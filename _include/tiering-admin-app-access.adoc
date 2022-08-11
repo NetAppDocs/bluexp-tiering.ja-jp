@@ -1,0 +1,6 @@
+= 
+:allow-uri-read: 
+
+
+必須のアプリケーションアクセスパラメータ:: クラスタ管理者ユーザは、「console」アプリケーションアクセス権を持っている必要があります。これは、ONTAP コマンドのsecurity login showを使用して確認できます。「admin」ユーザの_Application_Columnに「console」が表示されます。必要に応じて'security login createコマンドを使用してコンソール・アプリケーション・アクセスを追加します https://docs.netapp.com/us-en/ontap-cli-9111/security-login-create.html["詳細については、「security login」コマンドを参照してください"]。
+

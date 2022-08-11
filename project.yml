@@ -7,11 +7,10 @@ settings:
   prod:
     pdf_enabled: true
     harmony_enabled: false
+  rss_page: whats-new.html
   langs: ja-jp,us-en,zh-cn,zh-tw,ko-kr
 sidebar:
   entries:
-  - title: Cloud Manager のすべてのドキュメント
-    url: https://docs.netapp.com/us-en/cloud-manager-family
   - title: Cloud Tiering のドキュメント
     url: "/index.html"
   - title: リリースノート
@@ -38,20 +37,22 @@ sidebar:
       url: "/faq-cloud-tiering.html"
   - title: Cloud Tiering を使用
     entries:
-    - title: クラウドのパフォーマンスをテスト
-      url: "/task-tiering-test.html"
     - title: データの階層化を管理します
       url: "/task-managing-tiering.html"
+    - title: オブジェクトストレージを管理する
+      url: "/task-managing-object-storage.html"
+    - title: クラウドのパフォーマンスをテスト
+      url: "/task-tiering-test.html"
     - title: すべてのクラスタについて階層化の概要を表示します
       url: "/task-tiering-onprem-overview.html"
-    - title: 参照
-      entries:
-      - title: サポートされている Amazon S3 ストレージのクラスとリージョン
-        url: "/reference-aws-support.html"
-      - title: サポートされている Azure アクセス階層とリージョン
-        url: "/reference-azure-support.html"
-      - title: サポートされている Google Cloud ストレージクラスとリージョン
-        url: "/reference-google-support.html"
+  - title: 参照
+    entries:
+    - title: サポートされている Amazon S3 ストレージのクラスとリージョン
+      url: "/reference-aws-support.html"
+    - title: サポートされている Azure アクセス階層とリージョン
+      url: "/reference-azure-support.html"
+    - title: サポートされている Google Cloud ストレージクラスとリージョン
+      url: "/reference-google-support.html"
   - title: 知識とサポート
     entries:
     - title: サポートに登録します
@@ -94,6 +95,16 @@ homepage:
       url: task-managing-tiering.html#migrating-data-from-the-cloud-tier-back-to-the-performance-tier
     - title: アグリゲートの階層化設定を管理します
       url: task-managing-tiering.html#managing-tiering-settings-on-aggregates
+  - title: オブジェクトストレージを管理する
+    links:
+    - title: クラスタに新しいオブジェクトストアを追加します
+      url: task-managing-object-storage.html#adding-a-new-object-store
+    - title: 2つ目のオブジェクトストアをアグリゲートに追加してミラーリングします
+      url: task-managing-object-storage.html#attaching-a-second-object-store-to-an-aggregate-for-mirroring
+    - title: プライマリオブジェクトストアとミラーオブジェクトストアを入れ替えます
+      url: task-managing-object-storage.html#swapping-the-primary-and-mirror-object-store
+    - title: ミラーオブジェクトストアを削除する
+      url: task-managing-object-storage.html#removing-a-mirror-object-store-from-an-aggregate
   - title: ブログコミュニティ
     links:
     - title: ネットアップコミュニティ
@@ -109,3 +120,4 @@ homepage:
 product-family:
   name: Cloud Manager
   repo: cloud-manager-family
+  sidebar_label: All Cloud Manager documentation

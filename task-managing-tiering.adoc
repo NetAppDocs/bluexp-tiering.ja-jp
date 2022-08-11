@@ -27,7 +27,7 @@ TIP: オブジェクトストレージはクラスタの階層化の初期設定
 
 .手順
 . Cloud Manager の上部で、 * Tiering * をクリックします。
-. クラスタダッシュボード * で、クラスタの * 階層ボリューム * をクリックします。
+. クラスタダッシュボード*で、クラスタの「基本的な階層化の設定」をクリックします。
 +
 image:screenshot_tiering_tier_volumes_button.png["クラスタの階層のボリュームボタンを選択する方法を示すスクリーンショット。"]
 
@@ -37,7 +37,7 @@ image:screenshot_tiering_tier_volumes_button.png["クラスタの階層のボリ
 ** 複数のボリュームを選択するには、各ボリュームのボックス（image:button_backup_1_volume.png[""]）をクリックし、 * ボリュームの設定 * をクリックします。
 ** 単一のボリュームを選択するには、行（または）をクリックします image:screenshot_edit_icon.gif["鉛筆アイコンを編集します"] アイコン）をクリックします。
 +
-image:screenshot_tiering_modify_volumes.gif["単一のボリューム、複数のボリューム、またはすべてのボリュームを選択する方法、および選択したボリュームを変更するボタンを示すスクリーンショット。"]
+image:screenshot_tiering_tier_volumes.png["単一のボリューム、複数のボリューム、またはすべてのボリュームを選択する方法、および選択したボリュームを変更するボタンを示すスクリーンショット。"]
 
 
 
@@ -60,7 +60,7 @@ image:screenshot_tiering_policy_settings.png["設定可能な階層化ポリシ�
 
 .手順
 . Cloud Manager の上部で、 * Tiering * をクリックします。
-. クラスタダッシュボード * で、クラスタの * 階層ボリューム * をクリックします。
+. クラスタダッシュボード*で、クラスタの*階層ボリューム*をクリックします。
 . ボリュームの行をクリックし、階層化ポリシーを選択します。必要に応じてクーリング日数を調整し、 * 適用 * をクリックします。
 +
 link:concept-cloud-tiering.html#volume-tiering-policies["ボリューム階層化ポリシーとクーリング期間の詳細を確認できます"]。
@@ -100,7 +100,7 @@ NOTE: クラウドから転送されたデータの量に基づいて、クラ�
 クラウドから移動するすべてのデータに対して、パフォーマンス階層に十分なスペースがあることを確認してください。
 
 . Cloud Manager の上部で、 * Tiering * をクリックします。
-. クラスタダッシュボード * で、クラスタの * 階層ボリューム * をクリックします。
+. クラスタダッシュボード*で、クラスタの*階層ボリューム*をクリックします。
 . をクリックします image:screenshot_edit_icon.gif["に表示される編集アイコンのスクリーンショット ボリューム階層化のテーブルの各行の末尾です"] アイコンをクリックし、使用する取得オプションを選択して、 * 適用 * をクリックします。
 +
 image:screenshot_tiering_policy_settings_with_retrieve.png["設定可能な階層化ポリシーの設定を示すスクリーンショット。"]
@@ -131,15 +131,17 @@ TIP: IDR を有効にしておくと、アクセス頻度の低いデータや�
 
 
 .手順
-. Cloud Manager の上部で、 * Tiering * をクリックします。
-. Cloud Tiering * ページで、クラスタのメニューアイコンをクリックし、 * アグリゲートの管理 * を選択します。
+. [*クラスタダッシュボード*]で、選択したクラスタの[詳細設定*]をクリックします。
 +
-image:screenshot_tiering_manage_aggr_button.png["クラスタダッシュボードのスクリーンショットで、クラスタと操作メニューが展開されています。"]
+image:screenshot_tiering_advanced_setup_button.png["クラスタのAdvanced Setupボタンを示すスクリーンショット。"]
 
-. Manage Aggregates * ページで、をクリックします image:screenshot_edit_icon.gif["に表示される編集アイコンのスクリーンショット アグリゲートを管理するためにテーブルの各行の末尾に追加します"] アイコンをクリックして、テーブル内のアグリゲートを選択します。
-. スペース不足しきい値を変更して、アクセス頻度の低いデータのレポートを有効にするか無効にするかを選択します。
+. Advanced Setupページで、アグリゲートのメニューアイコンをクリックし、* Modify Aggregate *を選択します。
 +
-image:https://docs.netapp.com/us-en/cloud-tiering/media/screenshot_edit_aggregate.gif["階層化の使用率しきい値を変更するスライダと、アクセス頻度の低いデータのレポートを有効または無効にするボタンを示すスクリーンショット。"]
+image:screenshot_tiering_modify_aggr.png["アグリゲートのModify Aggregateオプションを示すスクリーンショット。"]
+
+. 表示されるダイアログで、使用率しきい値を変更し、アクセス頻度の低いデータのレポートを有効にするか無効にするかを選択します。
++
+image:screenshot_tiering_modify_aggregate.png["階層化の使用率しきい値を変更するスライダと、アクセス頻度の低いデータのレポートを有効または無効にするボタンを示すスクリーンショット。"]
 
 . [ 適用（ Apply ） ] をクリックします。
 
@@ -152,7 +154,7 @@ image:https://docs.netapp.com/us-en/cloud-tiering/media/screenshot_edit_aggregat
 
 .手順
 . Cloud Manager の上部で、 * Tiering * をクリックします。
-. クラスタダッシュボード * で、クラスタのメニューアイコンをクリックし、 * クラスタ情報 * を選択します。
+. クラスタダッシュボード*で、クラスタのメニューアイコンをクリックし、*クラスタ情報*を選択します。
 . クラスタに関する詳細を確認します。
 +
 次に例を示します。
@@ -195,7 +197,7 @@ image:https://docs.netapp.com/us-en/cloud-tiering/media/screenshot_tiering_healt
 また、他のクラスタを検出するためのボタンは Tiering_on_Prem Overview_page にも表示されます。
 
 .手順
-. Cloud Tiering から、 * クラスタダッシュボード * タブをクリックします。
+. Cloud Tieringから、*クラスタダッシュボード*タブをクリックします。
 . 検出されていないクラスタを表示するには、 * 検出されていないクラスタを表示 * をクリックします。
 +
 image:screenshot_tiering_show_undiscovered_cluster.png["階層化ダッシュボードの「未検出のクラスタを表示」ボタンを示すスクリーンショット。"]

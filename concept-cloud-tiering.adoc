@@ -20,7 +20,7 @@ Cloud Tiering サービスには、 FabricPool の機能が活用されていま
 
 オールSSDアグリゲートを使用するAFF 、FAS 、およびONTAP Select システムでサポートされていたのは、ONTAP 9.8以降で、高性能のSSDに加え、HDDで構成されるアグリゲートからデータを階層化できるようになりました。を参照してください https://docs.netapp.com/us-en/ontap/fabricpool/requirements-concept.html["FabricPool を使用する際の考慮事項と要件"^] を参照してください。
 
-Cloud Tieringライセンスは、FabricPool ミラー構成内のクラスタと共有できます（MetroCluster 構成は含まれません）。FabricPool の設定は、System ManagerまたはONTAP CLIを使用し、実行する必要があります https://docs.netapp.com/us-en/cloud-manager-tiering/task-licensing-cloud-tiering.html#apply-cloud-tiering-licenses-to-clusters-in-special-configurations["これらのタイプのクラスタのライセンスは、Cloud Tieringを使用して提供されています。"]
+クラウド階層化ライセンスは、MetroCluster 構成とFabricPool ミラー構成のクラスタと共有することもできます。FabricPool の設定は、System ManagerまたはONTAP CLIを使用して行う必要がありますが https://docs.netapp.com/us-en/cloud-manager-tiering/task-licensing-cloud-tiering.html#apply-cloud-tiering-licenses-to-clusters-in-special-configurations["これらのタイプのクラスタのライセンス設定は、Cloud Tieringを使用して完了しています。"]
 
 
 
@@ -30,6 +30,8 @@ Cloud Tiering は、自動化、監視、レポート、共通の管理インタ
 
 * 自動化により、データのセットアップと管理が容易になります オンプレミスの ONTAP クラスタからクラウドへの階層化
 * デフォルトのクラウドプロバイダのストレージクラス / アクセス階層を選択するか、ライフサイクル管理を使用して古い階層化データを対費用効果の高い階層に移動できます
+* 追加のオブジェクトストアへの接続を作成して、クラスタ内の他のアグリゲートに使用することができます
+* UIを使用してオブジェクトストアをアグリゲートにドラッグし、階層化やFabricPool ミラーリングを行うことができます
 * 単一のコンソールで、個別に行う必要がありません 複数のクラスタにわたって FabricPool を管理
 * レポートには、アクティブなデータと非アクティブなデータの量が表示されます 各クラスタ
 * 階層化の健常性ステータスを確認することで、問題を特定して修正できます そのような状況が発生したとき
@@ -54,7 +56,7 @@ TIP: Cloud Volumes ONTAP システムは、 Cloud Tiering から読み取り専�
 * NetApp StorageGRID
 
 
-Cloud Tieringライセンスは、IBM Cloud Object Storageにデータを階層化するクラスタと共有できます。FabricPool の設定は、System ManagerまたはONTAP CLIを使用し、実行する必要があります https://docs.netapp.com/us-en/cloud-manager-tiering/task-licensing-cloud-tiering.html#apply-cloud-tiering-licenses-to-clusters-in-special-configurations["このタイプの構成のライセンスは、Cloud Tieringを使用して提供されています。"]
+Cloud Tieringライセンスは、IBM Cloud Object Storageにデータを階層化するクラスタと共有できます。FabricPool の設定は、System ManagerまたはONTAP CLIを使用して行う必要がありますが https://docs.netapp.com/us-en/cloud-manager-tiering/task-licensing-cloud-tiering.html#apply-cloud-tiering-licenses-to-clusters-in-special-configurations["このタイプの構成のライセンスは、Cloud Tieringを使用して提供されます。"]
 
 
 NOTE: NAS ボリュームからパブリッククラウドまたは StorageGRID などのプライベートクラウドにデータを階層化できます。SAN プロトコルがアクセスするデータを階層化する場合は、接続に関する考慮事項に基づいてプライベートクラウドを使用することを推奨します。
@@ -63,7 +65,7 @@ NOTE: NAS ボリュームからパブリッククラウドまたは StorageGRID 
 
 === オブジェクトストレージ階層
 
-各 ONTAP クラスタは、アクセス頻度の低いデータを 1 つのオブジェクトストアに階層化します。データの階層化を設定するときに、新しいバケット / コンテナを追加するか、ストレージクラスまたはアクセス階層とともに既存のバケット / コンテナを選択するかを選択できます。
+ONTAP クラスタは、1つのオブジェクトストアまたは複数のオブジェクトストアにアクセス頻度の低いデータを階層化できます。データの階層化を設定するときに、新しいバケット / コンテナを追加するか、ストレージクラスまたはアクセス階層とともに既存のバケット / コンテナを選択するかを選択できます。
 
 * link:reference-aws-support.html["サポートされている AWS S3 ストレージクラスについて説明します"]
 * link:reference-azure-support.html["サポートされる Azure Blob アクセス階層の詳細については、こちらを参照して"]

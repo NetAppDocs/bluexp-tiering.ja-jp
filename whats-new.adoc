@@ -18,6 +18,22 @@ Cloud Tiering の新機能をご確認ください。
 
 
 
+== 2022年8月3日
+
+
+
+=== クラスタ内の他のアグリゲート用に追加のオブジェクトストアを設定できるようになりました
+
+Cloud Tiering UIに、オブジェクトストレージ構成用の新しいページセットが追加されました。新しいオブジェクトストアの追加、FabricPool ミラーリング用のアグリゲートへの複数のオブジェクトストアの接続、プライマリオブジェクトストアとミラーオブジェクトストアの交換、アグリゲートへのオブジェクトストアの接続の削除などが可能です。 https://docs.netapp.com/us-en/cloud-manager-tiering/task-managing-object-storage.html["新しいオブジェクトストレージ機能の詳細については、こちらをご覧ください。"]
+
+
+
+=== MetroCluster 構成に対するCloud Tieringライセンスがサポートされています
+
+Cloud Tieringライセンスを、MetroCluster 構成に含まれるクラスタと共有できるようになりました。これらのシナリオで廃止されたFabricPool ライセンスを使用する必要はなくなりました。これにより、多くのクラスタで「フローティング」のクラウド階層化ライセンスを簡単に使用できるようになります。 https://docs.netapp.com/us-en/cloud-manager-tiering/task-licensing-cloud-tiering.html#apply-cloud-tiering-licenses-to-clusters-in-special-configurations["これらのタイプのクラスタのライセンスを設定する方法を参照してください。"]
+
+
+
 == 2022年5月3日
 
 
