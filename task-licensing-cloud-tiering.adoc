@@ -1,8 +1,8 @@
 ---
 sidebar: sidebar 
 permalink: task-licensing-cloud-tiering.html 
-keywords: subscribe, trial, marketplace, subscription, paygo, pay as you go, byol, bring your own license, tiering, cloud tiering 
-summary: 最初のクラスタから階層化をセットアップすると、 Cloud Tiering の 30 日間の無償トライアルが開始されます。無償トライアルの終了後は、クラウドプロバイダのマーケットプレイスから従量課金制の Cloud Manager サブスクリプション、ネットアップからの BYOL ライセンス、またはその両方を組み合わせて Cloud Tiering の料金を支払う必要があります。 
+keywords: subscribe, trial, marketplace, subscription, paygo, pay as you go, byol, bring your own license, annual, tiering, cloud tiering 
+summary: 最初のクラスタから階層化をセットアップすると、 Cloud Tiering の 30 日間の無償トライアルが開始されます。無償トライアルの終了後は、クラウドプロバイダのマーケットプレイスから従量課金制または年間契約のCloud Managerサブスクリプション、NetAppからのBYOLライセンス、またはその両方を組み合わせてCloud Tieringの料金を支払う必要があります。 
 ---
 = Cloud Tiering のライセンスをセットアップ
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: 最初のクラスタから階層化をセットアップすると、 C
 
 
 [role="lead"]
-最初のクラスタから階層化をセットアップすると、 Cloud Tiering の 30 日間の無償トライアルが開始されます。無償トライアルの終了後は、クラウドプロバイダのマーケットプレイスから従量課金制の Cloud Manager サブスクリプション、ネットアップからの BYOL ライセンス、またはその両方を組み合わせて Cloud Tiering の料金を支払う必要があります。
+最初のクラスタから階層化をセットアップすると、 Cloud Tiering の 30 日間の無償トライアルが開始されます。無償トライアルの終了後は、クラウドプロバイダのマーケットプレイスから従量課金制または年間契約のCloud Managerサブスクリプション、NetAppからのBYOLライセンス、またはその両方を組み合わせてCloud Tieringの料金を支払う必要があります。
 
 さらに読む前に、いくつかのメモを記入してください。
 
@@ -87,9 +87,21 @@ video::video_subscribing_gcp_tiering.mp4[width=848,height=480]
 
 
 
+== 年間契約を使用する
+
+年間契約を購入することで、Cloud Tieringを年間料金で利用できます。
+
+アクセス頻度の低いデータをAWSに階層化するときは、で提供される年間契約に登録できます https://aws.amazon.com/marketplace/pp/B086PDWSS8["AWS Marketplace のページ"^]。1年、2年、3年の期間が用意されています。
+
+このオプションを使用する場合は、 Marketplace のページでサブスクリプションを設定してから、を設定します https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-aws-accounts.html#associate-an-aws-subscription["サブスクリプションを AWS クレデンシャルに関連付けます"^]。
+
+AzureやGCPへの階層化では、現在年間契約はサポートされていません。
+
+
+
 == Cloud Tiering BYOL ライセンスを使用します
 
-ネットアップが提供するお客様所有のライセンスは、 2 カ月、 12 カ月、 24 カ月、 36 カ月のいずれかで利用できます。BYOL * Cloud Tiering * ライセンスは、 Cloud Manager アカウントに含まれる複数のオンプレミス ONTAP クラスタで使用できるフローティングライセンスです。クラウド階層化ライセンスで定義された階層化の総容量は、オンプレミスのクラウドクラスタの * すべてで共有されるため、初期ライセンス取得と契約更新が容易になります。
+ネットアップが提供するお客様所有のライセンスには、 1 年、 2 年、 3 年の期間があります。BYOL * Cloud Tiering * ライセンスは、 Cloud Manager アカウントに含まれる複数のオンプレミス ONTAP クラスタで使用できるフローティングライセンスです。クラウド階層化ライセンスで定義された階層化の総容量は、オンプレミスのクラウドクラスタの * すべてで共有されるため、初期ライセンス取得と契約更新が容易になります。
 
 Cloud Tiering のライセンスがない場合は、次の製品を購入してください：
 
@@ -105,9 +117,9 @@ Cloud Manager の Digital Wallet ページを使用して、 Cloud Tiering BYOL 
 
 === 2021 年 8 月 21 日以降、 Cloud Tiering BYOL の新しいライセンス
 
-Cloud Tiering サービスを使用した Cloud Manager 内でサポートされる階層化構成の新しい * Cloud Tiering * ライセンスが、 2021 年 8 月に導入されました。Cloud Managerでは、現在、Amazon S3、Azure Blob Storage、Google Cloud Storage、S3互換オブジェクトストレージ、IBM Cloud Object Storage、StorageGRID などのクラウドストレージへの階層化をサポートしています。
+Cloud Tiering サービスを使用した Cloud Manager 内でサポートされる階層化構成の新しい * Cloud Tiering * ライセンスが、 2021 年 8 月に導入されました。Cloud Manager は、現在、 Amazon S3 、 Azure Blob Storage 、 Google Cloud Storage 、 S3 互換オブジェクトストレージ、 StorageGRID などのクラウドストレージへの階層化をサポートしています。
 
-従来、オンプレミス ONTAP データをクラウドに階層化するために使用していた * FabricPool * ライセンスは、インターネットにアクセスできないサイト（「ダークサイト」とも呼ばれます）の ONTAP 環境でのみ保持されています。このような構成を使用している場合は、System ManagerまたはONTAP CLIを使用して、各クラスタにFabricPool ライセンスをインストールします。
+従来、オンプレミスONTAP データをクラウドに階層化するために使用していた* FabricPool *ライセンスは、インターネットにアクセスできないサイト（「ダークサイト」とも呼ばれます）でのONTAP 導入、およびIBM Cloud Object Storageへの階層化構成にのみ保持されています。このような構成を使用している場合は、System ManagerまたはONTAP CLIを使用して、各クラスタにFabricPool ライセンスをインストールします。
 
 
 TIP: StorageGRID への階層化には、 FabricPool とクラウドの階層化ライセンスは必要ありません。
@@ -204,7 +216,7 @@ Cloud Tiering ライセンスは、期限が切れる前に更新できます。
 
 . Cloud Manager でライセンスを自動更新できない場合は、ライセンスファイルを手動でアップロードする必要があります。
 +
-.. 可能です <<Obtain your Cloud Tiering license file,ライセンスファイルをネットアップサポートサイトから入手します>>。
+.. 可能です  your Cloud Tiering license file,ライセンスファイルをネットアップサポートサイトから入手します。
 .. [ データサービスライセンス ] タブの [ デジタルウォレット ] ページで、をクリックします image:screenshot_horizontal_more_button.gif["[ 詳細 ] アイコン"] 更新するサービスシリアル番号の場合は、 ［ * ライセンスの更新 * ］ をクリックします。
 +
 image:screenshot_services_license_update.png["特定のサービスの [ ライセンスの更新 ] ボタンを選択するスクリーンショット。"]
@@ -220,11 +232,10 @@ Cloud Manager によってライセンスが更新され、 Cloud Tiering サー
 
 == 特別な構成のクラスタにCloud Tieringライセンスを適用します
 
-次の構成のONTAP クラスタでは、クラウド階層化ライセンスを使用できますが、通常のシングルノードクラスタおよびHA構成のONTAP クラスタとは異なる方法でライセンスを適用する必要があります。
+次の構成のONTAP クラスタでは、クラウド階層化ライセンスを使用できますが、ライセンスは、シングルノードクラスタ、HA構成のクラスタ、階層化ミラー構成のクラスタ、およびFabricPool ミラーを使用したMetroCluster 構成とは別の方法で適用する必要があります。
 
-* 階層化ミラー構成のクラスタ（2つのオブジェクトストアに接続されているクラスタ）
-* FabricPool ミラーを使用したMetroCluster 構成
 * IBM Cloud Object Storageに階層化されたクラスタ
+* 「ダークサイト」に設置されたクラスタ
 
 
 
@@ -246,7 +257,7 @@ Cloud Tieringで一般的なクラスタを検出すると、クラウド階層�
 
 NOTE: System ManagerまたはONTAP CLIの「子」ライセンスに表示されるライセンス容量と有効期限は実際の情報ではないため、情報が異なる場合は問題となりません。これらの値は、Cloud Tieringソフトウェアによって内部的に管理されます。実際の情報はデジタルウォレットで追跡されます。
 
-上記の3つの構成については、System ManagerまたはONTAP CLI（クラウド階層化インターフェイスではない）を使用して階層化を設定する必要があります。その場合は、「子」のライセンスをクラウド階層化インターフェイスから手動でこれらのクラスタにプッシュする必要があります。
+上記の2つの構成については、System ManagerまたはONTAP CLI（クラウド階層化インターフェイスではない）を使用して階層化を設定する必要があります。その場合は、「子」のライセンスをクラウド階層化インターフェイスから手動でこれらのクラスタにプッシュする必要があります。
 
 階層化ミラー構成では、データは2つの異なるオブジェクトストレージに階層化されるため、両方の場所にデータを階層化するための十分な容量を持つライセンスを購入する必要があります。
 

@@ -70,7 +70,7 @@ image:screenshot_tiering_policy_settings.png["設定可能な階層化ポリシ�
 
 
 
-* 注 : * 「階層化データを取得する」オプションが表示される場合は、を参照してください <<Migrating data from the cloud tier back to the performance tier,クラウド階層から高パフォーマンス階層へのデータの移行>> を参照してください。
+* 注 : * 「階層化データを取得する」オプションが表示される場合は、を参照してください  data from the cloud tier back to the performance tier,クラウド階層から高パフォーマンス階層へのデータの移行 を参照してください。
 
 階層化ポリシーが変更され、新しいポリシーに基づいてデータが階層化されます。
 

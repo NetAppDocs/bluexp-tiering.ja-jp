@@ -202,7 +202,7 @@ image:screenshot_tiering_lifecycle_selection_azure.png["データを特定の日
 ライフサイクルルールは、選択したストレージアカウント内のすべての BLOB コンテナに適用されます。
 
 +
-<<Verify that you have the necessary Connector permissions,必要なコネクタ権限があることを確認します>> ライフサイクル管理機能の場合。
+ that you have the necessary Connector permissions,必要なコネクタ権限があることを確認します ライフサイクル管理機能の場合。
 
 .. * クラスタネットワーク * ： ONTAP がオブジェクトストレージへの接続に使用する IPspace を選択し、「 * 続行」をクリックします。
 +
@@ -235,4 +235,4 @@ link:task-licensing-cloud-tiering.html["Cloud Tiering サービスに登録し�
 
 クラスタ上のアクティブなデータとアクセス頻度の低いデータに関する情報を確認できます。 link:task-managing-tiering.html["階層化設定の管理について詳しくは、こちらをご覧ください"]。
 
-また、クラスタの特定のアグリゲートのデータを別のオブジェクトストアに階層化する必要がある場合に、追加のオブジェクトストレージを作成することもできます。または、階層化データが別のオブジェクトストアにレプリケートされているFabricPool ミラーリングを使用する予定の場合も同様です。 link:task-managing-object-storage.html["オブジェクトストアの管理に関する詳細情報"]。
+また、クラスタの特定のアグリゲートのデータを別のオブジェクトストアに階層化したい場合に、追加のオブジェクトストレージを作成することもできます。または、階層化データが別のオブジェクトストアにレプリケートされているFabricPool ミラーリングを使用する予定の場合も同様です。 link:task-managing-object-storage.html["オブジェクトストアの管理に関する詳細情報"]。

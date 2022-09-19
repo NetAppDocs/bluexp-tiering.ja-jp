@@ -178,9 +178,7 @@ Cloud Tieringは、ONTAP バージョン9.2以降をサポートしています�
 
 === どのような種類の ONTAP システムがサポートされていますか。
 
-クラウド階層化は、シングルノードクラスタとハイアベイラビリティAFF 、FAS クラスタ、ONTAP Select クラスタでサポートされています。
-
-FabricPool ミラー構成とMetroCluster 構成のクラスタもサポートされますが、階層化設定の実行にはSystem ManagerまたはONTAP CLIを使用する必要があります。
+クラウド階層化は、シングルノードクラスタとハイアベイラビリティAFF 、FAS クラスタ、ONTAP Select クラスタでサポートされています。FabricPool ミラー構成とMetroCluster 構成のクラスタもサポートされます。
 
 
 
@@ -288,7 +286,7 @@ Cloud Tiering は、 _Standard_、 _Nearline _ 、 _Coldline_、 および _Arch
 
 === Cloud Tiering は、クラスタ全体に 1 つのオブジェクトストアを使用していますか、それともアグリゲートごとに 1 つ使用していますか
 
-一般的な構成では、クラスタ全体に1つのオブジェクトストアがあります。2022年8月に、* Advanced Setup *ページを使用してクラスタのオブジェクトストアを追加し、複数のオブジェクトストアを別々のアグリゲートに接続できるようになりました。
+一般的な構成では、クラスタ全体に1つのオブジェクトストアがあります。2022年8月より、* Advanced Setup *ページを使用してクラスタのオブジェクトストアを追加し、別々のオブジェクトストアを別々のアグリゲートに接続するか、2つのオブジェクトストアをアグリゲートに接続してミラーリングできます。
 
 
 
@@ -384,7 +382,11 @@ Connectorは、クラウドアカウント内またはオンプレミスでコ�
 
 次の4つの階層化ポリシーがあります。
 
-●なし：すべてのデータを常時ホットに分類し、ボリュームからオブジェクトストレージにデータを移動できないようにします。●コールドスナップショット（Snapshotのみ）：コールドスナップショットブロックのみがオブジェクトストレージに移動されます。●コールドユーザデータとスナップショット（自動）：コールドスナップショットブロックとコールドユーザデータブロックの両方をオブジェクトストレージに移動します。●すべてのユーザデータ（ALL）：すべてのデータをコールドとして分類し、ボリューム全体をオブジェクトストレージにただちに移動します。
+* none：すべてのデータを常にホットと分類し、ボリュームからオブジェクトストレージにデータを移動しないようにします。
+* コールドスナップショット（Snapshotのみ）：コールドスナップショットブロックのみがオブジェクトストレージに移動されます。
+* コールドユーザデータとSnapshot（自動）：コールドスナップショットブロックとコールドユーザデータブロックの両方がオブジェクトストレージに移動されます。
+* All User Data（all）：すべてのデータをコールドとして分類し、ボリューム全体をオブジェクトストレージにただちに移動します。
+
 
 link:concept-cloud-tiering.html#volume-tiering-policies["階層化ポリシーの詳細については、こちらをご覧ください"]。
 
@@ -509,7 +511,7 @@ Cloud Tiering以外、 https://docs.netapp.com/us-en/active-iq-unified-manager/[
 
 === どのような権限が必要ですか？
 
-* link:task-tiering-onprem-aws.html#preparing-amazon-s3["Amazonの場合、S3バケットを管理するには権限が必要です"]。
+* link:task-tiering-onprem-aws.html#set-up-s3-permissions["Amazonの場合、S3バケットを管理するには権限が必要です"]。
 * Azureでは、Cloud Managerに提供する必要のある権限以外で追加の権限は必要ありません。
 * link:task-tiering-onprem-gcp.html#preparing-google-cloud-storage["Google Cloudの場合、ストレージアクセスキーを含むサービスアカウントにはストレージ管理者権限が必要です"]。
 * link:task-tiering-onprem-storagegrid.html#preparing-storagegrid["StorageGRID の場合は、S3権限が必要です"]。

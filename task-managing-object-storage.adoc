@@ -91,6 +91,8 @@ IAM ユーザは、「 * S3 Bucket * 」ページで選択または作成した�
 
 2つ目のオブジェクトストアをアグリゲートに接続してFabricPool ミラーを作成し、オブジェクトストアをレプリケートできます。アグリゲートにオブジェクトストアがすでに1つ接続されている必要があります。
 
+MetroCluster 構成を使用する場合 https://docs.netapp.com/us-en/ontap/fabricpool/setup-object-stores-mcc-task.html["詳細および要件については、ONTAP のドキュメントを参照してください"]。
+
 .手順
 . [*クラスタダッシュボード*]で、選択したクラスタの[詳細設定*]をクリックします。
 +
@@ -105,6 +107,8 @@ image:screenshot_tiering_mirror_config.png["2つ目のオブジェクトスト�
 image:screenshot_tiering_mirror_config_complete.png["アグリゲートに接続された2つ目のオブジェクトストアを示すスクリーンショット。"]
 
 
+
+2つのオブジェクトストアの同期中は、ミラーステータスが「同期中」と表示され、同期が完了すると「同期済み」に変わります。
 
 
 
@@ -142,6 +146,9 @@ image:screenshot_tiering_mirror_delete.png["アグリゲートのUnmirror Object
 
 
 ミラーオブジェクトストアがアグリゲートから削除され、階層化データはレプリケートされなくなります。
+
+
+NOTE: MetroCluster 構成からミラーオブジェクトストアを削除する場合は、プライマリオブジェクトストアも削除するかどうかの確認を求められます。プライマリオブジェクトストアをアグリゲートに接続したままにすることも、削除することもできます。
 
 
 
