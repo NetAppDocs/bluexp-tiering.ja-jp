@@ -121,7 +121,7 @@ link:task-licensing-cloud-tiering.html#use-a-cloud-tiering-paygo-subscription["�
 
 === 年間契約
 
-Cloud Tieringは、アクセス頻度の低いデータをAWSに階層化する際に年間契約を提供します。1年、2年、3年の期間が用意されています。
+Cloud Tieringは、アクセス頻度の低いデータをAmazon S3に階層化する場合に年間契約を提供します。1年、2年、3年の期間が用意されています。
 
 AzureやGCPへの階層化では、現在年間契約はサポートされていません。
 

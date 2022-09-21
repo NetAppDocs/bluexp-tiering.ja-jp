@@ -135,21 +135,6 @@
   <block id="2817937e51c403b4b9929eaa298b82dd" category="paragraph">Cloud Tiering サービスを使用した、 Cloud Manager でサポートされる階層化構成に、新しい * Cloud Tiering * ライセンスが追加されました。複数のオンプレミス ONTAP クラスタにわたって使用できるフローティングライセンスです。過去に使用したことのある * FabricPool * ライセンスは、 Cloud Manager でサポートされていない構成にのみ保持されます。</block>
   <block id="54b8200ba1ce85a7ad931e091de0ed98" category="inline-link-macro">新しい Cloud Tiering ライセンスの詳細については、こちらをご覧ください</block>
   <block id="59e10c49329cd1a0a55e4a0d27f6a584" category="inline-link-macro">S3 互換オブジェクトストレージへのデータの階層化方法を参照してください</block>
-  <block id="916678dfdf53de83f6afdf8fca563fb3" category="section-title">2021 年 7 月 7 日</block>
-  <block id="def40345e2d3c9101a49141b1956c58d" category="paragraph">Azure VNet にインストールされたコネクタを使用する必要はなくなりました。Azure BLOB ストレージにデータを階層化する場合は、オンプレミスのホストで Connector を実行できます。</block>
-  <block id="945fb8f32f58d1cc36cb9f1e9e4c6fe5" category="section-title">2021 年 6 月 7 日</block>
-  <block id="277a1d3dc69ddcb600b5564bbfee2f99" category="paragraph">以前のリリースでは、 Amazon S3 または Google Cloud オブジェクトストレージを使用している場合、 30 日後に階層化データを Standard ストレージクラスから別のストレージクラスに移行できました。このリリースには、次の新機能が追加されてい</block>
-  <block id="92a8cc3e0000b5a588f5e5a545d580b8" category="list-text">階層化データを対費用効果の高い階層に移動する日数を選択できます。これをデータの「ライフサイクル管理」と呼びます。</block>
-  <block id="e7e39728235a606f9321e32048703018" category="list-text">Azure Blob で _Cool _ アクセス階層がサポートされるようになりました。</block>
-  <block id="b2c1efe1106d7a3c0771b064bea9957c" category="list-text">Google Cloud Storage では、階層化されたデータを複数のストレージ階層に長期的に移動できます。たとえば、階層化されたデータを 45 日後に _Standard_class から _Nearline_class に移動し、その後 75 日後に _Coldline_class に移動してから、 270 日後に _Archive_class に移動できます。</block>
-  <block id="c2c0bee6af3a5a60056d41dcc371d786" category="paragraph">この機能は、ボリュームでの階層化の使用を停止する場合や、すべてのユーザデータを高パフォーマンス階層に保持しながら Snapshot コピーをクラウド階層に保持する場合に便利です。この機能は、 ONTAP 9.8 以降を使用している場合に使用できます。</block>
-  <block id="296729a9ae6cd989b611bbaa8f279cba" category="inline-link-macro">データを高パフォーマンス階層に戻します</block>
-  <block id="ef010ff21ef40a36a12794034bd76e1b" category="paragraph">方法を参照してください <block ref="81dc96fdd3bce727e4737236967f1536" category="inline-link-macro-rx"></block>。</block>
-  <block id="824b76af9549cb14fd2443aa485afb15" category="section-title">2021 年 5 月 2 日</block>
-  <block id="bf6525c86100838072a02751028c3547" category="inline-link-macro">クラスタ内のすべてのボリュームの選択方法を参照してください</block>
-  <block id="36ce0e84f37feb90fb719b27375ae5e7" category="paragraph">ONTAP システムから階層化するボリュームを選択するときに、 [Tier Volumes] ページに [*All *VOLUMES ] チェックボックスが表示され、すべてのボリュームに同じポリシーを簡単に適用できるようになりました。 <block ref="fe9c671df76431123a5e8d8776c7cef2" category="inline-link-macro-rx"></block>。</block>
-  <block id="2296f192167be3972e69fc3d386a3e66" category="paragraph">ONTAP 9.8 以降を使用している場合、ボリューム内のデータを非アクティブのままオブジェクトストレージに移動する期間を決定する「クーリング期間」を変更する必要がある場合は、最大 183 日（ 63 日以内）まで指定できるようになりました。</block>
-  <block id="b4baef0a3a494382cb3865753733f031" category="paragraph">Google Cloud Storage に階層化する場合は、ライフサイクルルールを適用して、階層化されたデータを Standard ストレージクラスから 30 日後に低コストの Nearline 、 Coldline 、または Archive ストレージに移行することができます。</block>
   <block id="56e7e76078700fc13565626e04d55715" category="summary">Simple Storage Service （ S3 ）プロトコルを使用する任意のオブジェクトストレージサービスに、アクセス頻度の低いデータを階層化することによって、オンプレミスの ONTAP クラスタの空きスペースを確保します。</block>
   <block id="6fcd419d9b16c5368ab2877625e80567" category="doc">オンプレミスの ONTAP クラスタから S3 オブジェクトストレージへデータを階層化する</block>
   <block id="0a4e30d54ad79cb4d323fcc522b4c463" category="paragraph">Simple Storage Service （ S3 ）プロトコルを使用する任意のオブジェクトストレージサービスに、アクセス頻度の低いデータを階層化することによって、オンプレミスの ONTAP クラスタの空きスペースを確保します。</block>
@@ -743,7 +728,6 @@
   <block id="ad806d4b803a5aa7358400786d14dec0" category="section-title">2022 年 4 月 4 日</block>
   <block id="34a4923a0f84a1bc223389cfed6e2b62" category="paragraph"><block ref="3054f156a0693c67de0611c0445f676e" category="inline-link-rx"></block>。</block>
   <block id="df94b79ab63138be1c03382ae20c338d" category="paragraph">Simple Storage Service （ S3 ）プロトコルを使用する任意の Object Storage サービスにアクセス頻度の低いデータを階層化できるようになりました。<block ref="26932bf166134e05b1ade0d7ecb1b6d8" category="inline-link-rx"></block>。</block>
-  <block id="dbbd746e2d2c019dcb0c3c40b74f4f75" category="section-title">2021 年 3 月 8 日</block>
   <block id="5599b78f1c4021d635a48942fd659db7" category="paragraph">クラウド階層化では、 _Standard_,_Standard-Infrequent Access_,_one Zone - Infrequent Access_, _Intelligent Tiering _ 、および _Glacier Instant Retrieval_storage の各クラスへのデータ階層化がサポートされています。を参照してください <block ref="f693663c1e0f361f1f4405a9653a3c4b" category="inline-link-macro-rx"></block> 詳細：</block>
   <block id="72899f4178ab51a60b88e578be4f92f1" category="paragraph">必要に応じて、使用しない Cloud Volumes ONTAP の未割り当てのノードベースライセンスがある場合は、同じ金額と同じ有効期限で Cloud Tiering ライセンスに変換できます。<block ref="c110e5a4a66d7429a8ced7dc2264a8f5" category="inline-link-rx"></block>。</block>
   <block id="e2b0c2a0a664cef2184b3d17808db4ce" category="list-text">1 回のアクセスではほとんど発生しません</block>
@@ -755,12 +739,6 @@
   <block id="a74220a8acc78d1041352afb305af18f" category="paragraph">AFF システムと FAS システムのデータを階層化するだけでなく、 ONTAP Select システムからクラウドストレージにもアクセス頻度の低いデータを階層化できるようになりました。</block>
   <block id="99c3c55ceb085b94e53d8b7984863037" category="section-title">FabricPool ライセンスは Cloud Tiering BYOL ライセンスに置き換えられています</block>
   <block id="24263383a842093a8c2b6b9b8a88989d" category="section-title">オンプレミスの ONTAP クラスタから S3 互換のオブジェクトストレージにアクセス頻度の低いデータを階層化します</block>
-  <block id="154176674c0672732a91f2bd7ca5d8e0" category="section-title">Connector は、データを Azure BLOB ストレージに階層化するときにオンプレミスで実行できます</block>
-  <block id="c4f829b7ae242ef2fe076d1c69689d01" category="section-title">特定のクラウドプロバイダのストレージで新しい階層化クラスを使用できるようになりました</block>
-  <block id="84cada6f6939410de8fc42b2cea10895" category="section-title">これで、クラウド階層からパフォーマンス階層にデータをプロアクティブに戻すことができます</block>
-  <block id="011ff5422aa046bd5cf08306e8b04fde" category="section-title">これで、階層化ポリシーを適用する際にすべてのボリュームを選択できるようになりました</block>
-  <block id="f268cb0b89ceae31cbeb9f1cf4669fd0" category="section-title">「冷却」日数を 183 日まで設定できるようになりました</block>
-  <block id="5a294035d7c08dc10d36a9f693e9bdb7" category="section-title">Google Cloud Storage への階層化で、ライフサイクルルールを使用できるようになりました</block>
   <block id="7beb276ec918c2d8eb132df5ed6fe576" category="section-title">どのような種類の ONTAP システムがサポートされていますか。</block>
   <block id="ec0515a8a06c1c0cf10efc6cbb1bfab9" category="inline-link">FabricPool を使用する際の考慮事項と要件</block>
   <block id="403df42df80267a7b2bc0be8c3e6685d" category="paragraph">オンプレミスの ONTAP システムから次のオブジェクトストレージプロバイダにアクセス頻度の低いデータを階層化できます。</block>
@@ -1033,7 +1011,6 @@
   <block id="e79b2c28f4130226c9f1d6cb9f0ffd0c" category="paragraph">オブジェクトストアが作成されます。</block>
   <block id="e8ae815adf3f63d474c9e166a024d614" category="paragraph">これで、クラスタ内のアグリゲートにオブジェクトストアを接続できるようになります。</block>
   <block id="070570d4e2b0f26858aa948de0ba63dd" category="section-title">ミラーリング用に2つ目のオブジェクトストアをアグリゲートに接続しています</block>
-  <block id="d475f8c2ad721c50e2f3c32777bab8ec" category="paragraph">2つ目のオブジェクトストアをアグリゲートに接続してFabricPool ミラーを作成し、オブジェクトストアをレプリケートできます。アグリゲートにオブジェクトストアがすでに1つ接続されている必要があります。</block>
   <block id="9db0a2a7df2f469f7377ef9995abad54" category="list-text">[*クラスタダッシュボード*]で、選択したクラスタの[詳細設定*]をクリックします。</block>
   <block id="7f68d3e217be20821af2e99c59a95cae" category="inline-image-macro">クラスタのAdvanced Setupボタンを示すスクリーンショット。</block>
   <block id="e098fabd5ac5fda426e3f4e5268635d7" category="paragraph"><block ref="e098fabd5ac5fda426e3f4e5268635d7" category="inline-image-macro-rx" type="image"></block></block>
@@ -1250,15 +1227,12 @@
   <block id="93d0679385afbe8961d65715ec42ad95" category="paragraph"><block ref="eae517fc6cf18ab5b51a15743d8fba49" category="inline-link-rx"></block>。</block>
   <block id="6a22836d972c44908e791a2300d9312a" category="section-title">ドラッグアンドドロップしてAmazon S3へのクラウド階層化を有効にします</block>
   <block id="84b50dc471c57455cf0359ad021a8c58" category="paragraph">Amazon S3階層化のデスティネーションがキャンバスに作業環境として存在する場合は、オンプレミスのONTAP 作業環境をデスティネーションにドラッグして、階層化セットアップウィザードを開始できます。</block>
-  <block id="7c7cbcd98ab4ba89255f7b1be8725b81" category="inline-link">詳細および要件については、ONTAP のドキュメントを参照してください</block>
-  <block id="3cb1cda385e4184fc09dbec5c2aec109" category="paragraph">MetroCluster 構成を使用する場合<block ref="9abcb785e0ef8b918a18e0f5dbad9882" category="inline-link-rx"></block>。</block>
   <block id="9c71902c4f1a611c5b631cc69cbd2ada" category="paragraph">2つのオブジェクトストアの同期中は、ミラーステータスが「同期中」と表示され、同期が完了すると「同期済み」に変わります。</block>
   <block id="b57c0deab1a5287b0457bf7ca26a95f4" category="admonition">MetroCluster 構成からミラーオブジェクトストアを削除する場合は、プライマリオブジェクトストアも削除するかどうかの確認を求められます。プライマリオブジェクトストアをアグリゲートに接続したままにすることも、削除することもできます。</block>
   <block id="6eecabc0d7fe334dd9e87b08c1b64c93" category="paragraph">クラウド階層化は、シングルノードクラスタ、HA構成のクラスタ、階層化ミラー構成のクラスタ、およびMetroCluster 構成に対してFabricPool ミラーを使用して設定できます。Cloud Tieringライセンスは、すべてのクラスタ間で共有されます。</block>
   <block id="6341d59e78dc892e44e4255d34dff624" category="paragraph">従量課金制のサブスクリプション、年単位のサブスクリプション、お客様所有のCloud Tieringライセンス、またはその組み合わせでCloud Tieringを使用した従量課金制です。ライセンスがない場合は、最初のクラスタで 30 日間の無償トライアルを利用できます。</block>
   <block id="85e6332aa0d0ad8f46ae520da6d1c0c7" category="paragraph">Cloud Tiering ライセンスがない場合は、最初のクラスタへの階層化を設定すると、 Cloud Tiering の 30 日間の無償トライアルが開始されます。30日間の無償トライアルの終了後は、従量課金制のサブスクリプション、年間サブスクリプション、BYOLライセンス、またはその組み合わせを使用して、Cloud Tieringの料金を支払う必要があります。</block>
   <block id="421539f25601331f9f5f1e59cdb43e21" category="section-title">年間契約</block>
-  <block id="46e0b6a495f87cf4920ab347582f415e" category="paragraph">Cloud Tieringは、アクセス頻度の低いデータをAWSに階層化する際に年間契約を提供します。1年、2年、3年の期間が用意されています。</block>
   <block id="1ca6869c60d4b26c9ebd2bc63dd19e71" category="paragraph">ネットアップから Cloud Tiering * ライセンスを購入して、お客様所有のライセンスを有効にしてください。1年、2年、3年の期間ライセンスを購入し、階層化の容量を指定できます。BYOL クラウド階層化ライセンスは、複数のオンプレミス ONTAP クラスタで使用できるフローティングライセンスです。クラウド階層化ライセンスで定義した合計階層化容量は、すべてのオンプレミスクラスタで使用できます。</block>
   <block id="82812db645b6ff5e9c2a24ddfb66c8d6" category="paragraph">上記のセルフサポートオプションに加え、サポートを有効にしたあとで問題が発生した場合は、ネットアップサポートの担当者と相談して解決できます。</block>
   <block id="e2a733504c4088b809813bbb35a3ddfd" category="inline-link-macro">サポートに登録する方法について説明します</block>
@@ -1284,4 +1258,9 @@
   <block id="e01df0b4dfd95eba2c59333419e4fac6" category="list-text">製品内のチャットを使用します</block>
   <block id="639be990cfca56ab4b63685d8bacd437" category="list-text">テクニカル以外のケースをに送信します<block ref="2298f47e4dad19a3156da7ce6116d9b1" category="inline-link-rx"></block></block>
   <block id="7ff191df90fac0fa94ab5c2b5101a5e9" category="sidebar">Cloud Manager のすべてのドキュメント</block>
+  <block id="b5d536503b2db5208a418d0aad5a4c6b" category="paragraph">2つ目のオブジェクトストアをアグリゲートに接続してFabricPool ミラーを作成し、2つのオブジェクトストアにデータを同期的に階層化することができます。アグリゲートにオブジェクトストアがすでに1つ接続されている必要があります。</block>
+  <block id="0da0639ab808878f568f3c4f06c02689" category="inline-link">MetroCluster 要件の詳細については、ONTAP のドキュメントを参照してください</block>
+  <block id="6a6c83d33eeffc5742e2d15ff9f1e88d" category="paragraph">MetroCluster 構成を使用する場合は、異なるアベイラビリティゾーンにあるオブジェクトストアや、複数のアベイラビリティゾーンにオブジェクトのコピーを保持するように設定されたオブジェクトストアを使用することを推奨します。<block ref="8cdfadb67efe7ac0be1266ed1d493d6d" category="inline-link-rx"></block>。</block>
+  <block id="4368a1773cee54401cffba9d96b3ee45" category="paragraph">MetroCluster 構成でStorageGRID をオブジェクトストアとして使用する場合、両方のONTAP システムで単一のStorageGRID システムへのFabricPool 階層化を実行できます。</block>
+  <block id="a9435afbc015cc1ee7d59ebcb4c910fd" category="paragraph">Cloud Tieringは、アクセス頻度の低いデータをAmazon S3に階層化する場合に年間契約を提供します。1年、2年、3年の期間が用意されています。</block>
 </blocks>
