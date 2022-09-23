@@ -441,8 +441,6 @@
   <block id="5a7b146826969db8fcec8237bb37ca9e" category="list-text">コネクタには、ポート 443 経由での ONTAP クラスタへのアウトバウンド HTTPS 接続、オブジェクトストア、およびクラウド階層化サービスが必要です。</block>
   <block id="2f3ccf86e44d85ac02e49b28a63a02ba" category="paragraph">詳細については、以下を参照してください。</block>
   <block id="30d965eef5ba25c6b9998ae38270b43e" category="doc">法的通知</block>
-  <block id="4940124e8487cb4ea36f1511a195cf66" category="inline-link-macro">Cloud Manager 3.9 に関する注意事項</block>
-  <block id="c069fcc68c5dfa73ccc99924c836cae9" category="list-text"><block ref="c069fcc68c5dfa73ccc99924c836cae9" category="inline-link-macro-rx"></block></block>
   <block id="a5e8ac089fe7eb702f683ce020dc2a2a" category="inline-link-macro">Cloud Tiering への通知</block>
   <block id="3754b5e44654d3dc7bfaa36f213a8795" category="list-text"><block ref="3754b5e44654d3dc7bfaa36f213a8795" category="inline-link-macro-rx"></block></block>
   <block id="636acfcaa9d346397b4061f29f7518bd" category="summary">非アクティブなデータを Google Cloud Storage に階層化することで、オンプレミスの ONTAP クラスタの空きスペースを確保します。</block>
@@ -1220,14 +1218,12 @@
   <block id="08070357c74547d6c374634190ef592e" category="list-text">All User Data（all）：すべてのデータをコールドとして分類し、ボリューム全体をオブジェクトストレージにただちに移動します。</block>
   <block id="718ab8536a948516f06462c22a0f8852" category="list-text"><block ref="cb1be15d6f93cbd0769a2f1805d3c3a2" category="inline-link-macro-rx"></block>。</block>
   <block id="ab288ae4b4c50ebb9a997e0f0debbd15" category="section-title">2022年9月19日</block>
-  <block id="d6076da95b416ff0d08e3269c4addf0d" category="section-title">階層化ウィザードを使用すると、AWS PrivateLinkを使用してS3ストレージに安全に接続できます</block>
   <block id="905ecf204d0cf0b2ed497e63ae9324d0" category="inline-link">VPCエンドポイントインターフェイスを使用して、システムにプライベート接続を設定します</block>
   <block id="33e030edd0380c3b2d743ec2f989598c" category="paragraph">以前のリリースでは、VPCエンドポイントを介してクラスタをS3バケットに接続するこのセキュアな方法は、非常に時間がかかりました。前提条件となる手順を実行して、を実行します<block ref="fb4b1250ed3d38b3a9447c7c732436c8" category="inline-link-rx"></block>をクリックすると、[ネットワーク]ページの階層化セットアップウィザードでPrivateLinkを選択できます。</block>
   <block id="883959b6b7ad90936b33d524655bc282" category="inline-link">アクセス頻度の低いデータをAmazon S3に階層化するための要件と手順を確認します</block>
   <block id="93d0679385afbe8961d65715ec42ad95" category="paragraph"><block ref="eae517fc6cf18ab5b51a15743d8fba49" category="inline-link-rx"></block>。</block>
   <block id="6a22836d972c44908e791a2300d9312a" category="section-title">ドラッグアンドドロップしてAmazon S3へのクラウド階層化を有効にします</block>
   <block id="84b50dc471c57455cf0359ad021a8c58" category="paragraph">Amazon S3階層化のデスティネーションがキャンバスに作業環境として存在する場合は、オンプレミスのONTAP 作業環境をデスティネーションにドラッグして、階層化セットアップウィザードを開始できます。</block>
-  <block id="9c71902c4f1a611c5b631cc69cbd2ada" category="paragraph">2つのオブジェクトストアの同期中は、ミラーステータスが「同期中」と表示され、同期が完了すると「同期済み」に変わります。</block>
   <block id="b57c0deab1a5287b0457bf7ca26a95f4" category="admonition">MetroCluster 構成からミラーオブジェクトストアを削除する場合は、プライマリオブジェクトストアも削除するかどうかの確認を求められます。プライマリオブジェクトストアをアグリゲートに接続したままにすることも、削除することもできます。</block>
   <block id="6eecabc0d7fe334dd9e87b08c1b64c93" category="paragraph">クラウド階層化は、シングルノードクラスタ、HA構成のクラスタ、階層化ミラー構成のクラスタ、およびMetroCluster 構成に対してFabricPool ミラーを使用して設定できます。Cloud Tieringライセンスは、すべてのクラスタ間で共有されます。</block>
   <block id="6341d59e78dc892e44e4255d34dff624" category="paragraph">従量課金制のサブスクリプション、年単位のサブスクリプション、お客様所有のCloud Tieringライセンス、またはその組み合わせでCloud Tieringを使用した従量課金制です。ライセンスがない場合は、最初のクラスタで 30 日間の無償トライアルを利用できます。</block>
@@ -1258,9 +1254,16 @@
   <block id="e01df0b4dfd95eba2c59333419e4fac6" category="list-text">製品内のチャットを使用します</block>
   <block id="639be990cfca56ab4b63685d8bacd437" category="list-text">テクニカル以外のケースをに送信します<block ref="2298f47e4dad19a3156da7ce6116d9b1" category="inline-link-rx"></block></block>
   <block id="7ff191df90fac0fa94ab5c2b5101a5e9" category="sidebar">Cloud Manager のすべてのドキュメント</block>
-  <block id="b5d536503b2db5208a418d0aad5a4c6b" category="paragraph">2つ目のオブジェクトストアをアグリゲートに接続してFabricPool ミラーを作成し、2つのオブジェクトストアにデータを同期的に階層化することができます。アグリゲートにオブジェクトストアがすでに1つ接続されている必要があります。</block>
   <block id="0da0639ab808878f568f3c4f06c02689" category="inline-link">MetroCluster 要件の詳細については、ONTAP のドキュメントを参照してください</block>
-  <block id="6a6c83d33eeffc5742e2d15ff9f1e88d" category="paragraph">MetroCluster 構成を使用する場合は、異なるアベイラビリティゾーンにあるオブジェクトストアや、複数のアベイラビリティゾーンにオブジェクトのコピーを保持するように設定されたオブジェクトストアを使用することを推奨します。<block ref="8cdfadb67efe7ac0be1266ed1d493d6d" category="inline-link-rx"></block>。</block>
-  <block id="4368a1773cee54401cffba9d96b3ee45" category="paragraph">MetroCluster 構成でStorageGRID をオブジェクトストアとして使用する場合、両方のONTAP システムで単一のStorageGRID システムへのFabricPool 階層化を実行できます。</block>
   <block id="a9435afbc015cc1ee7d59ebcb4c910fd" category="paragraph">Cloud Tieringは、アクセス頻度の低いデータをAmazon S3に階層化する場合に年間契約を提供します。1年、2年、3年の期間が用意されています。</block>
+  <block id="c3d7ada1f42d9b916dd8624c5b5661c1" category="section-title">階層化ウィザードでは、S3ストレージへの階層化時にAWS PrivateLinkを設定できます</block>
+  <block id="bf482155aab691ba59a0313f5628cbba" category="section-title">MetroCluster 構成のミラーオブジェクトストアを削除するときに階層化の動作を選択します</block>
+  <block id="cd71992689f7bdbde4a7c9f0653f44f3" category="paragraph">MetroCluster 構成からミラーオブジェクトストアを削除する場合は、プライマリオブジェクトストアも削除するかどうかを確認するメッセージが表示されます。プライマリオブジェクトストアをアグリゲートに接続したままにすることも、削除することもできます。</block>
+  <block id="c80805cd1b291fd4590a3c0b82caa095" category="inline-link">FabricPool ミラーの詳細については、こちらをご覧ください</block>
+  <block id="4a6b2da2ae625dffc7d1a103b7579d57" category="paragraph">2つ目のオブジェクトストアをアグリゲートに接続してFabricPool ミラーを作成し、2つのオブジェクトストアにデータを同期的に階層化することができます。アグリゲートにオブジェクトストアがすでに1つ接続されている必要があります。<block ref="8af213a751b87119e23e85f52fbc72d6" category="inline-link-rx"></block>。</block>
+  <block id="2dc183e0073f3c1e0402cafe50273750" category="paragraph">MetroCluster 構成を使用する場合は、異なるアベイラビリティゾーンにあるパブリッククラウドでオブジェクトストアを使用することを推奨します。<block ref="8cdfadb67efe7ac0be1266ed1d493d6d" category="inline-link-rx"></block>。</block>
+  <block id="6b483bd3d7c70c49e8ad823d9d4bbf64" category="paragraph">MetroCluster 構成でStorageGRID をオブジェクトストアとして使用する場合、両方のONTAP システムで単一のStorageGRID システムへのFabricPool 階層化を実行できます。各ONTAP システムでは、データを別々のバケットに階層化する必要があります。</block>
+  <block id="64430472f9b760efd0fff8a56c3dfe2d" category="paragraph">2つのオブジェクトストアの同期中は、ミラーステータスが「同期中」と表示されます。同期が完了すると、ステータスが「Synchronized」に変わります。</block>
+  <block id="d14a27b37d19411318313c75f11baf13" category="inline-link">Cloud Managerに関する通知</block>
+  <block id="8f4eecef1c8abf547a153a1486d48ab2" category="list-text"><block ref="8f4eecef1c8abf547a153a1486d48ab2" category="inline-link-rx"></block></block>
 </blocks>

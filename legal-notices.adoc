@@ -47,6 +47,6 @@ https://www.netapp.com/us/legal/privacypolicy/index.aspx[]
 
 通知ファイルには、ネットアップソフトウェアで使用されるサードパーティの著作権およびライセンスに関する情報が記載されています。
 
-* link:media/notice_cloud_manager_3.9.pdf["Cloud Manager 3.9 に関する注意事項"^]
+* https://docs.netapp.com/us-en/cloud-manager-setup-admin/media/notice.pdf["Cloud Managerに関する通知"^]
 * link:media/notice_cloud_tiering.pdf["Cloud Tiering への通知"^]
 

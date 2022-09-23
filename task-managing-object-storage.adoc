@@ -89,11 +89,11 @@ IAM ユーザは、「 * S3 Bucket * 」ページで選択または作成した�
 
 == ミラーリング用に2つ目のオブジェクトストアをアグリゲートに接続しています
 
-2つ目のオブジェクトストアをアグリゲートに接続してFabricPool ミラーを作成し、2つのオブジェクトストアにデータを同期的に階層化することができます。アグリゲートにオブジェクトストアがすでに1つ接続されている必要があります。
+2つ目のオブジェクトストアをアグリゲートに接続してFabricPool ミラーを作成し、2つのオブジェクトストアにデータを同期的に階層化することができます。アグリゲートにオブジェクトストアがすでに1つ接続されている必要があります。 https://docs.netapp.com/us-en/ontap/fabricpool/create-mirror-task.html["FabricPool ミラーの詳細については、こちらをご覧ください"^]。
 
-MetroCluster 構成を使用する場合は、異なるアベイラビリティゾーンにあるオブジェクトストアや、複数のアベイラビリティゾーンにオブジェクトのコピーを保持するように設定されたオブジェクトストアを使用することを推奨します。 https://docs.netapp.com/us-en/ontap/fabricpool/setup-object-stores-mcc-task.html["MetroCluster 要件の詳細については、ONTAP のドキュメントを参照してください"^]。
+MetroCluster 構成を使用する場合は、異なるアベイラビリティゾーンにあるパブリッククラウドでオブジェクトストアを使用することを推奨します。 https://docs.netapp.com/us-en/ontap/fabricpool/setup-object-stores-mcc-task.html["MetroCluster 要件の詳細については、ONTAP のドキュメントを参照してください"^]。
 
-MetroCluster 構成でStorageGRID をオブジェクトストアとして使用する場合、両方のONTAP システムで単一のStorageGRID システムへのFabricPool 階層化を実行できます。
+MetroCluster 構成でStorageGRID をオブジェクトストアとして使用する場合、両方のONTAP システムで単一のStorageGRID システムへのFabricPool 階層化を実行できます。各ONTAP システムでは、データを別々のバケットに階層化する必要があります。
 
 .手順
 . [*クラスタダッシュボード*]で、選択したクラスタの[詳細設定*]をクリックします。
@@ -110,7 +110,7 @@ image:screenshot_tiering_mirror_config_complete.png["アグリゲートに接続
 
 
 
-2つのオブジェクトストアの同期中は、ミラーステータスが「同期中」と表示され、同期が完了すると「同期済み」に変わります。
+2つのオブジェクトストアの同期中は、ミラーステータスが「同期中」と表示されます。同期が完了すると、ステータスが「Synchronized」に変わります。
 
 
 

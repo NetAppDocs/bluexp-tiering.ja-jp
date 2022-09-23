@@ -22,7 +22,7 @@ Cloud Tiering の新機能をご確認ください。
 
 
 
-=== 階層化ウィザードを使用すると、AWS PrivateLinkを使用してS3ストレージに安全に接続できます
+=== 階層化ウィザードでは、S3ストレージへの階層化時にAWS PrivateLinkを設定できます
 
 以前のリリースでは、VPCエンドポイントを介してクラスタをS3バケットに接続するこのセキュアな方法は、非常に時間がかかりました。前提条件となる手順を実行して、を実行します https://docs.netapp.com/us-en/cloud-manager-tiering/task-tiering-onprem-aws.html#configure-your-system-for-a-private-connection-using-a-vpc-endpoint-interface["VPCエンドポイントインターフェイスを使用して、システムにプライベート接続を設定します"]をクリックすると、[ネットワーク]ページの階層化セットアップウィザードでPrivateLinkを選択できます。
 
@@ -33,6 +33,12 @@ https://docs.netapp.com/us-en/cloud-manager-tiering/task-tiering-onprem-aws.html
 === ドラッグアンドドロップしてAmazon S3へのクラウド階層化を有効にします
 
 Amazon S3階層化のデスティネーションがキャンバスに作業環境として存在する場合は、オンプレミスのONTAP 作業環境をデスティネーションにドラッグして、階層化セットアップウィザードを開始できます。
+
+
+
+=== MetroCluster 構成のミラーオブジェクトストアを削除するときに階層化の動作を選択します
+
+MetroCluster 構成からミラーオブジェクトストアを削除する場合は、プライマリオブジェクトストアも削除するかどうかを確認するメッセージが表示されます。プライマリオブジェクトストアをアグリゲートに接続したままにすることも、削除することもできます。
 
 
 
