@@ -35,7 +35,7 @@ AWS VPCまたはオンプレミスにすでにコネクタが導入されてい�
  your Connector,コネクタの作成方法および必要なネットワーク設定の定義方法を参照してください。
 
 [role="quick-margin-para"]
-Cloud Manager で ONTAP クラスタを検出し、クラスタが最小要件を満たしていることを確認し、クラスタが AWS S3 に接続できるようにネットワーク設定をカスタマイズします。
+BlueXPのONTAP クラスタを検出し、クラスタが最小要件を満たしていることを確認し、クラスタがAWS S3に接続できるようにネットワーク設定をカスタマイズします。
 
 [role="quick-margin-para"]
  your ONTAP cluster,オンプレミスの ONTAP クラスタを準備する方法をご確認ください。
@@ -56,7 +56,7 @@ ConnectorでS3バケットの作成と管理を行うための権限を設定し
 無償トライアルの終了後、従量課金制のサブスクリプション、 ONTAP Cloud Tiering のライセンス、またはその両方を組み合わせて使用したクラウド階層化の料金をお支払いください。
 
 * AWS Marketplace でサブスクライブするには、 https://aws.amazon.com/marketplace/pp/prodview-oorxakq6lq7m4?sr=0-8&ref_=beagle&applicationId=AWSMPContessa["Cloud Manager Marketplace の製品に移動します"^]をクリックし、 * Subscribe * をクリックして、画面の指示に従います。
-* Cloud Tiering BYOL ライセンスを使用して支払う場合は、 mailto:ng-cloud-tiering@netapp.com ？ subject=Licensing [ 購入が必要な場合はお問い合わせください ] のあとに link:task-licensing-cloud-tiering.html#add-cloud-tiering-byol-licenses-to-your-account["Cloud Manager Digital Wallet からアカウントに追加します"]。
+* Cloud Tiering BYOL ライセンスを使用して支払う場合は、 mailto:ng-cloud-tiering@netapp.com ？ subject=Licensing [ 購入が必要な場合はお問い合わせください ] のあとに link:task-licensing-cloud-tiering.html#add-cloud-tiering-byol-licenses-to-your-account["BlueXP Digital Walletからアカウントに追加します"]。
 
 
 
@@ -84,7 +84,7 @@ NOTE: コネクタと S3 の間の通信は、オブジェクトストレージ�
 
 == コネクタを準備します
 
-Cloud Manager Connector は、 Cloud Manager 機能のメインソフトウェアです。アクセス頻度の低いONTAP データを階層化するにはコネクタが必要です。
+BlueXPコネクタは'BlueXP機能の主要なソフトウェアですアクセス頻度の低いONTAP データを階層化するにはコネクタが必要です。
 
 
 
@@ -139,7 +139,7 @@ AWS VPCまたはオンプレミスにすでにコネクタが導入されてい�
 
 
 --
-サポートされるボリュームとアグリゲート:: クラウド階層化が可能なボリュームの総数は、 ONTAP システムのボリュームの数よりも少なくなる可能性があります。これは、一部のアグリゲートからボリュームを階層化できないためです。については、 ONTAP のドキュメントを参照してください https://docs.netapp.com/us-en/ontap/fabricpool/requirements-concept.html#functionality-or-features-not-supported-by-fabricpool["FabricPool でサポートされていない機能"^]。
+サポートされるボリュームとアグリゲート:: クラウド階層化が可能なボリュームの総数は、 ONTAP システムのボリュームの数よりも少なくなる可能性があります。これは、一部のアグリゲートからボリュームを階層化できないためです。については、ONTAP のドキュメントを参照してください https://docs.netapp.com/us-en/ontap/fabricpool/requirements-concept.html#functionality-or-features-not-supported-by-fabricpool["FabricPool でサポートされていない機能"^]。
 
 
 
@@ -176,9 +176,9 @@ IPspace内のすべてのクラスタ間LIFがオブジェクトストアにア�
 
 
 
-=== Cloud Manager で ONTAP クラスタを検出
+=== BlueXPでONTAP クラスタを検出します
 
-コールドデータをオブジェクトストレージに階層化する前に、Cloud ManagerでオンプレミスのONTAP クラスタを検出する必要があります。クラスタを追加するには、クラスタ管理 IP アドレスと admin ユーザアカウントのパスワードが必要です。
+オブジェクトストレージへのコールドデータの階層化を開始する前に、BlueXPでオンプレミスONTAP クラスタを検出する必要があります。クラスタを追加するには、クラスタ管理 IP アドレスと admin ユーザアカウントのパスワードが必要です。
 
 https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-discovering-ontap.html["クラスタの検出方法について説明します"^]。
 
@@ -237,7 +237,7 @@ https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_access-keys.html
 オンプレミスのデータセンターからVPCへのインターネット接続をよりセキュアにする場合は、階層化アクティブ化ウィザードでAWS PrivateLink接続を選択できます。VPNまたはAWS Direct Connectを使用して、プライベートIPアドレスを使用するVPCエンドポイントインターフェイス経由でオンプレミスシステムに接続する場合は、この環境が必要です。このタイプの接続がに表示されます  diagrams for connection options,上の2番目の図。
 
 . Amazon VPC コンソールまたはコマンドラインを使用して、インターフェイスエンドポイント設定を作成します。 https://docs.aws.amazon.com/AmazonS3/latest/userguide/privatelink-interface-endpoints.html["AWS PrivateLink for Amazon S3 の使用に関する詳細を参照してください"^]。
-. Cloud Manager Connector に関連付けられているセキュリティグループの設定を変更します。このポリシーを「 Custom 」（「 Full Access 」から）に変更する必要があります。また、変更する必要があります  up S3 permissions,必要なS3 Connector権限を追加します 前に示したように、
+. BlueXPコネクタに関連付けられているセキュリティグループ設定を変更します。このポリシーを「 Custom 」（「 Full Access 」から）に変更する必要があります。また、変更する必要があります  up S3 permissions,必要なS3 Connector権限を追加します 前に示したように、
 +
 image:screenshot_tiering_aws_sec_group.png["コネクタに関連付けられている AWS セキュリティグループのスクリーンショット。"]
 
@@ -251,7 +251,7 @@ image:screenshot_tiering_aws_sec_group.png["コネクタに関連付けられて
 +
 image:screenshot_endpoint_dns_aws_console.png["AWS コンソールから VPC エンドポイントの DNS 名のスクリーンショット。"]
 
-. VPC S3 エンドポイントから証明書を取得します。これは、で行います https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-managing-connectors.html#connect-to-the-linux-vm["Cloud Manager Connector をホストする VM にログインします"^] 実行するコマンドエンドポイントの DNS 名を入力するときは、先頭に「 * 」を追加して、「 * 」を置き換えます。
+. VPC S3 エンドポイントから証明書を取得します。これは、で行います https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-managing-connectors.html#connect-to-the-linux-vm["BlueXPコネクタをホストしているVMにログインします"^] 実行するコマンドエンドポイントの DNS 名を入力するときは、先頭に「 * 」を追加して、「 * 」を置き換えます。
 +
 [source, text]
 ----

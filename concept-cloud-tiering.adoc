@@ -16,7 +16,7 @@ summary: ネットアップの Cloud Tiering Service は、アクセス頻度の
 [role="lead"]
 ネットアップの Cloud Tiering Service は、アクセス頻度の低いデータをオンプレミスの ONTAP クラスタからオブジェクトストレージに自動的に階層化することで、データセンターをクラウドへと拡張します。これにより、クラスタの貴重なスペースが解放され、アプリケーションレイヤに変更を加えることなく、より多くのワークロードに対応できるようになります。Cloud Tiering を使用すると、データセンターのコストを削減し、 CAPEX モデルから OPEX モデルに切り替えることができます。
 
-Cloud Tiering サービスには、 FabricPool の機能が活用されています。FabricPool はネットアップデータファブリックのテクノロジで、低コストのオブジェクトストレージへデータを自動で階層化することができます。アクティブな（ホットな）データはローカル階層（オンプレミスの ONTAP アグリゲート）に残り、アクセス頻度の低い（コールド）データはクラウド階層に移動されます。移動されると、 ONTAP のデータ効率は維持されます。
+BlueXP（旧称Cloud Manager）のクラウド階層化サービスは、FabricPool の機能を活用しています。FabricPool はネットアップデータファブリックのテクノロジで、低コストのオブジェクトストレージへデータを自動で階層化することができます。アクティブな（ホットな）データはローカル階層（オンプレミスの ONTAP アグリゲート）に残り、アクセス頻度の低い（コールド）データはクラウド階層に移動されます。移動されると、 ONTAP のデータ効率は維持されます。
 
 オールSSDアグリゲートを使用するAFF 、FAS 、およびONTAP Select システムでサポートされていたのは、ONTAP 9.8以降で、高性能のSSDに加え、HDDで構成されるアグリゲートからデータを階層化できるようになりました。を参照してください https://docs.netapp.com/us-en/ontap/fabricpool/requirements-concept.html["FabricPool を使用する際の考慮事項と要件"^] を参照してください。
 
@@ -38,10 +38,10 @@ Cloud Tiering は、自動化、監視、レポート、共通の管理インタ
 * Cloud Volumes ONTAP システムを使用している場合は、クラスタダッシュボードにこれらのシステムが表示されるので、ハイブリッドクラウドインフラにおけるデータの階層化を完全に把握できます
 
 
-Cloud Tiering が提供する価値の詳細については、 https://cloud.netapp.com/cloud-tiering["NetApp Cloud Central の Cloud Tiering ページを確認してください"^]。
+Cloud Tiering が提供する価値の詳細については、 https://cloud.netapp.com/cloud-tiering["BlueXP WebサイトのCloud Tieringページをご覧ください"^]。
 
 
-TIP: Cloud Volumes ONTAP システムは、 Cloud Tiering から読み取り専用です。 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-tiering.html["Cloud Volumes ONTAP の階層化はで設定します Cloud Manager の作業環境"^]。
+TIP: Cloud Volumes ONTAP システムは、 Cloud Tiering から読み取り専用です。 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-tiering.html["Cloud Volumes ONTAP の階層化は'BlueXPの作業環境から設定します"^]。
 
 
 
@@ -131,7 +131,7 @@ AzureやGCPへの階層化では、現在年間契約はサポートされてい
 
 ネットアップから Cloud Tiering * ライセンスを購入して、お客様所有のライセンスを有効にしてください。1年、2年、3年の期間ライセンスを購入し、階層化の容量を指定できます。BYOL クラウド階層化ライセンスは、複数のオンプレミス ONTAP クラスタで使用できるフローティングライセンスです。クラウド階層化ライセンスで定義した合計階層化容量は、すべてのオンプレミスクラスタで使用できます。
 
-Cloud Tiering ライセンスを購入したら、 Cloud Manager のデジタルウォレットページを使用してライセンスを追加する必要があります。 link:task-licensing-cloud-tiering.html#use-a-cloud-tiering-byol-license["Cloud Tiering BYOL ライセンスの使用方法を参照してください"]。
+Cloud Tieringライセンスを購入したら、BlueXPのDigital Walletを使用してライセンスを追加する必要があります。 link:task-licensing-cloud-tiering.html#use-a-cloud-tiering-byol-license["Cloud Tiering BYOL ライセンスの使用方法を参照してください"]。
 
 前述したように、 BYOL ライセンスを購入した場合でも、従量課金制のサブスクリプションを設定することを推奨します。
 
@@ -150,9 +150,9 @@ image:diagram_cloud_tiering.png["「クラウドプロバイダのコネクタ�
 
 Cloud Tiering の仕組みは次のとおりです。
 
-. オンプレミスクラスタは、 Cloud Manager から検出できます。
+. BlueXPからオンプレミスクラスタを検出します。
 . 階層化を設定するには、バケット / コンテナ、ストレージクラスまたはアクセス階層、階層化データのライフサイクルルールなど、オブジェクトストレージに関する詳細を指定します。
-. Cloud Manager は、オブジェクトストレージプロバイダを使用するように ONTAP を設定し、クラスタ上のアクティブなデータと非アクティブデータの量を検出します。
+. BlueXPでは、オブジェクトストレージプロバイダを使用するようにONTAP が設定され、クラスタ上のアクティブなデータと非アクティブなデータの量が検出されます。
 . 階層化するボリュームとそれらのボリュームに適用する階層化ポリシーを選択します。
 . ONTAP は、アクセス頻度の低いデータをオブジェクトストアに階層化します。アクセス頻度の低いデータとして扱われるしきい値に達するとすぐにアクセスを開始します（を参照）  tiering policies）。
 . 階層化されたデータ（一部のプロバイダのみが使用可能）にライフサイクルルールを適用した場合、古い階層化データは、一定の日数が経過すると、よりコスト効率の高い階層に移動されます。

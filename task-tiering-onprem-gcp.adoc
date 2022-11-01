@@ -32,13 +32,13 @@ summary: 非アクティブなデータを Google Cloud Storage に階層化す�
 
 
 [role="quick-margin-para"]
-Cloud Manager で、オンプレミスの作業環境を選択し、階層化サービスの「 * 有効化」をクリックして、プロンプトに従って Google Cloud Storage にデータを階層化します。
+BlueXPでは、オンプレミスの作業環境を選択し、階層化サービスで「*有効化」をクリックし、画面の指示に従ってGoogle Cloud Storageにデータを階層化します。
 
 [role="quick-margin-para"]
 無償トライアルの終了後、従量課金制のサブスクリプション、 ONTAP Cloud Tiering のライセンス、またはその両方を組み合わせて使用したクラウド階層化の料金をお支払いください。
 
 * GCP Marketplace から登録するには、 https://console.cloud.google.com/marketplace/details/netapp-cloudmanager/cloud-manager?supportedpurview=project&rif_reserved["Cloud Manager Marketplace の製品に移動します"^]をクリックし、 * Subscribe * をクリックして、画面の指示に従います。
-* Cloud Tiering BYOL ライセンスを使用して支払う場合は、 mailto:ng-cloud-tiering@netapp.com ？ subject=Licensing [ 購入が必要な場合はお問い合わせください ] のあとに link:task-licensing-cloud-tiering.html#add-cloud-tiering-byol-licenses-to-your-account["Cloud Manager Digital Wallet からアカウントに追加します"]。
+* Cloud Tiering BYOL ライセンスを使用して支払う場合は、 mailto:ng-cloud-tiering@netapp.com ？ subject=Licensing [ 購入が必要な場合はお問い合わせください ] のあとに link:task-licensing-cloud-tiering.html#add-cloud-tiering-byol-licenses-to-your-account["BlueXP Digital Walletからアカウントに追加します"]。
 
 
 
@@ -91,7 +91,7 @@ Google Cloud Interconnect はパフォーマンスの向上とデータ転送コ
 
 
 --
-サポートされるボリュームとアグリゲート:: クラウド階層化が可能なボリュームの総数は、 ONTAP システムのボリュームの数よりも少なくなる可能性があります。これは、一部のアグリゲートからボリュームを階層化できないためです。については、 ONTAP のドキュメントを参照してください https://docs.netapp.com/us-en/ontap/fabricpool/requirements-concept.html#functionality-or-features-not-supported-by-fabricpool["FabricPool でサポートされていない機能"^]。
+サポートされるボリュームとアグリゲート:: クラウド階層化が可能なボリュームの総数は、 ONTAP システムのボリュームの数よりも少なくなる可能性があります。これは、一部のアグリゲートからボリュームを階層化できないためです。については、ONTAP のドキュメントを参照してください https://docs.netapp.com/us-en/ontap/fabricpool/requirements-concept.html#functionality-or-features-not-supported-by-fabricpool["FabricPool でサポートされていない機能"^]。
 
 
 
@@ -101,7 +101,7 @@ NOTE: Cloud Tiering は、 FlexGroup ボリュームをサポートしていま�
 
 === ONTAP クラスタを検出しています
 
-コールドデータの階層化を開始する前に、 Cloud Manager でオンプレミスの ONTAP 作業環境を作成する必要があります。
+コールドデータの階層化を開始する前に、オンプレミスのONTAP 作業環境をBlueXPに作成する必要があります。
 
 https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-discovering-ontap.html["クラスタの検出方法について説明します"^]。
 

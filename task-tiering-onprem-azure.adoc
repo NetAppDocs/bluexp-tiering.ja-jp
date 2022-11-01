@@ -31,13 +31,13 @@ summary: 非アクティブなデータを Azure Blob Storage に階層化する
 
 
 [role="quick-margin-para"]
-Cloud Manager で、オンプレミスの作業環境を選択し、階層化サービスの「 * 有効化」をクリックして、プロンプトに従って Azure Blob Storage にデータを階層化します。
+BlueXPでは、オンプレミスの作業環境を選択し、階層化サービスの*Enable*をクリックして、プロンプトに従ってAzure BLOBストレージにデータを階層化します。
 
 [role="quick-margin-para"]
 無償トライアルの終了後、従量課金制のサブスクリプション、 ONTAP Cloud Tiering のライセンス、またはその両方を組み合わせて使用したクラウド階層化の料金をお支払いください。
 
 * Azure Marketplace で配信登録するには、 https://azuremarketplace.microsoft.com/en-us/marketplace/apps/netapp.cloud-manager?tab=Overview["Cloud Manager Marketplace の製品に移動します"^]をクリックし、 * Subscribe * をクリックして、画面の指示に従います。
-* Cloud Tiering BYOL ライセンスを使用して支払う場合は、 mailto:ng-cloud-tiering@netapp.com ？ subject=Licensing [ 購入が必要な場合はお問い合わせください ] のあとに link:task-licensing-cloud-tiering.html#add-cloud-tiering-byol-licenses-to-your-account["Cloud Manager Digital Wallet からアカウントに追加します"]。
+* Cloud Tiering BYOL ライセンスを使用して支払う場合は、 mailto:ng-cloud-tiering@netapp.com ？ subject=Licensing [ 購入が必要な場合はお問い合わせください ] のあとに link:task-licensing-cloud-tiering.html#add-cloud-tiering-byol-licenses-to-your-account["BlueXP Digital Walletからアカウントに追加します"]。
 
 
 
@@ -90,7 +90,7 @@ ExpressRoute の方がパフォーマンスが向上し、データ転送コス�
 
 
 --
-サポートされるボリュームとアグリゲート:: クラウド階層化が可能なボリュームの総数は、 ONTAP システムのボリュームの数よりも少なくなる可能性があります。これは、一部のアグリゲートからボリュームを階層化できないためです。については、 ONTAP のドキュメントを参照してください https://docs.netapp.com/us-en/ontap/fabricpool/requirements-concept.html#functionality-or-features-not-supported-by-fabricpool["FabricPool でサポートされていない機能"^]。
+サポートされるボリュームとアグリゲート:: クラウド階層化が可能なボリュームの総数は、 ONTAP システムのボリュームの数よりも少なくなる可能性があります。これは、一部のアグリゲートからボリュームを階層化できないためです。については、ONTAP のドキュメントを参照してください https://docs.netapp.com/us-en/ontap/fabricpool/requirements-concept.html#functionality-or-features-not-supported-by-fabricpool["FabricPool でサポートされていない機能"^]。
 
 
 
@@ -100,7 +100,7 @@ NOTE: Cloud Tiering は、 ONTAP 9.5 以降、 FlexGroup ボリュームをサ�
 
 === ONTAP クラスタを検出しています
 
-コールドデータの階層化を開始する前に、 Cloud Manager でオンプレミスの ONTAP 作業環境を作成する必要があります。
+コールドデータの階層化を開始する前に、オンプレミスのONTAP 作業環境をBlueXPに作成する必要があります。
 
 https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-discovering-ontap.html["クラスタの検出方法について説明します"^]。
 
@@ -120,9 +120,9 @@ https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-discovering-ontap.
 
 === 必要なコネクタ権限があることを確認します
 
-Cloud Manager バージョン 3.9.7 以降を使用してコネクタを作成した場合は、すべての設定が完了しています。
+BlueXPバージョン3.9.7以降を使用してコネクタを作成した場合は、すべて設定されます。
 
-以前のバージョンの Cloud Manager を使用してコネクタを作成していた場合は、権限リストを編集して必要な権限を 2 つ追加する必要があります。
+以前のバージョンのBlueXPを使用してコネクタを作成した場合は、権限リストを編集して必要な権限を2つ追加する必要があります。
 
 [source, json]
 ----

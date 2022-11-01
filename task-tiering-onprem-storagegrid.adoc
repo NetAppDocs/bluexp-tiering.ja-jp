@@ -32,7 +32,7 @@ summary: アクセス頻度の低いデータを StorageGRID に階層化する�
 
 
 [role="quick-margin-para"]
-Cloud Manager で、オンプレミスの作業環境を選択し、階層化サービスの「 * 有効化」をクリックして、プロンプトに従ってデータを StorageGRID に階層化します。
+BlueXPでは、オンプレミスの作業環境を選択し、階層化サービスの*Enable*をクリックして、指示に従ってデータをStorageGRID に階層化します。
 
 
 
@@ -63,7 +63,7 @@ NOTE: コネクタと StorageGRID 間の通信は、オブジェクトストレ�
 --
 サポートされる ONTAP のバージョン:: ONTAP 9.4 以降
 必須のアプリケーションアクセスパラメータ:: クラスタ管理者ユーザは、「console」アプリケーションアクセス権を持っている必要があります。これは、ONTAP コマンドのsecurity login showを使用して確認できます。「admin」ユーザの_Application_Columnに「console」が表示されます。必要に応じて'security login createコマンドを使用してコンソール・アプリケーション・アクセスを追加します https://docs.netapp.com/us-en/ontap-cli-9111/security-login-create.html["詳細については、「security login」コマンドを参照してください"]。
-ライセンス:: Cloud Manager アカウントには Cloud Tiering ライセンスは必要 FabricPool ありません。また、 StorageGRID にデータを階層化する場合、 Cloud Tiering ライセンス ONTAP は必要ありません。
+ライセンス:: Cloud Tieringライセンスは、BlueXPアカウントには必要ありません。また、ONTAP クラスタにデータをStorageGRID に階層化する場合にはFabricPool ライセンスが必要です。
 クラスタネットワークの要件::
 +
 --
@@ -82,7 +82,7 @@ ONTAP は、オブジェクトストレージとの間でデータの読み取�
 
 
 --
-サポートされるボリュームとアグリゲート:: クラウド階層化が可能なボリュームの総数は、 ONTAP システムのボリュームの数よりも少なくなる可能性があります。これは、一部のアグリゲートからボリュームを階層化できないためです。については、 ONTAP のドキュメントを参照してください https://docs.netapp.com/us-en/ontap/fabricpool/requirements-concept.html#functionality-or-features-not-supported-by-fabricpool["FabricPool でサポートされていない機能"^]。
+サポートされるボリュームとアグリゲート:: クラウド階層化が可能なボリュームの総数は、 ONTAP システムのボリュームの数よりも少なくなる可能性があります。これは、一部のアグリゲートからボリュームを階層化できないためです。については、ONTAP のドキュメントを参照してください https://docs.netapp.com/us-en/ontap/fabricpool/requirements-concept.html#functionality-or-features-not-supported-by-fabricpool["FabricPool でサポートされていない機能"^]。
 
 
 
@@ -92,7 +92,7 @@ NOTE: Cloud Tiering は、 ONTAP 9.5 以降、 FlexGroup ボリュームをサ�
 
 === ONTAP クラスタを検出しています
 
-コールドデータの階層化を開始する前に、オンプレミスの ONTAP 作業環境を Cloud Manager キャンバスに作成する必要があります。
+コールドデータの階層化を開始する前に、オンプレミスのONTAP 作業環境をBlueXPキャンバスに作成する必要があります。
 
 https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-discovering-ontap.html["クラスタの検出方法について説明します"^]。
 
