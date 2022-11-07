@@ -18,6 +18,16 @@ Cloud Tiering の新機能をご確認ください。
 
 
 
+== 2022年11月6日
+
+
+
+=== ドラッグアンドドロップして、Azure Blob、Google Cloud Storage、StorageGRID へのクラウド階層化を有効にします
+
+Azure Blob、Google Cloud Storage、またはStorageGRID 階層化のデスティネーションがキャンバス上の作業環境として存在する場合は、オンプレミスのONTAP 作業環境を移行先にドラッグして、階層化セットアップウィザードを開始できます。
+
+
+
 == 2022年9月19日
 
 

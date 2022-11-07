@@ -174,6 +174,9 @@ https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-discovering-ontap.
 . オンプレミスクラスタを選択
 . 階層化サービスの * 有効化 * をクリックします。
 +
+Canvas上の作業環境としてAzure BLOB階層化デスティネーションが存在する場合は、クラスタをAzure Blob Working環境にドラッグしてセットアップウィザードを開始できます。
+
++
 image:screenshot_setup_tiering_onprem.png["オンプレミス ONTAP 作業環境を選択した後に画面の右側に表示される [ 有効 ] オプションを示すスクリーンショット。"]
 
 . *オブジェクトストレージ名の定義*：このオブジェクトストレージの名前を入力します。このクラスタのアグリゲートで使用する可能性のある他のオブジェクトストレージから一意である必要があります。
