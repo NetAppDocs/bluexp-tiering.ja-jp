@@ -85,7 +85,7 @@ NOTE: StorageGRID または S3 互換のストレージに階層化されたデ�
 
 データを StorageGRID に階層化する場合、料金は発生しません。BYOL ライセンスでも PAYGO 登録も必要ありません。
 
-https://cloud.netapp.com/cloud-tiering["価格設定の詳細を表示します"^]。
+https://bluexp.netapp.com/pricing#tiering["価格設定の詳細を表示します"^]。
 
 
 

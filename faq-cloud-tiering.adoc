@@ -130,7 +130,7 @@ Cloud Tieringを使用するためのライセンスとコストに関するFAQ�
 
 === BYOLの容量制限に達した場合はどうなりますか？
 
-BYOLの容量制限に達すると、新しいコールドデータの階層化が停止し、それまで階層化されていたすべてのデータにアクセスできる状態になります。PAYGOマーケットプレイスで_ Cloud Manager - Deploy & Manage Cloud Data Services _を購入した場合、新しいコールドデータは引き続きオブジェクトストレージに階層化され、使用量に応じて料金が支払われます。
+BYOLの容量制限に達すると、新しいコールドデータの階層化が停止し、それまで階層化されていたすべてのデータにアクセスできる状態になります。PAYGOマーケットプレイスで_BlueXP - Cloud Data Services-Deploy & Manage Cloud Data Services_を購入した場合、新しいコールドデータは引き続きオブジェクトストレージに階層化され、使用ごとに料金が支払われます。
 
 
 
@@ -204,7 +204,7 @@ Cloud Volumes ONTAP システムを使用している場合は、Cloud Tiering C
 
 コールドデータの階層化先によって異なります。詳細については、次のリンクを参照してください。
 
-* link:task-tiering-onprem-aws.html#preparing-your-ontap-clusters["Amazon S3へのデータの階層化"]
+* link:task-tiering-onprem-aws.html#prepare-your-ontap-cluster["Amazon S3へのデータの階層化"]
 * link:task-tiering-onprem-azure.html#preparing-your-ontap-clusters["Azure BLOBストレージへのデータの階層化"]
 * link:task-tiering-onprem-gcp.html#preparing-your-ontap-clusters["Google Cloud Storageへのデータの階層化"]
 * link:task-tiering-onprem-storagegrid.html#preparing-your-ontap-clusters["データをStorageGRID に階層化する"]

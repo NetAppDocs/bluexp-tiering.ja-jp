@@ -164,9 +164,9 @@ image:screenshot_tiering_cluster_info.png[" クラスタレポートを示すス
 
 
 
-また可能です https://docs.netapp.com/us-en/active-iq/task_monitor_and_tier_inactive_data_with_FabricPool_Advisor.html["Active IQ デジタルアドバイザからクラスタの階層化情報を表示します"^] ネットアップ製品の知識がある方は、左側のナビゲーションペインから「 * FabricPool Advisor * 」を選択します。
+また可能です https://docs.netapp.com/us-en/active-iq/task-informed-decisions-based-on-cloud-recommendations.html#tiering["クラスタの階層化情報をDigital Advisorから表示します"^] ネットアップ製品の知識がある方は、左側のナビゲーションペインから*クラウドの推奨事項*を選択してください。
 
-image:screenshot_tiering_aiq_fabricpool_info.png["Active IQ デジタルアドバイザの FabricPool を使用したクラスタの FabricPool 情報を示すスクリーンショット。"]
+image:screenshot_tiering_aiq_fabricpool_info.png["デジタルアドバイザのFabricPool を使用してクラスタのFabricPool 情報を示すスクリーンショット。"]
 
 
 
@@ -177,9 +177,9 @@ image:screenshot_tiering_aiq_fabricpool_info.png["Active IQ デジタルアド�
 .手順
 . 処理の健常性が「 Failed 」であるクラスタを特定します。
 +
-image:https://docs.netapp.com/us-en/cloud-tiering/media/screenshot_tiering_health.gif["クラスタの階層化の健常性ステータスが「失敗」であることを示すスクリーンショット。"]
+image:screenshot_tiering_health.gif["クラスタの階層化の健常性ステータスが「失敗」であることを示すスクリーンショット。"]
 
-. の上にカーソルを置きます image:https://docs.netapp.com/us-en/cloud-tiering/media/screenshot_info_icon.gif["失敗を示す i アイコンのスクリーンショット 理由"] アイコンをクリックして失敗の理由を確認してください。
+. の上にカーソルを置きます image:screenshot_info_icon.gif["失敗を示す i アイコンのスクリーンショット 理由"] アイコンをクリックして失敗の理由を確認してください。
 . 問題を修正します。
 +
 .. ONTAP クラスタが動作しており、オブジェクトストレージプロバイダへのインバウンドおよびアウトバウンド接続が確立されていることを確認してください。

@@ -100,7 +100,7 @@ AFF システムと FAS システムのデータを階層化するだけでな�
 
 === FabricPool ライセンスは Cloud Tiering BYOL ライセンスに置き換えられています
 
-Cloud Tiering サービスを使用した、 Cloud Manager でサポートされる階層化構成に、新しい * Cloud Tiering * ライセンスが追加されました。複数のオンプレミス ONTAP クラスタにわたって使用できるフローティングライセンスです。過去に使用したことのある * FabricPool * ライセンスは、 Cloud Manager でサポートされていない構成にのみ保持されます。
+Cloud Tieringサービスを使用してBlueXPでサポートされている階層化構成に、新しい* Cloud Tiering *ライセンスが追加されました。複数のオンプレミス ONTAP クラスタにわたって使用できるフローティングライセンスです。過去に使用したことがある*BlueXPでサポートされていない構成にのみ、FabricPool *ライセンスが保持されます。
 
 https://docs.netapp.com/us-en/cloud-manager-tiering/task-licensing-cloud-tiering.html#use-a-cloud-tiering-byol-license["新しい Cloud Tiering ライセンスの詳細については、こちらをご覧ください"]。
 

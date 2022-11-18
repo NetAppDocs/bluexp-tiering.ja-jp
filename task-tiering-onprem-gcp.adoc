@@ -37,7 +37,7 @@ BlueXPでは、オンプレミスの作業環境を選択し、階層化サー�
 [role="quick-margin-para"]
 無償トライアルの終了後、従量課金制のサブスクリプション、 ONTAP Cloud Tiering のライセンス、またはその両方を組み合わせて使用したクラウド階層化の料金をお支払いください。
 
-* GCP Marketplace から登録するには、 https://console.cloud.google.com/marketplace/details/netapp-cloudmanager/cloud-manager?supportedpurview=project&rif_reserved["Cloud Manager Marketplace の製品に移動します"^]をクリックし、 * Subscribe * をクリックして、画面の指示に従います。
+* GCP Marketplace から登録するには、 https://console.cloud.google.com/marketplace/details/netapp-cloudmanager/cloud-manager?supportedpurview=project&rif_reserved["BlueXP Marketplace製品にアクセスします"^]をクリックし、 * Subscribe * をクリックして、画面の指示に従います。
 * Cloud Tiering BYOL ライセンスを使用して支払う場合は、 mailto:ng-cloud-tiering@netapp.com ？ subject=Licensing [ 購入が必要な場合はお問い合わせください ] のあとに link:task-licensing-cloud-tiering.html#add-cloud-tiering-byol-licenses-to-your-account["BlueXP Digital Walletからアカウントに追加します"]。
 
 
