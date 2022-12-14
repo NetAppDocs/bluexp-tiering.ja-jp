@@ -22,15 +22,18 @@ summary: アクセス頻度の低いデータを StorageGRID に階層化する�
 
 これらの手順を実行すると、すぐに作業を開始できます。また、残りのセクションまでスクロールして詳細を確認することもできます。
 
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["1つ"] データを StorageGRID に階層化する準備をします
 [role="quick-margin-para"]
 次のものが必要です。
 
+[role="quick-margin-list"]
 * ONTAP 9.4 以降を実行しているオンプレミスの ONTAP クラスタと、ユーザが指定したポートから StorageGRID への接続。 https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-discovering-ontap.html["クラスタの検出方法について説明します"^]。
 * StorageGRID 10.3 以降で、 S3 権限を持つ AWS アクセスキーが使用されています。
 * オンプレミスにインストールされているコネクタ。
 * ONTAP クラスタ、 StorageGRID 、およびクラウド階層化サービスへのアウトバウンド HTTPS 接続を可能にするコネクタのネットワーク。
 
 
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["2 つ"] 階層化をセットアップする
 [role="quick-margin-para"]
 BlueXPでは、オンプレミスの作業環境を選択し、階層化サービスの*Enable*をクリックして、指示に従ってデータをStorageGRID に階層化します。
 
@@ -203,8 +206,10 @@ image:screenshot_tiering_policy_settings.png["設定可能な階層化ポリシ�
 
 
 
+.結果
 これで、クラスタのボリュームから StorageGRID へのデータ階層化が設定されました。
 
+.次の手順
 クラスタ上のアクティブなデータとアクセス頻度の低いデータに関する情報を確認できます。 link:task-managing-tiering.html["階層化設定の管理について詳しくは、こちらをご覧ください"]。
 
 また、クラスタの特定のアグリゲートのデータを別のオブジェクトストアに階層化したい場合に、追加のオブジェクトストレージを作成することもできます。または、階層化データが別のオブジェクトストアにレプリケートされているFabricPool ミラーリングを使用する予定の場合も同様です。 link:task-managing-object-storage.html["オブジェクトストアの管理に関する詳細情報"]。

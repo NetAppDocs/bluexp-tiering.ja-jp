@@ -22,39 +22,46 @@ summary: アクセス頻度の低いデータを Amazon S3 に階層化するこ
 
 これらの手順を実行すると、すぐに作業を開始できます。各手順の詳細については、このトピックの以降のセクションを参照してください。
 
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["1つ"] 使用する構成方法を特定します
 [role="quick-margin-para"]
 オンプレミスのONTAP クラスタをパブリックインターネット経由でAWS S3に直接接続するか、VPNとAWS Direct Connectのどちらを使用してトラフィックをAWS S3にルーティングするかを選択します。
 
 [role="quick-margin-para"]
- diagrams for connection options,使用可能な接続方法を参照してください。
+<<接続オプションのネットワークダイアグラム,使用可能な接続方法を参照してください。>>
 
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["2 つ"] BlueXPコネクタを準備します
 [role="quick-margin-para"]
 AWS VPCまたはオンプレミスにすでにコネクタが導入されている場合は、すべて設定されます。そうでない場合は、ONTAP データをAWS S3ストレージに階層化するためのコネクタを作成する必要があります。また、コネクタのネットワーク設定をカスタマイズして AWS S3 に接続できるようにする必要があります。
 
 [role="quick-margin-para"]
- your Connector,コネクタの作成方法および必要なネットワーク設定の定義方法を参照してください。
+<<コネクタを準備します,コネクタの作成方法および必要なネットワーク設定の定義方法を参照してください。>>
 
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["3つ"] オンプレミスのONTAP クラスタを準備
 [role="quick-margin-para"]
 BlueXPのONTAP クラスタを検出し、クラスタが最小要件を満たしていることを確認し、クラスタがAWS S3に接続できるようにネットワーク設定をカスタマイズします。
 
 [role="quick-margin-para"]
- your ONTAP cluster,オンプレミスの ONTAP クラスタを準備する方法をご確認ください。
+<<ONTAP クラスタを準備,オンプレミスの ONTAP クラスタを準備する方法をご確認ください。>>
 
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["4."] 階層化のターゲットとしてAmazon S3を準備します
 [role="quick-margin-para"]
 ConnectorでS3バケットの作成と管理を行うための権限を設定します。また、オンプレミスのONTAP クラスタに対する権限を設定して、S3バケットに対してデータの読み取りと書き込みを行えるようにする必要があります。
 
 [role="quick-margin-para"]
- up S3 permissions,Connectorおよびオンプレミスクラスタの権限を設定する方法については、を参照してください。
+<<S3 権限をセットアップする,Connectorおよびオンプレミスクラスタの権限を設定する方法については、を参照してください。>>
 
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-5.png["5 つ"] システムでCloud Tieringを有効にします
 [role="quick-margin-para"]
 オンプレミスの作業環境を選択し、階層化サービスの「*有効化」をクリックして、プロンプトに従ってAmazon S3にデータを階層化します。
 
 [role="quick-margin-para"]
- inactive data from your first cluster to Amazon S3,ボリュームの階層化を有効にする方法を参照してください。
+<<最初のクラスタからAmazon S3にアクセス頻度の低いデータを階層化します,ボリュームの階層化を有効にする方法を参照してください。>>
 
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-6.png["6"] ライセンスをセットアップする
 [role="quick-margin-para"]
 無償トライアルの終了後、従量課金制のサブスクリプション、 ONTAP Cloud Tiering のライセンス、またはその両方を組み合わせて使用したクラウド階層化の料金をお支払いください。
 
+[role="quick-margin-list"]
 * AWS Marketplace でサブスクライブするには、 https://aws.amazon.com/marketplace/pp/prodview-oorxakq6lq7m4?sr=0-8&ref_=beagle&applicationId=AWSMPContessa["BlueXP Marketplace製品にアクセスします"^]をクリックし、 * Subscribe * をクリックして、画面の指示に従います。
 * Cloud Tiering BYOL ライセンスを使用して支払う場合は、 mailto:ng-cloud-tiering@netapp.com ？ subject=Licensing [ 購入が必要な場合はお問い合わせください ] のあとに link:task-licensing-cloud-tiering.html#add-cloud-tiering-byol-licenses-to-your-account["BlueXP Digital Walletからアカウントに追加します"]。
 
@@ -110,7 +117,7 @@ AWS VPCまたはオンプレミスにすでにコネクタが導入されてい�
 
 
 * https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-permissions-aws.html#cloud-tiering["コネクタにS3バケットを管理する権限があることを確認します"^]
-* ONTAP クラスタからVPCへのDirect ConnectまたはVPN接続が確立されている状況で、コネクタとS3の間の通信をAWS内部ネットワーク（*プライベート*接続）のままにする場合は、S3へのVPCエンドポイントインターフェイスを有効にする必要があります。  your system for a private connection using a VPC endpoint interface,VPC エンドポイントインターフェイスの設定方法を参照してください。
+* ONTAP クラスタからVPCへのDirect ConnectまたはVPN接続が確立されている状況で、コネクタとS3の間の通信をAWS内部ネットワーク（*プライベート*接続）のままにする場合は、S3へのVPCエンドポイントインターフェイスを有効にする必要があります。 <<VPCエンドポイントインターフェイスを使用して、システムにプライベート接続を設定します,VPC エンドポイントインターフェイスの設定方法を参照してください。>>
 
 
 
@@ -170,8 +177,8 @@ Cloud Tieringをセットアップすると、IPspaceで使用するように求
 +
 IPspace内のすべてのクラスタ間LIFがオブジェクトストアにアクセスできる必要があります。現在のIPspaceに対してこれを設定できない場合は、すべてのクラスタ間LIFがオブジェクトストアにアクセスできる専用のIPspaceを作成する必要があります。
 
-* AWSでS3接続にプライベートVPCインターフェイスエンドポイントを使用している場合は、HTTPS / 443を使用するために、S3エンドポイント証明書をONTAP クラスタにロードする必要があります。  your system for a private connection using a VPC endpoint interface,VPC エンドポイントインターフェイスのセットアップ方法を参照して、 S3 証明書をロードしてください。
-*  up S3 permissions,ONTAP クラスタにS3バケットへのアクセス権限があることを確認します。
+* AWSでS3接続にプライベートVPCインターフェイスエンドポイントを使用している場合は、HTTPS / 443を使用するために、S3エンドポイント証明書をONTAP クラスタにロードする必要があります。 <<VPCエンドポイントインターフェイスを使用して、システムにプライベート接続を設定します,VPC エンドポイントインターフェイスのセットアップ方法を参照して、 S3 証明書をロードしてください。>>
+* <<S3 権限をセットアップする,ONTAP クラスタにS3バケットへのアクセス権限があることを確認します。>>
 
 
 
@@ -232,12 +239,12 @@ https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_access-keys.html
 
 === VPCエンドポイントインターフェイスを使用して、システムにプライベート接続を設定します
 
-標準のパブリックインターネット接続を使用する場合は、すべてのアクセス権がコネクタによって設定され、他に必要な操作はありません。このタイプの接続がに表示されます  diagrams for connection options,上の最初の図。
+標準のパブリックインターネット接続を使用する場合は、すべてのアクセス権がコネクタによって設定され、他に必要な操作はありません。このタイプの接続がに表示されます <<接続オプションのネットワークダイアグラム,上の最初の図>>。
 
-オンプレミスのデータセンターからVPCへのインターネット接続をよりセキュアにする場合は、階層化アクティブ化ウィザードでAWS PrivateLink接続を選択できます。VPNまたはAWS Direct Connectを使用して、プライベートIPアドレスを使用するVPCエンドポイントインターフェイス経由でオンプレミスシステムに接続する場合は、この環境が必要です。このタイプの接続がに表示されます  diagrams for connection options,上の2番目の図。
+オンプレミスのデータセンターからVPCへのインターネット接続をよりセキュアにする場合は、階層化アクティブ化ウィザードでAWS PrivateLink接続を選択できます。VPNまたはAWS Direct Connectを使用して、プライベートIPアドレスを使用するVPCエンドポイントインターフェイス経由でオンプレミスシステムに接続する場合は、この環境が必要です。このタイプの接続がに表示されます <<接続オプションのネットワークダイアグラム,上の2番目の図>>。
 
 . Amazon VPC コンソールまたはコマンドラインを使用して、インターフェイスエンドポイント設定を作成します。 https://docs.aws.amazon.com/AmazonS3/latest/userguide/privatelink-interface-endpoints.html["AWS PrivateLink for Amazon S3 の使用に関する詳細を参照してください"^]。
-. BlueXPコネクタに関連付けられているセキュリティグループ設定を変更します。このポリシーを「 Custom 」（「 Full Access 」から）に変更する必要があります。また、変更する必要があります  up S3 permissions,必要なS3 Connector権限を追加します 前に示したように、
+. BlueXPコネクタに関連付けられているセキュリティグループ設定を変更します。このポリシーを「 Custom 」（「 Full Access 」から）に変更する必要があります。また、変更する必要があります <<S3 権限をセットアップする,必要なS3 Connector権限を追加します>> 前に示したように、
 +
 image:screenshot_tiering_aws_sec_group.png["コネクタに関連付けられている AWS セキュリティグループのスクリーンショット。"]
 
@@ -336,7 +343,7 @@ IAM ユーザは、「 * S3 Bucket * 」ページで選択または作成した�
 階層化するボリュームが配置されているONTAP クラスタ内のIPspaceを選択します。このIPspaceのクラスタ間LIFは、クラウドプロバイダのオブジェクトストレージに接続できるように、アウトバウンドのインターネットアクセスを備えている必要があります。
 
 +
-必要に応じて、以前に設定した AWS PrivateLink を使用するかどうかを選択します。  your system for a private connection using a VPC endpoint interface,上記のセットアップ情報を参照してください。
+必要に応じて、以前に設定した AWS PrivateLink を使用するかどうかを選択します。 <<VPCエンドポイントインターフェイスを使用して、システムにプライベート接続を設定します,上記のセットアップ情報を参照してください。>>
 
 +
 エンドポイントの設定手順を説明するダイアログボックスが表示されます。
@@ -362,8 +369,10 @@ image:screenshot_tiering_policy_settings.png["設定可能な階層化ポリシ�
 
 
 
+.結果
 これで、クラスタのボリュームから S3 オブジェクトストレージへのデータ階層化が設定されました。
 
+.次の手順
 link:task-licensing-cloud-tiering.html["Cloud Tiering サービスに登録してください"]。
 
 クラスタ上のアクティブなデータとアクセス頻度の低いデータに関する情報を確認できます。 link:task-managing-tiering.html["階層化設定の管理について詳しくは、こちらをご覧ください"]。

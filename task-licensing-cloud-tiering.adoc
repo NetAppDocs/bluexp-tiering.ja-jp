@@ -193,6 +193,7 @@ image:screenshot_services_license_add.png["Cloud Tiering BYOL ライセンスを
 
 
 
+.結果
 Cloud Tieringサービスがアクティブになるように、BlueXPにライセンスが追加されています。
 
 
@@ -216,7 +217,7 @@ Cloud Tiering ライセンスは、期限が切れる前に更新できます。
 
 . BlueXPがライセンスを自動的に更新できない場合は、ライセンスファイルを手動でアップロードする必要があります。
 +
-.. 可能です  your Cloud Tiering license file,ライセンスファイルをネットアップサポートサイトから入手します。
+.. 可能です <<Cloud Tiering のライセンスファイルを入手します,ライセンスファイルをネットアップサポートサイトから入手します>>。
 .. [ データサービスライセンス ] タブの [ デジタルウォレット ] ページで、をクリックします image:screenshot_horizontal_more_button.gif["[ 詳細 ] アイコン"] 更新するサービスシリアル番号の場合は、 ［ * ライセンスの更新 * ］ をクリックします。
 +
 image:screenshot_services_license_update.png["特定のサービスの [ ライセンスの更新 ] ボタンを選択するスクリーンショット。"]
@@ -226,6 +227,7 @@ image:screenshot_services_license_update.png["特定のサービスの [ ライ�
 
 
 
+.結果
 ライセンスが更新され、Cloud Tiering Serviceがアクティブな状態になります。
 
 

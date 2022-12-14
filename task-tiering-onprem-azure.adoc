@@ -22,20 +22,25 @@ summary: 非アクティブなデータを Azure Blob Storage に階層化する
 
 これらの手順を実行すると、すぐに作業を開始できます。また、残りのセクションまでスクロールして詳細を確認することもできます。
 
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["1つ"] Azure BLOB ストレージへのデータの階層化を準備する
 [role="quick-margin-para"]
 次のものが必要です。
 
+[role="quick-margin-list"]
 * ONTAP 9.4 以降を実行し、 Azure Blob Storage への HTTPS 接続を備えたオンプレミスの ONTAP クラスタ。 https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-discovering-ontap.html["クラスタの検出方法について説明します"^]。
 * Azure VNet またはオンプレミスにインストールされたコネクタ。
 * データセンター内の ONTAP クラスタ、 Azure ストレージ、およびクラウド階層化サービスへのアウトバウンド HTTPS 接続を可能にするコネクタのネットワーク。
 
 
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["2 つ"] 階層化をセットアップする
 [role="quick-margin-para"]
 BlueXPでは、オンプレミスの作業環境を選択し、階層化サービスの*Enable*をクリックして、プロンプトに従ってAzure BLOBストレージにデータを階層化します。
 
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["3つ"] ライセンスをセットアップする
 [role="quick-margin-para"]
 無償トライアルの終了後、従量課金制のサブスクリプション、 ONTAP Cloud Tiering のライセンス、またはその両方を組み合わせて使用したクラウド階層化の料金をお支払いください。
 
+[role="quick-margin-list"]
 * Azure Marketplace で配信登録するには、 https://azuremarketplace.microsoft.com/en-us/marketplace/apps/netapp.cloud-manager?tab=Overview["BlueXP Marketplace製品にアクセスします"^]をクリックし、 * Subscribe * をクリックして、画面の指示に従います。
 * Cloud Tiering BYOL ライセンスを使用して支払う場合は、 mailto:ng-cloud-tiering@netapp.com ？ subject=Licensing [ 購入が必要な場合はお問い合わせください ] のあとに link:task-licensing-cloud-tiering.html#add-cloud-tiering-byol-licenses-to-your-account["BlueXP Digital Walletからアカウントに追加します"]。
 
@@ -168,6 +173,7 @@ NOTE: 低コストのアクセス階層を使用するようにクラウド階�
 
 Azure 環境を準備したら、最初のクラスタからアクセス頻度の低いデータの階層化を開始します。
 
+.必要なもの
 https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-discovering-ontap.html["オンプレミスの作業環境"^]。
 
 .手順
@@ -205,7 +211,7 @@ image:screenshot_tiering_lifecycle_selection_azure.png["データを特定の日
 ライフサイクルルールは、選択したストレージアカウント内のすべての BLOB コンテナに適用されます。
 
 +
- that you have the necessary Connector permissions,必要なコネクタ権限があることを確認します ライフサイクル管理機能の場合。
+<<必要なコネクタ権限があることを確認します,必要なコネクタ権限があることを確認します>> ライフサイクル管理機能の場合。
 
 .. * クラスタネットワーク * ： ONTAP がオブジェクトストレージへの接続に使用する IPspace を選択し、「 * 続行」をクリックします。
 +
@@ -232,8 +238,10 @@ image:screenshot_tiering_policy_settings.png["設定可能な階層化ポリシ�
 
 
 
+.結果
 クラスタのボリュームから Azure Blob オブジェクトストレージへのデータ階層化のセットアップが完了しました。
 
+.次の手順
 link:task-licensing-cloud-tiering.html["Cloud Tiering サービスに登録してください"]。
 
 クラスタ上のアクティブなデータとアクセス頻度の低いデータに関する情報を確認できます。 link:task-managing-tiering.html["階層化設定の管理について詳しくは、こちらをご覧ください"]。

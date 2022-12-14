@@ -29,21 +29,26 @@ Simple Storage Service （ S3 ）プロトコルを使用する任意のオブ�
 
 これらの手順を実行すると、すぐに作業を開始できます。また、残りのセクションまでスクロールして詳細を確認することもできます。
 
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["1つ"] S3 互換オブジェクトストレージにデータを階層化する準備をします
 [role="quick-margin-para"]
 次のものが必要です。
 
+[role="quick-margin-list"]
 * ONTAP 9.8 以降を実行しているオンプレミスの ONTAP クラスタ。ユーザが指定したポートを介して S3 互換オブジェクトストレージに接続されます。 https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-discovering-ontap.html["クラスタの検出方法について説明します"^]。
 * ONTAP クラスタがバケットにアクセスできるようにするための、オブジェクトストレージサーバの FQDN 、アクセスキー、およびシークレットキー。
 * オンプレミスにインストールされているコネクタ。
 * ONTAP クラスタ、 S3 互換オブジェクトストレージ、およびクラウド階層化サービスへのアウトバウンド HTTPS 接続を可能にするコネクタのネットワーク。
 
 
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["2 つ"] 階層化をセットアップする
 [role="quick-margin-para"]
 BlueXPでは、オンプレミスの作業環境を選択し、階層化サービスの*Enable*をクリックし、画面の指示に従ってデータをS3対応のオブジェクトストレージに階層化します。
 
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["3つ"] ライセンスをセットアップする
 [role="quick-margin-para"]
 従量課金制のクラウド階層化：クラウドプロバイダからの従量課金制サブスクリプション、 NetApp Cloud Tiering のお客様所有のライセンス、またはその両方の組み合わせで利用できます。
 
+[role="quick-margin-list"]
 * からBlueXP PAYGOを購読すること https://aws.amazon.com/marketplace/pp/prodview-oorxakq6lq7m4?sr=0-8&ref_=beagle&applicationId=AWSMPContessa["AWS Marketplace"^]、 https://azuremarketplace.microsoft.com/en-us/marketplace/apps/netapp.cloud-manager?tab=Overview["Azure Marketplace で入手できます"^]または https://console.cloud.google.com/marketplace/details/netapp-cloudmanager/cloud-manager?supportedpurview=project&rif_reserved["GCP Marketplace"^]をクリックし、 * Subscribe * をクリックして指示に従います。
 * Cloud Tiering BYOL ライセンスを使用して支払う場合は、 mailto:ng-cloud-tiering@netapp.com ？ subject=Licensing [ 購入が必要な場合はお問い合わせください ] のあとに link:task-licensing-cloud-tiering.html#add-cloud-tiering-byol-licenses-to-your-account["BlueXP Digital Walletからアカウントに追加します"]。
 
@@ -202,8 +207,10 @@ image:screenshot_tiering_policy_settings.png["設定可能な階層化ポリシ�
 
 
 
+.結果
 これで、クラスタのボリュームから S3-compatible オブジェクトストレージへのデータ階層化が設定されました。
 
+.次の手順
 link:task-licensing-cloud-tiering.html["Cloud Tiering サービスに登録してください"]。
 
 クラスタ上のアクティブなデータとアクセス頻度の低いデータに関する情報を確認できます。 link:task-managing-tiering.html["階層化設定の管理について詳しくは、こちらをご覧ください"]。

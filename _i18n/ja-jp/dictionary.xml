@@ -49,7 +49,6 @@
   <block id="383aab378d15aa426a28f88b0b8d7d71" category="inline-link">AWS ドキュメント：「 Managing Access Keys for IAM Users</block>
   <block id="18a5ea96fd1a711fe5cc2e22701fb42c" category="paragraph"><block ref="18a5ea96fd1a711fe5cc2e22701fb42c" category="inline-link-rx"></block></block>
   <block id="fd0b15799911e1006e252a82c698b372" category="paragraph">AWS 環境を準備したら、最初のクラスタからアクセス頻度の低いデータの階層化を開始します。</block>
-  <block id="a711863513c11f3a6d86294acc7be0ba" category="list-title">必要なもの</block>
   <block id="04e0208908b4c6086bf83c95b22aff8b" category="inline-link">オンプレミスの作業環境</block>
   <block id="5b47faa45c60368d15dfdd5dfe93817e" category="list-text"><block ref="05e67941b6656a354bb250fa5965cbfe" category="inline-link-rx"></block>。</block>
   <block id="1595204d9df7479eb1cce9861446c4a3" category="list-text">必要な S3 権限を持つ IAM ユーザの AWS アクセスキー。</block>
@@ -208,7 +207,6 @@
   <block id="7d5d486077d112d9f802c64eea1ab893" category="paragraph"><block ref="7d5d486077d112d9f802c64eea1ab893" category="inline-image-macro-rx" type="image"></block></block>
   <block id="bf1af3fe2b2716f907d63473ff063165" category="inline-image-macro">単一のボリューム、複数のボリューム、またはすべてのボリュームを選択する方法、および選択したボリュームを変更するボタンを示すスクリーンショット。</block>
   <block id="b43a266db2aca1fd9d7c018f414038a1" category="paragraph">選択したボリュームのデータがクラウドに階層化されます。</block>
-  <block id="6e4c88586fed564c2a533a5be0ddcf91" category="section-title">ボリュームの階層化ポリシーを変更する</block>
   <block id="5a40c33f4c0bb7db2e33038404ef04b9" category="paragraph">ボリュームの階層化ポリシーを変更すると、 ONTAP がコールドデータをオブジェクトストレージに階層化する方法が変更されます。変更は、ポリシーを変更した時点から始まります。変更されるのはボリュームに対する以降の階層化の動作のみで、データが変更後からクラウド階層に移動されることはありません。</block>
   <block id="3deb91ba336d29a173415247e2cfbc36" category="list-text">ボリュームの行をクリックし、階層化ポリシーを選択します。必要に応じてクーリング日数を調整し、 * 適用 * をクリックします。</block>
   <block id="607881f35d8174edd89161743c157a25" category="inline-xref">クラウド階層から高パフォーマンス階層へのデータの移行</block>
@@ -353,7 +351,6 @@
   <block id="f171b53c2ca59613ced7d9a5a942a255" category="inline-image-macro">クラウドのパフォーマンステストの結果を示すスクリーンショット。</block>
   <block id="0076173f0ac8d073b8ab32c9a088997b" category="paragraph"><block ref="0076173f0ac8d073b8ab32c9a088997b" category="inline-image-macro-rx" type="image"></block></block>
   <block id="8d7c169a466dfccc11fd70e4d5d9307c" category="paragraph">クラスタの CPU 利用率が 50% を超えていないときは、このチェックを実行することを推奨します。</block>
-  <block id="12ebb37a8d91ff10a8eaff4834cdfd67" category="list-title">が設定されていないクラスタの手順 階層化</block>
   <block id="c1d7cf1a6e1782b986990f5c14c566d8" category="list-text">クラスタダッシュボード * で、クラスタのメニューアイコンをクリックし、 * クラウドパフォーマンステスト * を選択します。</block>
   <block id="07ae28f7f79fff3c0b0b0cf1056fc2c1" category="list-text">詳細を確認し、 [* Continue （続行） ] をクリックします。</block>
   <block id="bfdee4fb60271a04ea7de7300cf2719f" category="list-text">プロンプトに従って、必要な情報を入力します。</block>
@@ -1172,9 +1169,7 @@
   <block id="00fc9d0c515c69ea2c368521453d982e" category="inline-xref">ネットアップへの登録方法をご確認ください</block>
   <block id="97454ce87333f7ebd50ee38b8126fb39" category="paragraph"><block ref="37544f11913357c4e8c8a4ec607ae247" category="inline-xref-macro-rx"></block>。</block>
   <block id="a92ec860f505b318fd0f0eba6165d607" category="section-title">NSSアカウントをBlueXPに追加します</block>
-  <block id="77bdda0b5be7d2725f2b5941d74db0e2" category="paragraph">サポートダッシュボードを使用すると、NetApp Support Site アカウントを追加して管理し、Cloud Managerで使用できます。</block>
   <block id="328a2c1e7778e9edaf79d90c51409ac4" category="list-text">お客様レベルのアカウントをお持ちの場合は、1つ以上のNSSアカウントを追加することもできます。</block>
-  <block id="4fde72c535fd0cd463dbeb49347cdfae" category="list-text">パートナーアカウントまたはリセラーアカウントをお持ちの場合は、1つ以上のNSSアカウントを追加できますが、お客様レベルのアカウントと一緒に追加することはできません。</block>
   <block id="1afe19576f77bb0073c93359ed2cbb18" category="list-text">BlueXPコンソールの右上にある[ヘルプ]アイコンをクリックし、[*Support*]を選択します。</block>
   <block id="cbc6cc3bb022583403171b447b2a962c" category="paragraph">これらのアクションにより、BlueXPはライセンスのダウンロード、ソフトウェアのアップグレード検証、および将来のサポート登録などの目的でNSSアカウントを使用できます。</block>
   <block id="cf3a2d2c139bf5c9cc87fe714bfff3b1" category="paragraph">次の点に注意してください。</block>
@@ -1198,17 +1193,14 @@
   <block id="5226d4ec1f4f81b740cbbd27635b441f" category="list-text">必ず、上記のシリアル番号フィールドに使用されているBlueXPアカウントのシリアル番号(960xxxx)をコピーしてください。これにより、アカウント処理が高速化されます。</block>
   <block id="e9b1f53d6cabb3394833a4e102eb6a69" category="section-title">ネットアップのソリューションを初めて導入する場合は</block>
   <block id="c20c107d0d4eef6351660f3590324232" category="paragraph">ネットアップ製品を初めてご利用になり、NSSアカウントをお持ちでない場合は、以下の手順に従ってください。</block>
-  <block id="59dd2a274c2c6a3cc5b3dce08109019d" category="list-text">Support Registrationのページで、Cloud ManagerアカウントIDのシリアル番号を確認します。</block>
   <block id="ef5e63bb6b6827440a13cc2ec7e9cf56" category="paragraph"><block ref="ef5e63bb6b6827440a13cc2ec7e9cf56" category="inline-image-macro-rx" type="image"></block></block>
   <block id="dd50e314c18933734174c1156dd9237f" category="inline-link">ネットアップサポート登録サイト</block>
   <block id="78f94e749b89d69dcbf3baff21ccb958" category="list-text">に移動します<block ref="e1c4be66250fd76d5c52bfe2cb7daee2" category="inline-link-rx"></block> 「*ネットアップ登録のお客様ではありません*」を選択します。</block>
   <block id="d4f633ef130727b2776fa7f45024ca7d" category="list-text">必須フィールドに入力します（赤いアスタリスクのフィールド）。</block>
   <block id="1128fc8d5ec64880f4d49337ed798d31" category="list-text">[*製品ライン*（Product Line *）]フィールドで、[* Cloud Manager *]を選択し、該当する課金プロバイダーを選択します。</block>
-  <block id="1192dec4cc2b923397748a651cef178f" category="list-text">前述の手順2からCloud Managerアカウントのシリアル番号をコピーし、セキュリティチェックを完了して、ネットアップのグローバルデータプライバシーポリシーを読み、確認します。</block>
   <block id="3a24c87c9971d2011b4df223718f84b4" category="paragraph">この安全なトランザクションを完了するために、メールボックスに電子メールがすぐに送信されます。確認メールが数分で届かない場合は、必ずスパムフォルダを確認してください。</block>
   <block id="03413baeca1ff7222737d8ce299bd4e8" category="list-text">Eメールからアクションを確認します。</block>
   <block id="201080500e946070a2e4873042507c77" category="paragraph">確認ではネットアップにリクエストが送信され、NetApp Support Site アカウントを作成することを推奨します。</block>
-  <block id="d6cb31c22f8f843a781cccec33157281" category="list-text">シリアル番号のフィールドには、上記のCloud Managerアカウントのシリアル番号（960xxxx）を必ずコピーしてください。これにより、アカウント処理が高速化されます。</block>
   <block id="684375e279a289295b72a006d93e2c4c" category="paragraph">このプロセスについては、ネットアップからご連絡ください。これは、新規ユーザ向けの1回限りのオンボーディング演習です。</block>
   <block id="1c0e45ef07d0dbc13ca2394d5e285fd7" category="paragraph">NetApp Support Site アカウントを作成したら、BlueXPに移動して、このNSSアカウントを追加して今後の登録を行うことができます。</block>
   <block id="c9df4195a305212ffd7b56d24f67129d" category="summary">ネットアップでは、さまざまな方法でBlueXPをサポートしています。ナレッジベース（ KB ）記事やコミュニティフォーラムなど、 24 時間 365 日利用可能な幅広いセルフサポートオプションをご用意しています。サポート登録には、 Web チケット処理によるリモートテクニカルサポートが含まれます。</block>
@@ -1318,4 +1310,34 @@
   <block id="bd25c3527b85ace964c6837242630a19" category="paragraph"><block ref="316080080631334cc8b0ad0316a8ebff" category="inline-link-rx"></block>。</block>
   <block id="be161e727970da45fa68901ea907f28e" category="list-text">AWS Marketplace でサブスクライブするには、<block ref="39d4482f47ca47b562b106b1d8bbeae0" category="inline-link-rx"></block>をクリックし、 * Subscribe * をクリックして、画面の指示に従います。</block>
   <block id="6cca8ac33a42313a50c7ad5adc9f4c91" category="paragraph">Cloud Tieringサービスを使用してBlueXPでサポートされている階層化構成に、新しい* Cloud Tiering *ライセンスが追加されました。複数のオンプレミス ONTAP クラスタにわたって使用できるフローティングライセンスです。過去に使用したことがある*BlueXPでサポートされていない構成にのみ、FabricPool *ライセンスが保持されます。</block>
+  <block id="06c2cea18679d64399783748fa367bdd" category="inline-image-macro">1つ</block>
+  <block id="8788b0cdf4f12f86e295a59a91c1f90a" category="paragraph-title"><block ref="58f667aaf05f87159670e12bd9bc076b" category="inline-image-macro-rx" type="image"></block> Google Cloud Storage へのデータの階層化を準備</block>
+  <block id="aada29daee1d64ed0fe907043855cb7e" category="inline-image-macro">2 つ</block>
+  <block id="1fc5678c52721c9b3e4645fbccb888e2" category="paragraph-title"><block ref="54f425ce8d89f4ed6b8a546561af5d60" category="inline-image-macro-rx" type="image"></block> 階層化をセットアップする</block>
+  <block id="ca8a2087e5557e317599344687a57391" category="inline-image-macro">3つ</block>
+  <block id="405c5046b6e6c8d7c0227d9136432afb" category="paragraph-title"><block ref="05b2444faffd66d76e88602ea7dd353f" category="inline-image-macro-rx" type="image"></block> ライセンスをセットアップする</block>
+  <block id="d59db7846bd10b6d60d21543df9faa9e" category="list-title">必要なもの</block>
+  <block id="8eea62084ca7e541d918e823422bd82e" category="paragraph-title">結果</block>
+  <block id="58eaebf972358f1cf03d386a4ade1a0f" category="paragraph-title">次の手順</block>
+  <block id="afef51d18777eb361a20c2043d35b3c7" category="paragraph-title"><block ref="58f667aaf05f87159670e12bd9bc076b" category="inline-image-macro-rx" type="image"></block> Azure BLOB ストレージへのデータの階層化を準備する</block>
+  <block id="6f863df0df6a06cb4fad6fa2f223e77f" category="paragraph-title"><block ref="58f667aaf05f87159670e12bd9bc076b" category="inline-image-macro-rx" type="image"></block> 使用する構成方法を特定します</block>
+  <block id="642a9b215bdf03aae5ed22d3ad869bf8" category="paragraph-title"><block ref="54f425ce8d89f4ed6b8a546561af5d60" category="inline-image-macro-rx" type="image"></block> BlueXPコネクタを準備します</block>
+  <block id="0ccb6a37cea873b6899d9aa76a81d884" category="paragraph-title"><block ref="05b2444faffd66d76e88602ea7dd353f" category="inline-image-macro-rx" type="image"></block> オンプレミスのONTAP クラスタを準備</block>
+  <block id="981b8fcee42e1e726a67a2b9a98ea6e9" category="inline-image-macro">4.</block>
+  <block id="fc2e4866d1e1246d6bc61fbaacd9f37d" category="paragraph-title"><block ref="beadfa85a2fdca06b91edc1131c603e6" category="inline-image-macro-rx" type="image"></block> 階層化のターゲットとしてAmazon S3を準備します</block>
+  <block id="e5d9de39f7ca1ba2637e5640af3ae8aa" category="inline-image-macro">5 つ</block>
+  <block id="7241b0a75a30d6a1a03f0b94b59fc7fc" category="paragraph-title"><block ref="99e8b2f00e172bfcff96afdce69907bc" category="inline-image-macro-rx" type="image"></block> システムでCloud Tieringを有効にします</block>
+  <block id="e6fbc0b9673f8c86726688d7607fc8f5" category="inline-image-macro">6</block>
+  <block id="07773528bb13b358d28822cea60fb477" category="paragraph-title"><block ref="ef78558f80439832e0f51cc22cee8b8c" category="inline-image-macro-rx" type="image"></block> ライセンスをセットアップする</block>
+  <block id="bbdb28e0c385a29cad4cd3acd0870ca5" category="section-title">ボリュームの階層化ポリシーを変更する</block>
+  <block id="8fece025a1a8fef7018449bf104a2527" category="paragraph-title">始める前に</block>
+  <block id="80fd0114f074882cbd99907336bcbff9" category="list-title">階層化が設定されていないクラスタでの手順</block>
+  <block id="874a5fea50f0ef6118e6407f7a38543b" category="paragraph-title"><block ref="58f667aaf05f87159670e12bd9bc076b" category="inline-image-macro-rx" type="image"></block> データを StorageGRID に階層化する準備をします</block>
+  <block id="a48ebc1daa09857cc47678ad5ad8759f" category="paragraph-title"><block ref="58f667aaf05f87159670e12bd9bc076b" category="inline-image-macro-rx" type="image"></block> S3 互換オブジェクトストレージにデータを階層化する準備をします</block>
+  <block id="bd965e38a0c9cf27aa1bde099308e23f" category="paragraph-title">完了後</block>
+  <block id="f2575f6d19024f7288cf78d7dc5b3db9" category="paragraph">サポートダッシュボードを使用すると、NetApp Support Site アカウントを追加して管理し、BlueXPで使用できます。</block>
+  <block id="e3cd99e4aa330ae6bdfb3754d83ae962" category="list-text">パートナーアカウントまたはリセラーアカウントをお持ちの場合は、1つ以上のNSSアカウントを追加することはできますが、お客様レベルのアカウントと一緒に追加することはできません。</block>
+  <block id="2974170a8b1b5b4a2ac69aacd4c1c9c3" category="list-text">サポート登録ページでアカウントIDのシリアル番号を確認します。</block>
+  <block id="50a1dc01b7312307c34a888071586955" category="list-text">上記の手順2からアカウントのシリアル番号をコピーし、セキュリティチェックを完了して、ネットアップのグローバルデータプライバシーポリシーを確認します。</block>
+  <block id="cc8b0535948da368f832027c19b7f853" category="list-text">シリアル番号フィールドには、上記のアカウントのシリアル番号（960xxxx）を必ずコピーしてください。これにより、アカウント処理が高速化されます。</block>
 </blocks>
