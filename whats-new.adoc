@@ -18,6 +18,28 @@ Cloud Tiering の新機能をご確認ください。
 
 
 
+== 2022年12月6日
+
+
+
+=== 必須コネクターアウトバウンドインターネットアクセスエンドポイントの変更
+
+Cloud Tieringの変更が行われたため、クラウド階層化処理を成功させるには、次のコネクタエンドポイントを変更する必要があります。
+
+[cols="50,50"]
+|===
+| 古いエンドポイント | 新しいエンドポイント 
+
+
+| \ https://cloudmanager.cloud.netapp.com | \ https://api.bluexp.netapp.com 
+
+
+| \ https://*.cloudmanager.cloud.netapp.com | \ https://*.api.bluexp.netapp.com 
+|===
+のすべてのエンドポイントのリストを参照してください https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-aws.html#outbound-internet-access["AWS"^]、 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-gcp.html#outbound-internet-access["Google Cloud"^]または https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-azure.html#outbound-internet-access["Azure"^] クラウド環境：
+
+
+
 == 2022年11月6日
 
 
@@ -91,21 +113,3 @@ Cloud Tiering をセットアップする際に、アクティブでないデー
 === Cloud Tiering は、 ONTAP Select システムで完全に認定されています
 
 AFF システムと FAS システムのデータを階層化するだけでなく、 ONTAP Select システムからクラウドストレージにもアクセス頻度の低いデータを階層化できるようになりました。
-
-
-
-== 2021 年 9 月 2 日
-
-
-
-=== FabricPool ライセンスは Cloud Tiering BYOL ライセンスに置き換えられています
-
-Cloud Tieringサービスを使用してBlueXPでサポートされている階層化構成に、新しい* Cloud Tiering *ライセンスが追加されました。複数のオンプレミス ONTAP クラスタにわたって使用できるフローティングライセンスです。過去に使用したことがある*BlueXPでサポートされていない構成にのみ、FabricPool *ライセンスが保持されます。
-
-https://docs.netapp.com/us-en/cloud-manager-tiering/task-licensing-cloud-tiering.html#use-a-cloud-tiering-byol-license["新しい Cloud Tiering ライセンスの詳細については、こちらをご覧ください"]。
-
-
-
-=== オンプレミスの ONTAP クラスタから S3 互換のオブジェクトストレージにアクセス頻度の低いデータを階層化します
-
-Simple Storage Service （ S3 ）プロトコルを使用する任意の Object Storage サービスにアクセス頻度の低いデータを階層化できるようになりました。 https://docs.netapp.com/us-en/cloud-manager-tiering/task-tiering-onprem-s3-compat.html["S3 互換オブジェクトストレージへのデータの階層化方法を参照してください"]。
