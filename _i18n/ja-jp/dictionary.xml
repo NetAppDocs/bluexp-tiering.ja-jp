@@ -126,24 +126,19 @@
   <block id="6fcd419d9b16c5368ab2877625e80567" category="doc">オンプレミスの ONTAP クラスタから S3 オブジェクトストレージへデータを階層化する</block>
   <block id="0a4e30d54ad79cb4d323fcc522b4c463" category="paragraph">Simple Storage Service （ S3 ）プロトコルを使用する任意のオブジェクトストレージサービスに、アクセス頻度の低いデータを階層化することによって、オンプレミスの ONTAP クラスタの空きスペースを確保します。</block>
   <block id="280cb258925e656482b6dc7f7cb2d1de" category="paragraph">クラウド階層として正式にサポートされていないオブジェクトストアを使用する場合は、以下の手順に従ってください。お客様は、オブジェクトストアが要件を満たしていることをテストし、確認する必要があります。</block>
-  <block id="8785318c34caff22656d48825ea62625" category="paragraph">ネットアップは、サードパーティの Object Store Service が原因で発生した問題、特に製品が製造されたサードパーティとのサポート契約に同意していない問題については、サポートも責任も負いません。また、ネットアップは、付随する損害について責任を負わないこと、またはサードパーティ製品に対するサポートを提供するためにその他の義務を負うことに同意するものとします。</block>
-  <block id="9a45293d52da18005b218074e890e0e3" category="list-text">ONTAP 9.8 以降を実行しているオンプレミスの ONTAP クラスタ。ユーザが指定したポートを介して S3 互換オブジェクトストレージに接続されます。<block ref="afd80128eeaacb8238d3ffdcf8ecd8a8" category="inline-link-rx"></block>。</block>
   <block id="3451be8fc6792d6f67247f8a5ef41a6f" category="list-text">ONTAP クラスタがバケットにアクセスできるようにするための、オブジェクトストレージサーバの FQDN 、アクセスキー、およびシークレットキー。</block>
-  <block id="87a3564b6d98c1d208de16f4d082340c" category="list-text">ONTAP クラスタ、 S3 互換オブジェクトストレージ、およびクラウド階層化サービスへのアウトバウンド HTTPS 接続を可能にするコネクタのネットワーク。</block>
   <block id="278c3ce71d676877f5d8d09bbed6b670" category="paragraph">従量課金制のクラウド階層化：クラウドプロバイダからの従量課金制サブスクリプション、 NetApp Cloud Tiering のお客様所有のライセンス、またはその両方の組み合わせで利用できます。</block>
   <block id="cab27dc53edb571cac663ce2e16450dc" category="inline-link">AWS Marketplace</block>
   <block id="21e74b3c28d006317f38a2bc8eb1da3b" category="inline-link">Azure Marketplace で入手できます</block>
   <block id="12a896df7cf6cd5b5e5dcf4a46c0cebc" category="inline-link">GCP Marketplace</block>
   <block id="8f9c7644f714e949ede8fc2b637bc2ba" category="paragraph"><block ref="8f9c7644f714e949ede8fc2b637bc2ba" category="inline-image-macro-rx" type="image"></block></block>
   <block id="0b0e66764c8cd937a79a9536c455d9de" category="admonition">コネクタと S3 互換性のあるオブジェクトストレージサーバの間の通信は、オブジェクトストレージのセットアップにのみ使用されます。</block>
-  <block id="ad1ec7ded7151408a7d1593d40eb6a69" category="paragraph">S3 互換オブジェクトストレージにデータを階層化するときは、 ONTAP クラスタが次の要件を満たしている必要があります。</block>
   <block id="b21bd398129651bd6709e6ebf2a82f5b" category="list-text">AFF システム、またはオール SSD アグリゲートまたはオール HDD アグリゲートを使用する FAS システムからデータを階層化できます。</block>
   <block id="c3ce6809be6bdc67ae978395484d0585" category="list-text">ONTAP 9.8 以降</block>
   <block id="387e3c4da375deb1519f43358cd3f9de" category="list-text">ONTAP クラスタは、ユーザ指定のポートから S3 互換オブジェクトストレージへの HTTPS 接続を開始します（階層化のセットアップ時にポートを設定可能）。</block>
   <block id="52ac279aadd8dafbcd415c589d1d21cc" category="admonition">Cloud Tiering は、 FlexVol と FlexGroup の両方のボリュームをサポートしています。</block>
   <block id="74ccc2fa0fb51156b665ef2ad19afebc" category="section-title">S3 互換オブジェクトストレージを準備しています</block>
   <block id="d3fa6e6481608f0c0ecdb65404370234" category="paragraph">S3 互換オブジェクトストレージは、次の要件を満たしている必要があります。</block>
-  <block id="96c06e253f43251a28ede10a3bf41852" category="list-text">S3 互換オブジェクトストレージへの階層化を設定すると、 S3 バケットの作成または既存の S3 バケットの選択を求められます。S3 のアクセスキーとシークレットキーを使用してクラウド階層化を提供する必要があります。Cloud Tiering は、キーを使用してバケットにアクセスします。</block>
   <block id="a8e0b99c18bb3abc41fb302166874ff2" category="paragraph">データをクラウドに階層化するにはコネクタが必要です。S3 互換のオブジェクトストレージにデータを階層化する場合は、オンプレミスにコネクタが必要です。新しいコネクターをインストールするか、現在選択されているコネクターがオンプレミスにあることを確認する必要があります。</block>
   <block id="c23e3e3ec330910b74031fabbb7bedbd" category="list-text">ポート 443 から S3 互換オブジェクトストレージへの HTTPS 接続</block>
   <block id="aa972ed8d4cd18a54d3bfc872e508a63" category="section-title">最初のクラスタから S3 互換オブジェクトストレージにアクセス頻度の低いデータを階層化しています</block>
@@ -185,7 +180,6 @@
   <block id="eeee7c2206f30d34992557feb0d7900f" category="paragraph">Azure 環境を準備したら、最初のクラスタからアクセス頻度の低いデータの階層化を開始します。</block>
   <block id="3ee477979f5c167102e6a5ac24838ded" category="list-text">* リソースグループ *: 既存のコンテナが管理されているリソースグループ、または階層化データの新しいコンテナを作成する場所を選択し、「 * 続行」をクリックします。</block>
   <block id="942f0e4fa69f4641e5d7a36f624bfc71" category="list-text">* Azure Container * ：ストレージアカウントに新しい BLOB コンテナを追加するか、既存のコンテナを選択して * Continue * をクリックします。</block>
-  <block id="2c144a187f06a9de2cdb7fb8f11f0560" category="paragraph">オンプレミスコネクタを使用する場合は、作成する既存のコンテナまたは新しいコンテナへのアクセスを提供する Azure サブスクリプションを入力する必要があります。</block>
   <block id="7c5961bc8d85d1e030c4394a4df65272" category="paragraph">この手順で表示されるストレージアカウントとコンテナは、前の手順で選択したリソースグループに属しています。</block>
   <block id="9933a95d80335a087c29022e3e618660" category="list-text">* アクセス層のライフサイクル * ： Cloud Tiering は、階層化されたデータのライフサイクルの移行を管理します。データは _Hot_class から始まりますが、特定の日数が経過したあとにデータを _Cool _ クラスに移動するルールを作成できます。</block>
   <block id="f9ec0a0e3f7751a980419c9235987d65" category="paragraph">階層化データを移行するアクセス階層とデータを移動するまでの日数を選択し、 * 続行 * をクリックします。たとえば、次のスクリーンショットは、オブジェクトストレージの階層化データが _Hot_class から _Cool _class に 45 日後に移動されたことを示しています。</block>
@@ -1342,4 +1336,11 @@
   <block id="9e434ddc2ad4b9de005368b77254223d" category="cell">\ https://*.cloudmanager.cloud.netapp.com</block>
   <block id="37ba276f010f4ea07f1196b487811443" category="cell">\ https://*.api.bluexp.netapp.com</block>
   <block id="0e40b9cba041560c9517bc49757da3c7" category="paragraph">のすべてのエンドポイントのリストを参照してください<block ref="4c9e3e17ba20f553394e5bc78e402946" category="inline-link-rx"></block>、<block ref="cd3c6f623ccf3e34f9d46b28c47f2a3d" category="inline-link-rx"></block>または<block ref="80755100f97c37f8aa8e3d999b0a43d9" category="inline-link-rx"></block> クラウド環境：</block>
+  <block id="c1b8b8c1767ffef37beebd6dca294a19" category="paragraph">オンプレミスコネクタを使用する場合は、リソースグループへのアクセスを提供するAzureサブスクリプションを入力する必要があります。</block>
+  <block id="838b026c40657f60dbef105628a74c67" category="paragraph">ネットアップは、サードパーティのObject Store Serviceに起因する問題、特に製品が製造されたサードパーティとのサポート契約に同意していない問題について、サポートも責任も負いません。また、ネットアップは、付随する損害について責任を負わないこと、またはサードパーティ製品に対するサポートを提供するためにその他の義務を負うことに同意するものとします。</block>
+  <block id="cde18ab8c63e317f54bbc67366c538fb" category="list-text">ONTAP 9.8以降を実行しているオンプレミスのソースONTAP クラスタと、ユーザが指定したポートからデスティネーションのS3互換オブジェクトストレージへの接続。<block ref="afd80128eeaacb8238d3ffdcf8ecd8a8" category="inline-link-rx"></block>。</block>
+  <block id="eff6cf7954dc3b74aca21559985ec95e" category="list-text">ソースONTAP クラスタ、S3互換オブジェクトストレージ、およびクラウド階層化サービスへのアウトバウンドHTTPS接続を可能にするコネクタのネットワーク。</block>
+  <block id="4f2ba178f02065cd43bc7615b226c05d" category="paragraph">S3互換オブジェクトストレージにデータを階層化するときは、ソースONTAP クラスタが次の要件を満たしている必要があります。</block>
+  <block id="9378df978e3f22322e7d49bdc1ff98b9" category="paragraph">ソースONTAP システムは、オブジェクトストレージとの間でデータの読み取りおよび書き込みを行います。オブジェクトストレージが開始されることはなく、応答するだけです。</block>
+  <block id="1cf86146f536cd28b2772a235c4b89f2" category="list-text">S3互換オブジェクトストレージへの階層化を設定すると、S3バケットの作成または既存のS3バケットの選択を求められます。S3 のアクセスキーとシークレットキーを使用してクラウド階層化を提供する必要があります。Cloud Tiering は、キーを使用してバケットにアクセスします。</block>
 </blocks>
