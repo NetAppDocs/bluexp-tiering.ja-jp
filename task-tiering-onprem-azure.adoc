@@ -160,9 +160,9 @@ ONTAP クラスタから VNet への ExpressRoute または VPN 接続があり�
 
 階層化を設定するときは、使用するリソースグループ、およびリソースグループに属するストレージアカウントと Azure コンテナを特定する必要があります。ストレージアカウントを使用すると、 Cloud Tiering でデータの階層化に使用される BLOB コンテナを認証し、アクセスすることができます。
 
-Cloud Tiering は、ストレージアカウントの汎用 v2 と Premium Block BLOB タイプのみをサポートしています。
+Cloud Tieringは、Connectorを使用してアクセス可能なリージョン内の任意のストレージアカウントへの階層化をサポートしています。
 
-BLOB コンテナはにある必要があります link:reference-azure-support.html#supported-azure-regions["Cloud Tiering をサポートするリージョン"]。
+Cloud Tiering は、ストレージアカウントの汎用 v2 と Premium Block BLOB タイプのみをサポートしています。
 
 
 NOTE: 低コストのアクセス階層を使用するようにクラウド階層を設定していて、階層化データが一定の日数後にに移行される場合は、 Azure アカウントでコンテナのセットアップ時にライフサイクルルールを選択しないでください。Cloud Tiering は、ライフサイクルの移行を管理します。

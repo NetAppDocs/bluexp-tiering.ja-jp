@@ -174,7 +174,6 @@
   <block id="256fb1d2776e7f3b364ce4414a65b2cd" category="section-title">Azure BLOB ストレージを準備しています</block>
   <block id="e353341b9f86b1c5a8255f3f47459da4" category="paragraph">階層化を設定するときは、使用するリソースグループ、およびリソースグループに属するストレージアカウントと Azure コンテナを特定する必要があります。ストレージアカウントを使用すると、 Cloud Tiering でデータの階層化に使用される BLOB コンテナを認証し、アクセスすることができます。</block>
   <block id="0cab1d18e33888aa4f85218003d9de5a" category="paragraph">Cloud Tiering は、ストレージアカウントの汎用 v2 と Premium Block BLOB タイプのみをサポートしています。</block>
-  <block id="3b59962ea13402bb6ea753b627310e7c" category="paragraph">BLOB コンテナはにある必要があります <block ref="a290baa3c16e15d9514a65f3a654d403" category="inline-link-macro-rx"></block>。</block>
   <block id="30c0faff624015e8c8016427ebe986eb" category="admonition">低コストのアクセス階層を使用するようにクラウド階層を設定していて、階層化データが一定の日数後にに移行される場合は、 Azure アカウントでコンテナのセットアップ時にライフサイクルルールを選択しないでください。Cloud Tiering は、ライフサイクルの移行を管理します。</block>
   <block id="0cff75f8a1ea859d852b43f30a5a65c5" category="section-title">最初のクラスタから Azure Blob にアクセス頻度の低いデータを階層化する ストレージ</block>
   <block id="eeee7c2206f30d34992557feb0d7900f" category="paragraph">Azure 環境を準備したら、最初のクラスタからアクセス頻度の低いデータの階層化を開始します。</block>
@@ -217,8 +216,6 @@
   <block id="b45317b449074be01eb535dc51134b25" category="cell">階層化ポリシーは「コールドスナップショット」に変更されます。</block>
   <block id="4462bf0f5ca8a6a2218e38c86b45446e" category="admonition">クラウドから転送されたデータの量に基づいて、クラウドプロバイダが課金する場合があります。</block>
   <block id="518c45bb71686bd34cfd0dd7adfb3ce0" category="paragraph">クラウドから移動するすべてのデータに対して、パフォーマンス階層に十分なスペースがあることを確認してください。</block>
-  <block id="621f6f17b31c046c0e769d995604f944" category="inline-image-macro">に表示される編集アイコンのスクリーンショット ボリューム階層化のテーブルの各行の末尾です</block>
-  <block id="d20bf3b0bd8d1cd785f6590b7b461afe" category="list-text">をクリックします <block ref="8a7b4d9eeceba80332a45bd9abdd9ed5" category="inline-image-macro-rx" type="image"></block> アイコンをクリックし、使用する取得オプションを選択して、 * 適用 * をクリックします。</block>
   <block id="39ccd40812695aaa7bc077a0fc353a0e" category="paragraph"><block ref="39ccd40812695aaa7bc077a0fc353a0e" category="inline-image-macro-rx" type="image"></block></block>
   <block id="56687950ee1692c1c4b88c4fd8cd206f" category="paragraph">階層化ポリシーが変更され、階層化されたデータの高パフォーマンス階層への移行が開始されます。クラウド内のデータ量によっては、転送プロセスに時間がかかることがあります。</block>
   <block id="176eb530d68328d73cd752bcf53ad2be" category="section-title">アグリゲートの階層化設定の管理</block>
@@ -239,8 +236,6 @@
   <block id="5afc7ef8d3c3feeb50817eff11cca91d" category="paragraph"><block ref="5afc7ef8d3c3feeb50817eff11cca91d" category="inline-image-macro-rx" type="image"></block></block>
   <block id="27df5f5776d4bab5bcdcfbdeafb746ca" category="section-title">運用の健全性を修正</block>
   <block id="f13e147df4e74e1146734748e3dd0663" category="list-text">処理の健常性が「 Failed 」であるクラスタを特定します。</block>
-  <block id="9e83f9c3a288548ca874b7474ad20ae7" category="inline-image-macro">クラスタの階層化の健常性ステータスが「失敗」であることを示すスクリーンショット。</block>
-  <block id="039ac5249f10b659e32e0dcebb1526da" category="inline-image-macro">失敗を示す i アイコンのスクリーンショット 理由</block>
   <block id="97052eb243c56bbc0d990eff54f746c9" category="list-text">問題を修正します。</block>
   <block id="073279dcfecd605313d456f15c7a1b78" category="list-text">ONTAP クラスタが動作しており、オブジェクトストレージプロバイダへのインバウンドおよびアウトバウンド接続が確立されていることを確認してください。</block>
   <block id="66009842ccd3b5b27255c54219dcb209" category="section-title">Cloud Tiering からの追加クラスタの検出</block>
@@ -439,39 +434,11 @@
   <block id="dee2bc58a49a84e9b7244f93fdc4a53a" category="paragraph">クラウド階層化ライフサイクルルールを設定する場合は、 Azure アカウントでコンテナをセットアップするときにライフサイクルルールを設定しないでください。</block>
   <block id="07e61ccfcb604b4d08fc03603677751d" category="inline-link">Azure Blob アクセス階層の概要について説明します</block>
   <block id="e298f51ca48eff0d92cee75ca43aaa3a" category="paragraph"><block ref="ac0a406faf148be2b386c73b962697e7" category="inline-link-rx"></block>。</block>
-  <block id="52850ea5b0c4063c74ca8ab0c4533d28" category="paragraph">Cloud Tiering は、次の Azure リージョンをサポートしています。</block>
-  <block id="f5cd262901883dff68d06b215fb0f28e" category="section-title">アフリカ</block>
-  <block id="d5daca31a462e138266141f6d01ca814" category="list-text">南アフリカ北部</block>
   <block id="2ebc1f6a39f03ec89f2b4bfdaf802f4c" category="section-title">アジア太平洋地域</block>
-  <block id="cee3f0213dd8b7eb15d7b31824e01754" category="list-text">オーストラリア東部</block>
-  <block id="c2701212de431ec66277aeb9ec636184" category="list-text">オーストラリア南東部</block>
-  <block id="f74e1c0c8ee8410fa5bfe03676347257" category="list-text">東アジア</block>
-  <block id="12fd3aa0a9f080663613364badb43e93" category="list-text">日本東部</block>
-  <block id="33e5ad3a780212ee47f127965a2dda72" category="list-text">日本西部</block>
-  <block id="6da3164e9884fb44e54fda035450cfaa" category="list-text">韓国中央</block>
-  <block id="cbbf2ae44538816cc573fa3ad561a434" category="list-text">韓国</block>
-  <block id="ef005ab2b7187e0e4953a0abfdacad42" category="list-text">東南アジア</block>
   <block id="912d59cdf1d3f551fae21f6f0062258f" category="section-title">ヨーロッパ</block>
-  <block id="bea1bd3d23555c539dab5f3f5426184c" category="list-text">フランス中部</block>
-  <block id="1dab3491cdeeb2a6d567b21ee3063ae4" category="list-text">ドイツ・ウェスト・セントラル</block>
-  <block id="85c1bd2190b5e1105a9c4e7e6a224a96" category="list-text">ドイツ北部</block>
-  <block id="d0fe0e3b6520479f718b98f0d471b7d0" category="list-text">北ヨーロッパ</block>
-  <block id="390a1a81c9b43f7d364b54144161673d" category="list-text">英国南部</block>
-  <block id="23d58738c27b56ae980ce7b45716f6a5" category="list-text">英国西部</block>
-  <block id="8fb2033d01e3efa2825282a13f86c14e" category="list-text">西ヨーロッパ</block>
   <block id="5ffec2d87ab548202f8b549af380913a" category="section-title">北米</block>
   <block id="1d0f99876d748759fce5e852f79fca96" category="list-text">カナダセントラル</block>
-  <block id="ea7c65fe418bef9cfe86be4944b30bcb" category="list-text">カナダ東部</block>
-  <block id="2e168141b8f719cbd37e6beec663b599" category="list-text">米国中部</block>
-  <block id="3c110de67497eb3f8d4c100e43101c81" category="list-text">米国東部</block>
-  <block id="7c61981f0be77fb7e4061ba5395ff02b" category="list-text">東アメリカ 2</block>
-  <block id="e306e59ae933d5705ad58b576840cfb7" category="list-text">北米</block>
-  <block id="00a0c4ce62672ec36639c314d0d8e114" category="list-text">米国南部</block>
-  <block id="f3397c566fedcaa2f63145169ba345fc" category="list-text">米国西部</block>
-  <block id="c349d3a26cf4231660785a0c5b4cb007" category="list-text">西アメリカ 2</block>
-  <block id="e74523dfd57d69116c6dc03759fe0a7b" category="list-text">アメリカ西部</block>
   <block id="aab422acb3d2334a6deca0e1495745c2" category="section-title">南米</block>
-  <block id="47b9af39407829080e9cfeee3607c39c" category="list-text">ブラジル南部</block>
   <block id="4b75686c0a14158ec6b99e93fbf1828b" category="doc">Cloud Tiering のライセンスをセットアップ</block>
   <block id="80186f1230af2267e2c2e4d2ab8c030e" category="paragraph">さらに読む前に、いくつかのメモを記入してください。</block>
   <block id="e206957e9be19dce9acce268f36b6b4d" category="list-text">データを StorageGRID に階層化する場合は料金が発生しないため、 BYOL ライセンスや PAYGO の登録は必要ありません。この階層化されたデータは、ライセンスで購入された容量にはカウントされません。</block>
@@ -1282,8 +1249,6 @@
   <block id="4beb855fa991422619d33c99b74d1365" category="paragraph">また可能です<block ref="ba21940cc7b1756c6b93b4daf8cfd4fb" category="inline-link-rx"></block> ネットアップ製品の知識がある方は、左側のナビゲーションペインから*クラウドの推奨事項*を選択してください。</block>
   <block id="d80d78ee61a9d0887caddafbd12776c6" category="inline-image-macro">デジタルアドバイザのFabricPool を使用してクラスタのFabricPool 情報を示すスクリーンショット。</block>
   <block id="dc0605b8b2de4441cff5b013be511267" category="paragraph"><block ref="dc0605b8b2de4441cff5b013be511267" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="58b4dc3ce866601f6466363f42d61123" category="paragraph"><block ref="58b4dc3ce866601f6466363f42d61123" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="3c35b41a16deb03425c723cee8f03be8" category="list-text">の上にカーソルを置きます <block ref="edf8c533ab635c618137908ca0fbe456" category="inline-image-macro-rx" type="image"></block> アイコンをクリックして失敗の理由を確認してください。</block>
   <block id="154756f3451aa7d3c9c0ff18e7159503" category="inline-link">BlueXP Marketplace製品にアクセスします</block>
   <block id="8888d46d611948a30ba2c08d3adb6945" category="list-text">Azure Marketplace で配信登録するには、<block ref="c7c84f194b790bd1614b3007104e1172" category="inline-link-rx"></block>をクリックし、 * Subscribe * をクリックして、画面の指示に従います。</block>
   <block id="a857c8adb9c1cde4acd264143a3e3ad1" category="paragraph">BYOLの容量制限に達すると、新しいコールドデータの階層化が停止し、それまで階層化されていたすべてのデータにアクセスできる状態になります。PAYGOマーケットプレイスで_BlueXP - Cloud Data Services-Deploy &amp; Manage Cloud Data Services_を購入した場合、新しいコールドデータは引き続きオブジェクトストレージに階層化され、使用ごとに料金が支払われます。</block>
@@ -1343,4 +1308,10 @@
   <block id="4f2ba178f02065cd43bc7615b226c05d" category="paragraph">S3互換オブジェクトストレージにデータを階層化するときは、ソースONTAP クラスタが次の要件を満たしている必要があります。</block>
   <block id="9378df978e3f22322e7d49bdc1ff98b9" category="paragraph">ソースONTAP システムは、オブジェクトストレージとの間でデータの読み取りおよび書き込みを行います。オブジェクトストレージが開始されることはなく、応答するだけです。</block>
   <block id="1cf86146f536cd28b2772a235c4b89f2" category="list-text">S3互換オブジェクトストレージへの階層化を設定すると、S3バケットの作成または既存のS3バケットの選択を求められます。S3 のアクセスキーとシークレットキーを使用してクラウド階層化を提供する必要があります。Cloud Tiering は、キーを使用してバケットにアクセスします。</block>
+  <block id="b8639afb3f4840600c6c36fd2685cc07" category="paragraph">Cloud Tieringは、Connectorを使用してアクセス可能なリージョン内の任意のストレージアカウントへの階層化をサポートしています。</block>
+  <block id="77cf2aec599c4e8df2dcafbc11506767" category="list-text">すべてのボリュームを選択するには、タイトル行（<block ref="48e674c3b35bfe3d3a9cb29d2c6ff5c1" category="inline-image-macro-rx" type="image"></block>）をクリックし、 * ボリュームの設定 * をクリックします。</block>
+  <block id="7db1d7841fc321b177d854a04ffc5eba" category="list-text">複数のボリュームを選択するには、各ボリュームのボックス（<block ref="27922440534843fc73bbce66b8385327" category="inline-image-macro-rx" type="image"></block>）をクリックし、 * ボリュームの設定 * をクリックします。</block>
+  <block id="79385e330c7175cb5887cc8f4befaed8" category="inline-image-macro">ボリューム階層化のテーブルの各行の最後に表示される編集アイコン</block>
+  <block id="58d8ea9b13cad2e6453367ec5718e38a" category="list-text">をクリックします <block ref="53af160daf8754f7e9dcd6d07cc514b7" category="inline-image-macro-rx" type="image"></block> アイコンをクリックし、使用する取得オプションを選択して、 * 適用 * をクリックします。</block>
+  <block id="b151844c81732b344718260aa69943af" category="list-text">情報の「I」アイコンにカーソルを合わせると、障害の原因が表示されます。</block>
 </blocks>
