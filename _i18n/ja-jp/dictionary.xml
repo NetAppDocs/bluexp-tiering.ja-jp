@@ -52,8 +52,6 @@
   <block id="04e0208908b4c6086bf83c95b22aff8b" category="inline-link">オンプレミスの作業環境</block>
   <block id="5b47faa45c60368d15dfdd5dfe93817e" category="list-text"><block ref="05e67941b6656a354bb250fa5965cbfe" category="inline-link-rx"></block>。</block>
   <block id="1595204d9df7479eb1cce9861446c4a3" category="list-text">必要な S3 権限を持つ IAM ユーザの AWS アクセスキー。</block>
-  <block id="bf873eef8ea9c1247876739a70ed365a" category="list-text">オンプレミスクラスタを選択</block>
-  <block id="6700c45eabe136b9fc9be1be1c2604d7" category="list-text">階層化サービスの * 有効化 * をクリックします。</block>
   <block id="b2a8895a08251e3a0ba8598464e85f4a" category="inline-image-macro">オンプレミス ONTAP 作業環境を選択した後に画面の右側に表示される [ 有効 ] オプションを示すスクリーンショット。</block>
   <block id="b7507ffc73507c1071aa3369e64f9b02" category="paragraph"><block ref="b7507ffc73507c1071aa3369e64f9b02" category="inline-image-macro-rx" type="image"></block></block>
   <block id="9dcb4338cde0614db53499ea9fe7fe74" category="paragraph">オンプレミスコネクタを使用する場合は、作成する既存の S3 バケットまたは新しい S3 バケットへのアクセスを提供する AWS アカウント ID を入力する必要があります。</block>
@@ -71,8 +69,6 @@
   <block id="3da4793f70832a1f06de77ca02441aed" category="paragraph">正しい IPspace を選択すると、 Cloud Tiering を使用して、 ONTAP からクラウドプロバイダのオブジェクトストレージへの接続をセットアップできます。</block>
   <block id="97c6279c799edb5b91946106e4bd7ead" category="list-text">_Tier Volume_page で、階層化を設定するボリュームを選択し、階層化ポリシーページを起動します。</block>
   <block id="d41d8cd98f00b204e9800998ecf8427e" category="inline-image-macro"></block>
-  <block id="a2c3063bd8f8a037bda26950fc2fa130" category="list-text">すべてのボリュームを選択するには、タイトル行（<block ref="2b1190f90c2c717d2aa70aabd2fc4c36" category="inline-image-macro-rx" type="image"></block>）をクリックし、 * ボリュームの設定 * をクリックします。</block>
-  <block id="7ede142e047a9c43e3ec4a50352f53b4" category="list-text">複数のボリュームを選択するには、各ボリュームのボックス（<block ref="f3b0afa317fb06ade03449dd632d08e0" category="inline-image-macro-rx" type="image"></block>）をクリックし、 * ボリュームの設定 * をクリックします。</block>
   <block id="27d7b10352920ea311d933853a157434" category="inline-image-macro">鉛筆アイコンを編集します</block>
   <block id="df5e176205e9c59d302111a246c6358e" category="list-text">単一のボリュームを選択するには、行（または）をクリックします <block ref="8e860c5cca0144ac9d126d75205476b6" category="inline-image-macro-rx" type="image"></block> アイコン）をクリックします。</block>
   <block id="8042a9373e3ae1f8fbfa77b3faf46f7d" category="list-text">_Tiering Policy_Dialog で、階層化ポリシーを選択し、必要に応じて選択したボリュームのクーリング日数を調整して、 * 適用 * をクリックします。</block>
@@ -144,7 +140,6 @@
   <block id="aa972ed8d4cd18a54d3bfc872e508a63" category="section-title">最初のクラスタから S3 互換オブジェクトストレージにアクセス頻度の低いデータを階層化しています</block>
   <block id="13b81562751bbcb9ff3beecfc691d73d" category="list-text">S3 互換性のあるオブジェクトストレージサーバの FQDN と HTTPS 通信に使用するポート。</block>
   <block id="d4087a3156960fb7d03ac9037d76ef8e" category="list-text">必要な S3 権限を持つアクセスキーとシークレットキー。</block>
-  <block id="8d43d9cd74de6ffefa944510fdac9def" category="list-text">右側のパネルで、階層化サービスの * 有効化 * をクリックします。</block>
   <block id="6676b3f6fd0aacd6a191518bb81aa206" category="inline-image-macro">オンプレミスの ONTAP 作業環境を選択したあとに画面の右側に表示される階層化オプションを示すスクリーンショット。</block>
   <block id="00daa784b7dee12cb2819fac0ab07fda" category="paragraph"><block ref="00daa784b7dee12cb2819fac0ab07fda" category="inline-image-macro-rx" type="image"></block></block>
   <block id="c681fc1169309fdbbc2003946bcf5c4c" category="list-text">* サーバ * ： S3 互換オブジェクトストレージサーバの FQDN 、サーバとの HTTPS 通信に ONTAP が使用するポート、および必要な S3 権限を持つアカウントのアクセスキーとシークレットキーを入力します。</block>
@@ -165,7 +160,6 @@
   <block id="03d597b22bd9d9fb770e928472c5c22a" category="list-text">ONTAP クラスタが、ポート 443 経由で Azure BLOB ストレージへの HTTPS 接続を開始します。</block>
   <block id="bbdf6f541b4707ac092673fa798cd221" category="paragraph">ExpressRoute の方がパフォーマンスが向上し、データ転送コストは削減されますが、 ONTAP クラスタと Azure BLOB ストレージ間では必要ありません。ただしそのようにすることがベストプラクティスとして推奨されます。</block>
   <block id="1530d1823861aa989d35b92ad0b2fd9e" category="list-text">インバウンド接続はコネクタから必要です。コネクタは Azure VNet 内またはオンプレミスに配置できます。</block>
-  <block id="b7f76e21e320bc5e90f575d84c38f775" category="paragraph">データをクラウドに階層化するにはコネクタが必要です。データを Azure BLOB ストレージに階層化する場合は、 Azure VNet または自社運用環境にあるコネクタを使用できます。新しいコネクタを作成するか、現在選択されているコネクタが Azure またはオンプレミスにあることを確認する必要があります。</block>
   <block id="b1e389999fc3500ff74c433071c6f3d0" category="section-title">必要なコネクタ権限があることを確認します</block>
   <block id="8d553e78e79ca1abdf2ffdd1714a7698" category="paragraph">コネクタに必要なネットワーク接続があることを確認します。コネクタは、オンプレミスまたは Azure にインストールできます。</block>
   <block id="bb1241e3a37748e608dbbde25c75ea25" category="list-text">ポート 443 から Azure BLOB ストレージへの HTTPS 接続</block>
@@ -177,9 +171,6 @@
   <block id="30c0faff624015e8c8016427ebe986eb" category="admonition">低コストのアクセス階層を使用するようにクラウド階層を設定していて、階層化データが一定の日数後にに移行される場合は、 Azure アカウントでコンテナのセットアップ時にライフサイクルルールを選択しないでください。Cloud Tiering は、ライフサイクルの移行を管理します。</block>
   <block id="0cff75f8a1ea859d852b43f30a5a65c5" category="section-title">最初のクラスタから Azure Blob にアクセス頻度の低いデータを階層化する ストレージ</block>
   <block id="eeee7c2206f30d34992557feb0d7900f" category="paragraph">Azure 環境を準備したら、最初のクラスタからアクセス頻度の低いデータの階層化を開始します。</block>
-  <block id="3ee477979f5c167102e6a5ac24838ded" category="list-text">* リソースグループ *: 既存のコンテナが管理されているリソースグループ、または階層化データの新しいコンテナを作成する場所を選択し、「 * 続行」をクリックします。</block>
-  <block id="942f0e4fa69f4641e5d7a36f624bfc71" category="list-text">* Azure Container * ：ストレージアカウントに新しい BLOB コンテナを追加するか、既存のコンテナを選択して * Continue * をクリックします。</block>
-  <block id="7c5961bc8d85d1e030c4394a4df65272" category="paragraph">この手順で表示されるストレージアカウントとコンテナは、前の手順で選択したリソースグループに属しています。</block>
   <block id="9933a95d80335a087c29022e3e618660" category="list-text">* アクセス層のライフサイクル * ： Cloud Tiering は、階層化されたデータのライフサイクルの移行を管理します。データは _Hot_class から始まりますが、特定の日数が経過したあとにデータを _Cool _ クラスに移動するルールを作成できます。</block>
   <block id="f9ec0a0e3f7751a980419c9235987d65" category="paragraph">階層化データを移行するアクセス階層とデータを移動するまでの日数を選択し、 * 続行 * をクリックします。たとえば、次のスクリーンショットは、オブジェクトストレージの階層化データが _Hot_class から _Cool _class に 45 日後に移動されたことを示しています。</block>
   <block id="a6de011c08144280abbea085810f3465" category="inline-link-macro">サポートされるアクセス階層を参照してください</block>
@@ -187,7 +178,6 @@
   <block id="68a83a6344da48ff48b7dfe970c4f766" category="inline-image-macro">データを特定の日数後に移動する別のアクセス階層を選択する方法を示すスクリーンショット。</block>
   <block id="76ebfce4c2c67a5c80f5e3389cadd984" category="paragraph"><block ref="76ebfce4c2c67a5c80f5e3389cadd984" category="inline-image-macro-rx" type="image"></block></block>
   <block id="d2f15cc1f6b52e91b3fa0f67c5683cc7" category="paragraph">ライフサイクルルールは、選択したストレージアカウント内のすべての BLOB コンテナに適用されます。</block>
-  <block id="b9c2da820a39ae715e453dbc44b9065a" category="paragraph"><block ref="b3f320eea54b95003707e5e870c0dfaf" category="inline-xref-macro-rx"></block> ライフサイクル管理機能の場合。</block>
   <block id="ade7907875a5b3e50997036947f13251" category="paragraph">クラスタのボリュームから Azure Blob オブジェクトストレージへのデータ階層化のセットアップが完了しました。</block>
   <block id="339e18b687c59777d2931b47d72cb440" category="summary">オンプレミスの ONTAP クラスタからデータ階層化を設定したので、追加のボリュームからデータを階層化したり、ボリュームの階層化ポリシーを変更したり、クラスタを追加したりできます。</block>
   <block id="93772529b8117fc8010ab6872129a19c" category="section-title">追加のボリュームのデータを階層化する</block>
@@ -411,7 +401,6 @@
   <block id="442a5b2cd4109c0203483d91fc544ccf" category="list-text"><block ref="cbd838ab5a582921645cc152129d502d" category="inline-link-rx"></block>。</block>
   <block id="037f057bec36e168c4cbef4fb3d7baef" category="inline-link">GCP Storage Settings （ GCP ストレージ設定）</block>
   <block id="53b7d7a30f51832e17a6116b67b1ed1b" category="list-text">に進みます<block ref="68a5b209ce3843ce6d342e4d1299b53b" category="inline-link-rx"></block> サービスアカウントのアクセスキーを作成します。</block>
-  <block id="b1ca97074a9a438ddbe4b7a8de533728" category="list-text">プロジェクトを選択し、 * 互換性 * をクリックします。まだ有効にしていない場合は、 [ 相互運用アクセスを有効にする *] をクリックします。</block>
   <block id="2888f76ffbc5da2864448f44f9438096" category="list-text">[ サービスアカウントのアクセスキー *] で、 [ サービスアカウントのキーの作成 *] をクリックし、作成したサービスアカウントを選択して、 [ キーの作成 *] をクリックします。</block>
   <block id="630337f9212a0c34ec9f5d53517b1325" category="paragraph">Cloud Tiering をセットアップしたあとで、キーを入力する必要があります。</block>
   <block id="b409d90e9c9774952be98ddeac919772" category="section-title">最初のクラスタから Google Cloud にアクセス頻度の低いデータを階層化する ストレージ</block>
@@ -441,7 +430,6 @@
   <block id="aab422acb3d2334a6deca0e1495745c2" category="section-title">南米</block>
   <block id="4b75686c0a14158ec6b99e93fbf1828b" category="doc">Cloud Tiering のライセンスをセットアップ</block>
   <block id="80186f1230af2267e2c2e4d2ab8c030e" category="paragraph">さらに読む前に、いくつかのメモを記入してください。</block>
-  <block id="e206957e9be19dce9acce268f36b6b4d" category="list-text">データを StorageGRID に階層化する場合は料金が発生しないため、 BYOL ライセンスや PAYGO の登録は必要ありません。この階層化されたデータは、ライセンスで購入された容量にはカウントされません。</block>
   <block id="d42e6c6c0bd600babc489630de73058f" category="inline-link-macro">Cloud Tiering のライセンスの仕組みをご確認ください</block>
   <block id="6cba13359069adfeb75d96e433421999" category="paragraph"><block ref="4e584f79910f9a3a7129b23d958f91fd" category="inline-link-macro-rx"></block>。</block>
   <block id="2c747bf611c932e034372048fa569c80" category="section-title">クラウド階層化と PAYGO のサブスクリプションを使用</block>
@@ -592,13 +580,11 @@
   <block id="51ae64fb3620d7b88a6fc20148f0e2d7" category="sidebar">サポートされている Amazon S3 ストレージのクラスとリージョン</block>
   <block id="483b947377ff3a8f0bfe2df65d4f5292" category="sidebar">サポートされている Azure アクセス階層とリージョン</block>
   <block id="0adc03eac86772ad2c75c8f140be417e" category="sidebar">知識とサポート</block>
-  <block id="5fef629b836b60819e0c0ce49cd2b9d7" category="sidebar">新機能</block>
   <block id="2081f1ce1d1b21d487730d917f2fc133" category="sidebar">オンプレミスの ONTAP データをクラウドに階層化</block>
   <block id="9c24075097cef2efbfa6d34acbbb775d" category="sidebar">Azure Blob に階層化</block>
   <block id="a62425c23786654b084b1fbadf9c41f1" category="sidebar">Google Cloud に階層化します</block>
   <block id="932b49a2d53968bfae607cb915ef9ec2" category="sidebar">汎用 S3 への階層化</block>
   <block id="6efa402b5baeb2ad1984997697bc2d7b" category="sidebar">階層化設定を管理します</block>
-  <block id="2379913388089eb3bb86ea09ddd47c5c" category="sidebar">ボリュームの階層化ポリシーを変更します</block>
   <block id="00e64b31a7ad3617adbda7547414223a" category="sidebar">クラスタの階層化情報を確認します</block>
   <block id="34698ad735e6046f93fbdd61cb2d3804" category="sidebar">追加のボリュームのデータを階層化</block>
   <block id="004509d192f15716a8c5185cda0cc0da" category="sidebar">クラウドのデータを高パフォーマンス階層に戻します</block>
@@ -695,9 +681,7 @@
   <block id="5e7895e85d2a8ce94a95b1e2d63c9a62" category="section-title">Cloud Tieringを使用すると、ストレージ効率化による削減効果をクラウド階層に維持できますか。</block>
   <block id="ae3e415a4fc13a56be5e1868c9aa2a6e" category="paragraph">はい。データをクラウド階層に移動するときに、圧縮、重複排除、コンパクションなどのONTAP のボリュームレベルのストレージ効率化機能が維持されます。</block>
   <block id="fe862e8407cd35832c11efb6a90397ff" category="section-title">FabricPool とクラウド階層化の違いは何ですか？</block>
-  <block id="7f7e71c666ac6e3a63bc3a7132680d3e" category="paragraph">FabricPool は、ONTAP CLIとSystem Managerを使用して自己管理することも、クラウド階層化を使用してサービスとして管理することもできる、ONTAPの階層化テクノロジです。Cloud Tieringを使用すると、FabricPool は、ONTAP とクラウドの両方で高度な自動化プロセスを使用したマネージドサービスに変わり、ハイブリッドクラウドとマルチクラウドの両方の環境における階層化の可視性と制御性が向上します。</block>
   <block id="0dcf524393e05cee3deb3f046b007d6a" category="section-title">データをクラウドに階層化してディザスタリカバリやバックアップ/アーカイブに使用できますか。</block>
-  <block id="11a0d2337d67ae21839695ee035fc0a0" category="paragraph">いいえボリュームのメタデータはパフォーマンス階層から階層化されることはないため、オブジェクトストレージに格納されているデータに直接アクセスすることはできません。</block>
   <block id="ede19369ca5aebd79f174cfded223842" category="paragraph">ただし、Cloud Tieringを使用すると、セカンダリシステムとSnapMirrorデスティネーションボリューム（DPボリューム）にデータを階層化し、データセンターの設置面積とTCOを削減することで、対費用効果の高いバックアップとDRを実現できます。</block>
   <block id="889a2ba97a353c789347d312f006b7c8" category="section-title">Cloud Tieringは、ボリュームレベルまたはアグリゲートレベルで適用されていますか。</block>
   <block id="20ff712f2c649ea611970e47fc3bb71d" category="paragraph">クラウド階層化は、各ボリュームに階層化ポリシーを関連付けることでボリュームレベルで有効になります。コールドデータはブロックレベルで識別されます。</block>
@@ -732,7 +716,6 @@
   <block id="c7fe1da619ea4dc60271978fef1e44fe" category="inline-link">Block BLOBの価格設定</block>
   <block id="f0597479b6555c19f89fc843f1c8d98c" category="inline-link">クラウドストレージの価格設定</block>
   <block id="80fb8aa8c4c5c3477d1c619e25dee21c" category="paragraph">はい。チェックしてください<block ref="134b76f780a567f977f9c0667960c527" category="inline-link-rx"></block>、<block ref="42cfb61355c94594363648e2439176bf" category="inline-link-rx"></block>および<block ref="fb963a69fe55ff45676c36ad0b99dda1" category="inline-link-rx"></block> データの読み取り/取得に伴う追加の価格設定については、を参照してください。</block>
-  <block id="03a5e5708e2ca1e0ed97c088a2f866a3" category="section-title">Cloud Tieringを有効にする前に、ボリュームの削減量を見積もり、コールドデータレポートを取得するにはどうすればよいですか。</block>
   <block id="360f208f0200dcfe1f02d2beac7d1a99" category="section-title">Cloud TieringがサポートしているONTAP のバージョンはどれですか？</block>
   <block id="d221b871da22439c86adc694691b8ac6" category="paragraph">Cloud Tieringは、ONTAP バージョン9.2以降をサポートしています。</block>
   <block id="a876ec112f46ac7e9d03cc5e9d61ab8f" category="section-title">HDDのみを使用するFAS システムからデータを階層化できますか。</block>
@@ -765,9 +748,6 @@
   <block id="4eb0e04ff79ba8e58d2cc578b23ac20a" category="paragraph">ONTAP 9.6以降では、デスティネーションアグリゲートがソースアグリゲートと同じクラウド階層を使用している場合、コールドデータはローカル階層に戻されません。</block>
   <block id="594e5f8f87d3f9aee64730282f1d9d11" category="inline-link-macro">データを高パフォーマンス階層に戻す方法をご覧ください</block>
   <block id="5b9fbe75fbcd16763752424288950fad" category="section-title">既存のAFF / FASコントローラを新しいコントローラに交換する場合、階層化データをオンプレミスに戻すことはできますか。</block>
-  <block id="954ab271743046342c8c477272ccf1e2" category="paragraph">いいえ「ヘッド交換」手順 で変更されるのは、アグリゲートの所有権だけです。この場合、データを移動することなく新しいコントローラに変更されます。</block>
-  <block id="be06043e635d6e3bb909d73510b44e3d" category="section-title">クラウドプロバイダのコンソールまたはオブジェクトストレージエクスプローラを使用して、バケットに階層化されたデータを確認できますか。オブジェクトストレージに格納されているデータをONTAP なしで直接使用できますか。</block>
-  <block id="d430f061b4da1d93d76a477eed713ad9" category="paragraph">いいえクラウドに対して構築、階層化されたオブジェクトには、単一のファイルは含まれず、複数のファイルから最大1、024個の4KBブロックが含まれます。ボリュームのメタデータは常にローカル階層に残ります。</block>
   <block id="c6dbaaf1bef168a38de37623edb997f7" category="section-title">コネクタは何ですか？</block>
   <block id="d2eea5ad2ae07890452da2aec5cffc98" category="section-title">コネクタをオンプレミスに導入できますか。</block>
   <block id="b0ccf0f3fa1a27a2fbab1c35ebf8e0f5" category="inline-link">コネクタをオンプレミスに取り付ける方法については、を参照してください</block>
@@ -782,7 +762,6 @@
   <block id="2719cad5460eb9108696993a4c233dc2" category="inline-link-macro">階層化ポリシーの詳細については、こちらをご覧ください</block>
   <block id="5ef61948a073dbcdfdb7d93caa1067ac" category="paragraph"><block ref="b9368c1c43c24f87d7a3626332a607af" category="inline-link-macro-rx"></block>。</block>
   <block id="d0252572656bbedd8e24eed72a5822ea" category="section-title">データがコールドと見なされるのはどの時点ですか？</block>
-  <block id="106e953d8d4bea7ebaea7ab2455cf23d" category="paragraph">データの階層化はブロックレベルで行われるため、データブロックは一定期間アクセスされていないとコールドとみなされます。この期間は、階層化ポリシーのminimum-cooling-days属性によって定義されます。ONTAP 9.7以前の場合は2～63日、ONTAP 9.8以降は2～183日です。</block>
   <block id="aa3f449e50a7b69fa0c38b77d2315143" category="section-title">クラウド階層に階層化される前のデータのデフォルトのクーリング期間</block>
   <block id="e72bc0c8a17dadf8e8ad885b9700456f" category="paragraph">コールドスナップショットポリシーのデフォルトのクーリング期間は2日間で、コールドユーザデータとスナップショットのデフォルトのクーリング期間は31日です。クーリング日数パラメータは、「すべて」の階層化ポリシーには適用されません。</block>
   <block id="4c8d66eef4460316cfa98d7ddb65f407" category="section-title">フルバックアップを実行するときに、オブジェクトストレージから取得された階層化データはすべて取得されますか。</block>
@@ -829,7 +808,6 @@
   <block id="049da913e478d360bf3fba0732f3ffe7" category="inline-link-macro">S3互換オブジェクトストレージの場合は、S3権限が必要です</block>
   <block id="de865f0ebc8f66fc8e1331d7e2a7f1d4" category="list-text"><block ref="2efc8cc4b2027ed3eb0bfad94737c839" category="inline-link-macro-rx"></block>。</block>
   <block id="6ace93b12d62dd3912b132e79298337d" category="section-title">Cloud Tieringは、ボリュームの容量にどのような影響を及ぼしますか？</block>
-  <block id="9edbed19ba22406e2515654036d6d7af" category="paragraph">Cloud Tieringは、ボリュームの容量には影響しませんが、アグリゲートのパフォーマンス階層の使用率には影響しません。</block>
   <block id="bd661fa541ade4c845ce21fee80a6364" category="section-title">Cloud Tieringは、ライフサイクル管理ポリシーの使用をサポートしていますか。</block>
   <block id="ab432a40ce280c4620566a0570350625" category="paragraph">はい。ライフサイクル管理を有効にすると、 Cloud Tiering でデータをデフォルトのストレージクラス / アクセス階層から、一定期間後にコスト効率の高い階層に移行できます。ライフサイクルルールは、選択したバケット内の Amazon S3 および Google Cloud ストレージのすべてのオブジェクト、および選択したストレージアカウント内の Azure Blob に対応するすべてのコンテナに適用されます。</block>
   <block id="864bccaf8b856c65bcec49d71eaad8e6" category="section-title">階層化したデータをオンプレミスからパフォーマンス階層に戻すにはどうすればよいですか？</block>
@@ -1181,10 +1159,7 @@
   <block id="44e77e3f6f32777fdda0f302f6eeb384" category="list-text">Cloud Tiering BYOL ライセンスを使用して支払う場合は、 mailto:ng-cloud-tiering@netapp.com ？ subject=Licensing [ 購入が必要な場合はお問い合わせください ] のあとに <block ref="6e5253c1105cb457fb1e1040cb387b28" category="inline-link-macro-rx"></block>。</block>
   <block id="fb033ea193d99adc8d3553114c5fe47d" category="list-text">クラウド階層化が可能なボリュームの総数は、 ONTAP システムのボリュームの数よりも少なくなる可能性があります。これは、一部のアグリゲートからボリュームを階層化できないためです。については、ONTAP のドキュメントを参照してください<block ref="bc16a784cd65f4901578ebb3b70f2118" category="inline-link-rx"></block>。</block>
   <block id="115976a072e6ce2f2ab2d16440a6eced" category="paragraph">コールドデータの階層化を開始する前に、オンプレミスのONTAP 作業環境をBlueXPキャンバスに作成する必要があります。</block>
-  <block id="dbb7149740d936c40081fce28d4ee35c" category="paragraph">BlueXPでは、オンプレミスの作業環境を選択し、階層化サービスの*Enable*をクリックして、プロンプトに従ってAzure BLOBストレージにデータを階層化します。</block>
   <block id="6f7498318061ab9585a9a930576417e9" category="paragraph">コールドデータの階層化を開始する前に、オンプレミスのONTAP 作業環境をBlueXPに作成する必要があります。</block>
-  <block id="c591cadfaae2c0910945f6c26e696561" category="paragraph">BlueXPバージョン3.9.7以降を使用してコネクタを作成した場合は、すべて設定されます。</block>
-  <block id="df8fa8381504770cbc85054471165786" category="paragraph">以前のバージョンのBlueXPを使用してコネクタを作成した場合は、権限リストを編集して必要な権限を2つ追加する必要があります。</block>
   <block id="62b4885d3e4f3aa3a6da101753a59fd4" category="paragraph">概算見積書を入手するには、ONTAP クラスタをBlueXPに追加し、階層化タブにあるCloud Tiering Clusters Dashboardを使用して確認します。Inactive Data Reporting（IDR）が無効になっているか、十分な期間アクティブ化されていない場合、Cloud Tieringは、業界定数の70%を使用して削減量を計算します。IDRデータを利用できるようになると、Cloud Tieringがコスト削減効果を正確な数値に更新します。</block>
   <block id="f0e21f59ae2ac8831058af2eeb6352ab" category="inline-link">Cloud Volumes ONTAP の階層化は'BlueXPの作業環境から設定します</block>
   <block id="61d4aa7877925f71314d23b9f09b7393" category="paragraph">Cloud Volumes ONTAP システムを使用している場合は、Cloud Tiering Cluster Dashboardにアクセスして、ハイブリッドクラウドインフラにおけるデータの階層化を最大限に確認できます。ただし、Cloud Volumes ONTAP システムはCloud Tieringから読み取り専用です。Cloud Volumes ONTAP では、クラウド階層化からデータ階層化を設定することはできません。<block ref="7477c38194261f0954175f853359735c" category="inline-link-rx"></block>。</block>
@@ -1214,7 +1189,6 @@
   <block id="beed46ff9b8cb197e70173271551eb15" category="paragraph">Cloud Tieringサービスがアクティブになるように、BlueXPにライセンスが追加されています。</block>
   <block id="2a1a6ce6532bc43b546f90932dcc9018" category="list-text">BlueXPの右下にあるチャットアイコンをクリックして、特定のシリアル番号のCloud Tieringライセンスの期間延長または追加容量をリクエストします。</block>
   <block id="8061535eb5e8bab52c4a8a0fdc119d14" category="paragraph">ライセンスの支払いが完了し、NetApp Support Site に登録されると、BlueXPは自動的にデジタルウォレットのライセンスを更新し、[データサービスのライセンス]ページには5～10分で変更が反映されます。</block>
-  <block id="214cacc5f23c512f4926b241fbfd1544" category="list-text">BlueXPがライセンスを自動的に更新できない場合は、ライセンスファイルを手動でアップロードする必要があります。</block>
   <block id="7abaea97100d61cae59d8ff3e63c7ecd" category="paragraph">ライセンスが更新され、Cloud Tiering Serviceがアクティブな状態になります。</block>
   <block id="2e6fc7efa287b2fe3ed8bb7cf5c6500f" category="list-text">BlueXPでは、 <block ref="fe2e5134b9c10f1de1aa1ca1472fd7e2" category="inline-link-macro-rx"></block>。</block>
   <block id="8816958eed360786a943983e0bd031fd" category="paragraph">BlueXPでは、オンプレミスの作業環境を選択し、階層化サービスで「*有効化」をクリックし、画面の指示に従ってGoogle Cloud Storageにデータを階層化します。</block>
@@ -1226,7 +1200,6 @@
   <block id="955a264d46a1f0536f93bcb5a3e454f1" category="list-text">BlueXPからオンプレミスクラスタを検出します。</block>
   <block id="92d46e494e7ad2aeddc2f61967fd1763" category="list-text">BlueXPでは、オブジェクトストレージプロバイダを使用するようにONTAP が設定され、クラスタ上のアクティブなデータと非アクティブなデータの量が検出されます。</block>
   <block id="d2c482346f4646ff22b0d802d84f0468" category="paragraph">BlueXPでは、オンプレミスの作業環境を選択し、階層化サービスの*Enable*をクリックして、指示に従ってデータをStorageGRID に階層化します。</block>
-  <block id="64f5a141e95a85b5c7adc328cad6065b" category="list-text">Cloud Tieringライセンスは、BlueXPアカウントには必要ありません。また、ONTAP クラスタにデータをStorageGRID に階層化する場合にはFabricPool ライセンスが必要です。</block>
   <block id="1fdc9d2d6f254f32143c31bdb680c25a" category="paragraph">BlueXPのONTAP クラスタを検出し、クラスタが最小要件を満たしていることを確認し、クラスタがAWS S3に接続できるようにネットワーク設定をカスタマイズします。</block>
   <block id="ffe46224318100d3f7bec7eca2ef7e3f" category="paragraph">BlueXPコネクタは'BlueXP機能の主要なソフトウェアですアクセス頻度の低いONTAP データを階層化するにはコネクタが必要です。</block>
   <block id="44ead0e70e856f32d3afe2f909f3fbe2" category="section-title">BlueXPでONTAP クラスタを検出します</block>
@@ -1236,7 +1209,6 @@
   <block id="53580765f208bf3a21b9b94ab077bfb1" category="list-text">VPC S3 エンドポイントから証明書を取得します。これは、で行います<block ref="baa295d957d2e86c0ec7224e7ed425da" category="inline-link-rx"></block> 実行するコマンドエンドポイントの DNS 名を入力するときは、先頭に「 * 」を追加して、「 * 」を置き換えます。</block>
   <block id="c95623cd0395d5a6bb6105b9d32f197b" category="inline-link">BlueXPに関する注意事項</block>
   <block id="e8a6d0f19a957eac14b9917a6c92899b" category="list-text"><block ref="e8a6d0f19a957eac14b9917a6c92899b" category="inline-link-rx"></block></block>
-  <block id="bd5465eb0e8cf8f303aee7ea9420c8b1" category="sidebar">BlueXPブログ</block>
   <block id="e4f8a35ee8df8b5c247f6e3286e42891" category="sidebar">BlueXPのユースケース</block>
   <block id="7a45e6298bb69116e2c6db653fb88884" category="sidebar">BlueXPのすべてのマニュアル</block>
   <block id="39cff02cd4c2bfac12f446d78e59e3ca" category="paragraph">Canvas上の作業環境としてAzure BLOB階層化デスティネーションが存在する場合は、クラスタをAzure Blob Working環境にドラッグしてセットアップウィザードを開始できます。</block>
@@ -1253,7 +1225,6 @@
   <block id="8888d46d611948a30ba2c08d3adb6945" category="list-text">Azure Marketplace で配信登録するには、<block ref="c7c84f194b790bd1614b3007104e1172" category="inline-link-rx"></block>をクリックし、 * Subscribe * をクリックして、画面の指示に従います。</block>
   <block id="a857c8adb9c1cde4acd264143a3e3ad1" category="paragraph">BYOLの容量制限に達すると、新しいコールドデータの階層化が停止し、それまで階層化されていたすべてのデータにアクセスできる状態になります。PAYGOマーケットプレイスで_BlueXP - Cloud Data Services-Deploy &amp; Manage Cloud Data Services_を購入した場合、新しいコールドデータは引き続きオブジェクトストレージに階層化され、使用ごとに料金が支払われます。</block>
   <block id="91a68e06c0ddb0dde07439f8f6bd8af6" category="list-text"><block ref="91a68e06c0ddb0dde07439f8f6bd8af6" category="inline-link-macro-rx"></block></block>
-  <block id="01bd12cba613f42e9ff6400f639a48dc" category="list-text">クラウドプロバイダのマーケットプレイスでBlueXPサブスクリプション（PAYGO）にすでに登録している場合は、オンプレミスのONTAP システムからCloud Tieringにも自動的にサブスクライブされます。Cloud Tiering * Licensing * タブにアクティブなサブスクリプションが表示されます。再度登録する必要はありません。</block>
   <block id="a4106436d00150633e4b615291f0b5c4" category="list-text">GCP Marketplace から登録するには、<block ref="7e960c467ff9bbcd90615ea936733251" category="inline-link-rx"></block>をクリックし、 * Subscribe * をクリックして、画面の指示に従います。</block>
   <block id="bd25c3527b85ace964c6837242630a19" category="paragraph"><block ref="316080080631334cc8b0ad0316a8ebff" category="inline-link-rx"></block>。</block>
   <block id="be161e727970da45fa68901ea907f28e" category="list-text">AWS Marketplace でサブスクライブするには、<block ref="39d4482f47ca47b562b106b1d8bbeae0" category="inline-link-rx"></block>をクリックし、 * Subscribe * をクリックして、画面の指示に従います。</block>
@@ -1292,7 +1263,6 @@
   <block id="b5aec059d3f0c191720983ba1eb05690" category="list-text">登録することで、無償トライアルの終了後にサービスが中断されることがなくなります。</block>
   <block id="121bc0fb41d07ce979966173203acae0" category="paragraph">トライアルが終了すると、階層化したデータの量に応じて1時間ごとに課金されます。</block>
   <block id="5c0fff562b33dc0a5a3acac30ed2d313" category="section-title">2022年12月6日</block>
-  <block id="73358bf2a9d2d2c32dbbab5b76681d7f" category="section-title">必須コネクターアウトバウンドインターネットアクセスエンドポイントの変更</block>
   <block id="c433416a8f427b90caab6f6eed1f6323" category="paragraph">Cloud Tieringの変更が行われたため、クラウド階層化処理を成功させるには、次のコネクタエンドポイントを変更する必要があります。</block>
   <block id="eb75f7332becd8b3fbb2a59ea0bd0536" category="cell">古いエンドポイント</block>
   <block id="afcce2fe2d959c0f4554e7815a50e8e4" category="cell">新しいエンドポイント</block>
@@ -1314,4 +1284,41 @@
   <block id="79385e330c7175cb5887cc8f4befaed8" category="inline-image-macro">ボリューム階層化のテーブルの各行の最後に表示される編集アイコン</block>
   <block id="58d8ea9b13cad2e6453367ec5718e38a" category="list-text">をクリックします <block ref="53af160daf8754f7e9dcd6d07cc514b7" category="inline-image-macro-rx" type="image"></block> アイコンをクリックし、使用する取得オプションを選択して、 * 適用 * をクリックします。</block>
   <block id="b151844c81732b344718260aa69943af" category="list-text">情報の「I」アイコンにカーソルを合わせると、障害の原因が表示されます。</block>
+  <block id="b2b5aa0c45edd9f1055e515a5bfde8eb" category="list-text">オンプレミスのONTAP 作業環境を選択します。</block>
+  <block id="57c0e1741966187a33a00eea2622a5ec" category="list-text">右側のパネルで、階層化サービスの*有効化*をクリックします。</block>
+  <block id="0375f4855be072c7d856a0233cc21de9" category="section-title">クラウドプロバイダソリューションのサポート</block>
+  <block id="be845c219bb74b14349ffa6e27e7aef3" category="paragraph">BlueXPに統合した次のクラウドプロバイダソリューションのテクニカルサポートについては、その製品のBlueXPマニュアルの「困ったときは」を参照してください。</block>
+  <block id="18cf072964a583150dd247485ba75b92" category="inline-link-macro">ONTAP 対応の Amazon FSX</block>
+  <block id="5bf5309465f91318228a7f956b826348" category="list-text"><block ref="5bf5309465f91318228a7f956b826348" category="inline-link-macro-rx"></block></block>
+  <block id="7450cfde7058dc5e1f7909d0280fd7ae" category="inline-link-macro">Azure NetApp Files の特長</block>
+  <block id="0e2bc9c853e0af52ead12823c025e58b" category="list-text"><block ref="0e2bc9c853e0af52ead12823c025e58b" category="inline-link-macro-rx"></block></block>
+  <block id="b0cee72642f5457a71ddd0b49efb6d93" category="inline-link-macro">Cloud Volumes Service for Google Cloud</block>
+  <block id="02efcbea18b9485a78a41871dce1e64d" category="list-text"><block ref="02efcbea18b9485a78a41871dce1e64d" category="inline-link-macro-rx"></block></block>
+  <block id="67e8236f9873d4ba827069cbe6f40bcb" category="list-text">データをStorageGRID に階層化する場合、Cloud Tieringライセンスは、BlueXPアカウントには必要ありません。また、ONTAP クラスタにFabricPool ライセンスが必要です。</block>
+  <block id="6b97c869d129075dc99119cc6c266fd4" category="paragraph">BlueXPでは、オンプレミスのONTAP 作業環境を選択し、階層化サービスの*Enable*をクリックして、プロンプトに従ってAzure BLOBストレージにデータを階層化します。</block>
+  <block id="8d69c6a87500bfb8cb04a6182b6d844b" category="paragraph">データをクラウドに階層化するにはコネクタが必要です。データをAzure BLOBストレージに階層化する場合は、Azure VNet内または自社運用内のコネクタを使用できます。新しいコネクタを作成するか、現在選択されているコネクタが Azure またはオンプレミスにあることを確認する必要があります。</block>
+  <block id="5354529f47c862f65799910961248e94" category="inline-link">必要なカスタムロールの権限</block>
+  <block id="83a989bd64e0e5885e1dec6274ea42ed" category="inline-link">Cloud Tieringには特定の権限が必要です</block>
+  <block id="01a5c8408150004575ed5198397b888a" category="paragraph">BlueXPバージョン3.9.25以上を使用してコネクタを作成した場合は、すべて設定されます。ConnectorでAzureネットワーク内のリソースとプロセスを管理するために必要な権限を提供するカスタムロールがデフォルトで設定されます。を参照してください<block ref="2e92f9b7c581d4f70c6be4a7886872e3" category="inline-link-rx"></block> および<block ref="11be4b468aa0767f9d6625c9158df171" category="inline-link-rx"></block>。</block>
+  <block id="93319d1fbdd154c5602c392140110702" category="paragraph">以前のバージョンのBlueXPを使用してコネクタを作成した場合は、Azureアカウントの権限リストを編集して、不足している権限を追加する必要があります。</block>
+  <block id="5fef57bc0c1b18c77c5be5c6d63bd96d" category="list-text">*リソースグループ*:既存のコンテナが管理されているリソースグループを選択するか'階層化データの新しいコンテナを作成する場所を選択して'続行をクリックします*</block>
+  <block id="973273fb1ef1a057d43299c67a2fa0c2" category="list-text">* Azure Container *：新しいBLOBコンテナをストレージアカウントに追加するか、既存のコンテナを使用する場合は、ラジオボタンを選択します。次に、ストレージアカウントを選択して既存のコンテナを選択するか、新しいコンテナの名前を入力します。[* Continue （続行） ] をクリックします。</block>
+  <block id="19a7b69e14b99b6d561b88afc3f34695" category="paragraph">この手順で表示されるストレージアカウントとコンテナは、前の手順で選択したリソースグループに属しています。</block>
+  <block id="1b9cd9f1d110a19c8b1050fa1e561e7b" category="list-text">プロジェクトを選択し、 * 互換性 * をクリックします。まだ有効にしていない場合は、 * 相互運用アクセスを有効にする * をクリックします。</block>
+  <block id="433c1ccd6c6d5af5fc78b729975e5f20" category="section-title">Connectorアウトバウンドインターネットアクセスエンドポイントの変更</block>
+  <block id="0c1c6a391ae1d68d3507d3080a25b274" category="paragraph">FabricPool は、ONTAP の階層化テクノロジで、ONTAP のCLIとSystem Managerを使用して自己管理することも、クラウド階層化を使用してサービスとして管理することもできます。Cloud Tieringを使用すると、FabricPool は、ONTAP とクラウドの両方で高度な自動化プロセスを使用したマネージドサービスに変わり、ハイブリッドクラウドとマルチクラウドの両方の環境における階層化の可視性と制御性が向上します。</block>
+  <block id="09c40a36a20188e380186d68dab9075a" category="paragraph">いいえボリュームのメタデータは高パフォーマンス階層から階層化されることはないため、オブジェクトストレージに格納されているデータに直接アクセスすることはできません。</block>
+  <block id="3986f01092f147c9d6cdec6e2d56ae9e" category="paragraph">Cloud Tieringは、ボリュームの容量には影響せず、アグリゲートのパフォーマンス階層の使用率に影響します。</block>
+  <block id="de8fae09cd33447b4a5792798abb8a9b" category="section-title">Cloud Tieringを有効にする前に、ボリュームの削減量を試算してコールドデータレポートを入手するにはどうすればよいですか？</block>
+  <block id="97649bd4040c0307cd57ff763d551780" category="paragraph">いいえ「ヘッド交換」手順 で変更されるのは、アグリゲートの所有権だけです。この場合、データを移動することなく新しいコントローラに変更されます。</block>
+  <block id="32524986634cdd65eea18c94ba7aa138" category="section-title">クラウドプロバイダのコンソールやオブジェクトストレージエクスプローラを使用して、バケットに階層化されたデータを確認できますか。オブジェクトストレージに格納されているデータをONTAP なしで直接使用できますか。</block>
+  <block id="05278fe4264fa7714f2deb1dc83a1f0f" category="paragraph">いいえクラウドに対して構築、階層化されたオブジェクトには、単一のファイルは含まれず、複数のファイルから最大1、024個の4KBブロックが含まれます。ボリュームのメタデータは常にローカル階層に残ります。</block>
+  <block id="d8de974cae25c190e1656a12aae05ac0" category="paragraph">データ階層化はブロックレベルで行われるため、階層化ポリシーのminimum-cooling-days属性によって定義された、一定の期間アクセスがないデータブロックはコールドとみなされます。ONTAP 9.7以前の場合は2～63日、ONTAP 9.8以降は2～183日です。</block>
+  <block id="997ad1f279c3ec4615df50788475bd1b" category="paragraph">最初のクラスタから階層化をセットアップすると、 Cloud Tiering の 30 日間の無償トライアルが開始されます。無償トライアルの終了後は、クラウドプロバイダのマーケットプレイスから従量課金制または年間サブスクリプション、ネットアップのBYOLライセンス、またはその両方を組み合わせてCloud Tieringを購入する必要があります。</block>
+  <block id="c50ed19c37a3a0b4ff682e979d40e06a" category="list-text">クラウドプロバイダのマーケットプレイスでBlueXPサブスクリプション（PAYGO）にすでに登録している場合は、オンプレミスのONTAP システムからCloud Tieringにも自動的にサブスクライブされます。Cloud Tiering * Licensing * タブにアクティブなサブスクリプションが表示されます。再度サブスクライブする必要はありません。</block>
+  <block id="538632f98286e11da7898a8dd8c5940a" category="list-text">データを StorageGRID に階層化する場合は料金が発生しないため、 BYOL ライセンスや PAYGO の登録は必要ありません。この階層化データは、ライセンスで購入された容量には含まれません。</block>
+  <block id="822f69d2e49d7da6f8c764e0680f2f75" category="list-text">BlueXPがライセンスを自動的に更新できない場合は、ライセンスファイルを手動でアップロードする必要があります。</block>
+  <block id="91770f038cd944a1d3b9b347edeb2b10" category="sidebar">新機能</block>
+  <block id="4f5b5f1d13dfc896b9f5faa0807d8a6c" category="sidebar">ボリュームの階層化ポリシーを変更する</block>
+  <block id="e7719a97642051ee358e5d15cf1ab284" category="sidebar">Cloud Tieringブログ</block>
 </blocks>

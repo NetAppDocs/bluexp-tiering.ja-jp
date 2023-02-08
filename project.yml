@@ -8,7 +8,7 @@ settings:
     pdf_enabled: true
     harmony_enabled: false
   rss_page: whats-new.html
-  langs: ja-jp,us-en,zh-cn,zh-tw,ko-kr,fr-fr,de-de
+  langs: ja-jp,us-en,ko-kr,zh-cn,zh-tw,de-de,fr-fr
 sidebar:
   entries:
   - title: Cloud Tiering のドキュメント
@@ -85,7 +85,7 @@ homepage:
       url: task-tiering-onprem-s3-compat.html
   - title: 階層化設定を管理します
     links:
-    - title: ボリュームの階層化ポリシーを変更します
+    - title: ボリュームの階層化ポリシーを変更する
       url: task-managing-tiering.html#changing-a-volumes-tiering-policy
     - title: クラスタの階層化情報を確認します
       url: task-managing-tiering.html#reviewing-tiering-info-for-a-cluster
@@ -108,15 +108,15 @@ homepage:
   - title: ブログコミュニティ
     links:
     - title: ネットアップコミュニティ
-      url: https://community.netapp.com/t5/Cloud-Data-Services/ct-p/CDS
-    - title: BlueXPブログ
-      url: https://cloud.netapp.com/blog
+      url: https://community.netapp.com/t5/BlueXP-and-Services/ct-p/CDS
+    - title: Cloud Tieringブログ
+      url: https://bluexp.netapp.com/blog/topic/cloud-tiering
     - title: クラウドに関する Web セミナー
-      url: https://cloud.netapp.com/events
+      url: https://bluexp.netapp.com/events
   - title: その他のリソース
     links:
     - title: BlueXPのユースケース
-      url: https://cloud.netapp.com/cloud-tiering
+      url: https://bluexp.netapp.com/cloud-tiering
 product-family:
   name: BlueXP
   repo: cloud-manager-family

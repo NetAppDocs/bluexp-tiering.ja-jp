@@ -34,7 +34,7 @@ summary: 非アクティブなデータを Azure Blob Storage に階層化する
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["2 つ"] 階層化をセットアップする
 [role="quick-margin-para"]
-BlueXPでは、オンプレミスの作業環境を選択し、階層化サービスの*Enable*をクリックして、プロンプトに従ってAzure BLOBストレージにデータを階層化します。
+BlueXPでは、オンプレミスのONTAP 作業環境を選択し、階層化サービスの*Enable*をクリックして、プロンプトに従ってAzure BLOBストレージにデータを階層化します。
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["3つ"] ライセンスをセットアップする
 [role="quick-margin-para"]
@@ -113,7 +113,7 @@ https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-discovering-ontap.
 
 === コネクタの作成または切り替え
 
-データをクラウドに階層化するにはコネクタが必要です。データを Azure BLOB ストレージに階層化する場合は、 Azure VNet または自社運用環境にあるコネクタを使用できます。新しいコネクタを作成するか、現在選択されているコネクタが Azure またはオンプレミスにあることを確認する必要があります。
+データをクラウドに階層化するにはコネクタが必要です。データをAzure BLOBストレージに階層化する場合は、Azure VNet内または自社運用内のコネクタを使用できます。新しいコネクタを作成するか、現在選択されているコネクタが Azure またはオンプレミスにあることを確認する必要があります。
 
 * https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html["コネクタについて説明します"^]
 * https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-azure.html["Azureへのコネクタの導入"^]
@@ -125,15 +125,10 @@ https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-discovering-ontap.
 
 === 必要なコネクタ権限があることを確認します
 
-BlueXPバージョン3.9.7以降を使用してコネクタを作成した場合は、すべて設定されます。
+BlueXPバージョン3.9.25以上を使用してコネクタを作成した場合は、すべて設定されます。ConnectorでAzureネットワーク内のリソースとプロセスを管理するために必要な権限を提供するカスタムロールがデフォルトで設定されます。を参照してください https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-permissions-azure.html#custom-role-permissions["必要なカスタムロールの権限"^] および https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-permissions-azure.html#cloud-tiering["Cloud Tieringには特定の権限が必要です"^]。
 
-以前のバージョンのBlueXPを使用してコネクタを作成した場合は、権限リストを編集して必要な権限を2つ追加する必要があります。
+以前のバージョンのBlueXPを使用してコネクタを作成した場合は、Azureアカウントの権限リストを編集して、不足している権限を追加する必要があります。
 
-[source, json]
-----
-Microsoft.Storage/storageAccounts/managementPolicies/read
-Microsoft.Storage/storageAccounts/managementPolicies/write
-----
 
 
 === コネクタのネットワークを準備しています
@@ -177,8 +172,8 @@ Azure 環境を準備したら、最初のクラスタからアクセス頻度�
 https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-discovering-ontap.html["オンプレミスの作業環境"^]。
 
 .手順
-. オンプレミスクラスタを選択
-. 階層化サービスの * 有効化 * をクリックします。
+. オンプレミスのONTAP 作業環境を選択します。
+. 右側のパネルで、階層化サービスの*有効化*をクリックします。
 +
 Canvas上の作業環境としてAzure BLOB階層化デスティネーションが存在する場合は、クラスタをAzure Blob Working環境にドラッグしてセットアップウィザードを開始できます。
 
@@ -189,11 +184,11 @@ image:screenshot_setup_tiering_onprem.png["オンプレミス ONTAP 作業環境
 . *プロバイダの選択*：「* Microsoft Azure *」を選択し、「*続行」をクリックします。
 . Create Object Storage *ページで次の手順を実行します。
 +
-.. * リソースグループ *: 既存のコンテナが管理されているリソースグループ、または階層化データの新しいコンテナを作成する場所を選択し、「 * 続行」をクリックします。
+.. *リソースグループ*:既存のコンテナが管理されているリソースグループを選択するか'階層化データの新しいコンテナを作成する場所を選択して'続行をクリックします*
 +
 オンプレミスコネクタを使用する場合は、リソースグループへのアクセスを提供するAzureサブスクリプションを入力する必要があります。
 
-.. * Azure Container * ：ストレージアカウントに新しい BLOB コンテナを追加するか、既存のコンテナを選択して * Continue * をクリックします。
+.. * Azure Container *：新しいBLOBコンテナをストレージアカウントに追加するか、既存のコンテナを使用する場合は、ラジオボタンを選択します。次に、ストレージアカウントを選択して既存のコンテナを選択するか、新しいコンテナの名前を入力します。[* Continue （続行） ] をクリックします。
 +
 この手順で表示されるストレージアカウントとコンテナは、前の手順で選択したリソースグループに属しています。
 
@@ -209,9 +204,6 @@ image:screenshot_tiering_lifecycle_selection_azure.png["データを特定の日
 
 +
 ライフサイクルルールは、選択したストレージアカウント内のすべての BLOB コンテナに適用されます。
-
-+
-<<必要なコネクタ権限があることを確認します,必要なコネクタ権限があることを確認します>> ライフサイクル管理機能の場合。
 
 .. * クラスタネットワーク * ： ONTAP がオブジェクトストレージへの接続に使用する IPspace を選択し、「 * 続行」をクリックします。
 +

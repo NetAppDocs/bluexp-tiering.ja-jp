@@ -66,7 +66,7 @@ NOTE: コネクタと StorageGRID 間の通信は、オブジェクトストレ�
 --
 サポートされる ONTAP のバージョン:: ONTAP 9.4 以降
 必須のアプリケーションアクセスパラメータ:: クラスタ管理者ユーザは、「console」アプリケーションアクセス権を持っている必要があります。これは、ONTAP コマンドのsecurity login showを使用して確認できます。「admin」ユーザの_Application_Columnに「console」が表示されます。必要に応じて'security login createコマンドを使用してコンソール・アプリケーション・アクセスを追加します https://docs.netapp.com/us-en/ontap-cli-9111/security-login-create.html["詳細については、「security login」コマンドを参照してください"]。
-ライセンス:: Cloud Tieringライセンスは、BlueXPアカウントには必要ありません。また、ONTAP クラスタにデータをStorageGRID に階層化する場合にはFabricPool ライセンスが必要です。
+ライセンス:: データをStorageGRID に階層化する場合、Cloud Tieringライセンスは、BlueXPアカウントには必要ありません。また、ONTAP クラスタにFabricPool ライセンスが必要です。
 クラスタネットワークの要件::
 +
 --
@@ -164,8 +164,8 @@ S3 クレデンシャル:: StorageGRID への階層化を設定するときは�
 
 
 .手順
-. オンプレミスクラスタを選択
-. 階層化サービスの * 有効化 * をクリックします。
+. オンプレミスのONTAP 作業環境を選択します。
+. 右側のパネルで、階層化サービスの*有効化*をクリックします。
 +
 StorageGRID 階層化のデスティネーションがキャンバス上に作業環境として存在する場合は、クラスタをStorageGRID 作業環境にドラッグしてセットアップウィザードを開始できます。
 
