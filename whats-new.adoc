@@ -18,6 +18,16 @@ Cloud Tiering の新機能をご確認ください。
 
 
 
+== 2023年3月5日
+
+
+
+=== ボリュームの階層化レポートを生成できるようになりました
+
+[階層ボリューム]ページからレポートをダウンロードして、管理しているクラスタ上のすべてのボリュームの階層化ステータスを確認できます。Cloud Tieringは.csvファイルを生成します。このファイルを確認して、必要に応じて社内の他のユーザに送信できます。 https://docs.netapp.com/us-en/cloud-manager-tiering/task-managing-tiering.html#download-a-tiering-report-for-your-volumes["階層化レポートのダウンロード方法をご覧ください"]。
+
+
+
 == 2022年12月6日
 
 
