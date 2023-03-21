@@ -90,3 +90,64 @@ image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-family/main/med
 * 製品内のチャットを使用します
 * テクニカル以外のケースをに送信します https://mysupport.netapp.com/site/help[]
 
+
+
+
+== サポートケースの管理（プレビュー）
+
+アクティブなサポートケースと解決済みのサポートケースは、BlueXPから直接表示および管理できます。NSSアカウントと会社に関連付けられたケースを管理できます。
+
+ケース管理はプレビューとして使用できます。今後のリリースでは、この点をさらに改良し、機能を強化する予定です。製品内のチャットでご意見をお寄せください。
+
+次の点に注意してください。
+
+* ページ上部のケース管理ダッシュボードには、次の2つのビューがあります。
++
+** 左側のビューには、指定したユーザNSSアカウントによって過去3カ月間にオープンされたケースの総数が表示されます。
+** 右側のビューには、ユーザのNSSアカウントに基づいて、過去3カ月間にオープンしたケースの総数が会社レベルで表示されます。
+
+
++
+テーブルの結果には、選択したビューに関連するケースが反映されます。
+
+* 目的の列を追加または削除したり、[優先度]や[ステータス]などの列の内容をフィルタリングしたりできます。他の列には、並べ替え機能だけがあります。
++
+詳細については、以下の手順を参照してください。
+
+* ケースごとに、ケースノートを更新したり、ステータスが「Closed」または「Pending Closed」でないケースをクローズしたりすることができます。
+
+
+.手順
+. BlueXPで、[ヘルプ]、[サポート]の順にクリックします。
+. [ケース管理]*をクリックし、プロンプトが表示されたらNSSアカウントをBlueXPに追加します。
++
+ケース管理*ページには、BlueXPユーザアカウントに関連付けられたNSSアカウントに関連するオープンケースが表示されます。これは、* NSS管理*ページの上部に表示されるNSSアカウントと同じです。
+
+. 必要に応じて、テーブルに表示される情報を変更します。
++
+** [Organization's Cases]*で[View]*をクリックすると、会社に関連付けられているすべてのケースが表示されます。
+** 正確な日付範囲を選択するか、別の期間を選択して、日付範囲を変更します。
++
+image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-family/main/media/screenshot-case-management-date-range.png["[Case Management]ページのテーブルの上にあるオプションのスクリーンショット。正確な日付範囲、または過去7日、30日、または3カ月を選択できます。"]
+
+** 列の内容をフィルタリングします。
++
+image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-family/main/media/screenshot-case-management-filter.png["[Status]列のフィルタオプションのスクリーンショット。[Active]や[Closed]など、特定のステータスに一致するケースを除外できます。"]
+
+** をクリックして、テーブルに表示される列を変更します image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-family/main/media/icon-table-columns.png["テーブルに表示されるプラスアイコン"] 次に、表示する列を選択します。
++
+image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-family/main/media/screenshot-case-management-columns.png["表に表示できる列を示すスクリーンショット。"]
+
+
+
+. をクリックして既存のケースを管理します image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-family/main/media/icon-table-action.png["テーブルの最後の列に表示される3つの点を持つアイコン"] 使用可能なオプションのいずれかを選択します。
++
+** *ケースの表示*:特定のケースの詳細を表示します。
+** *ケースノートの更新*：問題の詳細を入力します。
+** *ケースをクローズ*：ケースをクローズする理由の詳細を入力し、*ケースをクローズ*をクリックします。
+
+
++
+image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-family/main/media/screenshot-case-management-actions.png["テーブルの最後の列でメニューを選択した後に実行できる操作を示すスクリーンショット。"]
+
+

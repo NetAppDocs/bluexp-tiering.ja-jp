@@ -227,7 +227,7 @@ Cloud Tieringは、次のオブジェクトストレージプロバイダをサ�
 * Microsoft Azure Blob
 * Google クラウドストレージ
 * NetApp StorageGRID
-* S3 互換オブジェクトストレージ
+* S3互換のオブジェクトストレージ（MinIOなど）
 * IBM Cloud Object Storage（FabricPool の設定はSystem ManagerまたはONTAP CLIを使用して実行する必要があります）
 
 
@@ -260,7 +260,7 @@ Amazon S3 Glacier FlexibleおよびS3 Glacier Deep Archiveがサポートされ�
 
 
 
-=== WasabiなどのS3互換のオブジェクトストレージサービスをCloud Tieringとともに使用できますか。
+=== Cloud Tieringでは、MinIOなど、S3互換の他のオブジェクトストレージサービスを使用できますか。
 
 はい。ONTAP 9.8以降を使用しているクラスタでは、階層化UIからS3互換オブジェクトストレージを設定できます。 link:task-tiering-onprem-s3-compat.html["詳細はこちらをご覧ください"]。
 

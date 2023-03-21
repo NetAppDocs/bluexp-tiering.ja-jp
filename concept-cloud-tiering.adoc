@@ -53,7 +53,7 @@ TIP: Cloud Volumes ONTAP システムは、 Cloud Tiering から読み取り専�
 * Microsoft Azure Blob
 * Google クラウドストレージ
 * NetApp StorageGRID
-* S3 互換オブジェクトストレージ
+* S3互換のオブジェクトストレージ（MinIOなど）
 
 
 Cloud Tieringライセンスは、IBM Cloud Object Storageにデータを階層化するクラスタと共有できます。FabricPool の設定は、System ManagerまたはONTAP CLIを使用して行う必要がありますが https://docs.netapp.com/us-en/cloud-manager-tiering/task-licensing-cloud-tiering.html#apply-cloud-tiering-licenses-to-clusters-in-special-configurations["このタイプの構成のライセンスは、Cloud Tieringを使用して提供されます。"]
@@ -86,6 +86,8 @@ NOTE: StorageGRID または S3 互換のストレージに階層化されたデ�
 データを StorageGRID に階層化する場合、料金は発生しません。BYOL ライセンスでも PAYGO 登録も必要ありません。
 
 https://bluexp.netapp.com/pricing#tiering["価格設定の詳細を表示します"^]。
+
+クラウド階層化ではソースボリュームのストレージ効率化が維持されるため、クラウドプロバイダのオブジェクトストレージのコストは、ONTAP 効率化後の階層化データ（重複排除と圧縮を適用したあとのデータ量が少ない分）に対して支払われます。
 
 
 
