@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-licensing-cloud-tiering.html 
 keywords: subscribe, trial, marketplace, subscription, paygo, pay as you go, byol, bring your own license, annual, tiering, cloud tiering 
-summary: 最初のクラスタから階層化をセットアップすると、 Cloud Tiering の 30 日間の無償トライアルが開始されます。無償トライアルの終了後は、クラウドプロバイダの市場からの従量課金制または年間サブスクリプション、ネットアップのBYOLライセンス、またはその両方の組み合わせを使用して、クラウド階層化の料金を支払う必要があります。 
+summary: 最初のクラスタから階層化をセットアップすると、 Cloud Tiering の 30 日間の無償トライアルが開始されます。無償トライアルの終了後は、クラウドプロバイダのマーケットプレイスから従量課金制または年間サブスクリプション、ネットアップのBYOLライセンス、またはその両方を組み合わせてCloud Tieringを購入する必要があります。 
 ---
 = Cloud Tiering のライセンスをセットアップ
 :hardbreaks:
@@ -18,8 +18,8 @@ summary: 最初のクラスタから階層化をセットアップすると、 C
 
 さらに読む前に、いくつかのメモを記入してください。
 
-* クラウドプロバイダのマーケットプレイスでBlueXPサブスクリプション（PAYGO）にすでに登録している場合は、オンプレミスのONTAP システムからCloud Tieringにも自動的にサブスクライブされます。Cloud Tiering * Licensing * タブにアクティブなサブスクリプションが表示されます。再度サブスクライブする必要はありません。
-* BYOL Cloud Tieringライセンスは、BlueXPアカウントの複数のオンプレミスONTAP クラスタで使用できる_floated_licenseです。これは、各クラスタについて _ FabricPool _ ライセンスを購入した以前のものとは異なります。
+* クラウドプロバイダのマーケットプレイスですでにBlueXPサブスクリプション（PAYGO）にサブスクライブしている場合は、オンプレミスのONTAP システム向けのCloud Tieringにも自動的にサブスクライブされます。Cloud Tiering *のオンプレミスダッシュボード*タブにアクティブなサブスクリプションが表示されます。再度サブスクライブする必要はありません。
+* BYOL Cloud Tieringライセンスは、BlueXPアカウントの複数のオンプレミスONTAP クラスタで使用できる_floated_licenseです。これは、クラスタごとに_ FabricPool _ licenseを購入した以前とは異なり、はるかに簡単です。
 * データを StorageGRID に階層化する場合は料金が発生しないため、 BYOL ライセンスや PAYGO の登録は必要ありません。この階層化データは、ライセンスで購入された容量には含まれません。
 
 
@@ -39,8 +39,8 @@ AWS Marketplace で Cloud Tiering を登録して、 ONTAP クラスタから AW
 
 [[subscribe-aws]]
 .手順
-. BlueXPで、[モバイル]、[階層化]、[ライセンス]の順にクリックします。
-. AWS Marketplace で * Subscribe * をクリックし、 * Continue * をクリックします。
+. BlueXPで、*[モビリティ]>[階層化]>[オンプレミスダッシュボード]*をクリックします。
+. [_Marketplace subscriptions]セクションで、[Amazon Web Services]の*[Subscribe]*をクリックし、*[Continue]*をクリックします。
 . から登録します https://aws.amazon.com/marketplace/pp/prodview-oorxakq6lq7m4?sr=0-8&ref_=beagle&applicationId=AWSMPContessa["AWS Marketplace"^]をクリックし、BlueXP Webサイトにログインし直して登録を完了します。
 +
 次のビデオは、プロセスを示しています。
@@ -57,8 +57,8 @@ Azure Marketplace から Cloud Tiering をサブスクライブして、 ONTAP �
 
 [[subscribe-azure]]
 .手順
-. BlueXPで、[モバイル]、[階層化]、[ライセンス]の順にクリックします。
-. Azure Marketplace で * Subscribe * をクリックし、 * Continue * をクリックします。
+. BlueXPで、*[モビリティ]>[階層化]>[オンプレミスダッシュボード]*をクリックします。
+. [_Marketplace subscriptions]セクションで、[Microsoft Azure]の*[サブスクライブ]*をクリックし、*[続行]*をクリックします。
 . から登録します https://azuremarketplace.microsoft.com/en-us/marketplace/apps/netapp.cloud-manager?tab=Overview["Azure Marketplace で入手できます"^]をクリックし、BlueXP Webサイトにログインし直して登録を完了します。
 +
 次のビデオは、プロセスを示しています。
@@ -75,8 +75,8 @@ GCP Marketplace から Cloud Tiering に登録すると、 ONTAP クラスタか
 
 [[subscribe-gcp]]
 .手順
-. BlueXPで、[モバイル]、[階層化]、[ライセンス]の順にクリックします。
-. [GCP Marketplace] の下の [*Subscribe*] をクリックし、 [* Continue * ] をクリックします
+. BlueXPで、*[モビリティ]>[階層化]>[オンプレミスダッシュボード]*をクリックします。
+. [_Marketplace subscriptions]セクションで、[Google Cloud]の*[サブスクライブ]*をクリックし、*[続行]*をクリックします。
 . から登録します https://console.cloud.google.com/marketplace/details/netapp-cloudmanager/cloud-manager?supportedpurview=project&rif_reserved["GCP Marketplace"^]をクリックし、BlueXP Webサイトにログインし直して登録を完了します。
 +
 次のビデオは、プロセスを示しています。
@@ -117,7 +117,7 @@ Cloud Tiering BYOLライセンスの管理には、BlueXPのDigital Walletペー
 
 === 2021 年 8 月 21 日以降、 Cloud Tiering BYOL の新しいライセンス
 
-新しい* Cloud Tiering *ライセンスは、クラウド階層化サービスを使用したBlueXPでサポートされる階層化構成のために2021年8月に導入されました。BlueXPでは現在、Amazon S3、Azure Blob Storage、Google Cloud Storage、S3互換オブジェクトストレージ、StorageGRID などのクラウドストレージへの階層化をサポートしています。
+新しい* Cloud Tiering *ライセンスは、クラウド階層化サービスを使用したBlueXPでサポートされる階層化構成のために2021年8月に導入されました。BlueXPは現在、Amazon S3、Azure Blobストレージ、Google Cloud Storage、NetApp StorageGRID 、S3互換オブジェクトストレージへの階層化をサポートしています。
 
 従来、オンプレミスONTAP データをクラウドに階層化するために使用していた* FabricPool *ライセンスは、インターネットにアクセスできないサイト（「ダークサイト」とも呼ばれます）でのONTAP 導入、およびIBM Cloud Object Storageへの階層化構成にのみ保持されています。このような構成を使用している場合は、System ManagerまたはONTAP CLIを使用して、各クラスタにFabricPool ライセンスをインストールします。
 
@@ -177,7 +177,7 @@ BlueXPアカウントIDを確認するには、BlueXPの上部にある[*Account
 BlueXPアカウント用のCloud Tieringライセンスを購入したら、Cloud Tieringサービスを使用するライセンスをBlueXPに追加する必要があります。
 
 .手順
-. [ すべてのサービス ] 、 [ デジタルウォレット ] 、 [ データサービスライセンス ] の順にクリックします。
+. [ガバナンス]>[デジタルウォレット]>[データサービスライセンス]*をクリックします。
 . [ ライセンスの追加 ] をクリックします。
 . _ ライセンスの追加 _ ダイアログで、ライセンス情報を入力し、 * ライセンスの追加 * をクリックします。
 +
@@ -271,7 +271,7 @@ NOTE: System ManagerまたはONTAP CLIの「子」ライセンスに表示され
 . link:task-licensing-cloud-tiering.html#use-a-cloud-tiering-byol-license["Cloud Tieringライセンスを購入"] をクリックします。
 . BlueXPでは、 link:task-licensing-cloud-tiering.html#add-cloud-tiering-byol-licenses-to-your-account["ライセンスをデジタルウォレットに追加します"]。
 . Cloud Tieringで、 link:task-managing-tiering.html#discovering-additional-clusters-from-cloud-tiering["新しいクラスタを検出"]。
-. クラスタダッシュボードで、をクリックします image:screenshot_horizontal_more_button.gif["[ 詳細 ] アイコン"] クラスタの場合は、*ライセンスの導入*を選択します。
+. [Clusters]ページで、をクリックします image:screenshot_horizontal_more_button.gif["[ 詳細 ] アイコン"] クラスタの場合は、*ライセンスの導入*を選択します。
 +
 image:screenshot_tiering_deploy_license.png["ONTAP クラスタに階層化ライセンスを導入する方法を示すスクリーンショット。"]
 
