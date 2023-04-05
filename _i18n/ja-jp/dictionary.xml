@@ -242,7 +242,6 @@
   <block id="63df1b7fcfa29df67a9798d7767e4c54" category="list-text">単一のコンソールで、個別に行う必要がありません 複数のクラスタにわたって FabricPool を管理</block>
   <block id="c1ad703a668852b216aa10032b7c0cda" category="list-text">レポートには、アクティブなデータと非アクティブなデータの量が表示されます 各クラスタ</block>
   <block id="50ce53d55b005f76b356132a3901cfcf" category="list-text">階層化の健常性ステータスを確認することで、問題を特定して修正できます そのような状況が発生したとき</block>
-  <block id="0b8949500e9883a23b1d4fbc204e90ee" category="list-text">Cloud Volumes ONTAP システムを使用している場合は、クラスタダッシュボードにこれらのシステムが表示されるので、ハイブリッドクラウドインフラにおけるデータの階層化を完全に把握できます</block>
   <block id="002fca37a5e7d8eb724e874566419716" category="section-title">サポートされているオブジェクトストレージプロバイダ</block>
   <block id="270fcb785810d0206945029bb05f4e97" category="list-text">Amazon S3</block>
   <block id="6a51ed7bcacdfb13f78abc1e0f69c201" category="list-text">Microsoft Azure Blob</block>
@@ -262,7 +261,6 @@
   <block id="591a2cff7f748b04420333fcacaf56fd" category="paragraph">データを StorageGRID に階層化する場合、料金は発生しません。BYOL ライセンスでも PAYGO 登録も必要ありません。</block>
   <block id="8f66314cc87864910e23571f159f6180" category="inline-link">価格設定の詳細を表示します</block>
   <block id="5ef05167488611c5bd4ff0f410595ce4" category="section-title">30 日間の無償トライアルをご利用いただけます</block>
-  <block id="66415c946116518cc6899512da0314ea" category="paragraph">無償トライアルが終了し、ライセンスの登録や追加を行っていない場合、 ONTAP はオブジェクトストレージにコールドデータを階層化しなくなりますが、既存のデータには引き続きアクセスできます。</block>
   <block id="d1517db071086971f3453ded8278c7a1" category="section-title">従量課金制のサブスクリプション</block>
   <block id="a287e316989c25a2ee988a3e9950bf89" category="paragraph">無償トライアルを利用されている場合や、お客様が独自のライセンスを使用（ BYOL ）されている場合も、サブスクリプションを設定する必要があります。</block>
   <block id="7b8b7c4201f97e18e28054d96ce898a0" category="list-text">BYOL ライセンスで許可されている数を超えるデータを階層化した場合、従量課金制サブスクリプションでデータの階層化が続行されます。</block>
@@ -842,8 +840,6 @@
   <block id="096dcd3788cecb603666aeab1323e016" category="list-text">必須のアプリケーションアクセスパラメータ</block>
   <block id="5a5be55d6d19108a5a53e94d4b8bca13" category="inline-link">詳細については、「security login」コマンドを参照してください</block>
   <block id="fcccb04322797151b1c63a24fdbe8596" category="list-text">クラスタ管理者ユーザは、「console」アプリケーションアクセス権を持っている必要があります。これは、ONTAP コマンドのsecurity login showを使用して確認できます。「admin」ユーザの_Application_Columnに「console」が表示されます。必要に応じて'security login createコマンドを使用してコンソール・アプリケーション・アクセスを追加します<block ref="c49e76a401ad77700c5ead0ea46ac66a" category="inline-link-rx"></block>。</block>
-  <block id="8bde27dc2a4816433b259374095d8da3" category="inline-link">Linuxホストへのコネクタの導入</block>
-  <block id="72e0bcbd663626f0d086598014dfbeb0" category="list-text"><block ref="72e0bcbd663626f0d086598014dfbeb0" category="inline-link-rx"></block></block>
   <block id="303b6b375dcceef17b9d24c15d95c29b" category="list-text">*プロバイダを選択*：「* Amazon Web Services *」を選択し、*続行*をクリックします。</block>
   <block id="c22f32bc9795fa45c61320309de1c56e" category="list-text">* S3 Bucket *：新しいS3バケットを追加するか、prefix_fabric-pool_で始まる既存のS3バケットを選択し、バケットのリージョンを選択して* Continue *をクリックします。</block>
   <block id="7de06bb2b943b6fd5754912e3f1d4ceb" category="paragraph"><block ref="7de06bb2b943b6fd5754912e3f1d4ceb" category="inline-image-macro-rx" type="image"></block></block>
@@ -872,7 +868,6 @@
   <block id="37d627356844b359763aa1dbb8695283" category="list-text">表示されるダイアログで、使用率しきい値を変更し、アクセス頻度の低いデータのレポートを有効にするか無効にするかを選択します。</block>
   <block id="b2531ab74e4b89a1d4fe9224355475de" category="paragraph"><block ref="b2531ab74e4b89a1d4fe9224355475de" category="inline-image-macro-rx" type="image"></block></block>
   <block id="bda2a863882afc8f61b71a756b1ea690" category="inline-link">Azureへのコネクタの導入</block>
-  <block id="1dacca07d9ba20ab896874ca3c68ea8d" category="list-text"><block ref="1dacca07d9ba20ab896874ca3c68ea8d" category="inline-link-rx"></block></block>
   <block id="462a06b2a85bbbf735ba8fa3fc4dd871" category="list-text">*プロバイダの選択*：「* Microsoft Azure *」を選択し、「*続行」をクリックします。</block>
   <block id="ba34121e3527a1918b936c79899e68fa" category="paragraph">ミラーリングの目的で、アグリゲートごとに最大2つのバケットを接続できます。コールドデータは両方のバケットに同期的に階層化されます。バケットは、プロバイダや場所によって異なる場合があります。2022年8月より、* Advanced Setup *ページを使用して、2つのオブジェクトストアを1つのアグリゲートに接続できます。</block>
   <block id="6c66decef59a00987dd2d537b80e9092" category="paragraph">はい。一般的なベストプラクティスとして、1つのバケットを複数のアグリゲートに接続することを推奨します。ただし、パブリッククラウドを使用する場合は、オブジェクトストレージサービスのIOPSが最大であるため、複数のバケットを考慮する必要があります。</block>
@@ -915,12 +910,6 @@
   <block id="460820727f3b7117c5da2a76a02f36bc" category="admonition">コネクタと S3 の間の通信は、オブジェクトストレージのセットアップにのみ使用されます。</block>
   <block id="ea97cc2428a460eae122a94c68a8b16a" category="section-title">コネクタを準備します</block>
   <block id="cc8fa83637def0ab4b26b2c73eaf58b1" category="paragraph">AWS VPCまたはオンプレミスにすでにコネクタが導入されている場合は、すべて設定されます。ない場合は、ONTAP データをAWS S3ストレージに階層化するために、これらのどちらかの場所にコネクタを作成する必要があります。別のクラウドプロバイダに導入されているコネクタは使用できません。</block>
-  <block id="d41b031ef25fff764808749edcc2cd28" category="inline-link">コネクタの使用を開始する</block>
-  <block id="b37ed402641ff6f2d1b0b55061547f2d" category="list-text"><block ref="b37ed402641ff6f2d1b0b55061547f2d" category="inline-link-rx"></block></block>
-  <block id="cd10ae990b1a676dcb9da574833197dc" category="inline-link">AWSにコネクタをインストールする</block>
-  <block id="fe96b3be0fd11571a6c8ea6ac43f23fe" category="list-text"><block ref="fe96b3be0fd11571a6c8ea6ac43f23fe" category="inline-link-rx"></block></block>
-  <block id="c434332bb7ea2d6636a3d41a262f1e7e" category="inline-link">コネクタをオンプレミスにインストールする</block>
-  <block id="408e970a6e2ac7b03356ff4f61689ed3" category="list-text"><block ref="408e970a6e2ac7b03356ff4f61689ed3" category="inline-link-rx"></block></block>
   <block id="929d25665bc92d22cf4a79265248dd36" category="section-title">コネクタのネットワーク要件</block>
   <block id="572373ae1e78fa8826ac1a5468d0b8c1" category="list-text">クラウド階層化サービスへのポート443（HTTPS）経由のアウトバウンドインターネット接続</block>
   <block id="2e379f93711508ab69eec06837dd271c" category="inline-link">エンドポイントのリストを参照してください</block>
@@ -1011,7 +1000,6 @@
   <block id="84b50dc471c57455cf0359ad021a8c58" category="paragraph">Amazon S3階層化のデスティネーションがキャンバスに作業環境として存在する場合は、オンプレミスのONTAP 作業環境をデスティネーションにドラッグして、階層化セットアップウィザードを開始できます。</block>
   <block id="b57c0deab1a5287b0457bf7ca26a95f4" category="admonition">MetroCluster 構成からミラーオブジェクトストアを削除する場合は、プライマリオブジェクトストアも削除するかどうかの確認を求められます。プライマリオブジェクトストアをアグリゲートに接続したままにすることも、削除することもできます。</block>
   <block id="6eecabc0d7fe334dd9e87b08c1b64c93" category="paragraph">クラウド階層化は、シングルノードクラスタ、HA構成のクラスタ、階層化ミラー構成のクラスタ、およびMetroCluster 構成に対してFabricPool ミラーを使用して設定できます。Cloud Tieringライセンスは、すべてのクラスタ間で共有されます。</block>
-  <block id="85e6332aa0d0ad8f46ae520da6d1c0c7" category="paragraph">Cloud Tiering ライセンスがない場合は、最初のクラスタへの階層化を設定すると、 Cloud Tiering の 30 日間の無償トライアルが開始されます。30日間の無償トライアルの終了後は、従量課金制のサブスクリプション、年間サブスクリプション、BYOLライセンス、またはその組み合わせを使用して、Cloud Tieringの料金を支払う必要があります。</block>
   <block id="421539f25601331f9f5f1e59cdb43e21" category="section-title">年間契約</block>
   <block id="1ca6869c60d4b26c9ebd2bc63dd19e71" category="paragraph">ネットアップから Cloud Tiering * ライセンスを購入して、お客様所有のライセンスを有効にしてください。1年、2年、3年の期間ライセンスを購入し、階層化の容量を指定できます。BYOL クラウド階層化ライセンスは、複数のオンプレミス ONTAP クラスタで使用できるフローティングライセンスです。クラウド階層化ライセンスで定義した合計階層化容量は、すべてのオンプレミスクラスタで使用できます。</block>
   <block id="82812db645b6ff5e9c2a24ddfb66c8d6" category="paragraph">上記のセルフサポートオプションに加え、サポートを有効にしたあとで問題が発生した場合は、ネットアップサポートの担当者と相談して解決できます。</block>
@@ -1120,7 +1108,6 @@
   <block id="6f7498318061ab9585a9a930576417e9" category="paragraph">コールドデータの階層化を開始する前に、オンプレミスのONTAP 作業環境をBlueXPに作成する必要があります。</block>
   <block id="62b4885d3e4f3aa3a6da101753a59fd4" category="paragraph">概算見積書を入手するには、ONTAP クラスタをBlueXPに追加し、階層化タブにあるCloud Tiering Clusters Dashboardを使用して確認します。Inactive Data Reporting（IDR）が無効になっているか、十分な期間アクティブ化されていない場合、Cloud Tieringは、業界定数の70%を使用して削減量を計算します。IDRデータを利用できるようになると、Cloud Tieringがコスト削減効果を正確な数値に更新します。</block>
   <block id="f0e21f59ae2ac8831058af2eeb6352ab" category="inline-link">Cloud Volumes ONTAP の階層化は'BlueXPの作業環境から設定します</block>
-  <block id="61d4aa7877925f71314d23b9f09b7393" category="paragraph">Cloud Volumes ONTAP システムを使用している場合は、Cloud Tiering Cluster Dashboardにアクセスして、ハイブリッドクラウドインフラにおけるデータの階層化を最大限に確認できます。ただし、Cloud Volumes ONTAP システムはCloud Tieringから読み取り専用です。Cloud Volumes ONTAP では、クラウド階層化からデータ階層化を設定することはできません。<block ref="7477c38194261f0954175f853359735c" category="inline-link-rx"></block>。</block>
   <block id="f92115ef83b34980e3bba84c1a861bac" category="paragraph">次の質問は、BlueXPコネクタに関連しています。</block>
   <block id="367329787d30f75b30521f88dfa0d7c1" category="paragraph">Connectorは、クラウドアカウントまたはオンプレミスのいずれかのコンピューティングインスタンス上で実行されるソフトウェアで、BlueXPでクラウドリソースを安全に管理できます。Cloud Tieringサービスを使用するには、Connectorを導入する必要があります。</block>
   <block id="b3ac7359e28ad36cfcfef7d4cff76670" category="list-text">Azureでは、BlueXPに提供する必要のある権限以外で追加の権限は必要ありません。</block>
@@ -1177,7 +1164,6 @@
   <block id="dc0605b8b2de4441cff5b013be511267" category="paragraph"><block ref="dc0605b8b2de4441cff5b013be511267" category="inline-image-macro-rx" type="image"></block></block>
   <block id="154756f3451aa7d3c9c0ff18e7159503" category="inline-link">BlueXP Marketplace製品にアクセスします</block>
   <block id="8888d46d611948a30ba2c08d3adb6945" category="list-text">Azure Marketplace で配信登録するには、<block ref="c7c84f194b790bd1614b3007104e1172" category="inline-link-rx"></block>をクリックし、 * Subscribe * をクリックして、画面の指示に従います。</block>
-  <block id="a857c8adb9c1cde4acd264143a3e3ad1" category="paragraph">BYOLの容量制限に達すると、新しいコールドデータの階層化が停止し、それまで階層化されていたすべてのデータにアクセスできる状態になります。PAYGOマーケットプレイスで_BlueXP - Cloud Data Services-Deploy &amp; Manage Cloud Data Services_を購入した場合、新しいコールドデータは引き続きオブジェクトストレージに階層化され、使用ごとに料金が支払われます。</block>
   <block id="91a68e06c0ddb0dde07439f8f6bd8af6" category="list-text"><block ref="91a68e06c0ddb0dde07439f8f6bd8af6" category="inline-link-macro-rx"></block></block>
   <block id="a4106436d00150633e4b615291f0b5c4" category="list-text">GCP Marketplace から登録するには、<block ref="7e960c467ff9bbcd90615ea936733251" category="inline-link-rx"></block>をクリックし、 * Subscribe * をクリックして、画面の指示に従います。</block>
   <block id="bd25c3527b85ace964c6837242630a19" category="paragraph"><block ref="316080080631334cc8b0ad0316a8ebff" category="inline-link-rx"></block>。</block>
@@ -1329,7 +1315,6 @@
   <block id="0748730b16e2af0499abfb4f8fbcd91a" category="section-title">Cloud Tieringでは、MinIOなど、S3互換の他のオブジェクトストレージサービスを使用できますか。</block>
   <block id="5f25ca5749124089f38921fb40d73668" category="paragraph">クラウド階層化ではソースボリュームのストレージ効率化が維持されるため、クラウドプロバイダのオブジェクトストレージのコストは、ONTAP 効率化後の階層化データ（重複排除と圧縮を適用したあとのデータ量が少ない分）に対して支払われます。</block>
   <block id="ad54fbabce5f384433a02d947362a539" category="paragraph">この時点で、MinIOオブジェクトストレージが認定されています。</block>
-  <block id="5f1025b90c4f0c635572eda715d87a10" category="paragraph">[階層化]&gt;[オンプレミスダッシュボード]*をクリックするだけです。Cloud Tieringでは、環境に関する次の詳細が確認できます。</block>
   <block id="75ae3190ee97d211e630e0c0f1b5ddeb" category="inline-image-macro">[On-Prem Dashboard]ページのスクリーンショット。</block>
   <block id="59b117edc0d3d63aaf2729e082c38261" category="paragraph"><block ref="59b117edc0d3d63aaf2729e082c38261" category="inline-image-macro-rx" type="image"></block></block>
   <block id="7a7553c4b7ed244f088a49d323385c57" category="list-text">検出されたクラスタ</block>
@@ -1337,15 +1322,11 @@
   <block id="8ee0131ead01994f7bd95933f4e9a923" category="list-text">階層化の概要</block>
   <block id="4e03a2d38322e40af6a6e79c953fef0e" category="list-text">現在階層化されているデータの量と、階層化される可能性のあるデータの量。</block>
   <block id="f9600e20b044515122327f9895faca66" category="list-text">マーケットプレイスのサブスクリプション</block>
-  <block id="36c8c017c31e43cab58a5f2513c46696" category="list-text">[クラスタ]*ページで、*[クラスタの階層化の基本設定]*をクリックします。</block>
-  <block id="310e5a0853c673dc4faabacaee25d4fc" category="list-text">[クラスタ]*ページで、選択したクラスタの*[詳細設定]*をクリックします。</block>
-  <block id="4b25601db98fc4ec4887d38db18f833e" category="list-text">[詳細設定]ページで、アグリゲートのメニューアイコンをクリックし、*[アグリゲートの変更]*を選択します。</block>
   <block id="14cbdefab43f51a65021d80ce80980c0" category="list-text">[クラスタ]*ページで、クラスタのメニューアイコンをクリックし、*[クラスタ情報]*を選択します。</block>
   <block id="bff5f986b8f0d22acffc0010e8d56dde" category="paragraph">Tiering_Cluster_pageから検出されていないオンプレミスのONTAP クラスタをBlueXPに追加して、クラスタの階層化を有効にできます。</block>
   <block id="36b6d559a801013af8e2d0cd8f190efe" category="paragraph">追加のクラスタを検出するためのボタンは、Tiering_on-Premダッシュボードページにも表示されます。</block>
   <block id="9b1a75be486d93c4df9e13eef4128dc2" category="list-text">Cloud Tieringで、*[クラスタ]*タブをクリックします。</block>
   <block id="f202e1cf2a8a770d553e2f87c2b11801" category="list-text">検出されていないクラスタを表示するには、*[検出されていないクラスタを表示]*をクリックします。</block>
-  <block id="e643ccb2870b9bbfdbc24bc87d300f4d" category="list-text">BlueXPで管理してデータ階層化を実装するクラスタの[クラスタの追加]*をクリックします。</block>
   <block id="25a16ca1880cc1d4f1ff63f91034c468" category="list-text">[_Cluster Details_]ページで、管理者ユーザアカウントのパスワードを入力し、*[検出]*をクリックします。</block>
   <block id="78663d9137e3cc2c3049532938b4c70f" category="list-text">[Details &amp; Credentials]ページで、クラスタ名がWorking Environment Nameとして追加されたため、*[Go]*をクリックするだけです。</block>
   <block id="102787ed6297b34a7504b527e91d01d3" category="section-title">2023年4月3日</block>
@@ -1359,16 +1340,34 @@
   <block id="f8011f6560ae9c67fe47dfaf64d311be" category="paragraph"><block ref="f8011f6560ae9c67fe47dfaf64d311be" category="inline-image-macro-rx" type="image"></block></block>
   <block id="3e35b4d71fa62eacb0a5bb388fcaaefc" category="list-text">[クラスタ]ページで、クラスタのメニューアイコンをクリックし、*[クラウドパフォーマンステスト]*を選択します。</block>
   <block id="7bd2b7eee5b0e3ccc0cee448e5f16af6" category="list-text">[クラスタ]*ページで、クラスタのメニューアイコンをクリックし、*[オブジェクトストア情報]*を選択します。</block>
-  <block id="d6bf3a1568674e80c2c2ee91b89321aa" category="list-text">[Advanced Settings]ページで、使用するオブジェクトストアをミラーオブジェクトストアの場所にドラッグします。</block>
-  <block id="cd11e47501303547dfe86752a503190f" category="list-text">[詳細設定]ページで、アグリゲートのメニューアイコンをクリックし、*[デスティネーションのスワップ]*を選択します。</block>
-  <block id="3147fedbcc0be3024be497b0c4a9a86e" category="list-text">[Advanced Settings]ページで、アグリゲートのメニューアイコンをクリックし、*[Unmirror Object Store]*を選択します。</block>
-  <block id="512d20b1222e443735ce4d4233102c8b" category="list-text">クラウドプロバイダのマーケットプレイスですでにBlueXPサブスクリプション（PAYGO）にサブスクライブしている場合は、オンプレミスのONTAP システム向けのCloud Tieringにも自動的にサブスクライブされます。Cloud Tiering *のオンプレミスダッシュボード*タブにアクティブなサブスクリプションが表示されます。再度サブスクライブする必要はありません。</block>
   <block id="199835e9739f64711df8c553667c0873" category="list-text">BYOL Cloud Tieringライセンスは、BlueXPアカウントの複数のオンプレミスONTAP クラスタで使用できる_floated_licenseです。これは、クラスタごとに_ FabricPool _ licenseを購入した以前とは異なり、はるかに簡単です。</block>
-  <block id="c6cfe277ff95e8b00e4a3526eb00d9de" category="list-text">BlueXPで、*[モビリティ]&gt;[階層化]&gt;[オンプレミスダッシュボード]*をクリックします。</block>
   <block id="b1fac0d88d99bf87572b3a3dbde5021c" category="list-text">[_Marketplace subscriptions]セクションで、[Amazon Web Services]の*[Subscribe]*をクリックし、*[Continue]*をクリックします。</block>
   <block id="25fa54aa1e74279c5dd0574c255c9395" category="list-text">[_Marketplace subscriptions]セクションで、[Microsoft Azure]の*[サブスクライブ]*をクリックし、*[続行]*をクリックします。</block>
   <block id="1aeaa2e92434fc1c27cf37cfd23e8592" category="list-text">[_Marketplace subscriptions]セクションで、[Google Cloud]の*[サブスクライブ]*をクリックし、*[続行]*をクリックします。</block>
   <block id="35bfd546b4a554afcc648a0c8807406b" category="paragraph">新しい* Cloud Tiering *ライセンスは、クラウド階層化サービスを使用したBlueXPでサポートされる階層化構成のために2021年8月に導入されました。BlueXPは現在、Amazon S3、Azure Blobストレージ、Google Cloud Storage、NetApp StorageGRID 、S3互換オブジェクトストレージへの階層化をサポートしています。</block>
   <block id="5ed5be6c0303be48aaede9dd17a25f11" category="list-text">[ガバナンス]&gt;[デジタルウォレット]&gt;[データサービスライセンス]*をクリックします。</block>
   <block id="f16cf9a738fef68b5c516203192da03b" category="list-text">[Clusters]ページで、をクリックします <block ref="50acd719b1954eb4890c002b3b5e71a6" category="inline-image-macro-rx" type="image"></block> クラスタの場合は、*ライセンスの導入*を選択します。</block>
+  <block id="99cff1b26f15f21c85863c646752fd8a" category="paragraph">[階層化]&gt;[オンプレミスダッシュボード]*をクリックするだけです。Cloud Tieringでは、環境に関する次の詳細が確認できます。</block>
+  <block id="7e3b03fb1795db2dd05995429974e133" category="inline-link">Linuxホストへのコネクタのインストール</block>
+  <block id="b911d3b2a309c413ee66b9b771d150de" category="list-text"><block ref="b911d3b2a309c413ee66b9b771d150de" category="inline-link-rx"></block></block>
+  <block id="67238cd5edf831d6bf11f3b651f7c0ce" category="list-text">[クラスタ]*ページで、クラスタの*[ボリュームの階層化]*をクリックします。</block>
+  <block id="19bbde7543a4103105c6f45a4826d973" category="list-text">[クラスタ]*ページで、選択したクラスタの*[詳細セットアップ]*をクリックします。</block>
+  <block id="9bfca8fb5771e5278530e3aec5c99564" category="list-text">Advanced Setupページで、アグリゲートのメニューアイコンをクリックし、* Modify Aggregate *を選択します。</block>
+  <block id="d5c1e697c8b22502370d8a4d89241230" category="list-text">BlueXPで管理するクラスタの[*クラスタの検出*]をクリックし、データ階層化を実装します。</block>
+  <block id="d94cbfae2c85d4e68e18566207dbca79" category="list-text"><block ref="d94cbfae2c85d4e68e18566207dbca79" category="inline-link-rx"></block></block>
+  <block id="fcb56b02923ad8fee5725ea3ab197730" category="inline-link">AWSでのコネクタの導入</block>
+  <block id="aeab24d7d3032243d8637fa1f7ff200c" category="list-text"><block ref="aeab24d7d3032243d8637fa1f7ff200c" category="inline-link-rx"></block></block>
+  <block id="19a7096cffff1081298250811a27a2c9" category="list-text">Cloud Volumes ONTAP システムを使用している場合は、[クラスタ]ページに表示されるので、ハイブリッドクラウドインフラ内のデータ階層化の全体像を把握できます</block>
+  <block id="4e06fcbdd87dccfbea49bd9c084521b4" category="paragraph">Cloud Tiering ライセンスがない場合は、最初のクラスタへの階層化を設定すると、 Cloud Tiering の 30 日間の無償トライアルが開始されます。30日間の無償トライアルの終了後は、従量課金制サブスクリプション、年間サブスクリプション、BYOLライセンス、またはその組み合わせでCloud Tieringの料金を支払う必要があります。</block>
+  <block id="9da46a2ddb041da98995ffb63fb8ed72" category="paragraph">無償トライアルが終了し、ライセンスを登録または追加していない場合、ONTAP はコールドデータをオブジェクトストレージに階層化しなくなります。これまで階層化されていたすべてのデータに引き続きアクセスできるため、このデータを読み出して使用できます。取得されると、このデータはクラウドから高パフォーマンス階層に戻されます。</block>
+  <block id="23382689bb5023b2975968f57d098105" category="list-text">詳細設定ページで、使用するオブジェクトストアをミラーオブジェクトストアの場所にドラッグします。</block>
+  <block id="ebfa7c7e62c629e534a590d9c5bd48ac" category="list-text">Advanced Setupページで、アグリゲートのメニューアイコンをクリックし、* Swap Destinations *を選択します。</block>
+  <block id="85c797dc141e0eb32826e3caf502008c" category="list-text">Advanced Setupページで、アグリゲートのメニューアイコンをクリックし、* Unmirror Object Store *を選択します。</block>
+  <block id="c3b0021cb8b4d6a81a5732c2832b2ddf" category="list-text">クラウドプロバイダのマーケットプレイスですでにBlueXPサブスクリプション（PAYGO）にサブスクライブしている場合は、オンプレミスのONTAP システム向けのCloud Tieringにも自動的にサブスクライブされます。Cloud Tiering *のオンプレミスダッシュボード*タブにアクティブなサブスクリプションが表示されます。再度サブスクライブする必要はありません。Digital Wallet にアクティブなサブスクリプションが表示されます。</block>
+  <block id="48266b46c49dd5c5afbe71046b3b1261" category="list-text">BlueXPで、*[モビリティ]&gt;[階層化]&gt;[オンプレミスダッシュボード]*をクリックします。</block>
+  <block id="e44d709d5fa4c3c47b7380bfc09d83fa" category="inline-link">価格設定の詳細をご覧ください</block>
+  <block id="874323801a4fa98c0f05aaa80c3c1d82" category="paragraph"><block ref="f7ce611d89d41a39c0cd111c48bbba76" category="inline-link-rx"></block>。</block>
+  <block id="2b36f8b3b2cccdc6807233a79e1b8d1d" category="paragraph">BYOLの容量が上限に達すると、新しいコールドデータの階層化が停止します。これまで階層化されていたすべてのデータに引き続きアクセスできるため、このデータを読み出して使用できます。取得されると、このデータはクラウドから高パフォーマンス階層に戻されます。</block>
+  <block id="91c0c3f0911cf0aa7791e2815ecf2507" category="paragraph">ただし、PAYGO Marketplaceサブスクリプションで_BlueXP -クラウドデータサービスの導入と管理_を利用している場合、新しいコールドデータは引き続きオブジェクトストレージに階層化され、使用量に応じて料金が発生します。</block>
+  <block id="9c7d287d0ce7d0d1654a49d75c7314f0" category="paragraph">Cloud Volumes ONTAP システムを使用している場合は、[Cloud Tiering Clusters]ページに表示されるので、ハイブリッドクラウドインフラ内のデータ階層化の全体像を把握できます。ただし、Cloud Volumes ONTAP システムはCloud Tieringから読み取り専用です。Cloud Volumes ONTAP では、クラウド階層化からデータ階層化を設定することはできません。<block ref="7477c38194261f0954175f853359735c" category="inline-link-rx"></block>。</block>
 </blocks>

@@ -100,9 +100,8 @@ BlueXPコネクタは'BlueXP機能の主要なソフトウェアですアクセ�
 AWS VPCまたはオンプレミスにすでにコネクタが導入されている場合は、すべて設定されます。ない場合は、ONTAP データをAWS S3ストレージに階層化するために、これらのどちらかの場所にコネクタを作成する必要があります。別のクラウドプロバイダに導入されているコネクタは使用できません。
 
 * https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html["コネクタについて説明します"^]
-* https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-checklist-cm.html["コネクタの使用を開始する"^]
-* https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-aws.html["AWSにコネクタをインストールする"^]
-* https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-installing-linux.html["コネクタをオンプレミスにインストールする"^]
+* https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-aws.html["AWSでのコネクタの導入"^]
+* https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-on-prem.html["Linuxホストへのコネクタのインストール"^]
 
 
 

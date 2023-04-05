@@ -96,11 +96,11 @@ MetroCluster 構成を使用する場合は、異なるアベイラビリティ�
 MetroCluster 構成でStorageGRID をオブジェクトストアとして使用する場合、両方のONTAP システムで単一のStorageGRID システムへのFabricPool 階層化を実行できます。各ONTAP システムでは、データを別々のバケットに階層化する必要があります。
 
 .手順
-. [クラスタ]*ページで、選択したクラスタの*[詳細設定]*をクリックします。
+. [クラスタ]*ページで、選択したクラスタの*[詳細セットアップ]*をクリックします。
 +
 image:screenshot_tiering_advanced_setup_button.png["クラスタのAdvanced Setupボタンを示すスクリーンショット。"]
 
-. [Advanced Settings]ページで、使用するオブジェクトストアをミラーオブジェクトストアの場所にドラッグします。
+. 詳細設定ページで、使用するオブジェクトストアをミラーオブジェクトストアの場所にドラッグします。
 +
 image:screenshot_tiering_mirror_config.png["2つ目のオブジェクトストアをアグリゲートにドラッグして階層化ミラーを作成する方法を示すスクリーンショット。"]
 
@@ -119,11 +119,11 @@ image:screenshot_tiering_mirror_config_complete.png["アグリゲートに接続
 アグリゲートのプライマリオブジェクトストアとミラーオブジェクトストアをスワップできます。オブジェクトストアミラーがプライマリになり、元のプライマリがミラーになります。
 
 .手順
-. [クラスタ]*ページで、選択したクラスタの*[詳細設定]*をクリックします。
+. [クラスタ]*ページで、選択したクラスタの*[詳細セットアップ]*をクリックします。
 +
 image:screenshot_tiering_advanced_setup_button.png["クラスタのAdvanced Setupボタンを示すスクリーンショット。"]
 
-. [詳細設定]ページで、アグリゲートのメニューアイコンをクリックし、*[デスティネーションのスワップ]*を選択します。
+. Advanced Setupページで、アグリゲートのメニューアイコンをクリックし、* Swap Destinations *を選択します。
 +
 image:screenshot_tiering_mirror_swap.png["アグリゲートのSwap Destinationオプションを示すスクリーンショット"]
 
@@ -137,11 +137,11 @@ image:screenshot_tiering_mirror_swap.png["アグリゲートのSwap Destination�
 追加のオブジェクトストアにレプリケートする必要がなくなった場合は、FabricPool ミラーを削除できます。
 
 .手順
-. [クラスタ]*ページで、選択したクラスタの*[詳細設定]*をクリックします。
+. [クラスタ]*ページで、選択したクラスタの*[詳細セットアップ]*をクリックします。
 +
 image:screenshot_tiering_advanced_setup_button.png["クラスタのAdvanced Setupボタンを示すスクリーンショット。"]
 
-. [Advanced Settings]ページで、アグリゲートのメニューアイコンをクリックし、*[Unmirror Object Store]*を選択します。
+. Advanced Setupページで、アグリゲートのメニューアイコンをクリックし、* Unmirror Object Store *を選択します。
 +
 image:screenshot_tiering_mirror_delete.png["アグリゲートのUnmirror Object Storeオプションを示すスクリーンショット。"]
 

@@ -118,6 +118,8 @@ Cloud Tieringを使用するためのライセンスとコストに関するFAQ�
 * 年単位（BYOL）のタームベースサブスクリプション：GBあたり0.033ドル/月から
 
 
+https://bluexp.netapp.com/pricing["価格設定の詳細をご覧ください"]。
+
 コールドデータをNetApp StorageGRID システム（プライベートクラウド）に階層化しても、コストはかかりません。
 
 
@@ -130,7 +132,9 @@ Cloud Tieringを使用するためのライセンスとコストに関するFAQ�
 
 === BYOLの容量制限に達した場合はどうなりますか？
 
-BYOLの容量制限に達すると、新しいコールドデータの階層化が停止し、それまで階層化されていたすべてのデータにアクセスできる状態になります。PAYGOマーケットプレイスで_BlueXP - Cloud Data Services-Deploy & Manage Cloud Data Services_を購入した場合、新しいコールドデータは引き続きオブジェクトストレージに階層化され、使用ごとに料金が支払われます。
+BYOLの容量が上限に達すると、新しいコールドデータの階層化が停止します。これまで階層化されていたすべてのデータに引き続きアクセスできるため、このデータを読み出して使用できます。取得されると、このデータはクラウドから高パフォーマンス階層に戻されます。
+
+ただし、PAYGO Marketplaceサブスクリプションで_BlueXP -クラウドデータサービスの導入と管理_を利用している場合、新しいコールドデータは引き続きオブジェクトストレージに階層化され、使用量に応じて料金が発生します。
 
 
 
@@ -196,7 +200,7 @@ Cloud Tieringは、ONTAP バージョン9.2以降をサポートしています�
 
 === Cloud Volumes ONTAP について教えてください。
 
-Cloud Volumes ONTAP システムを使用している場合は、Cloud Tiering Cluster Dashboardにアクセスして、ハイブリッドクラウドインフラにおけるデータの階層化を最大限に確認できます。ただし、Cloud Volumes ONTAP システムはCloud Tieringから読み取り専用です。Cloud Volumes ONTAP では、クラウド階層化からデータ階層化を設定することはできません。 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-tiering.html["Cloud Volumes ONTAP の階層化は'BlueXPの作業環境から設定します"^]。
+Cloud Volumes ONTAP システムを使用している場合は、[Cloud Tiering Clusters]ページに表示されるので、ハイブリッドクラウドインフラ内のデータ階層化の全体像を把握できます。ただし、Cloud Volumes ONTAP システムはCloud Tieringから読み取り専用です。Cloud Volumes ONTAP では、クラウド階層化からデータ階層化を設定することはできません。 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-tiering.html["Cloud Volumes ONTAP の階層化は'BlueXPの作業環境から設定します"^]。
 
 
 
