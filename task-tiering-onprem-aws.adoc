@@ -110,8 +110,7 @@ AWS VPCまたはオンプレミスにすでにコネクタが導入されてい�
 
 * コネクタが取り付けられているネットワークで次の接続が有効になっていることを確認します。
 +
-** クラウド階層化サービスへのポート443（HTTPS）経由のアウトバウンドインターネット接続
-** S3 オブジェクトストレージへのポート 443 経由の HTTPS 接続 (https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-checklist-cm.html["エンドポイントのリストを参照してください"^])
+** ポート443を介してCloud TieringサービスとS3オブジェクトストレージに接続します (https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-set-up-networking-aws.html#endpoints-contacted-for-day-to-day-operations["エンドポイントのリストを参照してください"^])
 ** ONTAP クラスタ管理 LIF へのポート 443 経由の HTTPS 接続
 
 

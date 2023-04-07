@@ -137,8 +137,7 @@ BlueXPバージョン3.9.25以上を使用してコネクタを作成した場�
 .手順
 . コネクタが取り付けられているネットワークで次の接続が有効になっていることを確認します。
 +
-** クラウドの階層化サービスへのアウトバウンドのインターネット接続 ポート 443 （ HTTPS ）
-** ポート 443 から Azure BLOB ストレージへの HTTPS 接続
+** ポート443を介してCloud TieringサービスとAzure Blobオブジェクトストレージに接続します (https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-set-up-networking-azure.html#endpoints-contacted-for-day-to-day-operations["エンドポイントのリストを参照してください"^])
 ** ONTAP クラスタ管理 LIF へのポート 443 経由の HTTPS 接続
 
 

@@ -38,7 +38,6 @@
   <block id="a8e8e48001e032c3b5939047d15db5a2" category="section-title">コネクタのネットワークを準備しています</block>
   <block id="f3a29486bed19a90f2da6d007818b427" category="list-title">手順</block>
   <block id="aadbd6cd1f8b4e9deafea8f1d6c8333c" category="list-text">コネクタが取り付けられているネットワークで次の接続が有効になっていることを確認します。</block>
-  <block id="841f7e7eb4c540f0ef284f9a0806448c" category="list-text">クラウドの階層化サービスへのアウトバウンドのインターネット接続 ポート 443 （ HTTPS ）</block>
   <block id="699a71169310a3553bddb7e36ecb8a5c" category="list-text">ONTAP クラスタ管理 LIF へのポート 443 経由の HTTPS 接続</block>
   <block id="1fa74ff5a0547c12a6e2f2b89c3c8d6e" category="paragraph">新しいクラスタにデータ階層化を設定するときは、 S3 バケットを作成するか、コネクタが設定されている AWS アカウントで既存の S3 バケットを選択するように求められます。AWS アカウントには、 Cloud Tiering で入力できる権限とアクセスキーが必要です。ONTAP クラスタは、アクセスキーを使用して S3 との間でデータを階層化します。</block>
   <block id="41e85822b15d5899d14062cd9df9aded" category="inline-link-macro">Cloud Tiering をサポートするリージョン</block>
@@ -105,7 +104,6 @@
   <block id="aa4788e27cdbd61e4d722970587d99c5" category="list-text">オブジェクトストアバケットで StorageGRID オブジェクトのバージョン管理を有効にすることはできません。</block>
   <block id="1c3c05f52f226acac800b43e5ce83b67" category="paragraph">データをクラウドに階層化するにはコネクタが必要です。データを StorageGRID に階層化する場合は、オンプレミスのコネクタが必要です。新しいコネクターをインストールするか、現在選択されているコネクターがオンプレミスにあることを確認する必要があります。</block>
   <block id="7b16b8b258668ab05a1e5d83e084b477" category="paragraph">コネクタに必要なネットワーク接続があることを確認します。</block>
-  <block id="a3049b761ff526799f3b1881932b1c8c" category="list-text">ポート 443 から StorageGRID への HTTPS 接続</block>
   <block id="de9570886e9849852133b61caefd03b2" category="section-title">最初のクラスタから StorageGRID にアクセス頻度の低いデータを階層化しています</block>
   <block id="a71f0f53c9824602e78a79bc5fa52d43" category="paragraph">環境を準備したら、最初のクラスタからアクセス頻度の低いデータの階層化を開始します。</block>
   <block id="1b8a3756b590cb811f9726f247097028" category="list-text">必要な S3 権限を持つ AWS アクセスキー。</block>
@@ -162,7 +160,6 @@
   <block id="1530d1823861aa989d35b92ad0b2fd9e" category="list-text">インバウンド接続はコネクタから必要です。コネクタは Azure VNet 内またはオンプレミスに配置できます。</block>
   <block id="b1e389999fc3500ff74c433071c6f3d0" category="section-title">必要なコネクタ権限があることを確認します</block>
   <block id="8d553e78e79ca1abdf2ffdd1714a7698" category="paragraph">コネクタに必要なネットワーク接続があることを確認します。コネクタは、オンプレミスまたは Azure にインストールできます。</block>
-  <block id="bb1241e3a37748e608dbbde25c75ea25" category="list-text">ポート 443 から Azure BLOB ストレージへの HTTPS 接続</block>
   <block id="400985d5d8ad47af48b13e9fe604a6fe" category="list-text">必要に応じて、 VNet サービスエンドポイントを Azure ストレージに対して有効にします。</block>
   <block id="0eb60239b46482f7f72a4986fa40c73a" category="paragraph">ONTAP クラスタから VNet への ExpressRoute または VPN 接続があり、コネクタと BLOB ストレージ間の通信を仮想プライベートネットワーク内に維持する場合は、 Azure ストレージへの VNet サービスエンドポイントを推奨します。</block>
   <block id="256fb1d2776e7f3b364ce4414a65b2cd" category="section-title">Azure BLOB ストレージを準備しています</block>
@@ -378,7 +375,6 @@
   <block id="c3fb869301bdf0050425864a1c816fd8" category="admonition">Cloud Tiering は、 FlexGroup ボリュームをサポートしています。セットアップは他のボリュームと同じように機能します。</block>
   <block id="6f8de70a130cd2e986950accf1528a82" category="paragraph">データをクラウドに階層化するにはコネクタが必要です。データを Google Cloud Storage に階層化する場合は、 Google Cloud Platform VPC でコネクタが使用可能である必要があります。新しいコネクターを作成するか、現在選択されているコネクターが GCP にあることを確認する必要があります。</block>
   <block id="499449d439c0676b8921b5ff6e0ca806" category="list-text">コネクタがインストールされている VPC で次の接続が有効になっていることを確認します。</block>
-  <block id="d83f012d1d2a88fdb1e7cb28d94b081d" category="list-text">ポート 443 から Google Cloud Storage への HTTPS 接続</block>
   <block id="bad85e9654b782928f6763c3008e8dd4" category="list-text">オプション： Connector を展開するサブネットで Google Private Access を有効にします。</block>
   <block id="b092138563f7b68473c3bf2a6a23a434" category="inline-link">プライベート Google アクセス</block>
   <block id="f4daaef45bd7d11ebf3a4c8dc607eaa4" category="paragraph"><block ref="d1ea0c6b3f95b3376607c57ca3a4265e" category="inline-link-rx"></block> ONTAP クラスタから VPC への直接接続を確立している環境で、 Connector と Google Cloud Storage の間の通信を仮想プライベートネットワークのままにする場合は、を推奨します。プライベート Google アクセスは、内部（プライベート） IP アドレスのみ（外部 IP アドレスは使用しない）を持つ VM インスタンスで機能します。</block>
@@ -605,7 +601,6 @@
   <block id="9b73989307c1975dfa4d5e1581e4afe8" category="paragraph">通知ファイルには、ネットアップソフトウェアで使用されるサードパーティの著作権およびライセンスに関する情報が記載されています。</block>
   <block id="5e4b821a1a82558dead1ef6961e90666" category="paragraph">次のオプションは、 1 日 24 時間、週 7 日間無料でご利用いただけます。</block>
   <block id="19111351b69b6b15668130b38b7f6038" category="inline-link">ナレッジベース</block>
-  <block id="fd6bb4fa1ad0caeedd6782d92cc54ea3" category="list-text"><block ref="fd6bb4fa1ad0caeedd6782d92cc54ea3" category="inline-link-rx"></block></block>
   <block id="14526abd8bda5af347775025cd5342cf" category="inline-link">コミュニティ</block>
   <block id="410fdb9caa9c64da2ff3f88f4836960d" category="list-text"><block ref="410fdb9caa9c64da2ff3f88f4836960d" category="inline-link-rx"></block></block>
   <block id="5b6cf869265c13af8566f192b4ab3d2a" category="list-text">ドキュメント</block>
@@ -911,9 +906,7 @@
   <block id="ea97cc2428a460eae122a94c68a8b16a" category="section-title">コネクタを準備します</block>
   <block id="cc8fa83637def0ab4b26b2c73eaf58b1" category="paragraph">AWS VPCまたはオンプレミスにすでにコネクタが導入されている場合は、すべて設定されます。ない場合は、ONTAP データをAWS S3ストレージに階層化するために、これらのどちらかの場所にコネクタを作成する必要があります。別のクラウドプロバイダに導入されているコネクタは使用できません。</block>
   <block id="929d25665bc92d22cf4a79265248dd36" category="section-title">コネクタのネットワーク要件</block>
-  <block id="572373ae1e78fa8826ac1a5468d0b8c1" category="list-text">クラウド階層化サービスへのポート443（HTTPS）経由のアウトバウンドインターネット接続</block>
   <block id="2e379f93711508ab69eec06837dd271c" category="inline-link">エンドポイントのリストを参照してください</block>
-  <block id="070ae2b938526f98049114b311cf4a90" category="list-text">S3 オブジェクトストレージへのポート 443 経由の HTTPS 接続 <block ref="2b717f51e9f0e108fc936d861142f7b4" category="inline-link-rx"></block>)</block>
   <block id="76e709935c290dea4c7b1c0de4918211" category="inline-link">コネクタにS3バケットを管理する権限があることを確認します</block>
   <block id="4e96d68b20a8c2caa7ac1a77b15169c3" category="list-text"><block ref="4e96d68b20a8c2caa7ac1a77b15169c3" category="inline-link-rx"></block></block>
   <block id="db41e7a8de9567fec002e93320c428ad" category="inline-xref">VPC エンドポイントインターフェイスの設定方法を参照してください。</block>
@@ -1370,4 +1363,10 @@
   <block id="2b36f8b3b2cccdc6807233a79e1b8d1d" category="paragraph">BYOLの容量が上限に達すると、新しいコールドデータの階層化が停止します。これまで階層化されていたすべてのデータに引き続きアクセスできるため、このデータを読み出して使用できます。取得されると、このデータはクラウドから高パフォーマンス階層に戻されます。</block>
   <block id="91c0c3f0911cf0aa7791e2815ecf2507" category="paragraph">ただし、PAYGO Marketplaceサブスクリプションで_BlueXP -クラウドデータサービスの導入と管理_を利用している場合、新しいコールドデータは引き続きオブジェクトストレージに階層化され、使用量に応じて料金が発生します。</block>
   <block id="9c7d287d0ce7d0d1654a49d75c7314f0" category="paragraph">Cloud Volumes ONTAP システムを使用している場合は、[Cloud Tiering Clusters]ページに表示されるので、ハイブリッドクラウドインフラ内のデータ階層化の全体像を把握できます。ただし、Cloud Volumes ONTAP システムはCloud Tieringから読み取り専用です。Cloud Volumes ONTAP では、クラウド階層化からデータ階層化を設定することはできません。<block ref="7477c38194261f0954175f853359735c" category="inline-link-rx"></block>。</block>
+  <block id="942c9249796cf6b78c981ebf15195809" category="list-text"><block ref="942c9249796cf6b78c981ebf15195809" category="inline-link-rx"></block></block>
+  <block id="827819483dd4d9a78711b6afa4da92ab" category="list-text">ポート443を介してCloud TieringサービスとGoogle Cloud StorageへのHTTPS接続 <block ref="d9defc1077847b67f008853c06990134" category="inline-link-rx"></block>)</block>
+  <block id="7ec3e00e427ce2f28dc1338f2397328b" category="list-text">ポート443を介したCloud TieringサービスへのHTTPS接続 <block ref="4a7a4f89081133703af86b4e7832dbdb" category="inline-link-rx"></block>)</block>
+  <block id="5bfe7676a3f4e4197bf9f895c6b2fcb4" category="list-text">StorageGRID システムへのポート443経由のHTTPS接続</block>
+  <block id="0d2084a4e3ff91eb61a6e20f85d92399" category="list-text">ポート443を介してCloud TieringサービスとS3オブジェクトストレージに接続します <block ref="e55fc914b3d027a7a2463283008a8fbf" category="inline-link-rx"></block>)</block>
+  <block id="bd0e0977c46457979423f05da93b43de" category="list-text">ポート443を介してCloud TieringサービスとAzure Blobオブジェクトストレージに接続します <block ref="5bf1914e1013b2901a1aed42fbd7a1ac" category="inline-link-rx"></block>)</block>
 </blocks>

@@ -18,7 +18,7 @@ summary: ネットアップでは、さまざまな方法でBlueXPをサポー�
 
 次のオプションは、 1 日 24 時間、週 7 日間無料でご利用いただけます。
 
-* https://kb.netapp.com/Advice_and_Troubleshooting/Cloud_Services["ナレッジベース"^]
+* https://kb.netapp.com/Cloud/BlueXP["ナレッジベース"^]
 +
 BlueXPナレッジベースで問題のトラブルシューティングに役立つ記事を検索します。
 

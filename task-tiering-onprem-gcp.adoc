@@ -129,8 +129,7 @@ https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-discovering-ontap.
 .手順
 . コネクタがインストールされている VPC で次の接続が有効になっていることを確認します。
 +
-** クラウドの階層化サービスへのアウトバウンドのインターネット接続 ポート 443 （ HTTPS ）
-** ポート 443 から Google Cloud Storage への HTTPS 接続
+** ポート443を介してCloud TieringサービスとGoogle Cloud StorageへのHTTPS接続 (https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-set-up-networking-google.html#endpoints-contacted-for-day-to-day-operations["エンドポイントのリストを参照してください"^])
 ** ONTAP クラスタ管理 LIF へのポート 443 経由の HTTPS 接続
 
 
