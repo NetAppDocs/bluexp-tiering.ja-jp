@@ -117,7 +117,7 @@ https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-discovering-ontap.
 データをクラウドに階層化するにはコネクタが必要です。データを Google Cloud Storage に階層化する場合は、 Google Cloud Platform VPC でコネクタが使用可能である必要があります。新しいコネクターを作成するか、現在選択されているコネクターが GCP にあることを確認する必要があります。
 
 * https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html["コネクタについて説明します"^]
-* https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-gcp.html["GCPでのコネクターの配置"^]
+* https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-google.html["GCPでのコネクターの配置"^]
 
 
 
