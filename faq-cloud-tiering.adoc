@@ -164,7 +164,7 @@ BYOLの容量が上限に達すると、新しいコールドデータの階層�
 
 === Cloud Tieringを有効にする前に、ボリュームの削減量を試算してコールドデータレポートを入手するにはどうすればよいですか？
 
-概算見積書を入手するには、ONTAP クラスタをBlueXPに追加し、階層化タブにあるCloud Tiering Clusters Dashboardを使用して確認します。Inactive Data Reporting（IDR）が無効になっているか、十分な期間アクティブ化されていない場合、Cloud Tieringは、業界定数の70%を使用して削減量を計算します。IDRデータを利用できるようになると、Cloud Tieringがコスト削減効果を正確な数値に更新します。
+見積もりは、ONTAP クラスタをBlueXPに追加し、[Cloud Tiering Clusters]ページで確認するだけです。クラスタで[階層化の可能な削減量を計算する]*をクリックしてを起動します https://bluexp.netapp.com/cloud-tiering-service-tco["Cloud Tiering TCO計算ツール"^] どれだけのお金を節約できるかを確認します。
 
 
 
@@ -200,7 +200,7 @@ Cloud Tieringは、ONTAP バージョン9.2以降をサポートしています�
 
 === Cloud Volumes ONTAP について教えてください。
 
-Cloud Volumes ONTAP システムを使用している場合は、[Cloud Tiering Clusters]ページに表示されるので、ハイブリッドクラウドインフラ内のデータ階層化の全体像を把握できます。ただし、Cloud Volumes ONTAP システムはCloud Tieringから読み取り専用です。Cloud Volumes ONTAP では、クラウド階層化からデータ階層化を設定することはできません。 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-tiering.html["Cloud Volumes ONTAP の階層化は'BlueXPの作業環境から設定します"^]。
+Cloud Volumes ONTAP システムを使用している場合は、[Cloud Tiering Clusters]ページに表示されるので、ハイブリッドクラウドインフラ内のデータ階層化の全体像を把握できます。ただし、Cloud Volumes ONTAP システムはCloud Tieringから読み取り専用です。Cloud Volumes ONTAP では、クラウド階層化からデータ階層化を設定することはできません。 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-tiering.html["BlueXPの作業環境からCloud Volumes ONTAP システムの階層化をセットアップします"^]。
 
 
 
