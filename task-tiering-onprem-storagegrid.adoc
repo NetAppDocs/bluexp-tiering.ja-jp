@@ -30,7 +30,7 @@ summary: アクセス頻度の低いデータを StorageGRID に階層化する�
 * ONTAP 9.4 以降を実行しているオンプレミスの ONTAP クラスタと、ユーザが指定したポートから StorageGRID への接続。 https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-discovering-ontap.html["クラスタの検出方法について説明します"^]。
 * StorageGRID 10.3 以降で、 S3 権限を持つ AWS アクセスキーが使用されています。
 * オンプレミスにインストールされているコネクタ。
-* ONTAP クラスタ、 StorageGRID 、およびクラウド階層化サービスへのアウトバウンド HTTPS 接続を可能にするコネクタのネットワーク。
+* ONTAP クラスタ、StorageGRID 、およびBlueXP階層化サービスへのアウトバウンドHTTPS接続を可能にするコネクタのネットワーク。
 
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["2 つ"] 階層化をセットアップする
@@ -45,7 +45,7 @@ ONTAP クラスタのサポートを確認し、ネットワークをセット�
 
 次の図は、各コンポーネントとその間の準備に必要な接続を示しています。
 
-image:diagram_cloud_tiering_storagegrid.png["クラウド階層化サービスとオンプレミスのコネクタ、 ONTAP クラスタへの接続を含むコネクタ、 ONTAP クラスタとオブジェクトストレージの間の接続を示すアーキテクチャイメージ。アクティブなデータは ONTAP クラスタに格納され、アクセス頻度の低いデータはオブジェクトストレージに格納されます。」"]
+image:diagram_cloud_tiering_storagegrid.png["BlueXP階層化サービスを示すアーキテクチャイメージ。オンプレミスのコネクタへの接続、ONTAP クラスタへの接続、およびONTAP クラスタとオブジェクトストレージの間の接続を確立します。アクティブなデータは ONTAP クラスタに格納され、アクセス頻度の低いデータはオブジェクトストレージに格納されます。」"]
 
 
 NOTE: コネクタと StorageGRID 間の通信は、オブジェクトストレージのセットアップにのみ使用されます。
@@ -66,7 +66,7 @@ NOTE: コネクタと StorageGRID 間の通信は、オブジェクトストレ�
 --
 サポートされる ONTAP のバージョン:: ONTAP 9.4 以降
 必須のアプリケーションアクセスパラメータ:: クラスタ管理者ユーザは、「console」アプリケーションアクセス権を持っている必要があります。これは、ONTAP コマンドのsecurity login showを使用して確認できます。「admin」ユーザの_Application_Columnに「console」が表示されます。必要に応じて'security login createコマンドを使用してコンソール・アプリケーション・アクセスを追加します https://docs.netapp.com/us-en/ontap-cli-9111/security-login-create.html["詳細については、「security login」コマンドを参照してください"]。
-ライセンス:: データをStorageGRID に階層化する場合、Cloud Tieringライセンスは、BlueXPアカウントには必要ありません。また、ONTAP クラスタにFabricPool ライセンスが必要です。
+ライセンス:: データをStorageGRID に階層化する場合、BlueXPアカウントにはBlueXP階層化ライセンスは必要ありません。また、ONTAP クラスタにFabricPool ライセンスは必要ありません。
 クラスタネットワークの要件::
 +
 --
@@ -76,20 +76,20 @@ ONTAP は、オブジェクトストレージとの間でデータの読み取�
 
 * コネクタからのインバウンド接続が必要です。この接続はオンプレミスにある必要があります。
 +
-クラスタと Cloud Tiering Service の間の接続は必要ありません。
+クラスタとBlueXP階層化サービスの間の接続は必要ありません。
 
 * 階層化するボリュームをホストする各 ONTAP ノードにクラスタ間 LIF が 1 つ必要です。LIF は、 ONTAP がオブジェクトストレージへの接続に使用する IPspace に関連付けられている必要があります。
 +
-データの階層化を設定すると、使用する IPspace を入力するように求められます。各 LIF を関連付ける IPspace を選択する必要があります。これは、「デフォルト」の IPspace または作成したカスタム IPspace です。の詳細を確認してください https://docs.netapp.com/us-en/ontap/networking/create_a_lif.html["LIF"^] および https://docs.netapp.com/us-en/ontap/networking/standard_properties_of_ipspaces.html["IPspace"^]。
+データ階層化のセットアップ時に、使用するIPspaceの入力を求められます。各 LIF を関連付ける IPspace を選択する必要があります。これは、「デフォルト」の IPspace または作成したカスタム IPspace です。の詳細を確認してください https://docs.netapp.com/us-en/ontap/networking/create_a_lif.html["LIF"^] および https://docs.netapp.com/us-en/ontap/networking/standard_properties_of_ipspaces.html["IPspace"^]。
 
 
 
 --
-サポートされるボリュームとアグリゲート:: クラウド階層化が可能なボリュームの総数は、 ONTAP システムのボリュームの数よりも少なくなる可能性があります。これは、一部のアグリゲートからボリュームを階層化できないためです。については、ONTAP のドキュメントを参照してください https://docs.netapp.com/us-en/ontap/fabricpool/requirements-concept.html#functionality-or-features-not-supported-by-fabricpool["FabricPool でサポートされていない機能"^]。
+サポートされるボリュームとアグリゲート:: BlueXPの階層化で階層化できるボリュームの総数は、ONTAP システムのボリュームの数よりも少なくなることがあります。これは、一部のアグリゲートからボリュームを階層化できないためです。については、ONTAP のドキュメントを参照してください https://docs.netapp.com/us-en/ontap/fabricpool/requirements-concept.html#functionality-or-features-not-supported-by-fabricpool["FabricPool でサポートされていない機能"^]。
 
 
 
-NOTE: Cloud Tiering は、 ONTAP 9.5 以降、 FlexGroup ボリュームをサポートしています。セットアップは他のボリュームと同じように機能します。
+NOTE: BlueXPの階層化では、ONTAP 9.5以降でFlexGroup ボリュームがサポートされます。セットアップは他のボリュームと同じように機能します。
 
 
 
@@ -106,7 +106,7 @@ https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-discovering-ontap.
 StorageGRID は、次の要件を満たす必要があります。
 
 サポートされている StorageGRID のバージョン:: StorageGRID 10.3 以降がサポートされます。
-S3 クレデンシャル:: StorageGRID への階層化を設定するときは、 S3 アクセスキーとシークレットキーを使用してクラウド階層化を提供する必要があります。Cloud Tiering は、キーを使用してバケットにアクセスします。
+S3 クレデンシャル:: StorageGRID への階層化をセットアップするときは、S3のアクセスキーとシークレットキーを使用してBlueXPの階層化を提供する必要があります。BlueXPの階層化サービスでは、このキーを使用してバケットにアクセスします。
 +
 --
 これらのアクセスキーは、次の権限を持つユーザに関連付ける必要があります。
@@ -144,7 +144,7 @@ S3 クレデンシャル:: StorageGRID への階層化を設定するときは�
 .手順
 . コネクタが取り付けられているネットワークで次の接続が有効になっていることを確認します。
 +
-** ポート443を介したCloud TieringサービスへのHTTPS接続 (https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-set-up-networking-on-prem.html#endpoints-contacted-for-day-to-day-operations["エンドポイントのリストを参照してください"^])
+** ポート443経由でBlueXP階層化サービスへのHTTPS接続 (https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-set-up-networking-on-prem.html#endpoints-contacted-for-day-to-day-operations["エンドポイントのリストを参照してください"^])
 ** StorageGRID システムへのポート443経由のHTTPS接続
 ** ONTAP クラスタ管理 LIF へのポート 443 経由の HTTPS 接続
 
@@ -183,7 +183,7 @@ image:screenshot_setup_tiering_onprem.png["オンプレミスの ONTAP 作業環
 
 .. * クラスタネットワーク * ： ONTAP がオブジェクトストレージへの接続に使用する IPspace を選択し、「 * 続行」をクリックします。
 +
-適切な IPspace を選択することで、クラウド階層化によって ONTAP から StorageGRID オブジェクトストレージへの接続をセットアップできます。
+正しいIPspaceを選択すると、BlueXPの階層化でONTAP からStorageGRID オブジェクトストレージへの接続をセットアップできます。
 
 
 

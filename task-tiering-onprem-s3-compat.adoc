@@ -39,7 +39,7 @@ Simple Storage Service （ S3 ）プロトコルを使用する任意のオブ�
 * ONTAP 9.8以降を実行しているオンプレミスのソースONTAP クラスタと、ユーザが指定したポートからデスティネーションのS3互換オブジェクトストレージへの接続。 https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-discovering-ontap.html["クラスタの検出方法について説明します"^]。
 * ONTAP クラスタがバケットにアクセスできるようにするための、オブジェクトストレージサーバの FQDN 、アクセスキー、およびシークレットキー。
 * オンプレミスにインストールされているコネクタ。
-* ソースONTAP クラスタ、S3互換オブジェクトストレージ、およびクラウド階層化サービスへのアウトバウンドHTTPS接続を可能にするコネクタのネットワーク。
+* ソースONTAP クラスタ、S3互換オブジェクトストレージ、およびBlueXP階層化サービスへのアウトバウンドHTTPS接続を可能にするコネクタのネットワーク。
 
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["2 つ"] 階層化をセットアップする
@@ -48,11 +48,11 @@ BlueXPでは、オンプレミスの作業環境を選択し、階層化サー�
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["3つ"] ライセンスをセットアップする
 [role="quick-margin-para"]
-従量課金制のクラウド階層化：クラウドプロバイダからの従量課金制サブスクリプション、 NetApp Cloud Tiering のお客様所有のライセンス、またはその両方の組み合わせで利用できます。
+BlueXP階層化サービスの料金は、クラウドプロバイダが提供する従量課金制サブスクリプション、NetApp BlueXP階層化サービス（お客様所有のライセンスを使用）、またはその両方を組み合わせてお支払いください。
 
 [role="quick-margin-list"]
 * からBlueXP PAYGOを購読すること https://aws.amazon.com/marketplace/pp/prodview-oorxakq6lq7m4?sr=0-8&ref_=beagle&applicationId=AWSMPContessa["AWS Marketplace"^]、 https://azuremarketplace.microsoft.com/en-us/marketplace/apps/netapp.cloud-manager?tab=Overview["Azure Marketplace で入手できます"^]または https://console.cloud.google.com/marketplace/details/netapp-cloudmanager/cloud-manager?supportedpurview=project&rif_reserved["GCP Marketplace"^]をクリックし、 * Subscribe * をクリックして指示に従います。
-* Cloud Tiering BYOL ライセンスを使用して支払う場合は、 mailto:ng-cloud-tiering@netapp.com ？ subject=Licensing [ 購入が必要な場合はお問い合わせください ] のあとに link:task-licensing-cloud-tiering.html#add-cloud-tiering-byol-licenses-to-your-account["BlueXP Digital Walletからアカウントに追加します"]。
+* BlueXP階層化BYOLライセンスを使用して料金を支払う場合は、mailto：ng-cloud-tiering@netapp.com？subject=ライセンス[contact us if you need to purchase one]の順にクリックします link:task-licensing-cloud-tiering.html#add-bluexp-tiering-byol-licenses-to-your-account["BlueXP Digital Walletからアカウントに追加します"]。
 
 
 
@@ -63,7 +63,7 @@ ONTAP クラスタのサポートを確認し、ネットワークをセット�
 
 次の図は、各コンポーネントとその間の準備に必要な接続を示しています。
 
-image:diagram_cloud_tiering_s3_compat.png["クラウド階層化サービスとオンプレミスのコネクタ、 ONTAP クラスタへの接続を含むコネクタ、 ONTAP クラスタとオブジェクトストレージの間の接続を示すアーキテクチャイメージ。アクティブなデータは ONTAP クラスタに格納され、アクセス頻度の低いデータはオブジェクトストレージに格納されます。」"]
+image:diagram_cloud_tiering_s3_compat.png["BlueXP階層化サービスを示すアーキテクチャイメージ。オンプレミスのコネクタへの接続、ONTAP クラスタへの接続、およびONTAP クラスタとオブジェクトストレージの間の接続を確立します。アクティブなデータは ONTAP クラスタに格納され、アクセス頻度の低いデータはオブジェクトストレージに格納されます。」"]
 
 
 NOTE: コネクタと S3 互換性のあるオブジェクトストレージサーバの間の通信は、オブジェクトストレージのセットアップにのみ使用されます。
@@ -86,20 +86,20 @@ S3互換オブジェクトストレージにデータを階層化するときは
 
 * コネクタからのインバウンド接続が必要です。この接続はオンプレミスにある必要があります。
 +
-クラスタと Cloud Tiering Service の間の接続は必要ありません。
+クラスタとBlueXP階層化サービスの間の接続は必要ありません。
 
 * 階層化するボリュームをホストする各 ONTAP ノードにクラスタ間 LIF が 1 つ必要です。LIF は、 ONTAP がオブジェクトストレージへの接続に使用する IPspace に関連付けられている必要があります。
 +
-データの階層化を設定すると、使用する IPspace を入力するように求められます。各 LIF を関連付ける IPspace を選択する必要があります。これは、「デフォルト」の IPspace または作成したカスタム IPspace です。の詳細を確認してください https://docs.netapp.com/us-en/ontap/networking/create_a_lif.html["LIF"^] および https://docs.netapp.com/us-en/ontap/networking/standard_properties_of_ipspaces.html["IPspace"^]。
+データ階層化のセットアップ時に、使用するIPspaceの入力を求められます。各 LIF を関連付ける IPspace を選択する必要があります。これは、「デフォルト」の IPspace または作成したカスタム IPspace です。の詳細を確認してください https://docs.netapp.com/us-en/ontap/networking/create_a_lif.html["LIF"^] および https://docs.netapp.com/us-en/ontap/networking/standard_properties_of_ipspaces.html["IPspace"^]。
 
 
 
 --
-サポートされるボリュームとアグリゲート:: クラウド階層化が可能なボリュームの総数は、 ONTAP システムのボリュームの数よりも少なくなる可能性があります。これは、一部のアグリゲートからボリュームを階層化できないためです。については、ONTAP のドキュメントを参照してください https://docs.netapp.com/us-en/ontap/fabricpool/requirements-concept.html#functionality-or-features-not-supported-by-fabricpool["FabricPool でサポートされていない機能"^]。
+サポートされるボリュームとアグリゲート:: BlueXPの階層化で階層化できるボリュームの総数は、ONTAP システムのボリュームの数よりも少なくなることがあります。これは、一部のアグリゲートからボリュームを階層化できないためです。については、ONTAP のドキュメントを参照してください https://docs.netapp.com/us-en/ontap/fabricpool/requirements-concept.html#functionality-or-features-not-supported-by-fabricpool["FabricPool でサポートされていない機能"^]。
 
 
 
-TIP: Cloud Tiering は、 FlexVol と FlexGroup の両方のボリュームをサポートしています。
+TIP: BlueXPの階層化では、FlexVol とFlexGroup の両方のボリュームがサポートされます。
 
 
 
@@ -115,7 +115,7 @@ https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-discovering-ontap.
 
 S3 互換オブジェクトストレージは、次の要件を満たしている必要があります。
 
-S3 クレデンシャル:: S3互換オブジェクトストレージへの階層化を設定すると、S3バケットの作成または既存のS3バケットの選択を求められます。S3 のアクセスキーとシークレットキーを使用してクラウド階層化を提供する必要があります。Cloud Tiering は、キーを使用してバケットにアクセスします。
+S3 クレデンシャル:: S3互換オブジェクトストレージへの階層化を設定すると、S3バケットの作成または既存のS3バケットの選択を求められます。S3アクセスキーとシークレットキーを使用してBlueXPの階層化を提供する必要があります。BlueXPの階層化サービスでは、このキーを使用してバケットにアクセスします。
 +
 --
 これらのアクセスキーは、次の権限を持つユーザに関連付ける必要があります。
@@ -152,7 +152,7 @@ S3 クレデンシャル:: S3互換オブジェクトストレージへの階層
 .手順
 . コネクタが取り付けられているネットワークで次の接続が有効になっていることを確認します。
 +
-** ポート443を介したCloud TieringサービスへのHTTPS接続 (https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-set-up-networking-on-prem.html#endpoints-contacted-for-day-to-day-operations["エンドポイントのリストを参照してください"^])
+** ポート443経由でBlueXP階層化サービスへのHTTPS接続 (https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-set-up-networking-on-prem.html#endpoints-contacted-for-day-to-day-operations["エンドポイントのリストを参照してください"^])
 ** ポート 443 から S3 互換オブジェクトストレージへの HTTPS 接続
 ** ONTAP クラスタ管理 LIF へのポート 443 経由の HTTPS 接続
 
@@ -185,7 +185,7 @@ image:screenshot_setup_tiering_onprem.png["オンプレミスの ONTAP 作業環
 .. * Bucket * ：新しいバケットを追加するか既存のバケットを選択し、 * Continue * をクリックします。
 .. * クラスタネットワーク * ： ONTAP がオブジェクトストレージへの接続に使用する IPspace を選択し、「 * 続行」をクリックします。
 +
-適切な IPspace を選択することで、 Cloud Tiering が、 ONTAP から S3 互換オブジェクトストレージへの接続をセットアップできるようになります。
+正しいIPspaceを選択すると、BlueXP階層化サービスでONTAP からS3互換オブジェクトストレージへの接続をセットアップできます。
 
 
 
@@ -213,7 +213,7 @@ image:screenshot_tiering_policy_settings.png["設定可能な階層化ポリシ�
 これで、クラスタのボリュームから S3-compatible オブジェクトストレージへのデータ階層化が設定されました。
 
 .次の手順
-link:task-licensing-cloud-tiering.html["Cloud Tiering サービスに登録してください"]。
+link:task-licensing-cloud-tiering.html["BlueXP階層化サービスに必ず登録してください"]。
 
 クラスタ上のアクティブなデータとアクセス頻度の低いデータに関する情報を確認できます。 link:task-managing-tiering.html["階層化設定の管理について詳しくは、こちらをご覧ください"]。
 

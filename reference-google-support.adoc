@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: reference-google-support.html 
 keywords: google, gcp, regions, google regions, gcp regions, storage class, standard, nearline, coldline, archive 
-summary: Cloud Tiering は、複数の Google Cloud ストレージクラスとほとんどのリージョンをサポートしています。 
+summary: BlueXPの階層化サービスでは、複数のGoogle Cloudストレージクラスとほとんどのリージョンがサポートされます。 
 ---
 = サポートされている Google Cloud ストレージクラスとリージョン
 :hardbreaks:
@@ -14,13 +14,13 @@ summary: Cloud Tiering は、複数の Google Cloud ストレージクラスと�
 
 
 [role="lead"]
-Cloud Tiering は、複数の Google Cloud ストレージクラスとほとんどのリージョンをサポートしています。
+BlueXPの階層化サービスでは、複数のGoogle Cloudストレージクラスとほとんどのリージョンがサポートされます。
 
 
 
 == サポートされている GCP ストレージクラス
 
-GCP へのデータ階層化を設定すると、 Cloud Tiering は、アクセス頻度の低いデータに _Standard_storage クラスを自動的に使用します。Cloud Tiering では、ライフサイクルルールを適用して、特定の日数が経過したデータを _Standard_storage クラスから他のストレージクラスに移行できます。次のストレージクラスから選択できます。
+GCPへのデータ階層化を設定すると、BlueXPの階層化ではアクセス頻度の低いデータに_Standard_storageクラスが自動的に使用されます。BlueXPの階層化サービスでは、ライフサイクルルールを適用して、一定の日数が経過した時点で_Standard_storageクラスから他のストレージクラスにデータを移行できます。次のストレージクラスから選択できます。
 
 * ニアライン
 * コールドライン（ Coldline ）
@@ -29,7 +29,7 @@ GCP へのデータ階層化を設定すると、 Cloud Tiering は、アクセ�
 
 別のストレージクラスを選択しない場合、データは _Standard_storage クラスに残り、ルールは適用されません。
 
-Cloud Tiering ライフサイクルルールを設定する場合、 Google アカウントでバケットを設定するときに、ライフサイクルルールを設定しないでください。
+BlueXP階層化ライフサイクルルールを設定するときは、Googleアカウントでバケットをセットアップするときにライフサイクルルールを設定しないでください。
 
 https://cloud.google.com/storage/docs/storage-classes["Google Cloud Storage のクラスをご確認ください"^]。
 
@@ -37,7 +37,7 @@ https://cloud.google.com/storage/docs/storage-classes["Google Cloud Storage の�
 
 == サポートされている Google Cloud リージョン
 
-Cloud Tiering は、次のリージョンをサポートしています。
+BlueXPの階層化サービスは次のリージョンでサポートされます。
 
 
 

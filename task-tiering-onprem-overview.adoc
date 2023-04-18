@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-tiering-onprem-overview.html 
 keywords: overview, tiering overview, tiered clusters, clusters enabled for tiering, data tiering overview, cold data, hot data, tiered data, savings, savings opportunities, saving opportunity, policies, cold snapshots, all dp user data, cold user data & snapshots, cold user data and snapshots, all user data, no policy, marketplace subscriptions, clusters associated 
-summary: Cloud Tiering を使用すると、オンプレミスの各クラスタから集約されたデータ階層化を確認できます。ここでは、環境の概要を明確に示し、適切な操作を実行できるようにします。 
+summary: BlueXPの階層化サービスでは、オンプレミスの各クラスタからのデータ階層化をまとめて確認できます。ここでは、環境の概要を明確に示し、適切な操作を実行できるようにします。 
 ---
 = クラスタからデータ階層化の概要を取得します
 :toc: macro
@@ -17,9 +17,9 @@ summary: Cloud Tiering を使用すると、オンプレミスの各クラスタ
 
 
 [role="lead"]
-Cloud Tiering を使用すると、オンプレミスの各クラスタから集約されたデータ階層化を確認できます。ここでは、環境の概要を明確に示し、適切な操作を実行できるようにします。
+BlueXPの階層化サービスでは、オンプレミスの各クラスタからのデータ階層化をまとめて確認できます。ここでは、環境の概要を明確に示し、適切な操作を実行できるようにします。
 
-[階層化]>[オンプレミスダッシュボード]*をクリックするだけです。Cloud Tieringでは、環境に関する次の詳細が確認できます。
+[階層化]>[オンプレミスダッシュボード]*をクリックするだけです。BlueXPの階層化サービスには、環境に関する次の詳細情報が用意されています。
 
 image:screenshot_tiering_onprem_dashboard.png["[On-Prem Dashboard]ページのスクリーンショット。"]
 

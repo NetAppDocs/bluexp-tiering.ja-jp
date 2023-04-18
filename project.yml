@@ -1,6 +1,6 @@
 ---
 settings:
-  name: Cloud Tiering
+  name: BlueXP tiering
   platform: cloud
   internal:
     pdf_enabled: true
@@ -11,13 +11,13 @@ settings:
   langs: ja-jp,us-en,ko-kr,zh-cn,zh-tw,de-de,es-es,fr-fr
 sidebar:
   entries:
-  - title: Cloud Tiering のドキュメント
+  - title: BlueXP階層化ドキュメント
     url: "/index.html"
   - title: リリースノート
     url: "/whats-new.html"
   - title: はじめに
     entries:
-    - title: Cloud Tiering の詳細をご確認ください
+    - title: BlueXPの階層化機能の詳細をご確認ください
       url: "/concept-cloud-tiering.html"
     - title: オンプレミスのデータをクラウドに階層化
       entries:
@@ -35,7 +35,7 @@ sidebar:
       url: "/task-licensing-cloud-tiering.html"
     - title: よく寄せられる質問
       url: "/faq-cloud-tiering.html"
-  - title: Cloud Tiering を使用
+  - title: BlueXPの階層化サービスを利用
     entries:
     - title: データの階層化を管理します
       url: "/task-managing-tiering.html"
@@ -65,7 +65,7 @@ homepage:
   tiles:
   - title: はじめに
     links:
-    - title: Cloud Tiering の詳細をご確認ください
+    - title: BlueXPの階層化機能の詳細をご確認ください
       url: concept-cloud-tiering.html
     - title: 新機能
       url: whats-new.html
@@ -109,7 +109,7 @@ homepage:
     links:
     - title: ネットアップコミュニティ
       url: https://community.netapp.com/t5/BlueXP-and-Services/ct-p/CDS
-    - title: Cloud Tieringブログ
+    - title: BlueXP階層化ブログ
       url: https://bluexp.netapp.com/blog/topic/cloud-tiering
     - title: クラウドに関する Web セミナー
       url: https://bluexp.netapp.com/events

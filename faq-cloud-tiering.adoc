@@ -4,7 +4,7 @@ permalink: faq-cloud-tiering.html
 keywords: faq, questions, requirements, service connector, object store, object storage, aws, azure, bucket, cluster, aggregate, s3, storage class, standard, inactive data reporting, auto, volume tiering policy, policy, tiering policy, snapshot, cold, inactive, infrequent 
 summary: この FAQ は、質問に対する簡単な回答を探している場合に役立ちます。 
 ---
-= Cloud Tiering Technical FAQ 』を参照してください
+= BlueXP階層化に関するテクニカルFAQ
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -18,15 +18,15 @@ summary: この FAQ は、質問に対する簡単な回答を探している場
 
 
 
-== Cloud Tiering Service の略
+== BlueXP階層化サービス
 
-Cloud Tieringの仕組みについては、次のFAQを参照してください。
+以下のFAQは、BlueXP階層化の仕組みに関するものです。
 
 
 
-=== Cloud Tieringサービスを使用するメリットは何ですか？
+=== BlueXP階層化サービスを使用するメリットは何ですか？
 
-Cloud Tieringは、データの急増に伴う課題に対応し、次のようなメリットを提供します。
+BlueXPの階層化サービスは、データの急増に伴う課題に対処し、次のようなメリットをもたらします。
 
 * クラウドへのデータセンターを容易に拡張できるため、最大50倍のスペースを確保できます
 * ストレージの最適化により、ストレージを平均70%削減
@@ -54,15 +54,15 @@ Cloud Tieringは、データの急増に伴う課題に対応し、次のよう�
 
 
 
-=== Cloud Tieringを使用すると、ストレージ効率化による削減効果をクラウド階層に維持できますか。
+=== BlueXPの階層化サービスでは、Storage Efficiencyによる削減効果がクラウド階層に保持されますか？
 
 はい。データをクラウド階層に移動するときに、圧縮、重複排除、コンパクションなどのONTAP のボリュームレベルのストレージ効率化機能が維持されます。
 
 
 
-=== FabricPool とクラウド階層化の違いは何ですか？
+=== FabricPool とBlueXPの階層化の違いは何ですか？
 
-FabricPool は、ONTAP の階層化テクノロジで、ONTAP のCLIとSystem Managerを使用して自己管理することも、クラウド階層化を使用してサービスとして管理することもできます。Cloud Tieringを使用すると、FabricPool は、ONTAP とクラウドの両方で高度な自動化プロセスを使用したマネージドサービスに変わり、ハイブリッドクラウドとマルチクラウドの両方の環境における階層化の可視性と制御性が向上します。
+FabricPool は、ONTAP の階層化テクノロジです。ONTAP CLIとSystem Managerを使用して自己管理することも、BlueXP階層化を使用してサービスとして管理することもできます。BlueXPの階層化サービスでは、FabricPool がONTAP とクラウドの両方で高度な自動化プロセスを備えたマネージドサービスに変わり、ハイブリッドクラウドとマルチクラウドの環境全体で階層化の可視性と管理性が向上します。
 
 
 
@@ -70,31 +70,31 @@ FabricPool は、ONTAP の階層化テクノロジで、ONTAP のCLIとSystem Ma
 
 いいえボリュームのメタデータは高パフォーマンス階層から階層化されることはないため、オブジェクトストレージに格納されているデータに直接アクセスすることはできません。
 
-ただし、Cloud Tieringを使用すると、セカンダリシステムとSnapMirrorデスティネーションボリューム（DPボリューム）にデータを階層化し、データセンターの設置面積とTCOを削減することで、対費用効果の高いバックアップとDRを実現できます。
+ただし、BlueXPの階層化を使用すると、セカンダリシステムとSnapMirrorデスティネーションボリューム（DPボリューム）でバックアップとDRを有効にしてすべてのデータを階層化し（メタデータを除く）、データセンターの設置面積とTCOを削減することができ、対費用効果の高いバックアップとDRを実現できます。
 
 
 
-=== Cloud Tieringは、ボリュームレベルまたはアグリゲートレベルで適用されていますか。
+=== BlueXPの階層化はボリュームレベルまたはアグリゲートレベルで適用されますか。
 
-クラウド階層化は、各ボリュームに階層化ポリシーを関連付けることでボリュームレベルで有効になります。コールドデータはブロックレベルで識別されます。
+BlueXPの階層化は、各ボリュームに階層化ポリシーを関連付けることでボリュームレベルで有効になります。コールドデータはブロックレベルで識別されます。
 
 
 
-=== クラウド階層化は、どのブロックをクラウドに階層化するかをどのようにして決定しますか？
+=== BlueXPの階層化サービスは、クラウドに階層化するブロックをどのように判断しますか？
 
 ボリュームに関連付けられている階層化ポリシーは、どのブロックをいつ階層化するかを制御するメカニズムです。ポリシーでは、データブロックのタイプ（スナップショット、ユーザデータ、またはその両方）とクーリング期間を定義します。を参照してください link:concept-cloud-tiering.html#volume-tiering-policies["ボリューム階層化ポリシー"] を参照してください。
 
 
 
-=== Cloud Tieringは、ボリュームの容量にどのような影響を及ぼしますか？
+=== BlueXPの階層化はボリューム容量にどのような影響を与えますか？
 
-Cloud Tieringは、ボリュームの容量には影響せず、アグリゲートのパフォーマンス階層の使用率に影響します。
+BlueXPによる階層化は、ボリュームの容量ではなく、アグリゲートのパフォーマンス階層の使用量に影響します。
 
 
 
-=== クラウドの階層化でInactive Data Reportingは有効になりますか。
+=== BlueXPの階層化機能はInactive Data Reportingに対応していますか？
 
-はい、Cloud Tieringを使用すると、各アグリゲートでInactive Data Reporting（IDR）を有効にできます。この設定により、アクセス頻度の低いデータのうち、低コストのオブジェクトストレージに階層化できるデータの量を特定できます。
+はい。BlueXPの階層化機能を使用すると、各アグリゲートでInactive Data Reporting（IDR）が有効になります。この設定により、アクセス頻度の低いデータのうち、低コストのオブジェクトストレージに階層化できるデータの量を特定できます。
 
 
 
@@ -106,11 +106,11 @@ IDRは、設定されたクーリング期間が経過したあとに情報の�
 
 == ライセンスとコスト
 
-Cloud Tieringを使用するためのライセンスとコストに関するFAQを次に示します。
+BlueXPの階層化を使用するためのライセンスとコストに関するFAQを次に示します。
 
 
 
-=== Cloud Tieringのコストはいくらですか？
+=== BlueXPの階層化機能を使用すると、いくらかかりますか？
 
 コールドデータをパブリッククラウドに階層化する場合：
 
@@ -126,7 +126,7 @@ https://bluexp.netapp.com/pricing["価格設定の詳細をご覧ください"]�
 
 === 同じONTAP クラスタにBYOLライセンスとPAYGOライセンスの両方を利用できますか。
 
-はい。Cloud Tieringを使用すると、BYOLライセンス、PAYGOサブスクリプション、またはその両方を組み合わせて使用できます。
+はい。BlueXPの階層化サービスでは、BYOLライセンス、PAYGOサブスクリプション、またはその両方を使用できます。
 
 
 
@@ -138,7 +138,7 @@ BYOLの容量が上限に達すると、新しいコールドデータの階層�
 
 
 
-=== Cloud Tieringライセンスには、クラウドプロバイダからの出力料金が含まれていますか。
+=== BlueXP階層化ライセンスには、クラウドプロバイダからの出力料金は含まれていますか？
 
 いいえ、できません。
 
@@ -150,7 +150,7 @@ BYOLの容量が上限に達すると、新しいコールドデータの階層�
 
 
 
-=== クラウドの料金を見積もる方法Cloud Tieringには、「What if」モードがありますか。
+=== クラウドの料金を見積もる方法BlueXP階層化に「what if」モードはありますか？
 
 クラウドプロバイダがデータをホストするためにどの程度の料金を請求するかを見積もる最良の方法は、計算ツールを使用することです。 https://calculator.aws/#/["AWS"]、 https://azure.microsoft.com/en-us/pricing/calculator/["Azure"] および https://cloud.google.com/products/calculator["Google Cloud"]。
 
@@ -162,9 +162,9 @@ BYOLの容量が上限に達すると、新しいコールドデータの階層�
 
 
 
-=== Cloud Tieringを有効にする前に、ボリュームの削減量を試算してコールドデータレポートを入手するにはどうすればよいですか？
+=== BlueXP階層化を有効にする前に、ボリュームの削減量を試算してコールドデータレポートを取得するにはどうすればよいですか？
 
-見積もりは、ONTAP クラスタをBlueXPに追加し、[Cloud Tiering Clusters]ページで確認するだけです。クラスタで[階層化の可能な削減量を計算する]*をクリックしてを起動します https://bluexp.netapp.com/cloud-tiering-service-tco["Cloud Tiering TCO計算ツール"^] どれだけのお金を節約できるかを確認します。
+見積もりは、BlueXPにONTAP クラスタを追加し、[BlueXP階層化クラスタ]ページで確認するだけです。クラスタで[階層化の可能な削減量を計算する]*をクリックしてを起動します https://bluexp.netapp.com/cloud-tiering-service-tco["BlueXP階層化TCO計算ツール"^] どれだけのお金を節約できるかを確認します。
 
 
 
@@ -174,15 +174,15 @@ ONTAP に関連する質問を次に示します。
 
 
 
-=== Cloud TieringがサポートしているONTAP のバージョンはどれですか？
+=== BlueXP階層化サービスでサポートされているONTAP のバージョンを教えてください。
 
-Cloud Tieringは、ONTAP バージョン9.2以降をサポートしています。
+BlueXPの階層化では、ONTAP バージョン9.2以降がサポートされます。
 
 
 
 === どのような種類の ONTAP システムがサポートされていますか。
 
-クラウド階層化は、シングルノードクラスタとハイアベイラビリティAFF 、FAS クラスタ、ONTAP Select クラスタでサポートされています。FabricPool ミラー構成とMetroCluster 構成のクラスタもサポートされます。
+BlueXPの階層化は、シングルノードクラスタと高可用性AFF 、FAS 、ONTAP Select クラスタでサポートされています。FabricPool ミラー構成とMetroCluster 構成のクラスタもサポートされます。
 
 
 
@@ -194,13 +194,13 @@ Cloud Tieringは、ONTAP バージョン9.2以降をサポートしています�
 
 === HDDを使用するFAS ノードがあるクラスタに参加しているAFF からデータを階層化できますか。
 
-はい。Cloud Tieringは、任意のアグリゲートでホストされたボリュームを階層化するように設定できます。データ階層化設定は、使用するコントローラの種類や、クラスタが異機種混在であるかどうかに関係なく使用されます。
+はい。BlueXPの階層化は、任意のアグリゲートでホストされているボリュームを階層化するように設定できます。データ階層化設定は、使用するコントローラの種類や、クラスタが異機種混在であるかどうかに関係なく使用されます。
 
 
 
 === Cloud Volumes ONTAP について教えてください。
 
-Cloud Volumes ONTAP システムを使用している場合は、[Cloud Tiering Clusters]ページに表示されるので、ハイブリッドクラウドインフラ内のデータ階層化の全体像を把握できます。ただし、Cloud Volumes ONTAP システムはCloud Tieringから読み取り専用です。Cloud Volumes ONTAP では、クラウド階層化からデータ階層化を設定することはできません。 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-tiering.html["BlueXPの作業環境からCloud Volumes ONTAP システムの階層化をセットアップします"^]。
+Cloud Volumes ONTAP システムを使用している場合は、BlueXPの階層化クラスタページに表示されるので、ハイブリッドクラウドインフラ内のデータ階層化の全体像を把握できます。ただし、Cloud Volumes ONTAP システムはBlueXP階層化から読み取り専用です。BlueXP階層化からCloud Volumes ONTAP でデータ階層化をセットアップすることはできません。 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-tiering.html["BlueXPの作業環境からCloud Volumes ONTAP システムの階層化をセットアップします"^]。
 
 
 
@@ -225,7 +225,7 @@ Cloud Volumes ONTAP システムを使用している場合は、[Cloud Tiering 
 
 === サポートされているオブジェクトストレージプロバイダを教えてください。
 
-Cloud Tieringは、次のオブジェクトストレージプロバイダをサポートしています。
+BlueXPの階層化サービスは、次のオブジェクトストレージプロバイダをサポートします。
 
 * Amazon S3
 * Microsoft Azure Blob
@@ -254,17 +254,17 @@ Cloud Tieringは、次のオブジェクトストレージプロバイダをサ�
 
 === サポートされている S3 ストレージクラスはどれですか？
 
-クラウド階層化では、 _Standard_,_Standard-Infrequent Access_,_one Zone - Infrequent Access_, _Intelligent Tiering _ 、および _Glacier Instant Retrieval_storage の各クラスへのデータ階層化がサポートされています。を参照してください link:reference-aws-support.html["サポートされている S3 ストレージクラス"] 詳細：
+BlueXPの階層化サービスでは、_Standard_、_Standard-InFrequent Access_、_One Zone -InFrequent Access_、_Intelligent Tiering_、および_Glacier Instant Retrieval_ストレージクラスへのデータ階層化がサポートされます。を参照してください link:reference-aws-support.html["サポートされている S3 ストレージクラス"] 詳細：
 
 
 
-=== Amazon S3 Glacier FlexibleおよびS3 Glacier Deep Archiveがクラウド階層化でサポートされていないのはなぜですか。
+=== Amazon S3 Glacier FlexibleとS3 Glacier Deep ArchiveがBlueXP階層化でサポートされないのはなぜですか？
 
-Amazon S3 Glacier FlexibleおよびS3 Glacier Deep Archiveがサポートされていない主な理由は、クラウド階層化がハイパフォーマンスな階層化解決策 として設計されているため、データを継続的に利用してすばやくアクセスし、読み出しできるようにする必要があるためです。S3 Glacier FlexibleおよびS3 Glacier Deep Archiveでは、データ読み出しが数分から48時間の間の任意の場所に格納されます。
+Amazon S3 Glacier FlexibleとS3 Glacier Deep Archiveがサポートされない主な理由は、BlueXPの階層化機能がハイパフォーマンスな階層化解決策 として設計されているため、データの継続的な可用性と読み出し用の高速アクセスが必要であることです。S3 Glacier FlexibleおよびS3 Glacier Deep Archiveでは、データ読み出しが数分から48時間の間の任意の場所に格納されます。
 
 
 
-=== Cloud Tieringでは、MinIOなど、S3互換の他のオブジェクトストレージサービスを使用できますか。
+=== BlueXP階層化で、MinIOなど、S3互換の他のオブジェクトストレージサービスを使用できますか。
 
 はい。ONTAP 9.8以降を使用しているクラスタでは、階層化UIからS3互換オブジェクトストレージを設定できます。 link:task-tiering-onprem-s3-compat.html["詳細はこちらをご覧ください"]。
 
@@ -272,23 +272,23 @@ Amazon S3 Glacier FlexibleおよびS3 Glacier Deep Archiveがサポートされ�
 
 === サポートされている Azure Blob アクセス階層はどれですか？
 
-Cloud Tiering は、アクセス頻度の低いデータに対するホットアクセス階層へのデータ階層化をサポートします。を参照してください link:reference-azure-support.html["サポートされる Azure Blob アクセス階層"] 詳細：
+BlueXPの階層化サービスでは、アクセス頻度の低いデータの_Hot_or_Cool_access階層へのデータ階層化がサポートされます。を参照してください link:reference-azure-support.html["サポートされる Azure Blob アクセス階層"] 詳細：
 
 
 
 === Google Cloud Storage ではどのストレージクラスがサポートされていますか。
 
-Cloud Tiering は、 _Standard_、 _Nearline _ 、 _Coldline_、 および _Archive_storage の各クラスへのデータ階層化をサポートしています。を参照してください link:reference-google-support.html["サポートされている Google Cloud ストレージクラス"] 詳細：
+BlueXPの階層化サービスでは、_Standard_、_Nearline__、_Coldline__、および_Archive_storageクラスへのデータ階層化がサポートされます。を参照してください link:reference-google-support.html["サポートされている Google Cloud ストレージクラス"] 詳細：
 
 
 
-=== Cloud Tieringは、ライフサイクル管理ポリシーの使用をサポートしていますか。
+=== BlueXPの階層化サービスでは、ライフサイクル管理ポリシーの使用はサポートされていますか？
 
-はい。ライフサイクル管理を有効にすると、 Cloud Tiering でデータをデフォルトのストレージクラス / アクセス階層から、一定期間後にコスト効率の高い階層に移行できます。ライフサイクルルールは、選択したバケット内の Amazon S3 および Google Cloud ストレージのすべてのオブジェクト、および選択したストレージアカウント内の Azure Blob に対応するすべてのコンテナに適用されます。
+はい。ライフサイクル管理を有効にすると、BlueXPの階層化で、一定の日数が経過した時点でデフォルトのストレージクラス/アクセス階層から対費用効果の高い階層にデータを移行できます。ライフサイクルルールは、選択したバケット内の Amazon S3 および Google Cloud ストレージのすべてのオブジェクト、および選択したストレージアカウント内の Azure Blob に対応するすべてのコンテナに適用されます。
 
 
 
-=== Cloud Tiering は、クラスタ全体に 1 つのオブジェクトストアを使用していますか、それともアグリゲートごとに 1 つ使用していますか
+=== BlueXPの階層化では、クラスタ全体で1つのオブジェクトストアを使用しますか？それともアグリゲートごとに1つですか？
 
 一般的な構成では、クラスタ全体に1つのオブジェクトストアがあります。2022年8月より、* Advanced Setup *ページを使用してクラスタのオブジェクトストアを追加し、別々のオブジェクトストアを別々のアグリゲートに接続するか、2つのオブジェクトストアをアグリゲートに接続してミラーリングできます。
 
@@ -346,7 +346,7 @@ ONTAP 9.6以降では、デスティネーションアグリゲートがソー�
 
 === コネクタは何ですか？
 
-Connectorは、クラウドアカウントまたはオンプレミスのいずれかのコンピューティングインスタンス上で実行されるソフトウェアで、BlueXPでクラウドリソースを安全に管理できます。Cloud Tieringサービスを使用するには、Connectorを導入する必要があります。
+Connectorは、クラウドアカウントまたはオンプレミスのいずれかのコンピューティングインスタンス上で実行されるソフトウェアで、BlueXPでクラウドリソースを安全に管理できます。BlueXP階層化サービスを使用するには、コネクタを導入する必要があります。
 
 
 
@@ -366,7 +366,7 @@ Connectorは、クラウドアカウントまたはオンプレミスのいず�
 
 
 
-=== Cloud Tieringを使用するには、クラウドサービスプロバイダを利用するアカウントが必要ですか？
+=== BlueXP階層化を使用するには、クラウドサービスプロバイダのアカウントが必要ですか？
 
 はい。使用するオブジェクトストレージを定義するには、アカウントが必要です。VPCまたはVNet上のクラウドでコネクタを設定する際には、クラウドストレージプロバイダのアカウントも必要です。
 
@@ -463,7 +463,7 @@ link:concept-cloud-tiering.html#volume-tiering-policies["階層化ポリシー�
 ONTAP は、オブジェクトストレージとの間でデータの読み取りと書き込みを行います。オブジェクトストレージが開始されることはなく、応答するだけです。
 
 * StorageGRID の場合、 ONTAP クラスタは、ユーザ指定のポートから StorageGRID への HTTPS 接続を開始します（このポートは階層化のセットアップ時に設定可能です）。
-* コネクタには、ポート 443 経由での ONTAP クラスタへのアウトバウンド HTTPS 接続、オブジェクトストア、およびクラウド階層化サービスが必要です。
+* コネクタには、ポート443経由でONTAP クラスタ、オブジェクトストア、およびBlueXP階層化サービスへのアウトバウンドHTTPS接続が必要です。
 
 
 詳細については、以下を参照してください。
@@ -479,7 +479,7 @@ ONTAP は、オブジェクトストレージとの間でデータの読み取�
 
 === クラウドに保存されたコールドデータを管理するために、監視とレポートに使用できるツールはどれですか？
 
-Cloud Tiering以外、 https://docs.netapp.com/us-en/active-iq-unified-manager/["Active IQ Unified Manager"^] および https://docs.netapp.com/us-en/active-iq/index.html["Active IQ デジタルアドバイザ"^] 監視とレポートに使用できます。
+BlueXPの階層化サービス以外、 https://docs.netapp.com/us-en/active-iq-unified-manager/["Active IQ Unified Manager"^] および https://docs.netapp.com/us-en/active-iq/index.html["Active IQ デジタルアドバイザ"^] 監視とレポートに使用できます。
 
 
 
@@ -497,7 +497,7 @@ Cloud Tiering以外、 https://docs.netapp.com/us-en/active-iq-unified-manager/[
 
 === ユーザが階層化データにアクセスしようとしたときにレイテンシは発生しますか。
 
-はい。レイテンシは接続によって異なるため、クラウド階層と同じレイテンシを提供することはできません。オブジェクトストアのレイテンシとスループットを見積もるために、Cloud Tieringは、クラウドのパフォーマンステストを提供します（ONTAP オブジェクトストアプロファイラに基づく）。このテストは、オブジェクトストアの接続後、階層化のセットアップ前に使用できます。
+はい。レイテンシは接続によって異なるため、クラウド階層と同じレイテンシを提供することはできません。オブジェクトストアのレイテンシとスループットを見積もるために、BlueXP階層化サービスではクラウドパフォーマンステスト（ONTAP オブジェクトストアプロファイラに基づく）を実行します。このテストは、オブジェクトストアの接続後、階層化のセットアップ前に使用できます。
 
 
 

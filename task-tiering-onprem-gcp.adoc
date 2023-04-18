@@ -30,7 +30,7 @@ summary: 非アクティブなデータを Google Cloud Storage に階層化す�
 * ONTAP 9.6 以降を実行し、 Google Cloud Storage に HTTPS 接続するオンプレミスの ONTAP クラスタ。 https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-discovering-ontap.html["クラスタの検出方法について説明します"^]。
 * 事前定義された Storage Admin ロールとストレージアクセスキーを持つサービスアカウント。
 * Google Cloud Platform VPC にインストールされるコネクタ。
-* データセンター内の ONTAP クラスタ、 Google Cloud Storage 、およびクラウド階層化サービスへのアウトバウンド HTTPS 接続を可能にするコネクタのネットワーク。
+* データセンター内のONTAP クラスタ、Google Cloud Storage、およびBlueXP階層化サービスへのアウトバウンドHTTPS接続を可能にするコネクタのネットワーク。
 
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["2 つ"] 階層化をセットアップする
@@ -39,11 +39,11 @@ BlueXPでは、オンプレミスの作業環境を選択し、階層化サー�
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["3つ"] ライセンスをセットアップする
 [role="quick-margin-para"]
-無償トライアルの終了後、従量課金制のサブスクリプション、 ONTAP Cloud Tiering のライセンス、またはその両方を組み合わせて使用したクラウド階層化の料金をお支払いください。
+無償トライアルの終了後は、従量課金制サブスクリプション、ONTAP BlueXP階層化ライセンス、またはその両方を組み合わせて、BlueXP階層化サービスの料金をお支払いください。
 
 [role="quick-margin-list"]
 * GCP Marketplace から登録するには、 https://console.cloud.google.com/marketplace/details/netapp-cloudmanager/cloud-manager?supportedpurview=project&rif_reserved["BlueXP Marketplace製品にアクセスします"^]をクリックし、 * Subscribe * をクリックして、画面の指示に従います。
-* Cloud Tiering BYOL ライセンスを使用して支払う場合は、 mailto:ng-cloud-tiering@netapp.com ？ subject=Licensing [ 購入が必要な場合はお問い合わせください ] のあとに link:task-licensing-cloud-tiering.html#add-cloud-tiering-byol-licenses-to-your-account["BlueXP Digital Walletからアカウントに追加します"]。
+* BlueXP階層化BYOLライセンスを使用して料金を支払う場合は、mailto：ng-cloud-tiering@netapp.com？subject=ライセンス[contact us if you need to purchase one]の順にクリックします link:task-licensing-cloud-tiering.html#add-bluexp-tiering-byol-licenses-to-your-account["BlueXP Digital Walletからアカウントに追加します"]。
 
 
 
@@ -54,7 +54,7 @@ ONTAP クラスタのサポートを確認し、ネットワークをセット�
 
 次の図は、各コンポーネントとその間の準備に必要な接続を示しています。
 
-image:diagram_cloud_tiering_google.png["「クラウドプロバイダのコネクタへの接続、 ONTAP クラスタへの接続を含むクラウド階層化サービス、クラウドプロバイダ内の ONTAP クラスタとオブジェクトストレージの接続を含むアーキテクチャの図。アクティブなデータは ONTAP クラスタに格納され、アクセス頻度の低いデータはオブジェクトストレージに格納されます。」"]
+image:diagram_cloud_tiering_google.png["BlueXP階層化サービスを示すアーキテクチャ図。クラウドプロバイダのコネクタへの接続、ONTAP クラスタへの接続、およびONTAP クラスタとクラウドプロバイダのオブジェクトストレージ間の接続を確立します。アクティブなデータは ONTAP クラスタに格納され、アクセス頻度の低いデータはオブジェクトストレージに格納されます。」"]
 
 
 NOTE: Connector と Google Cloud Storage の間の通信は、オブジェクトストレージのセットアップにのみ使用されます。
@@ -87,20 +87,20 @@ Google Cloud Interconnect はパフォーマンスの向上とデータ転送コ
 
 * Google Cloud Platform VPC 内のコネクタからのインバウンド接続が必要です。
 +
-クラスタと Cloud Tiering Service の間の接続は必要ありません。
+クラスタとBlueXP階層化サービスの間の接続は必要ありません。
 
 * 階層化するボリュームをホストする各 ONTAP ノードにクラスタ間 LIF が 1 つ必要です。LIF は、 ONTAP がオブジェクトストレージへの接続に使用する IPspace に関連付けられている必要があります。
 +
-データの階層化を設定すると、使用する IPspace を入力するように求められます。各 LIF を関連付ける IPspace を選択する必要があります。これは、「デフォルト」の IPspace または作成したカスタム IPspace です。の詳細を確認してください https://docs.netapp.com/us-en/ontap/networking/create_a_lif.html["LIF"^] および https://docs.netapp.com/us-en/ontap/networking/standard_properties_of_ipspaces.html["IPspace"^]。
+データ階層化のセットアップ時に、使用するIPspaceの入力を求められます。各 LIF を関連付ける IPspace を選択する必要があります。これは、「デフォルト」の IPspace または作成したカスタム IPspace です。の詳細を確認してください https://docs.netapp.com/us-en/ontap/networking/create_a_lif.html["LIF"^] および https://docs.netapp.com/us-en/ontap/networking/standard_properties_of_ipspaces.html["IPspace"^]。
 
 
 
 --
-サポートされるボリュームとアグリゲート:: クラウド階層化が可能なボリュームの総数は、 ONTAP システムのボリュームの数よりも少なくなる可能性があります。これは、一部のアグリゲートからボリュームを階層化できないためです。については、ONTAP のドキュメントを参照してください https://docs.netapp.com/us-en/ontap/fabricpool/requirements-concept.html#functionality-or-features-not-supported-by-fabricpool["FabricPool でサポートされていない機能"^]。
+サポートされるボリュームとアグリゲート:: BlueXPの階層化で階層化できるボリュームの総数は、ONTAP システムのボリュームの数よりも少なくなることがあります。これは、一部のアグリゲートからボリュームを階層化できないためです。については、ONTAP のドキュメントを参照してください https://docs.netapp.com/us-en/ontap/fabricpool/requirements-concept.html#functionality-or-features-not-supported-by-fabricpool["FabricPool でサポートされていない機能"^]。
 
 
 
-NOTE: Cloud Tiering は、 FlexGroup ボリュームをサポートしています。セットアップは他のボリュームと同じように機能します。
+NOTE: BlueXPの階層化はFlexGroup ボリュームに対応しています。セットアップは他のボリュームと同じように機能します。
 
 
 
@@ -129,7 +129,7 @@ https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-discovering-ontap.
 .手順
 . コネクタがインストールされている VPC で次の接続が有効になっていることを確認します。
 +
-** ポート443を介してCloud TieringサービスとGoogle Cloud StorageへのHTTPS接続 (https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-set-up-networking-google.html#endpoints-contacted-for-day-to-day-operations["エンドポイントのリストを参照してください"^])
+** ポート443経由でBlueXP階層化サービスとGoogle Cloud StorageへのHTTPS接続 (https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-set-up-networking-google.html#endpoints-contacted-for-day-to-day-operations["エンドポイントのリストを参照してください"^])
 ** ONTAP クラスタ管理 LIF へのポート 443 経由の HTTPS 接続
 
 
@@ -143,12 +143,12 @@ https://cloud.google.com/vpc/docs/configure-private-google-access["プライベ�
 
 === Google Cloud Storage を準備しています
 
-階層化を設定する場合は、 Storage Admin の権限があるサービスアカウントにストレージアクセスキーを指定する必要があります。サービスアカウントを使用すると、 Cloud Tiering で、データの階層化に使用する Cloud Storage バケットを認証し、アクセスできます。キーは、 Google Cloud Storage がリクエストを発行しているユーザーを認識できるようにするために必要です。
+階層化を設定する場合は、 Storage Admin の権限があるサービスアカウントにストレージアクセスキーを指定する必要があります。サービスアカウントを使用すると、BlueXP階層化でデータ階層化に使用されるCloud Storageバケットを認証してアクセスできます。キーは、 Google Cloud Storage がリクエストを発行しているユーザーを認識できるようにするために必要です。
 
-クラウドストレージバケットがに含まれている必要があります link:reference-google-support.html#supported-google-cloud-regions["Cloud Tiering をサポートするリージョン"]。
+クラウドストレージバケットがに含まれている必要があります link:reference-google-support.html#supported-google-cloud-regions["BlueXPの階層化をサポートするリージョン"]。
 
 
-NOTE: 階層化データが一定の日数後に移行する低コストのストレージクラスを使用するように Cloud Tiering を設定する場合は、 GCP アカウントでバケットをセットアップするときにライフサイクルルールを選択しないでください。Cloud Tiering は、ライフサイクルの移行を管理します。
+NOTE: 一定の日数が経過したあとに階層化データがに移行される低コストのストレージクラスを使用するようにBlueXPの階層化を設定する場合は、GCPアカウントでバケットをセットアップするときにライフサイクルルールを選択しないでください。BlueXPの階層化サービスは、ライフサイクルの移行を管理します。
 
 .手順
 . https://cloud.google.com/iam/docs/creating-managing-service-accounts#creating_a_service_account["事前定義されたストレージ管理者を含むサービスアカウントを作成します ロール"^]。
@@ -157,7 +157,7 @@ NOTE: 階層化データが一定の日数後に移行する低コストのス�
 .. プロジェクトを選択し、 * 互換性 * をクリックします。まだ有効にしていない場合は、 * 相互運用アクセスを有効にする * をクリックします。
 .. [ サービスアカウントのアクセスキー *] で、 [ サービスアカウントのキーの作成 *] をクリックし、作成したサービスアカウントを選択して、 [ キーの作成 *] をクリックします。
 +
-Cloud Tiering をセットアップしたあとで、キーを入力する必要があります。
+このキーは、あとでBlueXP階層化をセットアップするときに入力する必要があります。
 
 
 
@@ -188,7 +188,7 @@ image:screenshot_setup_tiering_onprem.png["オンプレミス ONTAP 作業環境
 . Create Object Storage *ページで次の手順を実行します。
 +
 .. * Bucket * ：新しい Google Cloud Storage バケットを追加するか、既存のバケットを選択します。
-.. * ストレージクラスのライフサイクル * ： Cloud Tiering は、階層化されたデータのライフサイクルの移行を管理します。データは _Standard_class から始まりますが、データを特定の日数後に他のクラスに移動するルールを作成することができます。
+.. *ストレージクラスのライフサイクル*：BlueXP階層化サービスは、階層化されたデータのライフサイクルの移行を管理します。データは _Standard_class から始まりますが、データを特定の日数後に他のクラスに移動するルールを作成することができます。
 +
 階層化データを移行する Google Cloud ストレージクラスと、データを移動するまでの日数を選択し、 * Continue （続行） * をクリックします。たとえば、次のスクリーンショットは、階層化されたデータが、オブジェクトストレージで 30 日後に _Standard_class から _Nearline _class に移動され、オブジェクトストレージで 60 日後に _Coldline_class に移動されたことを示しています。
 
@@ -204,7 +204,7 @@ image:screenshot_tiering_lifecycle_selection_gcp.png["特定の日数が経過�
 .. * クレデンシャル * ：ストレージ管理者ロールが割り当てられたサービスアカウントのストレージアクセスキーとシークレットキーを入力します。
 .. * クラスタネットワーク * ： ONTAP がオブジェクトストレージへの接続に使用する IPspace を選択します。
 +
-正しい IPspace を選択すると、 Cloud Tiering を使用して、 ONTAP からクラウドプロバイダのオブジェクトストレージへの接続をセットアップできます。
+正しいIPspaceを選択すると、BlueXPの階層化でONTAP からクラウドプロバイダのオブジェクトストレージへの接続をセットアップできます。
 
 
 
@@ -232,7 +232,7 @@ image:screenshot_tiering_policy_settings.png["設定可能な階層化ポリシ�
 クラスタのボリュームから Google Cloud オブジェクトストレージへのデータ階層化の設定が完了しました。
 
 .次の手順
-link:task-licensing-cloud-tiering.html["Cloud Tiering サービスに登録してください"]。
+link:task-licensing-cloud-tiering.html["BlueXP階層化サービスに必ず登録してください"]。
 
 クラスタ上のアクティブなデータとアクセス頻度の低いデータに関する情報を確認できます。 link:task-managing-tiering.html["階層化設定の管理について詳しくは、こちらをご覧ください"]。
 

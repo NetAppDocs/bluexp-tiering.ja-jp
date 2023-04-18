@@ -50,7 +50,7 @@ ConnectorでS3バケットの作成と管理を行うための権限を設定し
 [role="quick-margin-para"]
 <<S3 権限をセットアップする,Connectorおよびオンプレミスクラスタの権限を設定する方法については、を参照してください。>>
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-5.png["5 つ"] システムでCloud Tieringを有効にします
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-5.png["5 つ"] システムでBlueXP階層化を有効にします
 [role="quick-margin-para"]
 オンプレミスの作業環境を選択し、階層化サービスの「*有効化」をクリックして、プロンプトに従ってAmazon S3にデータを階層化します。
 
@@ -59,11 +59,11 @@ ConnectorでS3バケットの作成と管理を行うための権限を設定し
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-6.png["6"] ライセンスをセットアップする
 [role="quick-margin-para"]
-無償トライアルの終了後、従量課金制のサブスクリプション、 ONTAP Cloud Tiering のライセンス、またはその両方を組み合わせて使用したクラウド階層化の料金をお支払いください。
+無償トライアルの終了後は、従量課金制サブスクリプション、ONTAP BlueXP階層化ライセンス、またはその両方を組み合わせて、BlueXP階層化サービスの料金をお支払いください。
 
 [role="quick-margin-list"]
 * AWS Marketplace でサブスクライブするには、 https://aws.amazon.com/marketplace/pp/prodview-oorxakq6lq7m4?sr=0-8&ref_=beagle&applicationId=AWSMPContessa["BlueXP Marketplace製品にアクセスします"^]をクリックし、 * Subscribe * をクリックして、画面の指示に従います。
-* Cloud Tiering BYOL ライセンスを使用して支払う場合は、 mailto:ng-cloud-tiering@netapp.com ？ subject=Licensing [ 購入が必要な場合はお問い合わせください ] のあとに link:task-licensing-cloud-tiering.html#add-cloud-tiering-byol-licenses-to-your-account["BlueXP Digital Walletからアカウントに追加します"]。
+* BlueXP階層化BYOLライセンスを使用して料金を支払う場合は、mailto：ng-cloud-tiering@netapp.com？subject=ライセンス[contact us if you need to purchase one]の順にクリックします link:task-licensing-cloud-tiering.html#add-bluexp-tiering-byol-licenses-to-your-account["BlueXP Digital Walletからアカウントに追加します"]。
 
 
 
@@ -78,11 +78,11 @@ ConnectorでS3バケットの作成と管理を行うための権限を設定し
 
 次の図は、*パブリック接続*メソッドと、コンポーネント間の準備に必要な接続を示しています。オンプレミスにインストールしたコネクタや、AWS VPCに導入したコネクタを使用できます。
 
-image:diagram_cloud_tiering_aws_public.png["Cloud Tieringが、パブリック接続を介して、アクセス頻度の低いデータが配置されているクラスタ上のボリュームおよびAWS S3ストレージと通信する仕組みを示す図。"]
+image:diagram_cloud_tiering_aws_public.png["BlueXP階層化サービスが、クラスタ上のボリュームおよびアクセス頻度の低いデータが配置されているAWS S3ストレージとパブリック接続を介して通信する仕組みを示す図。"]
 
 次の図は、*プライベート接続*メソッドと、コンポーネント間の準備に必要な接続を示しています。オンプレミスにインストールしたコネクタや、AWS VPCに導入したコネクタを使用できます。
 
-image:diagram_cloud_tiering_aws_private.png["Cloud Tieringが、プライベート接続を介して、クラスタ上のボリューム、およびアクセス頻度の低いデータが配置されているAWS S3ストレージと通信する仕組みを示す図。"]
+image:diagram_cloud_tiering_aws_private.png["BlueXP階層化サービスが、クラスタ上のボリュームおよびアクセス頻度の低いデータが配置されているAWS S3ストレージとプライベート接続を介して通信する仕組みを示す図。"]
 
 
 NOTE: コネクタと S3 の間の通信は、オブジェクトストレージのセットアップにのみ使用されます。
@@ -110,7 +110,7 @@ AWS VPCまたはオンプレミスにすでにコネクタが導入されてい�
 
 * コネクタが取り付けられているネットワークで次の接続が有効になっていることを確認します。
 +
-** ポート443を介してCloud TieringサービスとS3オブジェクトストレージに接続します (https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-set-up-networking-aws.html#endpoints-contacted-for-day-to-day-operations["エンドポイントのリストを参照してください"^])
+** ポート443を介してBlueXP階層化サービスとS3オブジェクトストレージへのHTTPS接続 (https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-set-up-networking-aws.html#endpoints-contacted-for-day-to-day-operations["エンドポイントのリストを参照してください"^])
 ** ONTAP クラスタ管理 LIF へのポート 443 経由の HTTPS 接続
 
 
@@ -144,11 +144,11 @@ AWS VPCまたはオンプレミスにすでにコネクタが導入されてい�
 
 
 --
-サポートされるボリュームとアグリゲート:: クラウド階層化が可能なボリュームの総数は、 ONTAP システムのボリュームの数よりも少なくなる可能性があります。これは、一部のアグリゲートからボリュームを階層化できないためです。については、ONTAP のドキュメントを参照してください https://docs.netapp.com/us-en/ontap/fabricpool/requirements-concept.html#functionality-or-features-not-supported-by-fabricpool["FabricPool でサポートされていない機能"^]。
+サポートされるボリュームとアグリゲート:: BlueXPの階層化で階層化できるボリュームの総数は、ONTAP システムのボリュームの数よりも少なくなることがあります。これは、一部のアグリゲートからボリュームを階層化できないためです。については、ONTAP のドキュメントを参照してください https://docs.netapp.com/us-en/ontap/fabricpool/requirements-concept.html#functionality-or-features-not-supported-by-fabricpool["FabricPool でサポートされていない機能"^]。
 
 
 
-NOTE: Cloud Tiering は、 ONTAP 9.5 以降で FlexGroup ボリュームをサポートしています。セットアップは他のボリュームと同じように機能します。
+NOTE: BlueXPの階層化では、ONTAP 9.5以降でFlexGroup ボリュームがサポートされます。セットアップは他のボリュームと同じように機能します。
 
 必須のアプリケーションアクセスパラメータ:: クラスタ管理者ユーザは、「console」アプリケーションアクセス権を持っている必要があります。これは、ONTAP コマンドのsecurity login showを使用して確認できます。「admin」ユーザの_Application_Columnに「console」が表示されます。必要に応じて'security login createコマンドを使用してコンソール・アプリケーション・アクセスを追加します https://docs.netapp.com/us-en/ontap-cli-9111/security-login-create.html["詳細については、「security login」コマンドを参照してください"]。
 
@@ -159,7 +159,7 @@ NOTE: Cloud Tiering は、 ONTAP 9.5 以降で FlexGroup ボリュームをサ�
 
 * クラスタには、コネクタからクラスタ管理 LIF へのインバウンド HTTPS 接続が必要です。
 +
-クラスタと Cloud Tiering Service の間の接続は必要ありません。
+クラスタとBlueXP階層化サービスの間の接続は必要ありません。
 
 * 階層化するボリュームをホストする各 ONTAP ノードにクラスタ間 LIF が 1 つ必要です。これらのクラスタ間 LIF がオブジェクトストアにアクセスできる必要があります。
 +
@@ -167,7 +167,7 @@ NOTE: Cloud Tiering は、 ONTAP 9.5 以降で FlexGroup ボリュームをサ�
 
 * クラスタ間 LIF は、 ONTAP がオブジェクトストレージへの接続に使用する IPspace に関連付けられている必要があります。 https://docs.netapp.com/us-en/ontap/networking/standard_properties_of_ipspaces.html["IPspace の詳細については、こちらをご覧ください"^]。
 +
-Cloud Tieringをセットアップすると、IPspaceで使用するように求められます。これらの LIF が関連付けられている IPspace を選択します。これは、「デフォルト」の IPspace または作成したカスタム IPspace です。
+BlueXPの階層化を設定すると、使用するIPspaceを指定するように求められます。これらの LIF が関連付けられている IPspace を選択します。これは、「デフォルト」の IPspace または作成したカスタム IPspace です。
 
 +
 「 default 」以外の IPspace を使用する場合は、オブジェクトストレージへのアクセスを取得するために静的ルートの作成が必要になることがあります。
@@ -191,12 +191,12 @@ https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-discovering-ontap.
 
 == AWS 環境を準備
 
-新しいクラスタにデータ階層化を設定するときは、 S3 バケットを作成するか、コネクタが設定されている AWS アカウントで既存の S3 バケットを選択するように求められます。AWS アカウントには、 Cloud Tiering で入力できる権限とアクセスキーが必要です。ONTAP クラスタは、アクセスキーを使用して S3 との間でデータを階層化します。
+新しいクラスタにデータ階層化を設定するときは、 S3 バケットを作成するか、コネクタが設定されている AWS アカウントで既存の S3 バケットを選択するように求められます。AWSアカウントには、BlueXP階層化で入力できる権限とアクセスキーが必要です。ONTAP クラスタは、アクセスキーを使用して S3 との間でデータを階層化します。
 
-S3 バケットはに配置する必要があります link:reference-aws-support.html#supported-aws-regions["Cloud Tiering をサポートするリージョン"]。
+S3 バケットはに配置する必要があります link:reference-aws-support.html#supported-aws-regions["BlueXPの階層化をサポートするリージョン"]。
 
 
-NOTE: 階層化データが一定の日数後にに移行する低コストのストレージクラスを使用するように Cloud Tiering を設定する場合、 AWS アカウントでバケットのセットアップ時にライフサイクルルールを選択しないでください。Cloud Tiering は、ライフサイクルの移行を管理します。
+NOTE: 一定の日数が経過すると階層化されたデータがに移行される低コストのストレージクラスを使用するようにBlueXPの階層化を設定する場合は、AWSアカウントでバケットをセットアップするときにライフサイクルルールを選択しないでください。BlueXPの階層化サービスは、ライフサイクルの移行を管理します。
 
 
 
@@ -226,7 +226,7 @@ NOTE: 階層化データが一定の日数後にに移行する低コストの�
 
 . アクセスキーを作成または検索します。
 +
-クラウド階層化は、 ONTAP クラスタにアクセスキーを渡します。クレデンシャルはクラウド階層化サービスに保存されません。
+BlueXP階層化サービスは、アクセスキーをONTAP クラスタに渡します。クレデンシャルはBlueXP階層化サービスに格納されません。
 
 +
 https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_access-keys.html["AWS ドキュメント：「 Managing Access Keys for IAM Users"^]
@@ -247,7 +247,7 @@ https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_access-keys.html
 image:screenshot_tiering_aws_sec_group.png["コネクタに関連付けられている AWS セキュリティグループのスクリーンショット。"]
 
 +
-プライベートエンドポイントとの通信にポート80（HTTP）を使用している場合は、すべて設定されています。クラスタでCloud Tieringを有効にできます。
+プライベートエンドポイントとの通信にポート80（HTTP）を使用している場合は、すべて設定されています。クラスタでBlueXP階層化を有効にすることができます。
 
 +
 ポート443（HTTPS）を使用してプライベートエンドポイントと通信する場合は、VPC S3エンドポイントから証明書をコピーし、次の4つの手順でONTAP クラスタに追加する必要があります。
@@ -319,7 +319,7 @@ image:screenshot_tiering_aws_s3_bucket.png["S3バケットへの階層化を設�
 +
 コネクタの IAM ポリシーではインスタンスが指定したプレフィックスのバケットに対して S3 処理を実行できるため、 _fabric-pool_prefix が必要です。たとえば、 S3 バケット _fabric-pool-AFF1_、 AFF1 はクラスタの名前です。
 
-.. *ストレージクラス*：Cloud Tieringは、階層化されたデータのライフサイクル移行を管理します。データは _Standard_class から始まりますが、データを特定の日数後に別のクラスに移動するルールを作成できます。
+.. *ストレージクラス*：BlueXPの階層化機能は、階層化されたデータのライフサイクルの移行を管理します。データは _Standard_class から始まりますが、データを特定の日数後に別のクラスに移動するルールを作成できます。
 +
 階層化データの移行先となる S3 ストレージクラスと、データを移動するまでの日数を選択し、 * Continue * をクリックします。たとえば、次のスクリーンショットは、オブジェクトストレージで 45 日後に階層化データが _Standard_class から _Standard-IA_class に移動されたことを示しています。
 
@@ -371,7 +371,7 @@ image:screenshot_tiering_policy_settings.png["設定可能な階層化ポリシ�
 これで、クラスタのボリュームから S3 オブジェクトストレージへのデータ階層化が設定されました。
 
 .次の手順
-link:task-licensing-cloud-tiering.html["Cloud Tiering サービスに登録してください"]。
+link:task-licensing-cloud-tiering.html["BlueXP階層化サービスに必ず登録してください"]。
 
 クラスタ上のアクティブなデータとアクセス頻度の低いデータに関する情報を確認できます。 link:task-managing-tiering.html["階層化設定の管理について詳しくは、こちらをご覧ください"]。
 

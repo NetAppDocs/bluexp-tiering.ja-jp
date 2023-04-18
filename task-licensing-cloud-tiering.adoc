@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: task-licensing-cloud-tiering.html 
 keywords: subscribe, trial, marketplace, subscription, paygo, pay as you go, byol, bring your own license, annual, tiering, cloud tiering 
-summary: 最初のクラスタから階層化をセットアップすると、 Cloud Tiering の 30 日間の無償トライアルが開始されます。無償トライアルの終了後は、クラウドプロバイダのマーケットプレイスから従量課金制または年間サブスクリプション、ネットアップのBYOLライセンス、またはその両方を組み合わせてCloud Tieringを購入する必要があります。 
+summary: BlueXP階層化サービスの30日間無償トライアルは、最初のクラスタから階層化をセットアップするときに始まります。無償トライアルの終了後は、BlueXP階層化サービスの料金を、クラウドプロバイダのマーケットプレイスから従量課金制または年単位のサブスクリプション、ネットアップのBYOLライセンス、またはその両方で支払う必要があります。 
 ---
-= Cloud Tiering のライセンスをセットアップ
+= BlueXP階層化のライセンスをセットアップ
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,28 +14,28 @@ summary: 最初のクラスタから階層化をセットアップすると、 C
 
 
 [role="lead"]
-最初のクラスタから階層化をセットアップすると、 Cloud Tiering の 30 日間の無償トライアルが開始されます。無償トライアルの終了後は、クラウドプロバイダのマーケットプレイスから従量課金制または年間サブスクリプション、ネットアップのBYOLライセンス、またはその両方を組み合わせてCloud Tieringを購入する必要があります。
+BlueXP階層化サービスの30日間無償トライアルは、最初のクラスタから階層化をセットアップするときに始まります。無償トライアルの終了後は、BlueXP階層化サービスの料金を、クラウドプロバイダのマーケットプレイスから従量課金制または年単位のサブスクリプション、ネットアップのBYOLライセンス、またはその両方で支払う必要があります。
 
 さらに読む前に、いくつかのメモを記入してください。
 
-* クラウドプロバイダのマーケットプレイスですでにBlueXPサブスクリプション（PAYGO）にサブスクライブしている場合は、オンプレミスのONTAP システム向けのCloud Tieringにも自動的にサブスクライブされます。Cloud Tiering *のオンプレミスダッシュボード*タブにアクティブなサブスクリプションが表示されます。再度サブスクライブする必要はありません。Digital Wallet にアクティブなサブスクリプションが表示されます。
-* BYOL Cloud Tieringライセンスは、BlueXPアカウントの複数のオンプレミスONTAP クラスタで使用できる_floated_licenseです。これは、クラスタごとに_ FabricPool _ licenseを購入した以前とは異なり、はるかに簡単です。
+* クラウドプロバイダのマーケットプレイスでBlueXPサブスクリプション（PAYGO）にすでにサブスクライブしている場合は、オンプレミスのONTAP システムでもBlueXP階層化に自動的にサブスクライブされます。BlueXP階層化*のオンプレミスダッシュボード*タブにアクティブなサブスクリプションが表示されます。再度サブスクライブする必要はありません。Digital Wallet にアクティブなサブスクリプションが表示されます。
+* BYOL BlueXP階層化ライセンス（旧称「Cloud Tiering」ライセンス）は_floating_licenseで、BlueXPアカウント内の複数のオンプレミスONTAP クラスタにわたって使用できます。これは、クラスタごとに_ FabricPool _ licenseを購入した以前とは異なり、はるかに簡単です。
 * データを StorageGRID に階層化する場合は料金が発生しないため、 BYOL ライセンスや PAYGO の登録は必要ありません。この階層化データは、ライセンスで購入された容量には含まれません。
 
 
-link:concept-cloud-tiering.html#pricing-and-licenses["Cloud Tiering のライセンスの仕組みをご確認ください"]。
+link:concept-cloud-tiering.html#pricing-and-licenses["BlueXPの階層化でライセンスがどのように機能するかについては、こちらをご覧ください"]。
 
 
 
-== クラウド階層化と PAYGO のサブスクリプションを使用
+== BlueXP階層化サービス（PAYGO）サブスクリプションを利用
 
-クラウドプロバイダのマーケットプレイスから従量課金制のサブスクリプションを購入すると、 Cloud Volumes ONTAP システムと Cloud Tiering などの多数のクラウドデータサービスのライセンスを取得できます。
+クラウドプロバイダのマーケットプレイスから購入した従量課金制サブスクリプションを使用すると、Cloud Volumes ONTAP システムや多くのクラウドデータサービス（BlueXP階層化など）のライセンスを取得できます。
 
 
 
 === AWS Marketplace からのサブスクライブ
 
-AWS Marketplace で Cloud Tiering を登録して、 ONTAP クラスタから AWS S3 へのデータ階層化の従量課金制サブスクリプションを設定できます。
+AWS MarketplaceからBlueXP階層化サービスにサブスクライブすると、ONTAP クラスタからAWS S3へのデータ階層化に従量課金制サブスクリプションを設定できます。
 
 [[subscribe-aws]]
 .手順
@@ -53,7 +53,7 @@ video::video_subscribing_aws_tiering.mp4[width=848,height=480]
 
 === Azure Marketplace からのサブスクライブ
 
-Azure Marketplace から Cloud Tiering をサブスクライブして、 ONTAP クラスタから Azure Blob ストレージへのデータ階層化の従量課金制サブスクリプションを設定できます。
+Azure MarketplaceからBlueXP階層化サービスにサブスクライブすると、ONTAP クラスタからAzure BLOBストレージへのデータ階層化に従量課金制サブスクリプションを設定できます。
 
 [[subscribe-azure]]
 .手順
@@ -71,7 +71,7 @@ video::video_subscribing_azure_tiering.mp4[width=848,height=480]
 
 === GCP Marketplace から配信登録する
 
-GCP Marketplace から Cloud Tiering に登録すると、 ONTAP クラスタから Google Cloud ストレージへのデータ階層化の従量課金制サブスクリプションを設定できます。
+GCP MarketplaceからBlueXP階層化サービスにサブスクライブすると、ONTAP クラスタからGoogle Cloudストレージへのデータ階層化の従量課金制サブスクリプションを設定できます。
 
 [[subscribe-gcp]]
 .手順
@@ -89,7 +89,7 @@ video::video_subscribing_gcp_tiering.mp4[width=848,height=480]
 
 == 年間契約を使用する
 
-年間契約を購入することで、Cloud Tieringを年間料金で利用できます。
+BlueXP階層化サービスの料金は、年単位の契約を購入して年単位で支払います。
 
 アクセス頻度の低いデータをAWSに階層化するときは、で提供される年間契約に登録できます https://aws.amazon.com/marketplace/pp/B086PDWSS8["AWS Marketplace のページ"^]。1年、2年、3年の期間が用意されています。
 
@@ -99,34 +99,34 @@ AzureやGCPへの階層化では、現在年間契約はサポートされてい
 
 
 
-== Cloud Tiering BYOL ライセンスを使用します
+== BlueXP階層化BYOLライセンスを使用
 
-ネットアップが提供するお客様所有のライセンスには、 1 年、 2 年、 3 年の期間があります。BYOL * Cloud Tiering *ライセンスは、BlueXPアカウントの複数のオンプレミスONTAP クラスタで使用できる_floated_licenseです。クラウド階層化ライセンスで定義された階層化の総容量は、オンプレミスのクラウドクラスタの * すべてで共有されるため、初期ライセンス取得と契約更新が容易になります。
+ネットアップが提供するお客様所有のライセンスには、 1 年、 2 年、 3 年の期間があります。BYOL * BlueXP階層化*ライセンス（旧称「クラウド階層化」ライセンス）は_floating_licenseで、BlueXPアカウントの複数のオンプレミスONTAP クラスタにわたって使用できます。BlueXP階層化ライセンスで定義されている階層化の合計容量は*すべての*オンプレミスクラスタで共有されるため、初期ライセンスの取得や更新が容易になります。
 
-Cloud Tiering のライセンスがない場合は、次の製品を購入してください：
+BlueXP階層化ライセンスをお持ちでない場合は、ネットアップまでお問い合わせください。
 
 * mailto ： ng-cloud-tiering@netapp.com ？ subject = ライセンス [ ライセンスを購入するために電子メールを送信 ] 。
 * ライセンスをリクエストするには、BlueXPの右下にあるチャットアイコンをクリックします。
 
 
-必要に応じて、使用しない Cloud Volumes ONTAP の未割り当てのノードベースライセンスがある場合は、同じ金額と同じ有効期限で Cloud Tiering ライセンスに変換できます。 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-manage-node-licenses.html#exchange-unassigned-node-based-licenses["詳細については、こちらをご覧ください"^]。
+必要に応じて、使用しないCloud Volumes ONTAP の未割り当てのノードベースライセンスがある場合は、同じ金額、同じ有効期限のBlueXP階層化ライセンスに変換できます。 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-manage-node-licenses.html#exchange-unassigned-node-based-licenses["詳細については、こちらをご覧ください"^]。
 
-Cloud Tiering BYOLライセンスの管理には、BlueXPのDigital Walletページを使用します。新しいライセンスを追加したり、既存のライセンスを更新したりできます。
+BlueXPのDigital Walletページを使用して、BlueXP階層化BYOLライセンスを管理します。新しいライセンスを追加したり、既存のライセンスを更新したりできます。
 
 
 
-=== 2021 年 8 月 21 日以降、 Cloud Tiering BYOL の新しいライセンス
+=== 2021年よりBlueXP階層化サービスのBYOLライセンスを提供開始
 
-新しい* Cloud Tiering *ライセンスは、クラウド階層化サービスを使用したBlueXPでサポートされる階層化構成のために2021年8月に導入されました。BlueXPは現在、Amazon S3、Azure Blobストレージ、Google Cloud Storage、NetApp StorageGRID 、S3互換オブジェクトストレージへの階層化をサポートしています。
+新しい* BlueXP階層化*ライセンスは、BlueXP階層化サービスを使用してBlueXPでサポートされる階層化構成用に2021年8月に導入されました。BlueXPは現在、Amazon S3、Azure Blobストレージ、Google Cloud Storage、NetApp StorageGRID 、S3互換オブジェクトストレージへの階層化をサポートしています。
 
 従来、オンプレミスONTAP データをクラウドに階層化するために使用していた* FabricPool *ライセンスは、インターネットにアクセスできないサイト（「ダークサイト」とも呼ばれます）でのONTAP 導入、およびIBM Cloud Object Storageへの階層化構成にのみ保持されています。このような構成を使用している場合は、System ManagerまたはONTAP CLIを使用して、各クラスタにFabricPool ライセンスをインストールします。
 
 
-TIP: StorageGRID への階層化には、 FabricPool とクラウドの階層化ライセンスは必要ありません。
+TIP: StorageGRID への階層化には、FabricPool またはBlueXPの階層化ライセンスは必要ありません。
 
 現在 FabricPool ライセンスを使用している場合は、 FabricPool ライセンスの有効期限または最大容量に達するまで、影響はありません。ライセンスの更新が必要な場合や、クラウドへのデータの階層化が中断されないようにするために以前のリリースについては、ネットアップにお問い合わせください。
 
-* BlueXPでサポートされている構成を使用している場合、FabricPool ライセンスはCloud Tieringライセンスに変換され、Digital Walletに表示されます。最初のライセンスの有効期限が切れたら、 Cloud Tiering ライセンスを更新する必要があります。
+* BlueXPでサポートされている構成を使用している場合は、FabricPool ライセンスがBlueXP階層化ライセンスに変換され、Digital Walletに表示されます。最初のライセンスの有効期限が切れたら、BlueXP階層化ライセンスを更新する必要があります。
 * BlueXPでサポートされていない構成を使用している場合は、引き続きFabricPool ライセンスを使用します。 https://docs.netapp.com/us-en/ontap/cloud-install-fabricpool-task.html["System Manager を使用した階層化のライセンス設定方法を参照してください"^]。
 
 
@@ -134,29 +134,29 @@ TIP: StorageGRID への階層化には、 FabricPool とクラウドの階層化
 
 [cols="50,50"]
 |===
-| Cloud Tiering ライセンス | FabricPool ライセンス 
+| BlueXP階層化ライセンス | FabricPool ライセンス 
 
 
 | 複数のオンプレミス ONTAP クラスタで使用できるフローティングライセンスです。 | クラスタ単位のライセンスであり、 _Every_cluster 用に購入してライセンスを取得します。 
 
 
-| これは、デジタルウォレットのBlueXPに登録されています。 | この処理は、 System Manager または ONTAP CLI を使用して個々のクラスタに適用されます。 
+| BlueXPのDigital Walletに登録されています。 | この処理は、 System Manager または ONTAP CLI を使用して個々のクラスタに適用されます。 
 
 
-| 階層化の設定と管理は、BlueXPのCloud Tieringサービスを通じて行われます。 | 階層化の設定と管理は、 System Manager または ONTAP CLI を使用して行います。 
+| 階層化の設定と管理は、BlueXPのBlueXP階層化サービスを通じて行われます。 | 階層化の設定と管理は、 System Manager または ONTAP CLI を使用して行います。 
 
 
 | 設定が完了したら、無償トライアルを使用して、 30 日間のライセンスなしで階層化サービスを使用できます。 | 設定が完了すると、最初の 10TB のデータを無料で階層化できます。 
 |===
 
 
-=== Cloud Tiering のライセンスファイルを入手します
+=== BlueXP階層化ライセンスファイルを入手します
 
-Cloud Tieringライセンスを購入したら、Cloud Tieringのシリアル番号とNSSアカウントを入力するか、NLFライセンスファイルをアップロードして、BlueXPでライセンスをアクティブ化します。次の手順は、 NLF ライセンスファイルを取得する方法を示しています。
+BlueXP階層化ライセンスを購入したら、BlueXP階層化シリアル番号とNSSアカウントを入力するか、NLFライセンスファイルをアップロードして、BlueXPでライセンスをアクティブ化します。次の手順は、 NLF ライセンスファイルを取得する方法を示しています。
 
 .手順
 . にサインインします https://mysupport.netapp.com["ネットアップサポートサイト"^] [ システム ] 、 [ ソフトウェアライセンス ] の順にクリックします。
-. Cloud Tiering ライセンスのシリアル番号を入力します。
+. BlueXP階層化ライセンスのシリアル番号を入力します。
 +
 image:screenshot_cloud_tiering_license_step1.gif["シリアル番号で検索したあとのライセンスの一覧を示すスクリーンショット。"]
 
@@ -172,9 +172,9 @@ BlueXPアカウントIDを確認するには、BlueXPの上部にある[*Account
 
 
 
-=== Cloud Tiering BYOL ライセンスをアカウントに追加します
+=== BlueXP階層化BYOLライセンスをアカウントに追加します
 
-BlueXPアカウント用のCloud Tieringライセンスを購入したら、Cloud Tieringサービスを使用するライセンスをBlueXPに追加する必要があります。
+BlueXPアカウント用のBlueXP階層化ライセンスを購入したら、BlueXP階層化サービスを使用するにはライセンスをBlueXPに追加する必要があります。
 
 .手順
 . [ガバナンス]>[デジタルウォレット]>[データサービスライセンス]*をクリックします。
@@ -187,37 +187,37 @@ BlueXPアカウント用のCloud Tieringライセンスを購入したら、Clou
 
 ** 階層化ライセンスファイルがある場合は、 * ライセンスファイルのアップロード * オプションを選択し、プロンプトに従ってファイルを添付します。
 +
-image:screenshot_services_license_add.png["Cloud Tiering BYOL ライセンスを追加するページを示すスクリーンショット。"]
+image:screenshot_services_license_add.png["BlueXP階層化BYOLライセンスを追加するページのスクリーンショット。"]
 
 
 
 
 
 .結果
-Cloud Tieringサービスがアクティブになるように、BlueXPにライセンスが追加されています。
+BlueXPにライセンスが追加され、BlueXP階層化サービスがアクティブになります。
 
 
 
-=== Cloud Tiering BYOL ライセンスを更新します
+=== BlueXP階層化BYOLライセンスを更新します
 
-ライセンスで許可された期間が有効期限に近づいている場合や、ライセンスで許可された容量が上限に達している場合は、 Cloud Tiering で通知されます。
+ライセンス期間が有効期限に近づいている場合、またはライセンス容量が上限に達している場合は、BlueXP階層化で通知されます。
 
-image:screenshot_services_license_expire2.png["クラウド階層化ページに期限切れになるライセンスを示すスクリーンショット。"]
+image:screenshot_services_license_expire2.png["BlueXP階層化ページの有効期限が近いライセンスを示すスクリーンショット。"]
 
 このステータスは、 [ デジタルウォレット ] ページにも表示されます。
 
 image:screenshot_services_license_expire1.png["Digital Wallet ページに期限切れになるライセンスを示すスクリーンショット。"]
 
-Cloud Tiering ライセンスは、期限が切れる前に更新できます。これにより、クラウドへのデータの階層化を中断することなく実行できます。
+有効期限が切れる前にBlueXP階層化ライセンスを更新することで、データのクラウドへの階層化が中断されることがありません。
 
 .手順
-. BlueXPの右下にあるチャットアイコンをクリックして、特定のシリアル番号のCloud Tieringライセンスの期間延長または追加容量をリクエストします。
+. BlueXPの右下にあるチャットアイコンをクリックして、特定のシリアル番号について、期間の延長やBlueXP階層化ライセンスの容量の追加をリクエストしてください。
 +
 ライセンスの支払いが完了し、NetApp Support Site に登録されると、BlueXPは自動的にデジタルウォレットのライセンスを更新し、[データサービスのライセンス]ページには5～10分で変更が反映されます。
 
 . BlueXPがライセンスを自動的に更新できない場合は、ライセンスファイルを手動でアップロードする必要があります。
 +
-.. 可能です <<Cloud Tiering のライセンスファイルを入手します,ライセンスファイルをネットアップサポートサイトから入手します>>。
+.. 可能です <<BlueXP階層化ライセンスファイルを入手します,ライセンスファイルをネットアップサポートサイトから入手します>>。
 .. [ データサービスライセンス ] タブの [ デジタルウォレット ] ページで、をクリックします image:screenshot_horizontal_more_button.gif["[ 詳細 ] アイコン"] 更新するサービスシリアル番号の場合は、 ［ * ライセンスの更新 * ］ をクリックします。
 +
 image:screenshot_services_license_update.png["特定のサービスの [ ライセンスの更新 ] ボタンを選択するスクリーンショット。"]
@@ -228,38 +228,38 @@ image:screenshot_services_license_update.png["特定のサービスの [ ライ�
 
 
 .結果
-ライセンスが更新され、Cloud Tiering Serviceがアクティブな状態になります。
+BlueXPのライセンスが更新され、BlueXP階層化サービスが引き続きアクティブになります。
 
 
 
-== 特別な構成のクラスタにCloud Tieringライセンスを適用します
+== 特別な構成のクラスタにBlueXP階層化ライセンスを適用
 
-次の構成のONTAP クラスタでは、クラウド階層化ライセンスを使用できますが、ライセンスは、シングルノードクラスタ、HA構成のクラスタ、階層化ミラー構成のクラスタ、およびFabricPool ミラーを使用したMetroCluster 構成とは別の方法で適用する必要があります。
+次の構成のONTAP クラスタではBlueXP階層化ライセンスを使用できますが、シングルノードクラスタ、HA構成クラスタ、階層化ミラー構成のクラスタ、およびFabricPool ミラーを使用するMetroCluster 構成とは異なる方法でライセンスを適用する必要があります。
 
 * IBM Cloud Object Storageに階層化されたクラスタ
-* 「ダークサイト」に設置されたクラスタ
+* 「ダークサイト」にインストールされているクラスタ
 
 
 
 
 === FabricPool ライセンスのある既存のクラスタ向けのプロセス
 
-いつでも link:task-managing-tiering.html#discovering-additional-clusters-from-cloud-tiering["Cloud Tieringで、これらの特別なクラスタタイプを検出できます"]、Cloud Tieringは、FabricPool ライセンスを認識し、デジタルウォレットにライセンスを追加します。これらのクラスタは、通常どおりデータの階層化を継続します。FabricPool ライセンスの有効期限が切れたら、Cloud Tieringライセンスを購入する必要があります。
+いつでも link:task-managing-tiering.html#discovering-additional-clusters-from-bluexp-tiering["これらの特殊なクラスタタイプをBlueXP階層化で検出します"]BlueXPの階層化サービスでは、FabricPool ライセンスが認識され、Digital Walletに追加されます。これらのクラスタは、通常どおりデータの階層化を継続します。FabricPool のライセンスが期限切れになったら、BlueXP階層化ライセンスを購入する必要があります。
 
 
 
 === 新しく作成したクラスタ用のプロセス
 
-Cloud Tieringで一般的なクラスタを検出すると、クラウド階層化インターフェイスを使用して階層化を設定できます。このような場合は、次の処理が行われます。
+BlueXP階層化で一般的なクラスタを検出する場合は、BlueXP階層化インターフェイスを使用して階層化を設定します。このような場合は、次の処理が行われます。
 
-. 「parent」のCloud Tieringライセンスは、すべてのクラスタによる階層化に使用されている容量を追跡し、ライセンスに十分な容量があることを確認します。ライセンスで許可された容量と有効期限の合計がデジタルウォレットに表示されます。
+. 「親」BlueXP階層化ライセンスは、ライセンスに十分な容量があることを確認するために、すべてのクラスタで階層化に使用されている容量を追跡します。ライセンスで許可された容量と有効期限の合計がデジタルウォレットに表示されます。
 . 「親」ライセンスと通信するために、各クラスタに「子」階層化ライセンスが自動的にインストールされます。
 
 
 
-NOTE: System ManagerまたはONTAP CLIの「子」ライセンスに表示されるライセンス容量と有効期限は実際の情報ではないため、情報が異なる場合は問題となりません。これらの値は、Cloud Tieringソフトウェアによって内部的に管理されます。実際の情報はデジタルウォレットで追跡されます。
+NOTE: System ManagerまたはONTAP CLIの「子」ライセンスに表示されるライセンス容量と有効期限は実際の情報ではないため、情報が異なる場合は問題となりません。これらの価値は、BlueXP階層化ソフトウェアによって内部的に管理されます。実際の情報はデジタルウォレットで追跡されます。
 
-上記の2つの構成については、System ManagerまたはONTAP CLI（クラウド階層化インターフェイスではない）を使用して階層化を設定する必要があります。その場合は、「子」のライセンスをクラウド階層化インターフェイスから手動でこれらのクラスタにプッシュする必要があります。
+上記の2つの構成では、（BlueXP階層化インターフェイスではなく）System ManagerまたはONTAP CLIを使用して階層化を設定する必要があります。そのため、このような場合は、BlueXP階層化インターフェイスから手動で「子」ライセンスをこれらのクラスタにプッシュする必要があります。
 
 階層化ミラー構成では、データは2つの異なるオブジェクトストレージに階層化されるため、両方の場所にデータを階層化するための十分な容量を持つライセンスを購入する必要があります。
 
@@ -268,9 +268,9 @@ NOTE: System ManagerまたはONTAP CLIの「子」ライセンスに表示され
 +
 この時点では階層化を設定しないでください。
 
-. link:task-licensing-cloud-tiering.html#use-a-cloud-tiering-byol-license["Cloud Tieringライセンスを購入"] をクリックします。
-. BlueXPでは、 link:task-licensing-cloud-tiering.html#add-cloud-tiering-byol-licenses-to-your-account["ライセンスをデジタルウォレットに追加します"]。
-. Cloud Tieringで、 link:task-managing-tiering.html#discovering-additional-clusters-from-cloud-tiering["新しいクラスタを検出"]。
+. link:task-licensing-cloud-tiering.html#use-a-bluexp-tiering-byol-license["BlueXP階層化ライセンスを購入"] をクリックします。
+. BlueXPでは、 link:task-licensing-cloud-tiering.html#add-bluexp-tiering-byol-licenses-to-your-account["ライセンスをデジタルウォレットに追加します"]。
+. BlueXP階層化サービスで、 link:task-managing-tiering.html#discovering-additional-clusters-from-bluexp-tiering["新しいクラスタを検出"]。
 . [Clusters]ページで、をクリックします image:screenshot_horizontal_more_button.gif["[ 詳細 ] アイコン"] クラスタの場合は、*ライセンスの導入*を選択します。
 +
 image:screenshot_tiering_deploy_license.png["ONTAP クラスタに階層化ライセンスを導入する方法を示すスクリーンショット。"]

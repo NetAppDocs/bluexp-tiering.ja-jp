@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: concept-cloud-tiering.html 
 keywords: cloud tiering, overview, conceptual, value, features, cost, charging, tiering policies, cooling period, fabricpool 
-summary: ネットアップの Cloud Tiering Service は、アクセス頻度の低いデータをオンプレミスの ONTAP クラスタからオブジェクトストレージに自動的に階層化することで、データセンターをクラウドへと拡張します。これにより、クラスタの貴重なスペースが解放され、アプリケーションレイヤに変更を加えることなく、より多くのワークロードに対応できるようになります。Cloud Tiering を使用すると、データセンターのコストを削減し、 CAPEX モデルから OPEX モデルに切り替えることができます。 
+summary: ネットアップのBlueXP階層化サービスは、アクセス頻度の低いデータをオンプレミスのONTAP クラスタからオブジェクトストレージに自動的に階層化することで、データセンターをクラウドに拡張します。これにより、クラスタの貴重なスペースが解放され、アプリケーションレイヤに変更を加えることなく、より多くのワークロードに対応できるようになります。BlueXPの階層化サービスを利用すれば、データセンターのコストを削減し、CAPEXモデルからOPEXモデルに切り替えることができます。 
 ---
-= Cloud Tiering の詳細をご確認ください
+= BlueXPの階層化機能の詳細をご確認ください
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,21 +14,21 @@ summary: ネットアップの Cloud Tiering Service は、アクセス頻度の
 
 
 [role="lead"]
-ネットアップの Cloud Tiering Service は、アクセス頻度の低いデータをオンプレミスの ONTAP クラスタからオブジェクトストレージに自動的に階層化することで、データセンターをクラウドへと拡張します。これにより、クラスタの貴重なスペースが解放され、アプリケーションレイヤに変更を加えることなく、より多くのワークロードに対応できるようになります。Cloud Tiering を使用すると、データセンターのコストを削減し、 CAPEX モデルから OPEX モデルに切り替えることができます。
+ネットアップのBlueXP階層化サービスは、アクセス頻度の低いデータをオンプレミスのONTAP クラスタからオブジェクトストレージに自動的に階層化することで、データセンターをクラウドに拡張します。これにより、クラスタの貴重なスペースが解放され、アプリケーションレイヤに変更を加えることなく、より多くのワークロードに対応できるようになります。BlueXPの階層化サービスを利用すれば、データセンターのコストを削減し、CAPEXモデルからOPEXモデルに切り替えることができます。
 
-BlueXP（旧称Cloud Manager）のクラウド階層化サービスは、FabricPool の機能を活用しています。FabricPool はネットアップデータファブリックのテクノロジで、低コストのオブジェクトストレージへデータを自動で階層化することができます。アクティブな（ホットな）データはローカル階層（オンプレミスの ONTAP アグリゲート）に残り、アクセス頻度の低い（コールド）データはクラウド階層に移動されます。移動されると、 ONTAP のデータ効率は維持されます。
+BlueXP階層化サービスは、_ FabricPool _の機能を活用しています。FabricPool はネットアップデータファブリックのテクノロジで、低コストのオブジェクトストレージへデータを自動で階層化することができます。アクティブな（ホットな）データはローカル階層（オンプレミスの ONTAP アグリゲート）に残り、アクセス頻度の低い（コールド）データはクラウド階層に移動されます。移動されると、 ONTAP のデータ効率は維持されます。
 
 オールSSDアグリゲートを使用するAFF 、FAS 、およびONTAP Select システムでサポートされていたのは、ONTAP 9.8以降で、高性能のSSDに加え、HDDで構成されるアグリゲートからデータを階層化できるようになりました。を参照してください https://docs.netapp.com/us-en/ontap/fabricpool/requirements-concept.html["FabricPool を使用する際の考慮事項と要件"^] を参照してください。
 
-クラウド階層化は、シングルノードクラスタ、HA構成のクラスタ、階層化ミラー構成のクラスタ、およびMetroCluster 構成に対してFabricPool ミラーを使用して設定できます。Cloud Tieringライセンスは、すべてのクラスタ間で共有されます。
+BlueXPの階層化は、シングルノードクラスタ、HA構成のクラスタ、階層化ミラー構成のクラスタ、およびFabricPool ミラーを使用したMetroCluster 構成に対して設定できます。BlueXP階層化ライセンスはすべてのクラスタで共有されます。
 
-https://bluexp.netapp.com/cloud-tiering-service-tco["Cloud Tiering TCO計算ツールを使用して、どれだけのコストを削減できるかを確認できます"^]。
+https://bluexp.netapp.com/cloud-tiering-service-tco["BlueXP階層化TCO計算ツールを使用して、どれだけのコストを削減できるかを確認できます"^]。
 
 
 
 == の機能
 
-Cloud Tiering は、自動化、監視、レポート、共通の管理インターフェイスを提供します。
+BlueXPの階層化サービスでは、自動化、監視、レポート作成、共通の管理インターフェイスを利用できます。
 
 * 自動化により、データのセットアップと管理が容易になります オンプレミスの ONTAP クラスタからクラウドへの階層化
 * デフォルトのクラウドプロバイダのストレージクラス / アクセス階層を選択するか、ライフサイクル管理を使用して古い階層化データを対費用効果の高い階層に移動できます
@@ -40,10 +40,10 @@ Cloud Tiering は、自動化、監視、レポート、共通の管理インタ
 * Cloud Volumes ONTAP システムを使用している場合は、[クラスタ]ページに表示されるので、ハイブリッドクラウドインフラ内のデータ階層化の全体像を把握できます
 
 
-Cloud Tiering が提供する価値の詳細については、 https://bluexp.netapp.com/cloud-tiering["BlueXP WebサイトのCloud Tieringページをご覧ください"^]。
+BlueXPの階層化機能の詳細については、 https://bluexp.netapp.com/cloud-tiering["BlueXP WebサイトのBlueXP階層化ページをご確認ください"^]。
 
 
-TIP: Cloud Volumes ONTAP システムは、 Cloud Tiering から読み取り専用です。 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-tiering.html["BlueXPの作業環境からCloud Volumes ONTAP システムの階層化をセットアップします"^]。
+TIP: Cloud Volumes ONTAP システムは、BlueXP階層化から読み取り専用です。 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-tiering.html["BlueXPの作業環境からCloud Volumes ONTAP システムの階層化をセットアップします"^]。
 
 
 
@@ -58,7 +58,7 @@ TIP: Cloud Volumes ONTAP システムは、 Cloud Tiering から読み取り専�
 * S3互換のオブジェクトストレージ（MinIOなど）
 
 
-Cloud Tieringライセンスは、IBM Cloud Object Storageにデータを階層化するクラスタと共有できます。FabricPool の設定は、System ManagerまたはONTAP CLIを使用して行う必要がありますが https://docs.netapp.com/us-en/cloud-manager-tiering/task-licensing-cloud-tiering.html#apply-cloud-tiering-licenses-to-clusters-in-special-configurations["このタイプの構成のライセンスは、Cloud Tieringを使用して提供されます。"]
+BlueXP階層化ライセンスは、IBM Cloud Object Storageにデータを階層化するクラスタと共有することもできます。FabricPool の設定は、System ManagerまたはONTAP CLIを使用して行う必要がありますが link:task-licensing-cloud-tiering.html#apply-bluexp-tiering-licenses-to-clusters-in-special-configurations["このタイプの構成のライセンスは、BlueXP階層化を使用して取得します。"]
 
 
 NOTE: NAS ボリュームからパブリッククラウドまたは StorageGRID などのプライベートクラウドにデータを階層化できます。SAN プロトコルがアクセスするデータを階層化する場合は、接続に関する考慮事項に基づいてプライベートクラウドを使用することを推奨します。
@@ -74,7 +74,7 @@ ONTAP クラスタは、1つのオブジェクトストアまたは複数のオ�
 * link:reference-google-support.html["サポートされている Google Cloud ストレージクラスについて説明します"]
 
 
-Cloud Tiering は、アクセス頻度の低いデータにクラウドプロバイダのデフォルトのストレージクラス / アクセス階層を使用します。ただし、ライフサイクルルールを適用することで、一定の日数が経過した時点でデータがデフォルトのストレージクラスから別のストレージクラスに自動的に移行されるようにすることができます。これにより、コールドデータを低コストのストレージに移動することで、コストを削減できます。
+BlueXPの階層化サービスでは、アクセス頻度の低いデータにクラウドプロバイダのデフォルトのストレージクラス/アクセス階層を使用します。ただし、ライフサイクルルールを適用することで、一定の日数が経過した時点でデータがデフォルトのストレージクラスから別のストレージクラスに自動的に移行されるようにすることができます。これにより、コールドデータを低コストのストレージに移動することで、コストを削減できます。
 
 
 NOTE: StorageGRID または S3 互換のストレージに階層化されたデータのライフサイクルルールは選択できません。
@@ -83,19 +83,19 @@ NOTE: StorageGRID または S3 互換のストレージに階層化されたデ�
 
 == 価格とライセンス
 
-従量課金制のサブスクリプション、年単位のサブスクリプション、お客様所有のCloud Tieringライセンス、またはその組み合わせでCloud Tieringを使用した従量課金制です。ライセンスがない場合は、最初のクラスタ用の30日間の無償トライアルを利用できます。
+BlueXP階層化サービスは、従量課金制サブスクリプション、年単位のサブスクリプション、お客様所有のBlueXP階層化ライセンス、またはその組み合わせで購入できます。ライセンスがない場合は、最初のクラスタ用の30日間の無償トライアルを利用できます。
 
 データを StorageGRID に階層化する場合、料金は発生しません。BYOL ライセンスでも PAYGO 登録も必要ありません。
 
 https://bluexp.netapp.com/pricing#tiering["価格設定の詳細を表示します"^]。
 
-クラウド階層化ではソースボリュームのストレージ効率化が維持されるため、クラウドプロバイダのオブジェクトストレージのコストは、ONTAP 効率化後の階層化データ（重複排除と圧縮を適用したあとのデータ量が少ない分）に対して支払われます。
+BlueXPの階層化ではソースボリュームのストレージ効率化が維持されるため、クラウドプロバイダのオブジェクトストレージのコストは、ONTAP による効率化後の階層化データに対して支払われます（重複排除と圧縮を適用したあとのデータ量が少ない分）。
 
 
 
 === 30 日間の無償トライアルをご利用いただけます
 
-Cloud Tiering ライセンスがない場合は、最初のクラスタへの階層化を設定すると、 Cloud Tiering の 30 日間の無償トライアルが開始されます。30日間の無償トライアルの終了後は、従量課金制サブスクリプション、年間サブスクリプション、BYOLライセンス、またはその組み合わせでCloud Tieringの料金を支払う必要があります。
+BlueXP階層化ライセンスをお持ちでない場合は、最初のクラスタへの階層化をセットアップすると、BlueXP階層化の30日間無償トライアルが開始されます。30日間の無償トライアルの終了後、BlueXP階層化サービスの料金は、従量課金制サブスクリプション、年間サブスクリプション、BYOLライセンス、またはその組み合わせで支払う必要があります。
 
 無償トライアルが終了し、ライセンスを登録または追加していない場合、ONTAP はコールドデータをオブジェクトストレージに階層化しなくなります。これまで階層化されていたすべてのデータに引き続きアクセスできるため、このデータを読み出して使用できます。取得されると、このデータはクラウドから高パフォーマンス階層に戻されます。
 
@@ -103,7 +103,7 @@ Cloud Tiering ライセンスがない場合は、最初のクラスタへの階
 
 === 従量課金制のサブスクリプション
 
-Cloud Tiering は、従量課金制モデルで使用量ベースのライセンスを提供します。クラウドプロバイダのマーケットプレイスを通じて登録すると、階層化されたデータに対してGB単位の料金が発生するため、前払い料金は発生しません。クラウドプロバイダから月額料金で請求されます。
+BlueXP階層化サービスは、従量課金制モデルで消費量ベースのライセンスを提供します。クラウドプロバイダのマーケットプレイスを通じて登録すると、階層化されたデータに対してGB単位の料金が発生するため、前払い料金は発生しません。クラウドプロバイダから月額料金で請求されます。
 
 無償トライアルを利用されている場合や、お客様が独自のライセンスを使用（ BYOL ）されている場合も、サブスクリプションを設定する必要があります。
 
@@ -117,15 +117,15 @@ Cloud Tiering は、従量課金制モデルで使用量ベースのライセン
 
 
 
-無償トライアル期間中、または Cloud Tiering BYOL ライセンスを超えていない場合、従量課金制サブスクリプションからは課金されません。
+無償トライアル中や、BlueXPの階層化BYOLライセンスを超えていない場合は、従量課金制サブスクリプションから請求されることはありません。
 
-link:task-licensing-cloud-tiering.html#use-a-cloud-tiering-paygo-subscription["従量課金制サブスクリプションの設定方法について説明します"]。
+link:task-licensing-cloud-tiering.html#use-a-bluexp-tiering-paygo-subscription["従量課金制サブスクリプションの設定方法について説明します"]。
 
 
 
 === 年間契約
 
-Cloud Tieringは、アクセス頻度の低いデータをAmazon S3に階層化する場合に年間契約を提供します。1年、2年、3年の期間が用意されています。
+BlueXP階層化サービスは、アクセス頻度の低いデータをAmazon S3に階層化する際に年間契約を提供します。1年、2年、3年の期間が用意されています。
 
 AzureやGCPへの階層化では、現在年間契約はサポートされていません。
 
@@ -133,26 +133,26 @@ AzureやGCPへの階層化では、現在年間契約はサポートされてい
 
 === お客様所有のライセンスを使用
 
-ネットアップから Cloud Tiering * ライセンスを購入して、お客様所有のライセンスを有効にしてください。1年、2年、3年の期間ライセンスを購入し、階層化の容量を指定できます。BYOL クラウド階層化ライセンスは、複数のオンプレミス ONTAP クラスタで使用できるフローティングライセンスです。クラウド階層化ライセンスで定義した合計階層化容量は、すべてのオンプレミスクラスタで使用できます。
+ネットアップから* BlueXP階層化*ライセンス（旧称「Cloud Tiering」ライセンス）を購入して、お客様所有のライセンスを使用します。1年、2年、3年の期間ライセンスを購入し、階層化の容量を指定できます。BYOL BlueXP階層化ライセンスは_floating_licenseで、オンプレミスの複数のONTAP クラスタで使用できます。BlueXP階層化ライセンスで定義した合計階層化容量は、すべてのオンプレミスクラスタで使用できます。
 
-Cloud Tieringライセンスを購入したら、BlueXPのDigital Walletを使用してライセンスを追加する必要があります。 link:task-licensing-cloud-tiering.html#use-a-cloud-tiering-byol-license["Cloud Tiering BYOL ライセンスの使用方法を参照してください"]。
+BlueXP階層化ライセンスを購入したら、BlueXPのDigital Walletを使用してライセンスを追加する必要があります。 link:task-licensing-cloud-tiering.html#use-a-bluexp-tiering-byol-license["BlueXP階層化BYOLライセンスの使用方法を説明します"]。
 
 前述したように、 BYOL ライセンスを購入した場合でも、従量課金制のサブスクリプションを設定することを推奨します。
 
 
-NOTE: 2021 年 8 月以降、古い * FabricPool * ライセンスが * Cloud Tiering * ライセンスに置き換えられました。 link:task-licensing-cloud-tiering.html#new-cloud-tiering-byol-licensing-starting-august-21-2021["Cloud Tiering ライセンスと FabricPool ライセンスの違いについては、こちらをご覧ください"]。
+NOTE: 2021 年 8 月以降、古い * FabricPool * ライセンスが * Cloud Tiering * ライセンスに置き換えられました。 link:task-licensing-cloud-tiering.html#bluexp-tiering-byol-licensing-starting-in-2021["BlueXP階層化ライセンスとFabricPool ライセンスの違いについては、こちらをご覧ください"]。
 
 
 
-== Cloud Tiering の仕組み
+== BlueXP階層化の仕組み
 
-クラウド階層化とは、 FabricPool テクノロジを使用して、オンプレミスの ONTAP クラスタからパブリッククラウドまたはプライベートクラウドのオブジェクトストレージに、アクセス頻度の低いコールドデータを自動的に階層化するネットアップマネージドサービスです。ONTAP への接続はコネクタから行われます。
+BlueXP階層化サービスは、ネットアップが管理するサービスです。FabricPool テクノロジを使用して、アクセス頻度の低いコールドデータをオンプレミスのONTAP クラスタからパブリッククラウドやプライベートクラウドのオブジェクトストレージに自動的に階層化します。ONTAP への接続はコネクタから行われます。
 
 次の図は、各コンポーネント間の関係を示しています。
 
-image:diagram_cloud_tiering.png["「クラウドプロバイダのコネクタへの接続、 ONTAP クラスタへの接続を含むクラウド階層化サービス、クラウドプロバイダ内の ONTAP クラスタとオブジェクトストレージの接続を含むアーキテクチャの図。アクティブなデータは ONTAP クラスタに格納され、アクセス頻度の低いデータはオブジェクトストレージに格納されます。」"]
+image:diagram_cloud_tiering.png["BlueXP階層化サービスを示すアーキテクチャ図。クラウドプロバイダのコネクタへの接続、ONTAP クラスタへの接続、およびONTAP クラスタとクラウドプロバイダのオブジェクトストレージ間の接続を確立します。アクティブなデータは ONTAP クラスタに格納され、アクセス頻度の低いデータはオブジェクトストレージに格納されます。」"]
 
-Cloud Tiering の仕組みは次のとおりです。
+BlueXPの階層化機能の概要は次のようになります。
 
 . BlueXPからオンプレミスクラスタを検出します。
 . 階層化を設定するには、バケット / コンテナ、ストレージクラスまたはアクセス階層、階層化データのライフサイクルルールなど、オブジェクトストレージに関する詳細を指定します。
@@ -205,7 +205,7 @@ NOTE: 再加熱されたデータは、スペースがある場合にのみパ�
 +
 データはすぐに階層化されるため、 SnapMirror はパフォーマンス階層ではなくクラウド階層からデータを読み取ります。そのため、 SnapMirror 処理が遅くなります。別の階層化ポリシーを使用している場合でも、 SnapMirror 処理の速度が遅くなる可能性があります。
 
-* Cloud Backup も、階層化ポリシーが設定されたボリュームに同様の影響を受けます。 https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-ontap-backup-to-cloud.html#fabricpool-tiering-policy-considerations["階層化ポリシーに関する考慮事項については、「 Cloud Backup の使用」を参照"^]。
+* Cloud Backup も、階層化ポリシーが設定されたボリュームに同様の影響を受けます。 https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-ontap-backup-to-cloud.html#fabricpool-tiering-policy-considerations["BlueXPのバックアップとリカバリでの階層化ポリシーに関する考慮事項を参照してください"^]。
 
 
 --

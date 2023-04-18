@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: whats-new.html 
 keywords: 'what"s new, features, new, release notes, bugs, limitations, known issues, enhancements, fixes, tiering' 
-summary: Cloud Tiering の新機能をご確認ください。 
+summary: BlueXP階層化サービスの新機能をご紹介します。 
 ---
-= Cloud Tiering の新機能
+= BlueXP階層化サービスの最新情報
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,7 +14,7 @@ summary: Cloud Tiering の新機能をご確認ください。
 
 
 [role="lead"]
-Cloud Tiering の新機能をご確認ください。
+BlueXP階層化サービスの新機能をご紹介します。
 
 
 
@@ -24,7 +24,7 @@ Cloud Tiering の新機能をご確認ください。
 
 === [ライセンス]タブが削除されました
 
-Cloud Tieringインターフェイスから[Licensing]タブが削除されました。従量課金制（PAYGO）サブスクリプションのすべてのライセンスに、オンプレミスのCloud Tieringダッシュボードからアクセスできるようになりました。また、このページからDigital Walletへのリンクもあり、Cloud Tieringのお客様所有のライセンスの使用（BYOL）を表示および管理できます。
+BlueXP階層化インターフェイスから[ライセンス]タブが削除されました。従量課金制（PAYGO）サブスクリプションのすべてのライセンスに、オンプレミスのBlueXP階層化ダッシュボードからアクセスできるようになりました。また、このページからDigital Walletへのリンクもあり、BlueXPの階層化によるお客様所有のライセンスの使用（BYOL）を表示および管理できます。
 
 
 
@@ -40,7 +40,7 @@ Cloud Tieringインターフェイスから[Licensing]タブが削除されま�
 
 === ボリュームの階層化レポートを生成できるようになりました
 
-[階層ボリューム]ページからレポートをダウンロードして、管理しているクラスタ上のすべてのボリュームの階層化ステータスを確認できます。Cloud Tieringは.csvファイルを生成します。このファイルを確認して、必要に応じて社内の他のユーザに送信できます。 https://docs.netapp.com/us-en/cloud-manager-tiering/task-managing-tiering.html#download-a-tiering-report-for-your-volumes["階層化レポートのダウンロード方法をご覧ください"]。
+[階層ボリューム]ページからレポートをダウンロードして、管理しているクラスタ上のすべてのボリュームの階層化ステータスを確認できます。BlueXPの階層化サービスでは.csvファイルが生成されます。このファイルを確認して、必要に応じて社内の他のユーザに送信できます。 https://docs.netapp.com/us-en/cloud-manager-tiering/task-managing-tiering.html#download-a-tiering-report-for-your-volumes["階層化レポートのダウンロード方法をご覧ください"]。
 
 
 
@@ -50,7 +50,7 @@ Cloud Tieringインターフェイスから[Licensing]タブが削除されま�
 
 === Connectorアウトバウンドインターネットアクセスエンドポイントの変更
 
-Cloud Tieringの変更が行われたため、クラウド階層化処理を成功させるには、次のコネクタエンドポイントを変更する必要があります。
+BlueXPの階層化が変更されたため、BlueXPの階層化処理を成功させるには、次のコネクタエンドポイントを変更する必要があります。
 
 [cols="50,50"]
 |===
@@ -70,7 +70,7 @@ Cloud Tieringの変更が行われたため、クラウド階層化処理を成�
 
 
 
-=== ドラッグアンドドロップして、Azure Blob、Google Cloud Storage、StorageGRID へのクラウド階層化を有効にします
+=== ドラッグアンドドロップして、Azure Blob、Google Cloud Storage、StorageGRID へのBlueXP階層化を有効にします
 
 Azure Blob、Google Cloud Storage、またはStorageGRID 階層化のデスティネーションがキャンバス上の作業環境として存在する場合は、オンプレミスのONTAP 作業環境を移行先にドラッグして、階層化セットアップウィザードを開始できます。
 
@@ -88,7 +88,7 @@ https://docs.netapp.com/us-en/cloud-manager-tiering/task-tiering-onprem-aws.html
 
 
 
-=== ドラッグアンドドロップしてAmazon S3へのクラウド階層化を有効にします
+=== ドラッグアンドドロップして、BlueXPからAmazon S3への階層化を有効にします
 
 Amazon S3階層化のデスティネーションがキャンバスに作業環境として存在する場合は、オンプレミスのONTAP 作業環境をデスティネーションにドラッグして、階層化セットアップウィザードを開始できます。
 
@@ -112,7 +112,7 @@ Cloud Tiering UIに、オブジェクトストレージ構成用の新しいペ�
 
 === MetroCluster 構成に対するCloud Tieringライセンスがサポートされています
 
-Cloud Tieringライセンスを、MetroCluster 構成に含まれるクラスタと共有できるようになりました。これらのシナリオで廃止されたFabricPool ライセンスを使用する必要はなくなりました。これにより、多くのクラスタで「フローティング」のクラウド階層化ライセンスを簡単に使用できるようになります。 https://docs.netapp.com/us-en/cloud-manager-tiering/task-licensing-cloud-tiering.html#apply-cloud-tiering-licenses-to-clusters-in-special-configurations["これらのタイプのクラスタのライセンスを設定する方法を参照してください。"]
+Cloud Tieringライセンスを、MetroCluster 構成に含まれるクラスタと共有できるようになりました。これらのシナリオで廃止されたFabricPool ライセンスを使用する必要はなくなりました。これにより、多くのクラスタで「フローティング」のクラウド階層化ライセンスを簡単に使用できるようになります。 https://docs.netapp.com/us-en/cloud-manager-tiering/task-licensing-cloud-tiering.html#apply-bluexp-tiering-licenses-to-clusters-in-special-configurations["これらのタイプのクラスタのライセンスを設定する方法を参照してください。"]
 
 
 
@@ -122,7 +122,7 @@ Cloud Tieringライセンスを、MetroCluster 構成に含まれるクラスタ
 
 === Cloud Tieringは、追加のクラスタ構成をサポートしています
 
-クラウド階層化ライセンスを、階層化ミラー構成（MetroCluster 構成を除く）のクラスタと、IBM Cloud Object Storageに階層化されたクラスタと共有できるようになりました。これらのシナリオで廃止されたFabricPool ライセンスを使用する必要はなくなりました。これにより、多くのクラスタで「フローティング」のクラウド階層化ライセンスを簡単に使用できるようになります。 https://docs.netapp.com/us-en/cloud-manager-tiering/task-licensing-cloud-tiering.html#apply-cloud-tiering-licenses-to-clusters-in-special-configurations["これらのタイプのクラスタのライセンスを設定する方法を参照してください。"]
+クラウド階層化ライセンスを、階層化ミラー構成（MetroCluster 構成を除く）のクラスタと、IBM Cloud Object Storageに階層化されたクラスタと共有できるようになりました。これらのシナリオで廃止されたFabricPool ライセンスを使用する必要はなくなりました。これにより、多くのクラスタで「フローティング」のクラウド階層化ライセンスを簡単に使用できるようになります。 https://docs.netapp.com/us-en/cloud-manager-tiering/task-licensing-cloud-tiering.html#apply-bluexp-tiering-licenses-to-clusters-in-special-configurations["これらのタイプのクラスタのライセンスを設定する方法を参照してください。"]
 
 
 

@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: reference-aws-support.html 
 keywords: aws, amazon, s3, support, regions, storage classes 
-summary: Cloud Tiering は、複数の S3 ストレージクラスとほとんどのリージョンをサポートしています。 
+summary: BlueXPの階層化では、複数のS3ストレージクラスとほとんどのリージョンがサポートされます。 
 ---
 = サポートされている S3 ストレージクラスとリージョン
 :hardbreaks:
@@ -14,13 +14,13 @@ summary: Cloud Tiering は、複数の S3 ストレージクラスとほとん�
 
 
 [role="lead"]
-Cloud Tiering は、複数の S3 ストレージクラスとほとんどのリージョンをサポートしています。
+BlueXPの階層化では、複数のS3ストレージクラスとほとんどのリージョンがサポートされます。
 
 
 
 == サポートされている S3 ストレージクラス
 
-AWS へのデータ階層化を設定すると、 Cloud Tiering は、アクセス頻度の低いデータに _Standard_storage クラスを自動的に使用します。Cloud Tiering では、ライフサイクルルールを適用して、特定の日数が経過したデータを _Standard_storage クラスから別のストレージクラスに移行できます。次のストレージクラスから選択できます。
+AWSへのデータ階層化を設定すると、BlueXPの階層化ではアクセス頻度の低いデータに_Standard_storageクラスが自動的に使用されます。BlueXPの階層化サービスでは、ライフサイクルルールを適用して、一定の日数が経過した時点で_Standard_storageクラスから別のストレージクラスにデータを移行できます。次のストレージクラスから選択できます。
 
 * 標準的なアクセス頻度は低い
 * 1 回のアクセスではほとんど発生しません
@@ -30,7 +30,7 @@ AWS へのデータ階層化を設定すると、 Cloud Tiering は、アクセ�
 
 別のストレージクラスを選択しない場合、データは _Standard_storage クラスに残り、ルールは適用されません。
 
-クラウド階層化ライフサイクルルールを設定する場合は、 AWS アカウントでバケットをセットアップするときにライフサイクルルールを設定しないでください。
+BlueXP階層化ライフサイクルルールを設定するときは、AWSアカウントでバケットをセットアップするときにライフサイクルルールを設定しないでください。
 
 https://aws.amazon.com/s3/storage-classes/["S3 ストレージクラスについて説明します"^]。
 
@@ -38,7 +38,7 @@ https://aws.amazon.com/s3/storage-classes/["S3 ストレージクラスについ
 
 == サポートされている AWS リージョン
 
-Cloud Tiering は、次の AWS リージョンをサポートしています。
+BlueXPの階層化では、次のAWSリージョンがサポートされます。
 
 
 
