@@ -135,7 +135,7 @@ AzureやGCPへの階層化では、現在年間契約はサポートされてい
 
 ネットアップから* BlueXP階層化*ライセンス（旧称「Cloud Tiering」ライセンス）を購入して、お客様所有のライセンスを使用します。1年、2年、3年の期間ライセンスを購入し、階層化の容量を指定できます。BYOL BlueXP階層化ライセンスは_floating_licenseで、オンプレミスの複数のONTAP クラスタで使用できます。BlueXP階層化ライセンスで定義した合計階層化容量は、すべてのオンプレミスクラスタで使用できます。
 
-BlueXP階層化ライセンスを購入したら、BlueXPのDigital Walletを使用してライセンスを追加する必要があります。 link:task-licensing-cloud-tiering.html#use-a-bluexp-tiering-byol-license["BlueXP階層化BYOLライセンスの使用方法を説明します"]。
+BlueXP階層化ライセンスを購入したら、BlueXPのBlueXPデジタルウォレットを使用してライセンスを追加する必要があります。 link:task-licensing-cloud-tiering.html#use-a-bluexp-tiering-byol-license["BlueXP階層化BYOLライセンスの使用方法を説明します"]。
 
 前述したように、 BYOL ライセンスを購入した場合でも、従量課金制のサブスクリプションを設定することを推奨します。
 
@@ -205,7 +205,7 @@ NOTE: 再加熱されたデータは、スペースがある場合にのみパ�
 +
 データはすぐに階層化されるため、 SnapMirror はパフォーマンス階層ではなくクラウド階層からデータを読み取ります。そのため、 SnapMirror 処理が遅くなります。別の階層化ポリシーを使用している場合でも、 SnapMirror 処理の速度が遅くなる可能性があります。
 
-* Cloud Backup も、階層化ポリシーが設定されたボリュームに同様の影響を受けます。 https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-ontap-backup-to-cloud.html#fabricpool-tiering-policy-considerations["BlueXPのバックアップとリカバリでの階層化ポリシーに関する考慮事項を参照してください"^]。
+* BlueXPのバックアップとリカバリも、階層化ポリシーが設定されたボリュームの影響を受けます。 https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-ontap-backup-to-cloud.html#fabricpool-tiering-policy-considerations["BlueXPのバックアップとリカバリでの階層化ポリシーに関する考慮事項を参照してください"^]。
 
 
 --

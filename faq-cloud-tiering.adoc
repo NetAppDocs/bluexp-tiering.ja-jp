@@ -479,7 +479,7 @@ ONTAP は、オブジェクトストレージとの間でデータの読み取�
 
 === クラウドに保存されたコールドデータを管理するために、監視とレポートに使用できるツールはどれですか？
 
-BlueXPの階層化サービス以外、 https://docs.netapp.com/us-en/active-iq-unified-manager/["Active IQ Unified Manager"^] および https://docs.netapp.com/us-en/active-iq/index.html["Active IQ デジタルアドバイザ"^] 監視とレポートに使用できます。
+BlueXPの階層化サービス以外、 https://docs.netapp.com/us-en/active-iq-unified-manager/["Active IQ Unified Manager"^] および https://docs.netapp.com/us-en/active-iq/index.html["BlueXPデジタルアドバイザ"^] 監視とレポートに使用できます。
 
 
 
