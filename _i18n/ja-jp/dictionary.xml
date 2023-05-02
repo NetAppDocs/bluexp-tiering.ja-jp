@@ -677,9 +677,6 @@
   <block id="271790724aaa38f93a773b0039eb982e" category="list-text">この新しいオブジェクトストアをミラーとして既存のアグリゲートに接続します。</block>
   <block id="482e7ac23805e20ce06fe8da5f067a40" category="list-text">プライマリオブジェクトストアとミラーオブジェクトストアを入れ替えます。</block>
   <block id="35f98bf089ff4cd3deaed43fb8a4c900" category="list-text">Amazon S3オブジェクトストアのミラーリングを解除します。</block>
-  <block id="096dcd3788cecb603666aeab1323e016" category="list-text">必須のアプリケーションアクセスパラメータ</block>
-  <block id="5a5be55d6d19108a5a53e94d4b8bca13" category="inline-link">詳細については、「security login」コマンドを参照してください</block>
-  <block id="fcccb04322797151b1c63a24fdbe8596" category="list-text">クラスタ管理者ユーザは、「console」アプリケーションアクセス権を持っている必要があります。これは、ONTAP コマンドのsecurity login showを使用して確認できます。「admin」ユーザの_Application_Columnに「console」が表示されます。必要に応じて'security login createコマンドを使用してコンソール・アプリケーション・アクセスを追加します<block ref="c49e76a401ad77700c5ead0ea46ac66a" category="inline-link-rx"></block>。</block>
   <block id="303b6b375dcceef17b9d24c15d95c29b" category="list-text">*プロバイダを選択*：「* Amazon Web Services *」を選択し、*続行*をクリックします。</block>
   <block id="c22f32bc9795fa45c61320309de1c56e" category="list-text">* S3 Bucket *：新しいS3バケットを追加するか、prefix_fabric-pool_で始まる既存のS3バケットを選択し、バケットのリージョンを選択して* Continue *をクリックします。</block>
   <block id="7de06bb2b943b6fd5754912e3f1d4ceb" category="paragraph"><block ref="7de06bb2b943b6fd5754912e3f1d4ceb" category="inline-image-macro-rx" type="image"></block></block>
@@ -1162,7 +1159,6 @@
   <block id="793e8e21e4c6d6e9102d21e5ceeb9ef6" category="paragraph">無償トライアル中や、BlueXPの階層化BYOLライセンスを超えていない場合は、従量課金制サブスクリプションから請求されることはありません。</block>
   <block id="a48331bea4b593b755f99fa927d65638" category="paragraph"><block ref="4a6532d8b81197880664db7ef07b3202" category="inline-link-macro-rx"></block>。</block>
   <block id="a05ea6f9f4f0a8968aa8c0288bad4b53" category="paragraph">BlueXP階層化サービスは、アクセス頻度の低いデータをAmazon S3に階層化する際に年間契約を提供します。1年、2年、3年の期間が用意されています。</block>
-  <block id="26913edc94f523c2a2b1416655f6ceb5" category="paragraph">ネットアップから* BlueXP階層化*ライセンス（旧称「Cloud Tiering」ライセンス）を購入して、お客様所有のライセンスを使用します。1年、2年、3年の期間ライセンスを購入し、階層化の容量を指定できます。BYOL BlueXP階層化ライセンスは_floating_licenseで、オンプレミスの複数のONTAP クラスタで使用できます。BlueXP階層化ライセンスで定義した合計階層化容量は、すべてのオンプレミスクラスタで使用できます。</block>
   <block id="49de8995cf3b9508af67fbbd5e085640" category="inline-link-macro">BlueXP階層化BYOLライセンスの使用方法を説明します</block>
   <block id="a42e9abff9358e2d7f140d2a5cca181b" category="inline-link-macro">BlueXP階層化ライセンスとFabricPool ライセンスの違いについては、こちらをご覧ください</block>
   <block id="73bd12c72df2f49e3c020653025ff48b" category="admonition">2021 年 8 月以降、古い * FabricPool * ライセンスが * Cloud Tiering * ライセンスに置き換えられました。 <block ref="e6f9c79a0a8d34aafe89d9b302bb60e6" category="inline-link-macro-rx"></block>。</block>
@@ -1231,7 +1227,6 @@
   <block id="de1cdae44076062eb7f546c81cfb6990" category="paragraph">GCP MarketplaceからBlueXP階層化サービスにサブスクライブすると、ONTAP クラスタからGoogle Cloudストレージへのデータ階層化の従量課金制サブスクリプションを設定できます。</block>
   <block id="67731652b48fdb7846ca466471556450" category="paragraph">BlueXP階層化サービスの料金は、年単位の契約を購入して年単位で支払います。</block>
   <block id="93f26f7b1e47a3f6bebd49a7fa7dd4b6" category="section-title">BlueXP階層化BYOLライセンスを使用</block>
-  <block id="30a3bb6537e5a17883dc40863aa0ea3e" category="paragraph">ネットアップが提供するお客様所有のライセンスには、 1 年、 2 年、 3 年の期間があります。BYOL * BlueXP階層化*ライセンス（旧称「クラウド階層化」ライセンス）は_floating_licenseで、BlueXPアカウントの複数のオンプレミスONTAP クラスタにわたって使用できます。BlueXP階層化ライセンスで定義されている階層化の合計容量は*すべての*オンプレミスクラスタで共有されるため、初期ライセンスの取得や更新が容易になります。</block>
   <block id="c2319a35daf2868e6d5793e8fa613108" category="paragraph">BlueXP階層化ライセンスをお持ちでない場合は、ネットアップまでお問い合わせください。</block>
   <block id="d24c279c3d050f8132eeb782120e60fe" category="paragraph">必要に応じて、使用しないCloud Volumes ONTAP の未割り当てのノードベースライセンスがある場合は、同じ金額、同じ有効期限のBlueXP階層化ライセンスに変換できます。<block ref="c110e5a4a66d7429a8ced7dc2264a8f5" category="inline-link-rx"></block>。</block>
   <block id="feace567e2626d7786ec5e18354a5177" category="section-title">2021年よりBlueXP階層化サービスのBYOLライセンスを提供開始</block>
@@ -1372,4 +1367,6 @@
   <block id="f4c3107fb758c7edea8576312dff63ac" category="inline-link-macro">ライセンスをBlueXPデジタルウォレットに追加します</block>
   <block id="1953cb0b13a811a9fb3db1b69c5f0a2d" category="list-text">BlueXPでは、 <block ref="fb3a1da5f1072aaa3d6f4c9eaa7cccb2" category="inline-link-macro-rx"></block>。</block>
   <block id="a109e3cb0dd9ad8fb1c83a4902e1c322" category="paragraph">BlueXP階層化インターフェイスから[ライセンス]タブが削除されました。従量課金制（PAYGO）サブスクリプションのすべてのライセンスに、オンプレミスのBlueXP階層化ダッシュボードからアクセスできるようになりました。また、このページからBlueXPのデジタルウォレットへのリンクもあり、BlueXP階層化サービスのお客様所有のライセンスの使用（BYOL）を表示および管理できます。</block>
+  <block id="891ca3a65a7ff1025eab9d895f17f04a" category="paragraph">ネットアップから* BlueXP階層化*ライセンス（旧称「Cloud Tiering」ライセンス）を購入して、お客様所有のライセンスを使用します。1年、2年、3年のライセンスを購入し、任意の量の階層化容量（最低10TiBから）を指定できます。BYOL BlueXP階層化ライセンスは_floating_licenseで、オンプレミスの複数のONTAP クラスタで使用できます。BlueXP階層化ライセンスで定義した合計階層化容量は、すべてのオンプレミスクラスタで使用できます。</block>
+  <block id="2105bccac1837aa99c46baf38ee1c998" category="paragraph">ネットアップが提供するお客様所有のライセンスには、 1 年、 2 年、 3 年の期間があります。BYOL * BlueXP階層化*ライセンス（旧称「クラウド階層化」ライセンス）は_floating_licenseで、BlueXPアカウントの複数のオンプレミスONTAP クラスタにわたって使用できます。BlueXP階層化ライセンスで定義されている階層化の合計容量は*すべての*オンプレミスクラスタで共有されるため、初期ライセンスの取得や更新が容易になります。階層化BYOLライセンスの最小容量は10TiBからです。</block>
 </blocks>

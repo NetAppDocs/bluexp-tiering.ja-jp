@@ -76,7 +76,6 @@ S3互換オブジェクトストレージにデータを階層化するときは
 
 サポートされている ONTAP プラットフォーム:: AFF システム、またはオール SSD アグリゲートまたはオール HDD アグリゲートを使用する FAS システムからデータを階層化できます。
 サポートされる ONTAP のバージョン:: ONTAP 9.8 以降
-必須のアプリケーションアクセスパラメータ:: クラスタ管理者ユーザは、「console」アプリケーションアクセス権を持っている必要があります。これは、ONTAP コマンドのsecurity login showを使用して確認できます。「admin」ユーザの_Application_Columnに「console」が表示されます。必要に応じて'security login createコマンドを使用してコンソール・アプリケーション・アクセスを追加します https://docs.netapp.com/us-en/ontap-cli-9111/security-login-create.html["詳細については、「security login」コマンドを参照してください"]。
 クラスタネットワークの要件::
 +
 --
