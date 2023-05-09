@@ -381,8 +381,6 @@
   <block id="2bdb7af2b6613fafdba930fb09034d3f" category="paragraph"><block ref="2bdb7af2b6613fafdba930fb09034d3f" category="inline-image-macro-rx" type="image"></block></block>
   <block id="41e921305ae1b027e5d364af4a2a9df2" category="list-text">_Update License_page で、ライセンスファイルをアップロードし、 * ライセンスの更新 * をクリックします。</block>
   <block id="8fa2690e71ce0c54acb839630146cadd" category="doc">クラスタからデータ階層化の概要を取得します</block>
-  <block id="ca7efa87a2dfa1e448ef01cfdaa54489" category="list-text">データをクラウドに階層化しているクラスタの数、データをクラウドに階層化していないクラスタの数、およびデータ階層化をサポートしていないクラスタの数。</block>
-  <block id="5198ebed4bb19dd4a54ec09aefa9b18a" category="list-text">クラウドに階層化されたデータの量と、クラスタ上のホットデータとコールドデータの量。</block>
   <block id="9e476387322a5c250893cf9c5c4ce78c" category="list-text">ポリシー</block>
   <block id="4be1b347cffb3177e749a7dea6f54978" category="list-text">各階層化ポリシーがボリュームに適用された回数。</block>
   <block id="28c123c8cd56ba4e4b9a732aa779fbc1" category="list-text">各タイプの Marketplace サブスクリプションに関連付けられているクラスタの数と、サブスクリプションのステータスが表示されます。</block>
@@ -1085,12 +1083,9 @@
   <block id="b14d512a3c64fb5df16f6721b0603c63" category="paragraph">このオプションを使用すると、再度ログインするように求められます。これらのアカウントのトークンは90日後に期限切れになります。このことを通知する通知が投稿されます。</block>
   <block id="ad8e06edf5256a509aa4b626821aded3" category="list-text">S3互換のオブジェクトストレージ（MinIOなど）</block>
   <block id="ad54fbabce5f384433a02d947362a539" category="paragraph">この時点で、MinIOオブジェクトストレージが認定されています。</block>
-  <block id="75ae3190ee97d211e630e0c0f1b5ddeb" category="inline-image-macro">[On-Prem Dashboard]ページのスクリーンショット。</block>
-  <block id="59b117edc0d3d63aaf2729e082c38261" category="paragraph"><block ref="59b117edc0d3d63aaf2729e082c38261" category="inline-image-macro-rx" type="image"></block></block>
   <block id="7a7553c4b7ed244f088a49d323385c57" category="list-text">検出されたクラスタ</block>
   <block id="82de8cfbf4bbb2c6acea13e93599b85d" category="list-text">データの概要</block>
   <block id="8ee0131ead01994f7bd95933f4e9a923" category="list-text">階層化の概要</block>
-  <block id="4e03a2d38322e40af6a6e79c953fef0e" category="list-text">現在階層化されているデータの量と、階層化される可能性のあるデータの量。</block>
   <block id="f9600e20b044515122327f9895faca66" category="list-text">マーケットプレイスのサブスクリプション</block>
   <block id="14cbdefab43f51a65021d80ce80980c0" category="list-text">[クラスタ]*ページで、クラスタのメニューアイコンをクリックし、*[クラスタ情報]*を選択します。</block>
   <block id="bff5f986b8f0d22acffc0010e8d56dde" category="paragraph">Tiering_Cluster_pageから検出されていないオンプレミスのONTAP クラスタをBlueXPに追加して、クラスタの階層化を有効にできます。</block>
@@ -1101,7 +1096,6 @@
   <block id="102787ed6297b34a7504b527e91d01d3" category="section-title">2023年4月3日</block>
   <block id="2e79231a13ecf62585403e20da2dea4a" category="section-title">[ライセンス]タブが削除されました</block>
   <block id="66a0b4752150538292b81c073ca0b83b" category="section-title">階層化タブの名前が変更され、内容が更新されました</block>
-  <block id="10d9a166ad36cdda1e0585914ac18d5f" category="paragraph">[Clusters Dashboard]タブの名前が[Clusters]に変更され、[On-Prem Overview]タブの名前が[On-Prem Dashboard]に変更されました。これらのページには、階層化構成を追加してストレージスペースを最適化できるかどうかを評価するための情報が追加されています。</block>
   <block id="c7f5c1a75acc58c6f004efc0ce1eba09" category="list-text">*添付ファイル（オプション）*：一度に1つずつ、最大5つの添付ファイルをアップロードできます。</block>
   <block id="bfa80e7aaad6da353b431bff3a0e12d6" category="paragraph">添付ファイルはファイルあたり25 MBに制限されています。サポートされているファイル拡張子は、txt、log、pdf、jpg/jpeg、rtf、 doc/docx、xls/xlsx、およびcsv。</block>
   <block id="8e6b52a532a4fbbfc98dca3ebfa5f1e6" category="list-text">*ケースノートの更新*：問題の詳細を入力するか、*ファイルのアップロード*を選択して最大5つのファイルを添付します。</block>
@@ -1126,7 +1120,6 @@
   <block id="23382689bb5023b2975968f57d098105" category="list-text">詳細設定ページで、使用するオブジェクトストアをミラーオブジェクトストアの場所にドラッグします。</block>
   <block id="ebfa7c7e62c629e534a590d9c5bd48ac" category="list-text">Advanced Setupページで、アグリゲートのメニューアイコンをクリックし、* Swap Destinations *を選択します。</block>
   <block id="85c797dc141e0eb32826e3caf502008c" category="list-text">Advanced Setupページで、アグリゲートのメニューアイコンをクリックし、* Unmirror Object Store *を選択します。</block>
-  <block id="48266b46c49dd5c5afbe71046b3b1261" category="list-text">BlueXPで、*[モビリティ]&gt;[階層化]&gt;[オンプレミスダッシュボード]*をクリックします。</block>
   <block id="e44d709d5fa4c3c47b7380bfc09d83fa" category="inline-link">価格設定の詳細をご覧ください</block>
   <block id="874323801a4fa98c0f05aaa80c3c1d82" category="paragraph"><block ref="f7ce611d89d41a39c0cd111c48bbba76" category="inline-link-rx"></block>。</block>
   <block id="2b36f8b3b2cccdc6807233a79e1b8d1d" category="paragraph">BYOLの容量が上限に達すると、新しいコールドデータの階層化が停止します。これまで階層化されていたすべてのデータに引き続きアクセスできるため、このデータを読み出して使用できます。取得されると、このデータはクラウドから高パフォーマンス階層に戻されます。</block>
@@ -1138,7 +1131,6 @@
   <block id="c395006d6063b66336be768382280c9e" category="paragraph">のすべてのエンドポイントのリストを参照してください<block ref="684a3f4234dd7d8f8b7d90e00da95138" category="inline-link-rx"></block>、<block ref="fd66fc554da543d0f7f94dcde36b2a2f" category="inline-link-rx"></block>または<block ref="2484264a704a749bc992bec76f43f13d" category="inline-link-rx"></block> クラウド環境：</block>
   <block id="90d333fba347612ff8ecc43a29a3eed9" category="inline-link">BlueXPの作業環境からCloud Volumes ONTAP システムの階層化をセットアップします</block>
   <block id="a36dfacc56a130ed7ae9dd3590426d64" category="summary">BlueXPの階層化サービスでは、オンプレミスの各クラスタからのデータ階層化をまとめて確認できます。ここでは、環境の概要を明確に示し、適切な操作を実行できるようにします。</block>
-  <block id="89de184d96dfdc1dd515cfe64321c1c5" category="paragraph">[階層化]&gt;[オンプレミスダッシュボード]*をクリックするだけです。BlueXPの階層化サービスには、環境に関する次の詳細情報が用意されています。</block>
   <block id="55f9ae56b6fac196eddd4055167857aa" category="summary">ネットアップのBlueXP階層化サービスは、アクセス頻度の低いデータをオンプレミスのONTAP クラスタからオブジェクトストレージに自動的に階層化することで、データセンターをクラウドに拡張します。これにより、クラスタの貴重なスペースが解放され、アプリケーションレイヤに変更を加えることなく、より多くのワークロードに対応できるようになります。BlueXPの階層化サービスを利用すれば、データセンターのコストを削減し、CAPEXモデルからOPEXモデルに切り替えることができます。</block>
   <block id="e920ef862d77b3f54bb7bf3e535062a3" category="doc">BlueXPの階層化機能の詳細をご確認ください</block>
   <block id="1f5bb8e27fe9e5bc5db4e7d70b757a81" category="paragraph">BlueXP階層化サービスは、_ FabricPool _の機能を活用しています。FabricPool はネットアップデータファブリックのテクノロジで、低コストのオブジェクトストレージへデータを自動で階層化することができます。アクティブな（ホットな）データはローカル階層（オンプレミスの ONTAP アグリゲート）に残り、アクセス頻度の低い（コールド）データはクラウド階層に移動されます。移動されると、 ONTAP のデータ効率は維持されます。</block>
@@ -1216,7 +1208,6 @@
   <block id="78e084a8e123f468bdc8292351608ac4" category="paragraph">はい。レイテンシは接続によって異なるため、クラウド階層と同じレイテンシを提供することはできません。オブジェクトストアのレイテンシとスループットを見積もるために、BlueXP階層化サービスではクラウドパフォーマンステスト（ONTAP オブジェクトストアプロファイラに基づく）を実行します。このテストは、オブジェクトストアの接続後、階層化のセットアップ前に使用できます。</block>
   <block id="588536d1b6de932fbea2c2b22f963d72" category="summary">BlueXP階層化サービスの30日間無償トライアルは、最初のクラスタから階層化をセットアップするときに始まります。無償トライアルの終了後は、BlueXP階層化サービスの料金を、クラウドプロバイダのマーケットプレイスから従量課金制または年単位のサブスクリプション、ネットアップのBYOLライセンス、またはその両方で支払う必要があります。</block>
   <block id="8202299929ccdfe388049a03c2c36d60" category="doc">BlueXP階層化のライセンスをセットアップ</block>
-  <block id="89bbec154619ad89d4ce9c542dabf604" category="list-text">クラウドプロバイダのマーケットプレイスでBlueXPサブスクリプション（PAYGO）にすでにサブスクライブしている場合は、オンプレミスのONTAP システムでもBlueXP階層化に自動的にサブスクライブされます。BlueXP階層化*のオンプレミスダッシュボード*タブにアクティブなサブスクリプションが表示されます。再度サブスクライブする必要はありません。Digital Wallet にアクティブなサブスクリプションが表示されます。</block>
   <block id="f6013530929ce5c8125f05448da6c33e" category="list-text">BYOL BlueXP階層化ライセンス（旧称「Cloud Tiering」ライセンス）は_floating_licenseで、BlueXPアカウント内の複数のオンプレミスONTAP クラスタにわたって使用できます。これは、クラスタごとに_ FabricPool _ licenseを購入した以前とは異なり、はるかに簡単です。</block>
   <block id="4f38e9048319fde605a07b6a4c99d8f5" category="inline-link-macro">BlueXPの階層化でライセンスがどのように機能するかについては、こちらをご覧ください</block>
   <block id="917e8711906a1b676db9798fcc2be9a1" category="paragraph"><block ref="4edd15551f6199902649e3b2955f6f1d" category="inline-link-macro-rx"></block>。</block>
@@ -1366,7 +1357,24 @@
   <block id="4acb8884a848c4db6d41852f96aa4ef6" category="admonition">System ManagerまたはONTAP CLIの「子」ライセンスに表示されるライセンス容量と有効期限は実際の情報ではないため、情報が異なる場合は問題となりません。これらの価値は、BlueXP階層化ソフトウェアによって内部的に管理されます。実際の情報はBlueXPのデジタルウォレットで追跡されます。</block>
   <block id="f4c3107fb758c7edea8576312dff63ac" category="inline-link-macro">ライセンスをBlueXPデジタルウォレットに追加します</block>
   <block id="1953cb0b13a811a9fb3db1b69c5f0a2d" category="list-text">BlueXPでは、 <block ref="fb3a1da5f1072aaa3d6f4c9eaa7cccb2" category="inline-link-macro-rx"></block>。</block>
-  <block id="a109e3cb0dd9ad8fb1c83a4902e1c322" category="paragraph">BlueXP階層化インターフェイスから[ライセンス]タブが削除されました。従量課金制（PAYGO）サブスクリプションのすべてのライセンスに、オンプレミスのBlueXP階層化ダッシュボードからアクセスできるようになりました。また、このページからBlueXPのデジタルウォレットへのリンクもあり、BlueXP階層化サービスのお客様所有のライセンスの使用（BYOL）を表示および管理できます。</block>
   <block id="891ca3a65a7ff1025eab9d895f17f04a" category="paragraph">ネットアップから* BlueXP階層化*ライセンス（旧称「Cloud Tiering」ライセンス）を購入して、お客様所有のライセンスを使用します。1年、2年、3年のライセンスを購入し、任意の量の階層化容量（最低10TiBから）を指定できます。BYOL BlueXP階層化ライセンスは_floating_licenseで、オンプレミスの複数のONTAP クラスタで使用できます。BlueXP階層化ライセンスで定義した合計階層化容量は、すべてのオンプレミスクラスタで使用できます。</block>
   <block id="2105bccac1837aa99c46baf38ee1c998" category="paragraph">ネットアップが提供するお客様所有のライセンスには、 1 年、 2 年、 3 年の期間があります。BYOL * BlueXP階層化*ライセンス（旧称「クラウド階層化」ライセンス）は_floating_licenseで、BlueXPアカウントの複数のオンプレミスONTAP クラスタにわたって使用できます。BlueXP階層化ライセンスで定義されている階層化の合計容量は*すべての*オンプレミスクラスタで共有されるため、初期ライセンスの取得や更新が容易になります。階層化BYOLライセンスの最小容量は10TiBからです。</block>
+  <block id="76e73aa82e342d9c46acf62eef4dcfc4" category="paragraph">[階層化]&gt;[オンプレミスダッシュボード]*をクリックするだけです。BlueXPの階層化サービスには、環境に関する次の詳細情報が用意されています。</block>
+  <block id="73363ef02ce267ee93816a7a9661efbb" category="inline-image-macro">オンプレミスのダッシュボードページのスクリーンショット。</block>
+  <block id="d8dd920a9088057867f1c70674cd6044" category="paragraph"><block ref="d8dd920a9088057867f1c70674cd6044" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="74a744bb842841bca60d2354efc47e63" category="list-text">BlueXP階層化サービスで検出されたオンプレミスクラスタの数。これらのクラスタの階層化ステータスの概要がグラフに表示されます。</block>
+  <block id="961fae3a3bd92168bb4311abe3732555" category="list-text">高階層化-コールドデータの20%以上を階層化しているクラスタ</block>
+  <block id="2f099d69366214f0a621dbd6f670d432" category="list-text">低階層化-コールドデータの20%未満を階層化しているクラスタ</block>
+  <block id="94a0f35b6512d82decab6d0169b0d82a" category="list-text">階層化なし-データを階層化しないクラスタ</block>
+  <block id="74d8fc4a0af61d770b56d0d4511ca8d8" category="list-text">Not Eligible -データ階層化をサポートしていないクラスタ</block>
+  <block id="c5754d852beb82302ca98976ea71cbbc" category="list-text">検出されたすべてのクラスタで使用されているデータの量。このグラフには、これらのクラスタについて階層化されているデータの量などが表示されます。</block>
+  <block id="591210acc9067056ff44d0a3207f9f77" category="list-text">階層化データ-クラウドに階層化されているコールドデータの総数</block>
+  <block id="6cff198ca76939ad9cc090e625ff3510" category="list-text">コールドデータ-階層化されていないコールドデータの総数</block>
+  <block id="35fc384bebd7724a70565ab7ef5ba5f2" category="list-text">ホットデータ-使用中のアクティブなホットデータの合計</block>
+  <block id="c98782bb630b00f1e0db7b7c6d173e63" category="list-text">Not eligible -クラスタまたはボリュームでデータ階層化がサポートされていないために階層化されていない合計データ量</block>
+  <block id="8e7506d0839acfb6f7efb77f1903df0d" category="list-text">現在階層化されているデータの量と、階層化される可能性があるコールドデータの量。</block>
+  <block id="6e3d9df489c437a2601f627a5b8935c9" category="paragraph">BlueXP階層化インターフェイスから[ライセンス]タブが削除されました。従量課金制（PAYGO）サブスクリプションのすべてのライセンスに、BlueXP階層化オンプレミスダッシュボードからアクセスできるようになりました。また、このページからBlueXPのデジタルウォレットへのリンクもあり、BlueXP階層化サービスのお客様所有のライセンスの使用（BYOL）を表示および管理できます。</block>
+  <block id="f6e3b39522072e9cb3b0ffb8cecf9b0b" category="paragraph">[Clusters Dashboard]タブの名前が[Clusters]に変更され、[On-Prem Overview]タブの名前が[On-Premises Dashboard]に変更されました。これらのページには、階層化構成を追加してストレージスペースを最適化できるかどうかを評価するための情報が追加されています。</block>
+  <block id="cb75eb32a44d8c6565fd938d48a9e7af" category="list-text">クラウドプロバイダのマーケットプレイスでBlueXPサブスクリプション（PAYGO）にすでにサブスクライブしている場合は、オンプレミスのONTAP システムでもBlueXP階層化に自動的にサブスクライブされます。BlueXP階層化*オンプレミスダッシュボード*タブにアクティブなサブスクリプションが表示されます。再度サブスクライブする必要はありません。Digital Wallet にアクティブなサブスクリプションが表示されます。</block>
+  <block id="7703863e061bca8dc56bfd0084619b09" category="list-text">BlueXPで、*[モビリティ]&gt;[階層化]&gt;[オンプレミスダッシュボード]*をクリックします。</block>
 </blocks>
