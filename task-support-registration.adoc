@@ -18,9 +18,9 @@ summary: ネットアップテクニカルサポートでサポートケース�
 
 BlueXPに統合した次のクラウドプロバイダソリューションのテクニカルサポートについては、その製品のBlueXPマニュアルの「困ったときは」を参照してください。
 
-* link:https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/start/concept-fsx-aws.html#getting-help["ONTAP 対応の Amazon FSX"^]
-* link:https://docs.netapp.com/us-en/cloud-manager-azure-netapp-files/concept-azure-netapp-files.html#getting-help["Azure NetApp Files の特長"^]
-* link:https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-service-gcp/concept-cvs-gcp.html#getting-help["Cloud Volumes Service for Google Cloud"^]
+* link:https://docs.netapp.com/us-en/bluexp-fsx-ontap/start/concept-fsx-aws.html#getting-help["ONTAP 対応の Amazon FSX"^]
+* link:https://docs.netapp.com/us-en/bluexp-azure-netapp-files/concept-azure-netapp-files.html#getting-help["Azure NetApp Files の特長"^]
+* link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-service-gcp/concept-cvs-gcp.html#getting-help["Cloud Volumes Service for Google Cloud"^]
 
 
 
@@ -72,7 +72,7 @@ BlueXPに統合した次のクラウドプロバイダソリューションの�
 .手順
 . BlueXPコンソールの右上にある[ヘルプ]アイコンをクリックし、[*Support*]を選択します。
 +
-image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-family/main/media/screenshot-help-support.png["[ ヘルプ ] メニューのスクリーンショット。サポートは最初に表示されるオプションです"]
+image:https://raw.githubusercontent.com/NetAppDocs/bluexp-family/main/media/screenshot-help-support.png["[ ヘルプ ] メニューのスクリーンショット。サポートは最初に表示されるオプションです"]
 
 . [*NSS Management] > [Add NSS Account*] をクリックします。
 . メッセージが表示されたら、 [* Continue （続行） ] をクリックして Microsoft ログインページにリダイレクトします。
@@ -97,9 +97,9 @@ image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-family/main/med
 
 ** ログインに成功すると、ネットアップはNSSのユーザ名を保存します。
 +
-これはシステムによって生成されたIDで、電子メールにマッピングされます。[*NSS Management*]ページで、から電子メールを表示できます image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-family/main/media/icon-nss-menu.png["3つの水平ドットのアイコン"] メニュー。
+これはシステムによって生成されたIDで、電子メールにマッピングされます。[*NSS Management*]ページで、から電子メールを表示できます image:https://raw.githubusercontent.com/NetAppDocs/bluexp-family/main/media/icon-nss-menu.png["3つの水平ドットのアイコン"] メニュー。
 
-** ログイン認証情報トークンを更新する必要がある場合は、の[認証情報の更新*]オプションも使用できます image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-family/main/media/icon-nss-menu.png["3つの水平ドットのアイコン"] メニュー。
+** ログイン認証情報トークンを更新する必要がある場合は、の[認証情報の更新*]オプションも使用できます image:https://raw.githubusercontent.com/NetAppDocs/bluexp-family/main/media/icon-nss-menu.png["3つの水平ドットのアイコン"] メニュー。
 +
 このオプションを使用すると、再度ログインするように求められます。これらのアカウントのトークンは90日後に期限切れになります。このことを通知する通知が投稿されます。
 
@@ -122,12 +122,12 @@ NSSアカウントをお持ちのネットアップのお客様は、BlueXPか�
 .手順
 . BlueXPコンソールの右上にある[ヘルプ]アイコンをクリックし、[*Support*]を選択します。
 +
-image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-family/main/media/screenshot-help-support.png["[ ヘルプ ] メニューのスクリーンショット。サポートは最初に表示されるオプションです"]
+image:https://raw.githubusercontent.com/NetAppDocs/bluexp-family/main/media/screenshot-help-support.png["[ ヘルプ ] メニューのスクリーンショット。サポートは最初に表示されるオプションです"]
 
 . NSSアカウントをまだ追加していない場合は、BlueXPに追加します。
 . [*リソース]ページで、[*サポートに登録*]をクリックします。
 +
-image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-family/main/media/screenshot-register-support.png["アカウントのシリアル番号と[サポートに登録]オプションを示すスクリーンショット"]
+image:https://raw.githubusercontent.com/NetAppDocs/bluexp-family/main/media/screenshot-register-support.png["アカウントのシリアル番号と[サポートに登録]オプションを示すスクリーンショット"]
 
 
 
@@ -155,11 +155,11 @@ image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-family/main/med
 .手順
 . BlueXPコンソールの右上にある[ヘルプ]アイコンをクリックし、[*Support*]を選択します。
 +
-image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-family/main/media/screenshot-help-support.png["[ ヘルプ ] メニューのスクリーンショット。サポートは最初に表示されるオプションです"]
+image:https://raw.githubusercontent.com/NetAppDocs/bluexp-family/main/media/screenshot-help-support.png["[ ヘルプ ] メニューのスクリーンショット。サポートは最初に表示されるオプションです"]
 
 . サポート登録ページでアカウントIDのシリアル番号を確認します。
 +
-image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-family/main/media/screenshot-serial-number.png["[ ヘルプ ] メニューのスクリーンショット。サポートは最初に表示されるオプションです"]
+image:https://raw.githubusercontent.com/NetAppDocs/bluexp-family/main/media/screenshot-serial-number.png["[ ヘルプ ] メニューのスクリーンショット。サポートは最初に表示されるオプションです"]
 
 . に移動します https://register.netapp.com["ネットアップサポート登録サイト"^] 「*ネットアップ登録のお客様ではありません*」を選択します。
 . 必須フィールドに入力します（赤いアスタリスクのフィールド）。

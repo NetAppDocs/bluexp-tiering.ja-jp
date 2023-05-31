@@ -200,7 +200,7 @@ BlueXPの階層化は、シングルノードクラスタと高可用性AFF 、F
 
 === Cloud Volumes ONTAP について教えてください。
 
-Cloud Volumes ONTAP システムを使用している場合は、BlueXPの階層化クラスタページに表示されるので、ハイブリッドクラウドインフラ内のデータ階層化の全体像を把握できます。ただし、Cloud Volumes ONTAP システムはBlueXP階層化から読み取り専用です。BlueXP階層化からCloud Volumes ONTAP でデータ階層化をセットアップすることはできません。 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-tiering.html["BlueXPの作業環境からCloud Volumes ONTAP システムの階層化をセットアップします"^]。
+Cloud Volumes ONTAP システムを使用している場合は、BlueXPの階層化クラスタページに表示されるので、ハイブリッドクラウドインフラ内のデータ階層化の全体像を把握できます。ただし、Cloud Volumes ONTAP システムはBlueXP階層化から読み取り専用です。BlueXP階層化からCloud Volumes ONTAP でデータ階層化をセットアップすることはできません。 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-tiering.html["BlueXPの作業環境からCloud Volumes ONTAP システムの階層化をセットアップします"^]。
 
 
 
@@ -362,7 +362,7 @@ Connectorは、クラウドアカウントまたはオンプレミスのいず�
 
 === コネクタをオンプレミスに導入できますか。
 
-はい。Connectorソフトウェアは、ネットワーク上のLinuxホストにダウンロードして手動でインストールできます。 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-install-connector-on-prem.html["コネクタをオンプレミスに取り付ける方法については、を参照してください"]。
+はい。Connectorソフトウェアは、ネットワーク上のLinuxホストにダウンロードして手動でインストールできます。 https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-on-prem.html["コネクタをオンプレミスに取り付ける方法については、を参照してください"]。
 
 
 

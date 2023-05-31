@@ -18,7 +18,7 @@ BlueXP階層化サービスの30日間無償トライアルは、最初のクラ
 
 さらに読む前に、いくつかのメモを記入してください。
 
-* クラウドプロバイダのマーケットプレイスでBlueXPサブスクリプション（PAYGO）にすでにサブスクライブしている場合は、オンプレミスのONTAP システムでもBlueXP階層化に自動的にサブスクライブされます。BlueXP階層化*オンプレミスダッシュボード*タブにアクティブなサブスクリプションが表示されます。再度サブスクライブする必要はありません。Digital Wallet にアクティブなサブスクリプションが表示されます。
+* クラウドプロバイダのマーケットプレイスでBlueXPサブスクリプション（PAYGO）にすでにサブスクライブしている場合は、オンプレミスのONTAP システムでもBlueXP階層化に自動的にサブスクライブされます。BlueXP階層化*オンプレミスダッシュボード*タブにアクティブなサブスクリプションが表示されます。再度サブスクライブする必要はありません。BlueXPデジタルウォレットには、アクティブなサブスクリプションが表示されます。
 * BYOL BlueXP階層化ライセンス（旧称「Cloud Tiering」ライセンス）は_floating_licenseで、BlueXPアカウント内の複数のオンプレミスONTAP クラスタにわたって使用できます。これは、クラスタごとに_ FabricPool _ licenseを購入した以前とは異なり、はるかに簡単です。
 * データを StorageGRID に階層化する場合は料金が発生しないため、 BYOL ライセンスや PAYGO の登録は必要ありません。この階層化データは、ライセンスで購入された容量には含まれません。
 
@@ -93,7 +93,7 @@ BlueXP階層化サービスの料金は、年単位の契約を購入して年�
 
 アクセス頻度の低いデータをAWSに階層化するときは、で提供される年間契約に登録できます https://aws.amazon.com/marketplace/pp/B086PDWSS8["AWS Marketplace のページ"^]。1年、2年、3年の期間が用意されています。
 
-このオプションを使用する場合は、 Marketplace のページでサブスクリプションを設定してから、を設定します https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-aws-accounts.html#associate-an-aws-subscription["サブスクリプションを AWS クレデンシャルに関連付けます"^]。
+このオプションを使用する場合は、 Marketplace のページでサブスクリプションを設定してから、を設定します https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-aws-accounts.html#associate-an-aws-subscription["サブスクリプションを AWS クレデンシャルに関連付けます"^]。
 
 AzureやGCPへの階層化では、現在年間契約はサポートされていません。
 
@@ -109,7 +109,7 @@ BlueXP階層化ライセンスをお持ちでない場合は、ネットアッ�
 * ライセンスをリクエストするには、BlueXPの右下にあるチャットアイコンをクリックします。
 
 
-必要に応じて、使用しないCloud Volumes ONTAP の未割り当てのノードベースライセンスがある場合は、同じ金額、同じ有効期限のBlueXP階層化ライセンスに変換できます。 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-manage-node-licenses.html#exchange-unassigned-node-based-licenses["詳細については、こちらをご覧ください"^]。
+必要に応じて、使用しないCloud Volumes ONTAP の未割り当てのノードベースライセンスがある場合は、同じ金額、同じ有効期限のBlueXP階層化ライセンスに変換できます。 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-manage-node-licenses.html#exchange-unassigned-node-based-licenses["詳細については、こちらをご覧ください"^]。
 
 BlueXPのデジタルウォレットページを使用して、BlueXP階層化のBYOLライセンスを管理します。新しいライセンスを追加したり、既存のライセンスを更新したりできます。
 
@@ -183,7 +183,7 @@ BlueXPアカウント用のBlueXP階層化ライセンスを購入したら、Bl
 +
 ** 階層化ライセンスのシリアル番号があり、 NSS アカウントを知っている場合は、 * シリアル番号を入力 * オプションを選択してその情報を入力します。
 +
-お使いのNetApp Support Siteのアカウントがドロップダウンリストにない場合は、 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-adding-nss-accounts.html["NSSアカウントをBlueXPに追加します"^]。
+お使いのNetApp Support Siteのアカウントがドロップダウンリストにない場合は、 https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-nss-accounts.html["NSSアカウントをBlueXPに追加します"^]。
 
 ** 階層化ライセンスファイルがある場合は、 * ライセンスファイルのアップロード * オプションを選択し、プロンプトに従ってファイルを添付します。
 +

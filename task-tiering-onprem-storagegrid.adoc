@@ -27,7 +27,7 @@ summary: アクセス頻度の低いデータを StorageGRID に階層化する�
 次のものが必要です。
 
 [role="quick-margin-list"]
-* ONTAP 9.4 以降を実行しているオンプレミスの ONTAP クラスタと、ユーザが指定したポートから StorageGRID への接続。 https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-discovering-ontap.html["クラスタの検出方法について説明します"^]。
+* ONTAP 9.4 以降を実行しているオンプレミスの ONTAP クラスタと、ユーザが指定したポートから StorageGRID への接続。 https://docs.netapp.com/us-en/bluexp-ontap-onprem/task-discovering-ontap.html["クラスタの検出方法について説明します"^]。
 * StorageGRID 10.3 以降で、 S3 権限を持つ AWS アクセスキーが使用されています。
 * オンプレミスにインストールされているコネクタ。
 * ONTAP クラスタ、StorageGRID 、およびBlueXP階層化サービスへのアウトバウンドHTTPS接続を可能にするコネクタのネットワーク。
@@ -96,7 +96,7 @@ NOTE: BlueXPの階層化では、ONTAP 9.5以降でFlexGroup ボリュームが�
 
 コールドデータの階層化を開始する前に、オンプレミスのONTAP 作業環境をBlueXPキャンバスに作成する必要があります。
 
-https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-discovering-ontap.html["クラスタの検出方法について説明します"^]。
+https://docs.netapp.com/us-en/bluexp-ontap-onprem/task-discovering-ontap.html["クラスタの検出方法について説明します"^]。
 
 
 
@@ -129,9 +129,9 @@ S3 クレデンシャル:: StorageGRID への階層化をセットアップす�
 
 データをクラウドに階層化するにはコネクタが必要です。データを StorageGRID に階層化する場合は、オンプレミスのコネクタが必要です。新しいコネクターをインストールするか、現在選択されているコネクターがオンプレミスにあることを確認する必要があります。
 
-* https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html["コネクタについて説明します"^]
-* https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-on-prem.html["Linuxホストへのコネクタのインストール"^]
-* https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-managing-connectors.html["コネクタ間の切り替え"^]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/concept-connectors.html["コネクタについて説明します"^]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-on-prem.html["Linuxホストへのコネクタのインストール"^]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-managing-connectors.html["コネクタ間の切り替え"^]
 
 
 
@@ -143,7 +143,7 @@ S3 クレデンシャル:: StorageGRID への階層化をセットアップす�
 .手順
 . コネクタが取り付けられているネットワークで次の接続が有効になっていることを確認します。
 +
-** ポート443経由でBlueXP階層化サービスへのHTTPS接続 (https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-set-up-networking-on-prem.html#endpoints-contacted-for-day-to-day-operations["エンドポイントのリストを参照してください"^])
+** ポート443経由でBlueXP階層化サービスへのHTTPS接続 (https://docs.netapp.com/us-en/bluexp-setup-admin/task-set-up-networking-on-prem.html#endpoints-contacted-for-day-to-day-operations["エンドポイントのリストを参照してください"^])
 ** StorageGRID システムへのポート443経由のHTTPS接続
 ** ONTAP クラスタ管理 LIF へのポート 443 経由の HTTPS 接続
 
@@ -157,7 +157,7 @@ S3 クレデンシャル:: StorageGRID への階層化をセットアップす�
 環境を準備したら、最初のクラスタからアクセス頻度の低いデータの階層化を開始します。
 
 .必要なもの
-* https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-discovering-ontap.html["オンプレミスの作業環境"^]。
+* https://docs.netapp.com/us-en/bluexp-ontap-onprem/task-discovering-ontap.html["オンプレミスの作業環境"^]。
 * StorageGRID ゲートウェイノードのFQDNと、HTTPS通信に使用するポート。
 * 必要な S3 権限を持つ AWS アクセスキー。
 

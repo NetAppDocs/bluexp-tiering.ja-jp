@@ -27,7 +27,7 @@ summary: 非アクティブなデータを Google Cloud Storage に階層化す�
 次のものが必要です。
 
 [role="quick-margin-list"]
-* ONTAP 9.6 以降を実行し、 Google Cloud Storage に HTTPS 接続するオンプレミスの ONTAP クラスタ。 https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-discovering-ontap.html["クラスタの検出方法について説明します"^]。
+* ONTAP 9.6 以降を実行し、 Google Cloud Storage に HTTPS 接続するオンプレミスの ONTAP クラスタ。 https://docs.netapp.com/us-en/bluexp-ontap-onprem/task-discovering-ontap.html["クラスタの検出方法について説明します"^]。
 * 事前定義された Storage Admin ロールとストレージアクセスキーを持つサービスアカウント。
 * Google Cloud Platform VPC にインストールされるコネクタ。
 * データセンター内のONTAP クラスタ、Google Cloud Storage、およびBlueXP階層化サービスへのアウトバウンドHTTPS接続を可能にするコネクタのネットワーク。
@@ -43,7 +43,7 @@ BlueXPでは、オンプレミスの作業環境を選択し、階層化サー�
 
 [role="quick-margin-list"]
 * GCP Marketplace から登録するには、 https://console.cloud.google.com/marketplace/details/netapp-cloudmanager/cloud-manager?supportedpurview=project&rif_reserved["BlueXP Marketplace製品にアクセスします"^]をクリックし、 * Subscribe * をクリックして、画面の指示に従います。
-* BlueXP階層化BYOLライセンスを使用して料金を支払う場合は、mailto：ng-cloud-tiering@netapp.com？subject=ライセンス[contact us if you need to purchase one]の順にクリックします link:task-licensing-cloud-tiering.html#add-bluexp-tiering-byol-licenses-to-your-account["BlueXP Digital Walletからアカウントに追加します"]。
+* BlueXP階層化BYOLライセンスを使用して料金を支払う場合は、mailto：ng-cloud-tiering@netapp.com？subject=ライセンス[contact us if you need to purchase one]の順にクリックします link:task-licensing-cloud-tiering.html#add-bluexp-tiering-byol-licenses-to-your-account["BlueXPデジタルウォレットからアカウントに追加します"]。
 
 
 
@@ -107,7 +107,7 @@ NOTE: BlueXPの階層化はFlexGroup ボリュームに対応しています。�
 
 コールドデータの階層化を開始する前に、オンプレミスのONTAP 作業環境をBlueXPに作成する必要があります。
 
-https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-discovering-ontap.html["クラスタの検出方法について説明します"^]。
+https://docs.netapp.com/us-en/bluexp-ontap-onprem/task-discovering-ontap.html["クラスタの検出方法について説明します"^]。
 
 
 
@@ -115,8 +115,8 @@ https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-discovering-ontap.
 
 データをクラウドに階層化するにはコネクタが必要です。データを Google Cloud Storage に階層化する場合は、 Google Cloud Platform VPC でコネクタが使用可能である必要があります。新しいコネクターを作成するか、現在選択されているコネクターが GCP にあることを確認する必要があります。
 
-* https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html["コネクタについて説明します"^]
-* https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-google.html["GCPでのコネクターの配置"^]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/concept-connectors.html["コネクタについて説明します"^]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-google.html["GCPでのコネクターの配置"^]
 
 
 
@@ -128,7 +128,7 @@ https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-discovering-ontap.
 .手順
 . コネクタがインストールされている VPC で次の接続が有効になっていることを確認します。
 +
-** ポート443経由でBlueXP階層化サービスとGoogle Cloud StorageへのHTTPS接続 (https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-set-up-networking-google.html#endpoints-contacted-for-day-to-day-operations["エンドポイントのリストを参照してください"^])
+** ポート443経由でBlueXP階層化サービスとGoogle Cloud StorageへのHTTPS接続 (https://docs.netapp.com/us-en/bluexp-setup-admin/task-set-up-networking-google.html#endpoints-contacted-for-day-to-day-operations["エンドポイントのリストを参照してください"^])
 ** ONTAP クラスタ管理 LIF へのポート 443 経由の HTTPS 接続
 
 
@@ -169,7 +169,7 @@ NOTE: 一定の日数が経過したあとに階層化データがに移行さ�
 Google Cloud 環境を準備したら、最初のクラスタからアクセス頻度の低いデータの階層化を開始します。
 
 .必要なもの
-* https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-discovering-ontap.html["オンプレミスの作業環境"^]。
+* https://docs.netapp.com/us-en/bluexp-ontap-onprem/task-discovering-ontap.html["オンプレミスの作業環境"^]。
 * Storage Admin ロールが割り当てられているサービスアカウントのストレージアクセスキー。
 
 

@@ -76,7 +76,7 @@ NSSアカウントが表示されない場合は、BlueXPのサポートセク�
 
 
 +
-image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-family/main/media/screenshot-create-case.png["ネットアップサポートでケースを作成できるケースの作成フォームのスクリーンショット。"]
+image:https://raw.githubusercontent.com/NetAppDocs/bluexp-family/main/media/screenshot-create-case.png["ネットアップサポートでケースを作成できるケースの作成フォームのスクリーンショット。"]
 
 
 
@@ -132,19 +132,19 @@ image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-family/main/med
 ** [Organization's Cases]*で[View]*をクリックすると、会社に関連付けられているすべてのケースが表示されます。
 ** 正確な日付範囲を選択するか、別の期間を選択して、日付範囲を変更します。
 +
-image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-family/main/media/screenshot-case-management-date-range.png["[Case Management]ページのテーブルの上にあるオプションのスクリーンショット。正確な日付範囲、または過去7日、30日、または3カ月を選択できます。"]
+image:https://raw.githubusercontent.com/NetAppDocs/bluexp-family/main/media/screenshot-case-management-date-range.png["[Case Management]ページのテーブルの上にあるオプションのスクリーンショット。正確な日付範囲、または過去7日、30日、または3カ月を選択できます。"]
 
 ** 列の内容をフィルタリングします。
 +
-image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-family/main/media/screenshot-case-management-filter.png["[Status]列のフィルタオプションのスクリーンショット。[Active]や[Closed]など、特定のステータスに一致するケースを除外できます。"]
+image:https://raw.githubusercontent.com/NetAppDocs/bluexp-family/main/media/screenshot-case-management-filter.png["[Status]列のフィルタオプションのスクリーンショット。[Active]や[Closed]など、特定のステータスに一致するケースを除外できます。"]
 
-** をクリックして、テーブルに表示される列を変更します image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-family/main/media/icon-table-columns.png["テーブルに表示されるプラスアイコン"] 次に、表示する列を選択します。
+** をクリックして、テーブルに表示される列を変更します image:https://raw.githubusercontent.com/NetAppDocs/bluexp-family/main/media/icon-table-columns.png["テーブルに表示されるプラスアイコン"] 次に、表示する列を選択します。
 +
-image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-family/main/media/screenshot-case-management-columns.png["表に表示できる列を示すスクリーンショット。"]
+image:https://raw.githubusercontent.com/NetAppDocs/bluexp-family/main/media/screenshot-case-management-columns.png["表に表示できる列を示すスクリーンショット。"]
 
 
 
-. をクリックして既存のケースを管理します image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-family/main/media/icon-table-action.png["テーブルの最後の列に表示される3つの点を持つアイコン"] 使用可能なオプションのいずれかを選択します。
+. をクリックして既存のケースを管理します image:https://raw.githubusercontent.com/NetAppDocs/bluexp-family/main/media/icon-table-action.png["テーブルの最後の列に表示される3つの点を持つアイコン"] 使用可能なオプションのいずれかを選択します。
 +
 ** *ケースの表示*:特定のケースの詳細を表示します。
 ** *ケースノートの更新*：問題の詳細を入力するか、*ファイルのアップロード*を選択して最大5つのファイルを添付します。
@@ -155,6 +155,6 @@ image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-family/main/med
 
 
 +
-image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-family/main/media/screenshot-case-management-actions.png["テーブルの最後の列でメニューを選択した後に実行できる操作を示すスクリーンショット。"]
+image:https://raw.githubusercontent.com/NetAppDocs/bluexp-family/main/media/screenshot-case-management-actions.png["テーブルの最後の列でメニューを選択した後に実行できる操作を示すスクリーンショット。"]
 
 

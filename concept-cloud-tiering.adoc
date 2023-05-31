@@ -43,7 +43,7 @@ BlueXPの階層化サービスでは、自動化、監視、レポート作成�
 BlueXPの階層化機能の詳細については、 https://bluexp.netapp.com/cloud-tiering["BlueXP WebサイトのBlueXP階層化ページをご確認ください"^]。
 
 
-TIP: Cloud Volumes ONTAP システムは、BlueXP階層化から読み取り専用です。 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-tiering.html["BlueXPの作業環境からCloud Volumes ONTAP システムの階層化をセットアップします"^]。
+TIP: Cloud Volumes ONTAP システムは、BlueXP階層化から読み取り専用です。 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-tiering.html["BlueXPの作業環境からCloud Volumes ONTAP システムの階層化をセットアップします"^]。
 
 
 
@@ -205,7 +205,7 @@ NOTE: 再加熱されたデータは、スペースがある場合にのみパ�
 +
 データはすぐに階層化されるため、 SnapMirror はパフォーマンス階層ではなくクラウド階層からデータを読み取ります。そのため、 SnapMirror 処理が遅くなります。別の階層化ポリシーを使用している場合でも、 SnapMirror 処理の速度が遅くなる可能性があります。
 
-* BlueXPのバックアップとリカバリも、階層化ポリシーが設定されたボリュームの影響を受けます。 https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-ontap-backup-to-cloud.html#fabricpool-tiering-policy-considerations["BlueXPのバックアップとリカバリでの階層化ポリシーに関する考慮事項を参照してください"^]。
+* BlueXPのバックアップとリカバリも、階層化ポリシーが設定されたボリュームの影響を受けます。 https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-ontap-backup-to-cloud.html#fabricpool-tiering-policy-considerations["BlueXPのバックアップとリカバリでの階層化ポリシーに関する考慮事項を参照してください"^]。
 
 
 --

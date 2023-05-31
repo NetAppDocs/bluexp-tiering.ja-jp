@@ -40,7 +40,7 @@ BlueXP階層化インターフェイスから[ライセンス]タブが削除さ
 
 === ボリュームの階層化レポートを生成できるようになりました
 
-[階層ボリューム]ページからレポートをダウンロードして、管理しているクラスタ上のすべてのボリュームの階層化ステータスを確認できます。BlueXPの階層化サービスでは.csvファイルが生成されます。このファイルを確認して、必要に応じて社内の他のユーザに送信できます。 https://docs.netapp.com/us-en/cloud-manager-tiering/task-managing-tiering.html#download-a-tiering-report-for-your-volumes["階層化レポートのダウンロード方法をご覧ください"]。
+[階層ボリューム]ページからレポートをダウンロードして、管理しているクラスタ上のすべてのボリュームの階層化ステータスを確認できます。BlueXPの階層化サービスでは.csvファイルが生成されます。このファイルを確認して、必要に応じて社内の他のユーザに送信できます。 https://docs.netapp.com/us-en/bluexp-tiering/task-managing-tiering.html#download-a-tiering-report-for-your-volumes["階層化レポートのダウンロード方法をご覧ください"]。
 
 
 
@@ -62,7 +62,7 @@ BlueXPの階層化が変更されたため、BlueXPの階層化処理を成功�
 
 | \ https://*.cloudmanager.cloud.netapp.com | \ https://*.api.bluexp.netapp.com 
 |===
-のすべてのエンドポイントのリストを参照してください https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-set-up-networking-aws.html#outbound-internet-access["AWS"^]、 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-set-up-networking-google.html#outbound-internet-access["Google Cloud"^]または https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-set-up-networking-azure.html#outbound-internet-access["Azure"^] クラウド環境：
+のすべてのエンドポイントのリストを参照してください https://docs.netapp.com/us-en/bluexp-setup-admin/task-set-up-networking-aws.html#outbound-internet-access["AWS"^]、 https://docs.netapp.com/us-en/bluexp-setup-admin/task-set-up-networking-google.html#outbound-internet-access["Google Cloud"^]または https://docs.netapp.com/us-en/bluexp-setup-admin/task-set-up-networking-azure.html#outbound-internet-access["Azure"^] クラウド環境：
 
 
 
@@ -82,9 +82,9 @@ Azure Blob、Google Cloud Storage、またはStorageGRID 階層化のデステ�
 
 === 階層化ウィザードでは、S3ストレージへの階層化時にAWS PrivateLinkを設定できます
 
-以前のリリースでは、VPCエンドポイントを介してクラスタをS3バケットに接続するこのセキュアな方法は、非常に時間がかかりました。前提条件となる手順を実行して、を実行します https://docs.netapp.com/us-en/cloud-manager-tiering/task-tiering-onprem-aws.html#configure-your-system-for-a-private-connection-using-a-vpc-endpoint-interface["VPCエンドポイントインターフェイスを使用して、システムにプライベート接続を設定します"]をクリックすると、[ネットワーク]ページの階層化セットアップウィザードでPrivateLinkを選択できます。
+以前のリリースでは、VPCエンドポイントを介してクラスタをS3バケットに接続するこのセキュアな方法は、非常に時間がかかりました。前提条件となる手順を実行して、を実行します https://docs.netapp.com/us-en/bluexp-tiering/task-tiering-onprem-aws.html#configure-your-system-for-a-private-connection-using-a-vpc-endpoint-interface["VPCエンドポイントインターフェイスを使用して、システムにプライベート接続を設定します"]をクリックすると、[ネットワーク]ページの階層化セットアップウィザードでPrivateLinkを選択できます。
 
-https://docs.netapp.com/us-en/cloud-manager-tiering/task-tiering-onprem-aws.html["アクセス頻度の低いデータをAmazon S3に階層化するための要件と手順を確認します"]。
+https://docs.netapp.com/us-en/bluexp-tiering/task-tiering-onprem-aws.html["アクセス頻度の低いデータをAmazon S3に階層化するための要件と手順を確認します"]。
 
 
 
@@ -106,13 +106,13 @@ MetroCluster 構成からミラーオブジェクトストアを削除する場�
 
 === クラスタ内の他のアグリゲート用に追加のオブジェクトストアを設定できるようになりました
 
-Cloud Tiering UIに、オブジェクトストレージ構成用の新しいページセットが追加されました。新しいオブジェクトストアの追加、FabricPool ミラーリング用のアグリゲートへの複数のオブジェクトストアの接続、プライマリオブジェクトストアとミラーオブジェクトストアの交換、アグリゲートへのオブジェクトストアの接続の削除などが可能です。 https://docs.netapp.com/us-en/cloud-manager-tiering/task-managing-object-storage.html["新しいオブジェクトストレージ機能の詳細については、こちらをご覧ください。"]
+Cloud Tiering UIに、オブジェクトストレージ構成用の新しいページセットが追加されました。新しいオブジェクトストアの追加、FabricPool ミラーリング用のアグリゲートへの複数のオブジェクトストアの接続、プライマリオブジェクトストアとミラーオブジェクトストアの交換、アグリゲートへのオブジェクトストアの接続の削除などが可能です。 https://docs.netapp.com/us-en/bluexp-tiering/task-managing-object-storage.html["新しいオブジェクトストレージ機能の詳細については、こちらをご覧ください。"]
 
 
 
 === MetroCluster 構成に対するCloud Tieringライセンスがサポートされています
 
-Cloud Tieringライセンスを、MetroCluster 構成に含まれるクラスタと共有できるようになりました。これらのシナリオで廃止されたFabricPool ライセンスを使用する必要はなくなりました。これにより、多くのクラスタで「フローティング」のクラウド階層化ライセンスを簡単に使用できるようになります。 https://docs.netapp.com/us-en/cloud-manager-tiering/task-licensing-cloud-tiering.html#apply-bluexp-tiering-licenses-to-clusters-in-special-configurations["これらのタイプのクラスタのライセンスを設定する方法を参照してください。"]
+Cloud Tieringライセンスを、MetroCluster 構成に含まれるクラスタと共有できるようになりました。これらのシナリオで廃止されたFabricPool ライセンスを使用する必要はなくなりました。これにより、多くのクラスタで「フローティング」のクラウド階層化ライセンスを簡単に使用できるようになります。 https://docs.netapp.com/us-en/bluexp-tiering/task-licensing-cloud-tiering.html#apply-bluexp-tiering-licenses-to-clusters-in-special-configurations["これらのタイプのクラスタのライセンスを設定する方法を参照してください。"]
 
 
 
@@ -122,7 +122,7 @@ Cloud Tieringライセンスを、MetroCluster 構成に含まれるクラスタ
 
 === Cloud Tieringは、追加のクラスタ構成をサポートしています
 
-クラウド階層化ライセンスを、階層化ミラー構成（MetroCluster 構成を除く）のクラスタと、IBM Cloud Object Storageに階層化されたクラスタと共有できるようになりました。これらのシナリオで廃止されたFabricPool ライセンスを使用する必要はなくなりました。これにより、多くのクラスタで「フローティング」のクラウド階層化ライセンスを簡単に使用できるようになります。 https://docs.netapp.com/us-en/cloud-manager-tiering/task-licensing-cloud-tiering.html#apply-bluexp-tiering-licenses-to-clusters-in-special-configurations["これらのタイプのクラスタのライセンスを設定する方法を参照してください。"]
+クラウド階層化ライセンスを、階層化ミラー構成（MetroCluster 構成を除く）のクラスタと、IBM Cloud Object Storageに階層化されたクラスタと共有できるようになりました。これらのシナリオで廃止されたFabricPool ライセンスを使用する必要はなくなりました。これにより、多くのクラスタで「フローティング」のクラウド階層化ライセンスを簡単に使用できるようになります。 https://docs.netapp.com/us-en/bluexp-tiering/task-licensing-cloud-tiering.html#apply-bluexp-tiering-licenses-to-clusters-in-special-configurations["これらのタイプのクラスタのライセンスを設定する方法を参照してください。"]
 
 
 
@@ -132,7 +132,7 @@ Cloud Tieringライセンスを、MetroCluster 構成に含まれるクラスタ
 
 === Amazon S3 Glacier Instant Retrieval ストレージクラスが使用可能になりました
 
-Cloud Tiering をセットアップする際に、アクティブでないデータが特定の日数後に _Standard_storage クラスから _Glacier Instant Retrieve_に 移行するようにライフサイクルルールを設定できるようになりました。これにより、 AWS インフラのコストを削減できます。 https://docs.netapp.com/us-en/cloud-manager-tiering/reference-aws-support.html["サポートされているS3ストレージクラスを参照してください。"]
+Cloud Tiering をセットアップする際に、アクティブでないデータが特定の日数後に _Standard_storage クラスから _Glacier Instant Retrieve_に 移行するようにライフサイクルルールを設定できるようになりました。これにより、 AWS インフラのコストを削減できます。 https://docs.netapp.com/us-en/bluexp-tiering/reference-aws-support.html["サポートされているS3ストレージクラスを参照してください。"]
 
 
 

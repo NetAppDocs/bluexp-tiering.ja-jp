@@ -63,7 +63,7 @@ ConnectorでS3バケットの作成と管理を行うための権限を設定し
 
 [role="quick-margin-list"]
 * AWS Marketplace でサブスクライブするには、 https://aws.amazon.com/marketplace/pp/prodview-oorxakq6lq7m4?sr=0-8&ref_=beagle&applicationId=AWSMPContessa["BlueXP Marketplace製品にアクセスします"^]をクリックし、 * Subscribe * をクリックして、画面の指示に従います。
-* BlueXP階層化BYOLライセンスを使用して料金を支払う場合は、mailto：ng-cloud-tiering@netapp.com？subject=ライセンス[contact us if you need to purchase one]の順にクリックします link:task-licensing-cloud-tiering.html#add-bluexp-tiering-byol-licenses-to-your-account["BlueXP Digital Walletからアカウントに追加します"]。
+* BlueXP階層化BYOLライセンスを使用して料金を支払う場合は、mailto：ng-cloud-tiering@netapp.com？subject=ライセンス[contact us if you need to purchase one]の順にクリックします link:task-licensing-cloud-tiering.html#add-bluexp-tiering-byol-licenses-to-your-account["BlueXPデジタルウォレットからアカウントに追加します"]。
 
 
 
@@ -99,9 +99,9 @@ BlueXPコネクタは'BlueXP機能の主要なソフトウェアですアクセ�
 
 AWS VPCまたはオンプレミスにすでにコネクタが導入されている場合は、すべて設定されます。ない場合は、ONTAP データをAWS S3ストレージに階層化するために、これらのどちらかの場所にコネクタを作成する必要があります。別のクラウドプロバイダに導入されているコネクタは使用できません。
 
-* https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html["コネクタについて説明します"^]
-* https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-aws.html["AWSでのコネクタの導入"^]
-* https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-on-prem.html["Linuxホストへのコネクタのインストール"^]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/concept-connectors.html["コネクタについて説明します"^]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-aws.html["AWSでのコネクタの導入"^]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-on-prem.html["Linuxホストへのコネクタのインストール"^]
 
 
 
@@ -110,11 +110,11 @@ AWS VPCまたはオンプレミスにすでにコネクタが導入されてい�
 
 * コネクタが取り付けられているネットワークで次の接続が有効になっていることを確認します。
 +
-** ポート443を介してBlueXP階層化サービスとS3オブジェクトストレージへのHTTPS接続 (https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-set-up-networking-aws.html#endpoints-contacted-for-day-to-day-operations["エンドポイントのリストを参照してください"^])
+** ポート443を介してBlueXP階層化サービスとS3オブジェクトストレージへのHTTPS接続 (https://docs.netapp.com/us-en/bluexp-setup-admin/task-set-up-networking-aws.html#endpoints-contacted-for-day-to-day-operations["エンドポイントのリストを参照してください"^])
 ** ONTAP クラスタ管理 LIF へのポート 443 経由の HTTPS 接続
 
 
-* https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-permissions-aws.html#cloud-tiering["コネクタにS3バケットを管理する権限があることを確認します"^]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-aws.html#cloud-tiering["コネクタにS3バケットを管理する権限があることを確認します"^]
 * ONTAP クラスタからVPCへのDirect ConnectまたはVPN接続が確立されている状況で、コネクタとS3の間の通信をAWS内部ネットワーク（*プライベート*接続）のままにする場合は、S3へのVPCエンドポイントインターフェイスを有効にする必要があります。 <<VPCエンドポイントインターフェイスを使用して、システムにプライベート接続を設定します,VPC エンドポイントインターフェイスの設定方法を参照してください。>>
 
 
@@ -182,7 +182,7 @@ IPspace内のすべてのクラスタ間LIFがオブジェクトストアにア�
 
 オブジェクトストレージへのコールドデータの階層化を開始する前に、BlueXPでオンプレミスONTAP クラスタを検出する必要があります。クラスタを追加するには、クラスタ管理 IP アドレスと admin ユーザアカウントのパスワードが必要です。
 
-https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-discovering-ontap.html["クラスタの検出方法について説明します"^]。
+https://docs.netapp.com/us-en/bluexp-ontap-onprem/task-discovering-ontap.html["クラスタの検出方法について説明します"^]。
 
 
 
@@ -206,7 +206,7 @@ NOTE: 一定の日数が経過すると階層化されたデータがに移行�
 
 
 .手順
-. 確認します https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-permissions-aws.html#cloud-tiering["指定したS3権限になります"^] IAMロールの一部であり、コネクタに権限を付与します。これらは、コネクタを最初に展開したときにデフォルトで含まれています。そうでない場合は、不足している権限を追加する必要があります。を参照してください https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_manage-edit.html["AWS のドキュメント：「 Editing IAM policies"^]。
+. 確認します https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-aws.html#cloud-tiering["指定したS3権限になります"^] IAMロールの一部であり、コネクタに権限を付与します。これらは、コネクタを最初に展開したときにデフォルトで含まれています。そうでない場合は、不足している権限を追加する必要があります。を参照してください https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_manage-edit.html["AWS のドキュメント：「 Editing IAM policies"^]。
 . サービスをアクティブ化すると、階層化ウィザードにアクセスキーとシークレットキーの入力を求められます。これらのクレデンシャルは、ONTAP がS3バケットにデータを階層化できるようにONTAP クラスタに渡されます。そのためには、次の権限を持つ IAM ユーザを作成する必要があります。
 +
 [source, json]
@@ -253,7 +253,7 @@ image:screenshot_tiering_aws_sec_group.png["コネクタに関連付けられて
 +
 image:screenshot_endpoint_dns_aws_console.png["AWS コンソールから VPC エンドポイントの DNS 名のスクリーンショット。"]
 
-. VPC S3 エンドポイントから証明書を取得します。これは、で行います https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-managing-connectors.html#connect-to-the-linux-vm["BlueXPコネクタをホストしているVMにログインします"^] 実行するコマンドエンドポイントの DNS 名を入力するときは、先頭に「 * 」を追加して、「 * 」を置き換えます。
+. VPC S3 エンドポイントから証明書を取得します。これは、で行います https://docs.netapp.com/us-en/bluexp-setup-admin/task-managing-connectors.html#connect-to-the-linux-vm["BlueXPコネクタをホストしているVMにログインします"^] 実行するコマンドエンドポイントの DNS 名を入力するときは、先頭に「 * 」を追加して、「 * 」を置き換えます。
 +
 [source, text]
 ----
@@ -289,7 +289,7 @@ Please enter Certificate: Press <Enter> when done
 AWS 環境を準備したら、最初のクラスタからアクセス頻度の低いデータの階層化を開始します。
 
 .必要なもの
-* https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-discovering-ontap.html["オンプレミスの作業環境"^]。
+* https://docs.netapp.com/us-en/bluexp-ontap-onprem/task-discovering-ontap.html["オンプレミスの作業環境"^]。
 * 必要な S3 権限を持つ IAM ユーザの AWS アクセスキー。
 
 
