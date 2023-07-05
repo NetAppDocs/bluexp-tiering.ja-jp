@@ -18,6 +18,24 @@ BlueXP階層化サービスの新機能をご紹介します。
 
 
 
+== 2023年7月4日
+
+
+
+=== アクセス頻度の低いデータをオブジェクトストレージにアップロードする際の帯域幅を調整できるようになりました
+
+BlueXP階層化をアクティブ化すると、ONTAPは無制限のネットワーク帯域幅を使用して、アクセス頻度の低いデータをクラスタ内のボリュームからオブジェクトストレージに転送できます。階層化トラフィックが通常のユーザワークロードに影響していることに気付いた場合は、転送中に使用できる帯域幅を調整できます。 https://docs.netapp.com/us-en/bluexp-tiering/task-managing-tiering.html#changing-the-network-bandwidth-available-to-upload-inactive-data-to-object-storage["詳細はこちら。"]。
+
+
+
+=== 通知センターに「低階層化」の階層化イベントが表示されます
+
+クラスタがコールドデータの20%未満（データを階層化しないクラスタを含む）を階層化しているときに、階層化イベント「Tier additional data from cluster <name> to object storage efficiency」が通知として表示されるようになりました。
+
+本通知は、システムの効率化とストレージコストの削減を目的とした「推奨事項」です。これにより、へのリンクが提供されます https://bluexp.netapp.com/cloud-tiering-service-tco["BlueXP階層化サービス（TCO）とコスト削減試算ツールです"^] コスト削減額の計算に役立ちます。
+
+
+
 == 2023年4月3日
 
 
@@ -123,19 +141,3 @@ Cloud Tieringライセンスを、MetroCluster 構成に含まれるクラスタ
 === Cloud Tieringは、追加のクラスタ構成をサポートしています
 
 クラウド階層化ライセンスを、階層化ミラー構成（MetroCluster 構成を除く）のクラスタと、IBM Cloud Object Storageに階層化されたクラスタと共有できるようになりました。これらのシナリオで廃止されたFabricPool ライセンスを使用する必要はなくなりました。これにより、多くのクラスタで「フローティング」のクラウド階層化ライセンスを簡単に使用できるようになります。 https://docs.netapp.com/us-en/bluexp-tiering/task-licensing-cloud-tiering.html#apply-bluexp-tiering-licenses-to-clusters-in-special-configurations["これらのタイプのクラスタのライセンスを設定する方法を参照してください。"]
-
-
-
-== 2022 年 4 月 4 日
-
-
-
-=== Amazon S3 Glacier Instant Retrieval ストレージクラスが使用可能になりました
-
-Cloud Tiering をセットアップする際に、アクティブでないデータが特定の日数後に _Standard_storage クラスから _Glacier Instant Retrieve_に 移行するようにライフサイクルルールを設定できるようになりました。これにより、 AWS インフラのコストを削減できます。 https://docs.netapp.com/us-en/bluexp-tiering/reference-aws-support.html["サポートされているS3ストレージクラスを参照してください。"]
-
-
-
-=== Cloud Tiering は、 ONTAP Select システムで完全に認定されています
-
-AFF システムと FAS システムのデータを階層化するだけでなく、 ONTAP Select システムからクラウドストレージにもアクセス頻度の低いデータを階層化できるようになりました。

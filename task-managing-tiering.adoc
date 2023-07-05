@@ -4,7 +4,7 @@ permalink: task-managing-tiering.html
 keywords: discover, volumes, report, hot, cold, inactive, active, capacity, used capacity, savings, health, failed 
 summary: オンプレミスの ONTAP クラスタからデータ階層化を設定したので、追加のボリュームからデータを階層化したり、ボリュームの階層化ポリシーを変更したり、クラスタを追加したりできます。 
 ---
-= クラスタからのデータ階層化の管理
+= クラスタのデータ階層化の管理
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -15,6 +15,33 @@ summary: オンプレミスの ONTAP クラスタからデータ階層化を設�
 
 [role="lead"]
 オンプレミスの ONTAP クラスタからデータ階層化を設定したので、追加のボリュームからデータを階層化したり、ボリュームの階層化ポリシーを変更したり、クラスタを追加したりできます。
+
+
+
+== クラスタの階層化情報を確認しています
+
+クラウド階層に格納されているデータの量やディスク上のデータの量を確認することができます。または、クラスタのディスク上のホットデータとコールドデータの量を確認することもできます。BlueXPの階層化サービスは、この情報をクラスタごとに提供します。
+
+.手順
+. 左側のナビゲーションメニューから、* Mobility > Tiering *を選択します。
+. [クラスタ]*ページで、メニューアイコンをクリックします image:icon-action.png["アクションアイコン"] クラスタの場合は、*[クラスタ情報]*を選択します。
++
+image:screenshot_tiering_cluster_info_button.png["[Clusters]ページで[Cluster Info]ボタンを選択するスクリーンショット。"]
+
+. クラスタに関する詳細を確認します。
++
+次に例を示します。
+
++
+image:screenshot_tiering_cluster_info.png["クラスタの合計使用済みデータ容量、クラスタの使用済み容量、およびクラスタ情報を示すスクリーンショット。"]
+
+
+
+Cloud Volumes ONTAPシステムでは表示が異なることに注意してください。Cloud Volumes ONTAPボリュームではデータをクラウドに階層化できますが、BlueXP階層化サービスは使用しません。 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-tiering.html["アクセス頻度の低いデータをCloud Volumes ONTAPシステムから低コストのオブジェクトストレージに階層化する方法をご紹介します"^]。
+
+また可能です https://docs.netapp.com/us-en/active-iq/task-informed-decisions-based-on-cloud-recommendations.html#tiering["クラスタの階層化情報をDigital Advisorから表示します"^] ネットアップ製品の知識がある方は、左側のナビゲーションペインから*クラウドの推奨事項*を選択してください。
+
+image:screenshot_tiering_aiq_fabricpool_info.png["デジタルアドバイザのFabricPool を使用してクラスタのFabricPool 情報を示すスクリーンショット。"]
 
 
 
@@ -75,6 +102,25 @@ image:screenshot_tiering_policy_settings.png["設定可能な階層化ポリシ�
 
 .結果
 階層化ポリシーが変更され、新しいポリシーに基づいてデータが階層化されます。
+
+
+
+== アクセス頻度の低いデータをオブジェクトストレージにアップロードするためのネットワーク帯域幅を変更します
+
+クラスタでBlueXPの階層化をアクティブ化すると、デフォルトでは、ONTAPは無制限の帯域幅を使用して、作業環境内のボリュームからオブジェクトストレージにアクセス頻度の低いデータを転送できます。階層化トラフィックが通常のユーザワークロードに影響していることに気付いた場合は、転送中に使用するネットワーク帯域幅を調整できます。最大転送速度として1~10,000 Mbpsの値を選択できます。
+
+. 左側のナビゲーションメニューから、* Mobility > Tiering *を選択します。
+. [クラスタ]*ページで、メニューアイコンをクリックします image:icon-action.png["アクションアイコン"] クラスタの場合は、*[最大転送速度]*を選択します。
++
+image:screenshot_tiering_transfer_rate_button.png["[Clusters]ページで[Maximum transfer rate]ボタンを選択したスクリーンショット。"]
+
+. [_Maximum transfer rate]ページで、*[Limited]*ラジオボタンを選択して使用できる最大帯域幅を入力するか、*[Unlimited]*を選択して制限がないことを示します。次に*[適用]*をクリックします。
++
+image:screenshot_tiering_transfer_rate.png["クラスタの[Maximum Transfer Rate]ダイアログのスクリーンショット。"]
+
+
+
+この設定は、データを階層化している他のクラスタに割り当てられる帯域幅には影響しません。
 
 
 
@@ -157,28 +203,6 @@ image:screenshot_tiering_modify_aggregate.png["階層化の使用率しきい値
 
 . [ 適用（ Apply ） ] をクリックします。
 
-
-
-
-== クラスタの階層化情報を確認しています
-
-クラウド階層に格納されているデータの量やディスク上のデータの量を確認することができます。または、クラスタのディスク上のホットデータとコールドデータの量を確認することもできます。BlueXPの階層化サービスは、この情報をクラスタごとに提供します。
-
-.手順
-. 左側のナビゲーションメニューから、* Mobility > Tiering *を選択します。
-. [クラスタ]*ページで、クラスタのメニューアイコンをクリックし、*[クラスタ情報]*を選択します。
-. クラスタに関する詳細を確認します。
-+
-次に例を示します。
-
-+
-image:screenshot_tiering_cluster_info.png[" クラスタレポートを示すスクリーンショット。合計使用容量、クラスタの使用済み容量、クラスタ情報、オブジェクトストレージ情報の詳細が表示されます。 "]
-
-
-
-また可能です https://docs.netapp.com/us-en/active-iq/task-informed-decisions-based-on-cloud-recommendations.html#tiering["クラスタの階層化情報をDigital Advisorから表示します"^] ネットアップ製品の知識がある方は、左側のナビゲーションペインから*クラウドの推奨事項*を選択してください。
-
-image:screenshot_tiering_aiq_fabricpool_info.png["デジタルアドバイザのFabricPool を使用してクラスタのFabricPool 情報を示すスクリーンショット。"]
 
 
 

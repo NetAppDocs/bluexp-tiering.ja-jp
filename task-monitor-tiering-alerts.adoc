@@ -1,0 +1,28 @@
+---
+sidebar: sidebar 
+permalink: task-monitor-tiering-alerts.html 
+keywords: tiering, status, monitor, alert, notification 
+summary: 階層化アラートのステータスはBlueXP通知センターで確認できます。 
+---
+= 階層化アラートのステータスを監視します
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+階層化アラートのステータスはBlueXP通知センターで確認できます。
+
+通知センターは、階層化インシデントの進行状況を追跡するため、それらが解決されたかどうかを確認できます。通知を表示するには、（image:icon_bell.png["通知ベル"])を選択します。
+
+この時点で、通知として表示される階層化イベントが1つあります。
+
+* クラスタ<name>の追加データをオブジェクトストレージに階層化して、ストレージ効率を高めます
+
+
+本通知は、システムの効率化とストレージコストの削減を目的とした「推奨事項」です。これは、クラスタがコールドデータ（データを階層化しないクラスタを含む）の20%未満を階層化していることを示しています。これにより、へのリンクが提供されます https://bluexp.netapp.com/cloud-tiering-service-tco["BlueXP階層化サービス（TCO）とコスト削減試算ツールです"^] コスト削減額の計算に役立ちます。
+
+https://docs.netapp.com/us-en/bluexp-setup-admin/task-monitor-cm-operations.html["通知センターの詳細については、こちらをご覧ください"^]。

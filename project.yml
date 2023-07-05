@@ -45,6 +45,8 @@ sidebar:
       url: "/task-tiering-test.html"
     - title: すべてのクラスタについて階層化の概要を表示します
       url: "/task-tiering-onprem-overview.html"
+    - title: 階層化アラートのステータスを監視します
+      url: "/task-monitor-tiering-alerts.html"
   - title: 参照
     entries:
     - title: サポートされている Amazon S3 ストレージのクラスとリージョン
@@ -91,6 +93,8 @@ homepage:
       url: task-managing-tiering.html#reviewing-tiering-info-for-a-cluster
     - title: 追加のボリュームのデータを階層化
       url: task-managing-tiering.html#tiering-data-from-additional-volumes
+    - title: アクセス頻度の低いデータをオブジェクトストレージにアップロードするための帯域幅を変更してください
+      url: task-managing-tiering.html#changing-the-network-bandwidth-available-to-upload-inactive-data-to-object-storage
     - title: クラウドのデータを高パフォーマンス階層に戻します
       url: task-managing-tiering.html#migrating-data-from-the-cloud-tier-back-to-the-performance-tier
     - title: アグリゲートの階層化設定を管理します
