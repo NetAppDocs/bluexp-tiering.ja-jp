@@ -154,19 +154,29 @@ TIP: StorageGRID への階層化には、FabricPool またはBlueXPの階層化�
 
 BlueXP階層化ライセンスを購入したら、BlueXP階層化シリアル番号とNSSアカウントを入力するか、NLFライセンスファイルをアップロードして、BlueXPでライセンスをアクティブ化します。次の手順は、 NLF ライセンスファイルを取得する方法を示しています。
 
+.作業を開始する前に
+開始する前に、次の情報が必要です。
+
+* BlueXP階層化のシリアル番号
++
+この番号は、SOから確認するか、アカウントチームにお問い合わせください。
+
+* BlueXPアカウントID
++
+BlueXPアカウントIDを確認するには、BlueXPの上部にある[*Account*]ドロップダウンを選択し、アカウントの横にある[*Manage Account*]をクリックします。アカウント ID は、 [ 概要 ] タブにあります。
+
+
+
 .手順
 . にサインインします https://mysupport.netapp.com["ネットアップサポートサイト"^] [ システム ] 、 [ ソフトウェアライセンス ] の順にクリックします。
 . BlueXP階層化ライセンスのシリアル番号を入力します。
 +
 image:screenshot_cloud_tiering_license_step1.gif["シリアル番号で検索したあとのライセンスの一覧を示すスクリーンショット。"]
 
-. [* License Key] で、 [* Get NetApp License File* ] をクリックします。
+. [* License Key] 列で、 [* Get NetApp License File* ] をクリックします。
 . BlueXPアカウントID (これはサポートサイトではテナントIDと呼ばれます)を入力し'[*Submit*]をクリックしてライセンスファイルをダウンロードします
 +
 image:screenshot_cloud_tiering_license_step2.gif["ライセンスの取得ダイアログボックスを示すスクリーンショット。テナント ID を入力し、送信をクリックしてライセンスファイルをダウンロードします。"]
-
-+
-BlueXPアカウントIDを確認するには、BlueXPの上部にある[*Account*]ドロップダウンを選択し、アカウントの横にある[*Manage Account*]をクリックします。アカウント ID は、 [ 概要 ] タブにあります。
 
 
 

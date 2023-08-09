@@ -195,7 +195,7 @@ image:screenshot_setup_tiering_onprem.png["オンプレミスの ONTAP 作業環
 ** 複数のボリュームを選択するには、各ボリュームのボックス（image:button_backup_1_volume.png[""]）をクリックし、 * ボリュームの設定 * をクリックします。
 ** 単一のボリュームを選択するには、行（または）をクリックします image:screenshot_edit_icon.gif["鉛筆アイコンを編集します"] アイコン）をクリックします。
 +
-image:screenshot_tiering_tier_volumes.png["単一のボリューム、複数のボリューム、またはすべてのボリュームを選択する方法、および選択したボリュームを変更するボタンを示すスクリーンショット。"]
+image:screenshot_tiering_initial_volumes.png["単一のボリューム、複数のボリューム、またはすべてのボリュームを選択する方法、および選択したボリュームを変更するボタンを示すスクリーンショット。"]
 
 
 
@@ -204,7 +204,7 @@ image:screenshot_tiering_tier_volumes.png["単一のボリューム、複数の�
 link:concept-cloud-tiering.html#volume-tiering-policies["ボリューム階層化ポリシーとクーリング期間の詳細を確認できます"]。
 
 +
-image:screenshot_tiering_policy_settings.png["設定可能な階層化ポリシーの設定を示すスクリーンショット。"]
+image:screenshot_tiering_initial_policy_settings.png["設定可能な階層化ポリシーの設定を示すスクリーンショット。"]
 
 
 
