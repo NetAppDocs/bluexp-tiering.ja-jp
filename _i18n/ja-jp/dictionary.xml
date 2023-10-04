@@ -848,7 +848,6 @@
   <block id="667b744af05e085368d150edc4b8a344" category="inline-link">BlueXPコネクタをホストしているVMにログインします</block>
   <block id="c95623cd0395d5a6bb6105b9d32f197b" category="inline-link">BlueXPに関する注意事項</block>
   <block id="e4f8a35ee8df8b5c247f6e3286e42891" category="sidebar">BlueXPのユースケース</block>
-  <block id="7a45e6298bb69116e2c6db653fb88884" category="sidebar">BlueXPのすべてのマニュアル</block>
   <block id="39cff02cd4c2bfac12f446d78e59e3ca" category="paragraph">Canvas上の作業環境としてAzure BLOB階層化デスティネーションが存在する場合は、クラスタをAzure Blob Working環境にドラッグしてセットアップウィザードを開始できます。</block>
   <block id="0e8a08e502abe437efca593eced30efb" category="paragraph">Canvasの作業環境としてGoogle Cloud Storage階層化のデスティネーションが存在する場合は、クラスタをGoogle Cloud Storage作業環境にドラッグしてセットアップウィザードを開始できます。</block>
   <block id="bb9a67152dc7c7f6ad99d55da23a9b5c" category="paragraph">StorageGRID 階層化のデスティネーションがキャンバス上に作業環境として存在する場合は、クラスタをStorageGRID 作業環境にドラッグしてセットアップウィザードを開始できます。</block>
@@ -912,7 +911,6 @@
   <block id="b151844c81732b344718260aa69943af" category="list-text">情報の「I」アイコンにカーソルを合わせると、障害の原因が表示されます。</block>
   <block id="b2b5aa0c45edd9f1055e515a5bfde8eb" category="list-text">オンプレミスのONTAP 作業環境を選択します。</block>
   <block id="57c0e1741966187a33a00eea2622a5ec" category="list-text">右側のパネルで、階層化サービスの*有効化*をクリックします。</block>
-  <block id="0375f4855be072c7d856a0233cc21de9" category="section-title">クラウドプロバイダソリューションのサポート</block>
   <block id="18cf072964a583150dd247485ba75b92" category="inline-link-macro">ONTAP 対応の Amazon FSX</block>
   <block id="7450cfde7058dc5e1f7909d0280fd7ae" category="inline-link-macro">Azure NetApp Files の特長</block>
   <block id="b0cee72642f5457a71ddd0b49efb6d93" category="inline-link-macro">Cloud Volumes Service for Google Cloud</block>
@@ -1286,9 +1284,7 @@
   <block id="e1d2e1a634647fd631081bc4f6f8e523" category="list-text">[ケースの作成]*機能を使用するには、最初にNetApp Support SiteクレデンシャルをBlueXPログインに関連付ける必要があります。<block ref="2a0d8b66ca9e99d023b48cf25f40fb12" category="inline-link-rx"></block>。</block>
   <block id="e49aa971c20ec071f1b5bbc3c7266769" category="list-text">シリアル番号のあるONTAPシステムのケースをオープンする場合は、そのシステムのシリアル番号にNSSアカウントを関連付ける必要があります。</block>
   <block id="c7b7a5ae9f37fd7d24e4d641b9186fe9" category="paragraph">このエラーは、NSSアカウントとそれに関連付けられているレコードの会社が、BlueXPアカウントのシリアル番号(例960xxxx）または動作環境のシリアル番号。次のいずれかのオプションを使用して、サポートを受けることができます。</block>
-  <block id="0c7db2bd63c891adb2c0fa4527805d72" category="paragraph">BlueXPアカウントと個 々 のCloud Volumes ONTAPシステムにサポートを登録する必要があります。</block>
   <block id="28164bf9e881ddc9e7ff74744bfce180" category="paragraph">両方のタイプのシリアル番号を登録することで、サポートチケットのオープンやケースの自動生成などの機能を利用できます。登録を完了するには、以下の手順でNetApp Support Site（NSS）アカウントをBlueXPに追加してください。</block>
-  <block id="e922b9aa0836a1d93e11cac0fe4c9004" category="paragraph">以下のクラウドプロバイダソリューションに関するテクニカルサポートについては、その製品のBlueXPドキュメントの「困ったときは」を参照してください。</block>
   <block id="5a19febf1dcb23c10e8dcfde64ba764c" category="section-title">NetAppサポートにBlueXPアカウントを登録します</block>
   <block id="6bbc2ba432f59ab65ee3d8ac5a58336e" category="paragraph">サポートに登録してサポート利用資格をアクティブ化するには、BlueXPアカウントの1人のユーザがNetApp Support SiteアカウントをBlueXPログインに関連付ける必要があります。ネットアップサポートへの登録方法は、NetApp Support Site （NSS）アカウントがあるかどうかによって異なります。</block>
   <block id="0c788a722f31f8f0cf36539ee04615cf" category="list-text">[NSSクレデンシャルの追加]*を選択し、NetApp Support Site（NSS）認証プロンプトに従います。</block>
@@ -1435,4 +1431,9 @@
   <block id="15b2d2644c0eb82c219365b9d3ed6f75" category="paragraph">クラウドから元の場所に移動するすべてのデータを格納できる十分なスペースが高パフォーマンス階層にあることを確認してください。</block>
   <block id="18711602a05157009e1d81446d484cb4" category="list-text">*ストレージクラスのライフサイクル*：BlueXPの階層化機能は、階層化されたデータのライフサイクル移行を管理します。データは_Standard_classから開始されますが、一定の日数が経過したあとに別のストレージクラスをデータに適用するルールを作成することもできます。</block>
   <block id="8ca0007104a6880fedaff25fc59dc8ad" category="paragraph">MetroCluster構成からミラーオブジェクトストアを削除するときに、プライマリオブジェクトストアも削除するかどうかを確認するメッセージが表示されます。プライマリオブジェクトストアをアグリゲートに接続したままにすることも、削除することもできます。</block>
+  <block id="ece19bab46695021f109a5e50f08bebe" category="paragraph">BlueXPとそのストレージソリューションおよびサービスに固有のテクニカルサポートを受けるには、サポート登録が必要です。Cloud Volumes ONTAPシステムの主要なワークフローを有効にするには、サポート登録も必要です。</block>
+  <block id="8a3d807608e632d188a288fc5f4aa7eb" category="paragraph">サポートに登録しても、クラウドプロバイダのファイルサービスでNetAppのサポートは有効になりません。クラウドプロバイダのファイルサービスとそのインフラ、またはサービスを使用する解決策に関連するテクニカルサポートについては、該当する製品のBlueXPドキュメントの「困ったときは」を参照してください。</block>
+  <block id="522cbb900314aeb84eb5a961c5f94672" category="section-title">クラウドプロバイダのファイルサービスのサポート</block>
+  <block id="f6185bb12f5e53c800be8cda7fbca65b" category="paragraph">クラウドプロバイダのファイルサービスとそのインフラ、またはサービスを使用する解決策に関連するテクニカルサポートについては、該当する製品のBlueXPドキュメントの「困ったときは」を参照してください。</block>
+  <block id="3880ae5df9fdc4d0fc4a6d00a2239530" category="paragraph">BlueXPおよびそのストレージソリューションとサービスに固有のテクニカルサポートを受けるには、以下に記載されているサポートオプションを使用してください。</block>
 </blocks>
