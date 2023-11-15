@@ -27,6 +27,14 @@ link:concept-cloud-tiering.html#pricing-and-licenses["BlueXPの階層化でラ�
 
 
 
+== 30 日間の無償トライアルをご利用いただけます
+
+BlueXP階層化ライセンスをお持ちでない場合は、最初のクラスタへの階層化をセットアップすると、BlueXP階層化の30日間無償トライアルが開始されます。30日間の無償トライアルの終了後、BlueXP階層化サービスの料金は、従量課金制サブスクリプション、年間サブスクリプション、BYOLライセンス、またはその組み合わせで支払う必要があります。
+
+無償トライアルが終了し、ライセンスを登録または追加していない場合、ONTAP はコールドデータをオブジェクトストレージに階層化しなくなります。これまで階層化されていたすべてのデータに引き続きアクセスできるため、このデータを読み出して使用できます。取得されると、このデータはクラウドから高パフォーマンス階層に戻されます。
+
+
+
 == BlueXP階層化サービス（PAYGO）サブスクリプションを利用
 
 クラウドプロバイダのマーケットプレイスから購入した従量課金制サブスクリプションを使用すると、Cloud Volumes ONTAP システムや多くのクラウドデータサービス（BlueXP階層化など）のライセンスを取得できます。
@@ -41,7 +49,7 @@ AWS MarketplaceからBlueXP階層化サービスにサブスクライブする�
 .手順
 . BlueXPで、*[モビリティ]>[階層化]>[オンプレミスダッシュボード]*をクリックします。
 . [_Marketplace subscriptions]セクションで、[Amazon Web Services]の*[Subscribe]*をクリックし、*[Continue]*をクリックします。
-. から登録します https://aws.amazon.com/marketplace/pp/prodview-oorxakq6lq7m4?sr=0-8&ref_=beagle&applicationId=AWSMPContessa["AWS Marketplace"^]をクリックし、BlueXP Webサイトにログインし直して登録を完了します。
+. から登録します https://aws.amazon.com/marketplace/pp/prodview-oorxakq6lq7m4["AWS Marketplace"^]をクリックし、BlueXP Webサイトにログインし直して登録を完了します。
 +
 次のビデオは、プロセスを示しています。
 
@@ -69,15 +77,15 @@ video::video_subscribing_azure_tiering.mp4[width=848,height=480]
 
 
 
-=== GCP Marketplace から配信登録する
+=== Google Cloud Marketplaceからのサブスクライブ
 
-GCP MarketplaceからBlueXP階層化サービスにサブスクライブすると、ONTAP クラスタからGoogle Cloudストレージへのデータ階層化の従量課金制サブスクリプションを設定できます。
+Google Cloud MarketplaceからBlueXPの階層化サービスにサブスクライブすると、ONTAPクラスタからGoogle Cloudストレージへのデータ階層化に従量課金制サブスクリプションを設定できます。
 
 [[subscribe-gcp]]
 .手順
 . BlueXPで、*[モビリティ]>[階層化]>[オンプレミスダッシュボード]*をクリックします。
 . [_Marketplace subscriptions]セクションで、[Google Cloud]の*[サブスクライブ]*をクリックし、*[続行]*をクリックします。
-. から登録します https://console.cloud.google.com/marketplace/details/netapp-cloudmanager/cloud-manager?supportedpurview=project&rif_reserved["GCP Marketplace"^]をクリックし、BlueXP Webサイトにログインし直して登録を完了します。
+. から登録します https://console.cloud.google.com/marketplace/details/netapp-cloudmanager/cloud-manager?supportedpurview=project["Google Cloud Marketplace"^]をクリックし、BlueXP Webサイトにログインし直して登録を完了します。
 +
 次のビデオは、プロセスを示しています。
 
@@ -89,13 +97,13 @@ video::video_subscribing_gcp_tiering.mp4[width=848,height=480]
 
 == 年間契約を使用する
 
-BlueXP階層化サービスの料金は、年単位の契約を購入して年単位で支払います。
+BlueXP階層化サービスの料金は、年単位の契約を購入して年単位で支払います。年間契約には、1年、2年、3年のいずれかがあります。
 
-アクセス頻度の低いデータをAWSに階層化するときは、で提供される年間契約に登録できます https://aws.amazon.com/marketplace/pp/B086PDWSS8["AWS Marketplace のページ"^]。1年、2年、3年の期間が用意されています。
+アクセス頻度の低いデータをAWSに階層化する場合は、 https://aws.amazon.com/marketplace/pp/prodview-q7dg6zwszplri["AWS Marketplace のページ"^]。このオプションを使用する場合は、 Marketplace のページでサブスクリプションを設定してから、を設定します https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-aws-accounts.html#associate-an-aws-subscription["サブスクリプションを AWS クレデンシャルに関連付けます"^]。
 
-このオプションを使用する場合は、 Marketplace のページでサブスクリプションを設定してから、を設定します https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-aws-accounts.html#associate-an-aws-subscription["サブスクリプションを AWS クレデンシャルに関連付けます"^]。
+アクセス頻度の低いデータをAzureに階層化する場合は、 https://azuremarketplace.microsoft.com/en-us/marketplace/apps/netapp.netapp-bluexp["Azure Marketplaceのページ"^]。このオプションを使用する場合は、 Marketplace のページでサブスクリプションを設定してから、を設定します https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-azure-accounts.html#subscribe["サブスクリプションをAzureクレデンシャルに関連付ける"^]。
 
-AzureやGCPへの階層化では、現在年間契約はサポートされていません。
+現在、Google Cloudへの階層化では年間契約はサポートされていません。
 
 
 
