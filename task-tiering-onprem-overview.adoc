@@ -5,15 +5,12 @@ keywords: overview, tiering overview, tiered clusters, clusters enabled for tier
 summary: BlueXPの階層化サービスでは、オンプレミスの各クラスタからのデータ階層化をまとめて確認できます。ここでは、環境の概要を明確に示し、適切な操作を実行できるようにします。 
 ---
 = クラスタからデータ階層化の概要を取得します
-:toc: macro
 :hardbreaks:
 :allow-uri-read: 
-:toc: 
 :nofooter: 
 :icons: font
 :linkattrs: 
 :imagesdir: ./media/
-:toc-position: content
 
 
 [role="lead"]
