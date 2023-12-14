@@ -1119,7 +1119,6 @@
   <block id="5b68fac5f1ce77d65201586ce9a60468" category="list-text"><block ref="1f8cdb76c7bd9ccb2f67a5fe3a108324" category="inline-link-macro-rx"></block> をクリックします。</block>
   <block id="35871aa5a51169ec1ce0c1aa1e2550f0" category="list-text">BlueXP階層化サービスで、 <block ref="210b64e2207c15c9773eb7d42739f7fc" category="inline-link-macro-rx"></block>。</block>
   <block id="5853c8a054007c0c99bbc9662a53c4fb" category="summary">BlueXPの階層化サービスは、2つのアクセス階層とほとんどのリージョンをサポートします。</block>
-  <block id="e8823c938290b3df1d69b5821a4bbbb8" category="paragraph">Azureへのデータ階層化を設定すると、BlueXPの階層化では、アクセス頻度の低いデータに_Hot_access階層が自動的に使用されます。BlueXPの階層化サービスでは、ライフサイクルルールを適用して、一定の日数が経過した時点で_Hot_access階層から_Cool_access階層にデータを移行できます。</block>
   <block id="95d5445b66336b61fe8c176426e3cb6b" category="paragraph">BlueXP階層化ライフサイクルルールを設定する場合、Azureアカウントでコンテナをセットアップするときにライフサイクルルールを設定しないでください。</block>
   <block id="4a744a6786776cc5df25ca40dc57cb36" category="paragraph">BlueXPの階層化サービスでは、コネクタ経由でアクセス可能なリージョン内のすべてのストレージアカウントへの階層化がサポートされます。</block>
   <block id="07702d7eda621b95dd9a2353b7d4e568" category="list-text">データセンター内のONTAP クラスタ、Google Cloud Storage、およびBlueXP階層化サービスへのアウトバウンドHTTPS接続を可能にするコネクタのネットワーク。</block>
@@ -1155,7 +1154,6 @@
   <block id="3afb7cae2b7c3e96c6a4e1df765d3dce" category="section-title">ドラッグアンドドロップして、Azure Blob、Google Cloud Storage、StorageGRID へのBlueXP階層化を有効にします</block>
   <block id="18cd1c130656412d8089667948bc48a2" category="section-title">ドラッグアンドドロップして、BlueXPからAmazon S3への階層化を有効にします</block>
   <block id="a0396859c016deff163331729e87c6cf" category="summary">BlueXPの階層化サービスでは、複数のGoogle Cloudストレージクラスとほとんどのリージョンがサポートされます。</block>
-  <block id="e9885ff472161e4c48f508f106c6ad36" category="paragraph">GCPへのデータ階層化を設定すると、BlueXPの階層化ではアクセス頻度の低いデータに_Standard_storageクラスが自動的に使用されます。BlueXPの階層化サービスでは、ライフサイクルルールを適用して、一定の日数が経過した時点で_Standard_storageクラスから他のストレージクラスにデータを移行できます。次のストレージクラスから選択できます。</block>
   <block id="58edb41c3cfab45408029ad69032402a" category="paragraph">BlueXP階層化ライフサイクルルールを設定するときは、Googleアカウントでバケットをセットアップするときにライフサイクルルールを設定しないでください。</block>
   <block id="2d5551329360393b3ea83aeec84cf519" category="paragraph">BlueXPの階層化サービスは次のリージョンでサポートされます。</block>
   <block id="85fc382665546ae4cc771b24663b67ce" category="paragraph-title"><block ref="99e8b2f00e172bfcff96afdce69907bc" category="inline-image-macro-rx" type="image"></block> システムでBlueXP階層化を有効にします</block>
@@ -1177,7 +1175,6 @@
   <block id="3ba3b9c66dc287b5cb13e6a63f117260" category="inline-link-macro">BlueXPの階層化に関するお知らせ</block>
   <block id="072ac4eafcf075811201623eddbc2488" category="list-text"><block ref="072ac4eafcf075811201623eddbc2488" category="inline-link-macro-rx"></block></block>
   <block id="be097470e9ac90369332a05c045a9742" category="summary">BlueXPの階層化では、複数のS3ストレージクラスとほとんどのリージョンがサポートされます。</block>
-  <block id="9febe911a8cef93d7919b4e705d2af96" category="paragraph">AWSへのデータ階層化を設定すると、BlueXPの階層化ではアクセス頻度の低いデータに_Standard_storageクラスが自動的に使用されます。BlueXPの階層化サービスでは、ライフサイクルルールを適用して、一定の日数が経過した時点で_Standard_storageクラスから別のストレージクラスにデータを移行できます。次のストレージクラスから選択できます。</block>
   <block id="b48e3a08ac6bdb2960ebbf7583060d5c" category="paragraph">BlueXP階層化ライフサイクルルールを設定するときは、AWSアカウントでバケットをセットアップするときにライフサイクルルールを設定しないでください。</block>
   <block id="35e385e351037991047fc3503ac66ea0" category="paragraph">BlueXPの階層化では、次のAWSリージョンがサポートされます。</block>
   <block id="2af8ca26b1bcf00d88a15b8f1992fa35" category="list-text">ソースONTAP クラスタ、S3互換オブジェクトストレージ、およびBlueXP階層化サービスへのアウトバウンドHTTPS接続を可能にするコネクタのネットワーク。</block>
@@ -1440,4 +1437,7 @@
   <block id="77d720d97cc99bdd67ce50e58655dc3f" category="paragraph">現在、Google Cloudへの階層化では年間契約はサポートされていません。</block>
   <block id="74369b8ae005333b4dd61fb93f495946" category="paragraph">BlueXP階層化サービスは、アクセス頻度の低いデータをAmazon S3またはAzureに階層化する際に年間契約を提供します。1年、2年、3年の期間が用意されています。</block>
   <block id="8a2304319d2e68c914c95280f8d1b529" category="paragraph">現在、Google Cloudへの階層化では年間契約はサポートされていません。</block>
+  <block id="a6946f1b4a14c4860d7cb9b918379334" category="paragraph">オンプレミスのONTAPシステムからGCPへのデータ階層化を設定すると、BlueXPの階層化ではアクセス頻度の低いデータに_Standard_storageクラスが自動的に使用されます。BlueXPの階層化サービスでは、ライフサイクルルールを適用して、一定の日数が経過した時点で_Standard_storageクラスから他のストレージクラスにデータを移行できます。次のストレージクラスから選択できます。</block>
+  <block id="90fd6199eed378ef0bf6c4f8d3ed5ebc" category="paragraph">オンプレミスのONTAPシステムからAzureへのデータ階層化を設定すると、BlueXPの階層化では、アクセス頻度の低いデータに_Hot_access階層が自動的に使用されます。BlueXPの階層化サービスでは、ライフサイクルルールを適用して、一定の日数が経過した時点で_Hot_access階層から_Cool_access階層にデータを移行できます。</block>
+  <block id="17c353c0dd208c819d731350ef2b1300" category="paragraph">オンプレミスのONTAPシステムからAWSへのデータ階層化を設定すると、BlueXPの階層化ではアクセス頻度の低いデータに_Standard_storageクラスが自動的に使用されます。BlueXPの階層化サービスでは、ライフサイクルルールを適用して、一定の日数が経過した時点で_Standard_storageクラスから別のストレージクラスにデータを移行できます。次のストレージクラスから選択できます。</block>
 </blocks>
