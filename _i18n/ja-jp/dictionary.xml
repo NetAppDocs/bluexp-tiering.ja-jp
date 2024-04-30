@@ -1416,4 +1416,26 @@
   <block id="17c353c0dd208c819d731350ef2b1300" category="paragraph">オンプレミスのONTAPシステムからAWSへのデータ階層化を設定すると、BlueXPの階層化ではアクセス頻度の低いデータに_Standard_storageクラスが自動的に使用されます。BlueXPの階層化サービスでは、ライフサイクルルールを適用して、一定の日数が経過した時点で_Standard_storageクラスから別のストレージクラスにデータを移行できます。次のストレージクラスから選択できます。</block>
   <block id="d59e0b46782e48a01966e5c7ccc38d17" category="paragraph">NetAppでは、サポートとライセンスに固有の認証サービスのIDプロバイダとしてMicrosoftエントラIDを使用します。</block>
   <block id="36a7f0d732c9746e546a6bf227b6a550" category="summary">BlueXPの階層化サービスは、アクセス頻度の低いデータをオンプレミスのONTAPクラスタからオブジェクトストレージに自動的に階層化することで、データセンターをクラウドに拡張します。</block>
+  <block id="91770f038cd944a1d3b9b347edeb2b10" category="sidebar">新機能</block>
+  <block id="2081f1ce1d1b21d487730d917f2fc133" category="sidebar">オンプレミスの ONTAP データをクラウドに階層化</block>
+  <block id="9c24075097cef2efbfa6d34acbbb775d" category="sidebar">Azure Blob に階層化</block>
+  <block id="a62425c23786654b084b1fbadf9c41f1" category="sidebar">Google Cloud に階層化します</block>
+  <block id="932b49a2d53968bfae607cb915ef9ec2" category="sidebar">汎用 S3 への階層化</block>
+  <block id="6efa402b5baeb2ad1984997697bc2d7b" category="sidebar">階層化設定を管理します</block>
+  <block id="4f5b5f1d13dfc896b9f5faa0807d8a6c" category="sidebar">ボリュームの階層化ポリシーを変更する</block>
+  <block id="00e64b31a7ad3617adbda7547414223a" category="sidebar">クラスタの階層化情報を確認します</block>
+  <block id="34698ad735e6046f93fbdd61cb2d3804" category="sidebar">追加のボリュームのデータを階層化</block>
+  <block id="e1c9950bf8922ee7b7ee2dc803696a6a" category="sidebar">アクセス頻度の低いデータをオブジェクトストレージにアップロードするための帯域幅を変更してください</block>
+  <block id="004509d192f15716a8c5185cda0cc0da" category="sidebar">クラウドのデータを高パフォーマンス階層に戻します</block>
+  <block id="b19237098460d786516168b98687becc" category="sidebar">アグリゲートの階層化設定を管理します</block>
+  <block id="44e298753e2ff93996d0e8ffa928a922" category="sidebar">クラスタに新しいオブジェクトストアを追加します</block>
+  <block id="f479e40bc5b0a3dc9ce1b1c43ebdec89" category="sidebar">2つ目のオブジェクトストアをアグリゲートに追加してミラーリングします</block>
+  <block id="07ed437d90cdfd3243fc6c8fa8ddacff" category="sidebar">プライマリオブジェクトストアとミラーオブジェクトストアを入れ替えます</block>
+  <block id="500c3424a2151541a2d7783c7e308bb5" category="sidebar">ミラーオブジェクトストアを削除する</block>
+  <block id="813011e2103649bb71f124adedcc10ea" category="sidebar">ブログとコミュニティ</block>
+  <block id="dd490b81914dd945601e442a41cb4222" category="sidebar">ネットアップコミュニティ</block>
+  <block id="10fd54f4214c20c0fb0c8174413e67e6" category="sidebar">BlueXP階層化ブログ</block>
+  <block id="ad203e818e0c9d7f42f1c260b33875f3" category="sidebar">クラウドに関する Web セミナー</block>
+  <block id="4c7d5d7dfde4a7bd82b54348182043d3" category="sidebar">その他のリソース</block>
+  <block id="e4f8a35ee8df8b5c247f6e3286e42891" category="sidebar">BlueXPのユースケース</block>
 </blocks>
