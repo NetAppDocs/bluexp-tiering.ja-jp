@@ -272,5 +272,5 @@ image:screenshot_tiering_search for_cluster.png["BlueXPコネクタに含まれ�
 +
 BlueXPの階層化サービスでクラスタが見つかった場合は、コネクタの名前が表示されます。
 
-. https://docs.netapp.com/us-en/bluexp-setup-admin/task-managing-connectors.html#switch-between-connectors["コネクタに切り替えてクラスタの階層化を設定する"^]。
+. https://docs.netapp.com/us-en/bluexp-setup-admin/task-manage-multiple-connectors.html#switch-between-connectors["コネクタに切り替えてクラスタの階層化を設定する"^]。
 

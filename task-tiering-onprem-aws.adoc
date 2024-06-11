@@ -272,7 +272,7 @@ image:screenshot_tiering_aws_sec_group.png["コネクタに関連付けられて
 +
 image:screenshot_endpoint_dns_aws_console.png["AWS コンソールから VPC エンドポイントの DNS 名のスクリーンショット。"]
 
-. VPC S3 エンドポイントから証明書を取得します。これは、で行います https://docs.netapp.com/us-en/bluexp-setup-admin/task-managing-connectors.html#connect-to-the-linux-vm["BlueXPコネクタをホストしているVMにログインします"^] 実行するコマンドエンドポイントの DNS 名を入力するときは、先頭に「 * 」を追加して、「 * 」を置き換えます。
+. VPC S3 エンドポイントから証明書を取得します。これは、で行います https://docs.netapp.com/us-en/bluexp-setup-admin/task-maintain-connectors.html#connect-to-the-linux-vm["BlueXPコネクタをホストしているVMにログインします"^] 実行するコマンドエンドポイントの DNS 名を入力するときは、先頭に「 * 」を追加して、「 * 」を置き換えます。
 +
 [source, text]
 ----
