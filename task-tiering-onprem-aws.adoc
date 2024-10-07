@@ -211,7 +211,7 @@ NOTE: BlueXPの階層化で低コストのストレージクラスを使用し�
 ** 確認します https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-aws.html#iam-policies["指定したS3権限になります"^] IAMロールの一部であり、コネクタに権限を付与します。これらは、コネクタを最初に展開したときにデフォルトで含まれています。そうでない場合は、不足している権限を追加する必要があります。を参照してください https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_manage-edit.html["AWS のドキュメント：「 Editing IAM policies"^] 手順については、を参照し
 ** BlueXP階層化で作成されるデフォルトのバケットには、「fabric-pool」というプレフィックスが付けられます。バケットに別のプレフィックスを使用する場合は、使用する名前で権限をカスタマイズする必要があります。S3権限に行が表示されます。 `"Resource": ["arn:aws:s3:::fabric-pool*"]`。「fabric-pool」を使用するプレフィックスに変更する必要があります。たとえば、バケットのプレフィックスとして「tiering-1」を使用する場合は、この行を次のように変更します。 `"Resource": ["arn:aws:s3:::tiering-1*"]`。
 +
-同じBlueXPアカウントのクラスタの追加に使用するバケットに別のプレフィックスを使用する場合は、プレフィックスを含む行を他のバケットに追加できます。例：
+同じBlueXP  組織内の追加のクラスタに使用するバケットに別のプレフィックスを使用する場合は、プレフィックスを含む行を他のバケットに追加できます。例：
 
 +
 `"Resource": ["arn:aws:s3:::tiering-1*"]`

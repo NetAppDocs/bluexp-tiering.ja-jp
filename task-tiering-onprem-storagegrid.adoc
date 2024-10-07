@@ -65,7 +65,7 @@ NOTE: コネクタと StorageGRID 間の通信は、オブジェクトストレ�
 
 --
 サポートされる ONTAP のバージョン:: ONTAP 9.4 以降
-ライセンス:: データをStorageGRID に階層化する場合、BlueXPアカウントにはBlueXP階層化ライセンスは必要ありません。また、ONTAP クラスタにFabricPool ライセンスは必要ありません。
+ライセンス:: StorageGRIDにデータを階層化する場合、BlueXP  組織ではBlueXP  階層化ライセンスは必要ありません。また、ONTAPクラスタではFabricPoolライセンスは必要ありません。
 クラスタネットワークの要件::
 +
 --
@@ -130,7 +130,7 @@ S3 クレデンシャル:: StorageGRID への階層化をセットアップす�
 データをクラウドに階層化するにはコネクタが必要です。データを StorageGRID に階層化する場合は、オンプレミスのコネクタが必要です。新しいコネクターをインストールするか、現在選択されているコネクターがオンプレミスにあることを確認する必要があります。
 
 * https://docs.netapp.com/us-en/bluexp-setup-admin/concept-connectors.html["コネクタについて説明します"^]
-* https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-on-prem.html["コネクタをオンプレミスにインストールしてセットアップします"^]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-on-prem.html["コネクタをオンプレミスにインストールしてセットアップする"^]
 * https://docs.netapp.com/us-en/bluexp-setup-admin/task-manage-multiple-connectors.html#switch-between-connectors["コネクタを切り替えます"^]
 
 

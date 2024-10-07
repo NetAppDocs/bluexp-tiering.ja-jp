@@ -760,7 +760,6 @@
   <block id="243263104c829e77835d632f591230d5" category="summary">ネットアップテクニカルサポートでサポートケースをオープンするには、まずNetApp Support Site アカウントをBlueXPに追加し、サポートに登録する必要があります。</block>
   <block id="0b0e252af8897fbe981ec6682d2aa33b" category="section-title">サポート登録の概要</block>
   <block id="192054ad7601240a3e8be54cc5cc548e" category="paragraph">サポート資格を有効にする登録には、次の2つの形式があります。</block>
-  <block id="2322ca552c2b0ebe090c8485519246a8" category="list-text">BlueXPアカウントIDサポートサブスクリプションの登録(BlueXPの[サポートリソース]ページにある20桁の960xxxxxxxxxシリアル番号)。</block>
   <block id="23fdcbefa6d9cd877be7ceb7a18bb936" category="paragraph">これは、BlueXP内のすべてのサービスのシングルサポートサブスクリプションIDとして機能します。各BlueXPアカウントレベルのサポート契約が登録されている必要があります。</block>
   <block id="55ff64467cd508971910145ab5d6b3b8" category="list-text">クラウドプロバイダのマーケットプレイスでのサブスクリプションに関連付けられているCloud Volumes ONTAP のシリアル番号を登録している（909201xxxxxxxxのシリアル番号）。</block>
   <block id="67dbdeb11e22ea7def810bade59ce818" category="paragraph">これらのシリアル番号は、通常PAY_GOシリアル番号と呼ばれ、Cloud Volumes ONTAP の導入時にBlueXPによって生成されます。</block>
@@ -791,7 +790,6 @@
   <block id="00c5fef3bb9d593ae96bf5d2ee60354a" category="paragraph">BlueXPコミュニティに参加して、進行中のディスカッションをフォローしたり、新しいディスカッションを作成したりできます。</block>
   <block id="a4a6c2ea0078252eac2d74ef3e6c917c" category="paragraph">現在表示しているBlueXPのマニュアル。</block>
   <block id="d63bf50426f4c712554faec55b30c548" category="list-text">*Service*:問題 が関連付けられているサービスを選択します。たとえば、サービス内のワークフローまたは機能を備えたテクニカルサポート問題 に固有のBlueXPなどです。</block>
-  <block id="aa996e20900197b0ea41485ada083d8c" category="paragraph">作業環境のリストは、サービスの上部バナーで選択したBlueXPアカウント、ワークスペース、コネクタの範囲内にあります。</block>
   <block id="d7945c5e359d6ac7ea9f91926a2538da" category="list-text">左側のナビゲーションメニューから、* Mobility &gt; Tiering *を選択します。</block>
   <block id="77c2f2a395526537d532a604d4148171" category="paragraph">NSSクレデンシャルがBlueXPに保存されている場合は、アカウント内のクラスタがリストに表示されます。</block>
   <block id="05d09a490352dd1a62f556737b4e126c" category="paragraph">NSS資格情報がBlueXPに保存されていない場合は、検出されていないクラスタを表示する前に資格情報を追加するように求められます。</block>
@@ -807,8 +805,6 @@
   <block id="0c664d98088fac0e3d869a21cac0c6c4" category="list-text">から登録します<block ref="41a6e7dc73b2f1e43bd8c26c6ce83782" category="inline-link-rx"></block>をクリックし、BlueXP Webサイトにログインし直して登録を完了します。</block>
   <block id="6193e62acb4a86204633b2d093e49546" category="list-text">ライセンスをリクエストするには、BlueXPの右下にあるチャットアイコンをクリックします。</block>
   <block id="e031d1891af14066db39ea9bc5a67edb" category="list-text">BlueXPでサポートされていない構成を使用している場合は、引き続きFabricPool ライセンスを使用します。<block ref="f4b8492105dcaca906c2ce90b9ccab9e" category="inline-link-rx"></block>。</block>
-  <block id="f68bf28051d836364652b5a91d1bcd3a" category="list-text">BlueXPアカウントID (これはサポートサイトではテナントIDと呼ばれます)を入力し'[*Submit*]をクリックしてライセンスファイルをダウンロードします</block>
-  <block id="257ff1df6b80ed0bf9b3463d53be79f9" category="paragraph">BlueXPアカウントIDを確認するには、BlueXPの上部にある[*Account*]ドロップダウンを選択し、アカウントの横にある[*Manage Account*]をクリックします。アカウント ID は、 [ 概要 ] タブにあります。</block>
   <block id="bae190eec3db4a0dd635ae72756acde8" category="inline-link">NSSアカウントをBlueXPに追加します</block>
   <block id="8816958eed360786a943983e0bd031fd" category="paragraph">BlueXPでは、オンプレミスの作業環境を選択し、階層化サービスで「*有効化」をクリックし、画面の指示に従ってGoogle Cloud Storageにデータを階層化します。</block>
   <block id="955a264d46a1f0536f93bcb5a3e454f1" category="list-text">BlueXPからオンプレミスクラスタを検出します。</block>
@@ -863,7 +859,6 @@
   <block id="e3cd99e4aa330ae6bdfb3754d83ae962" category="list-text">パートナーアカウントまたはリセラーアカウントをお持ちの場合は、1つ以上のNSSアカウントを追加することはできますが、お客様レベルのアカウントと一緒に追加することはできません。</block>
   <block id="2974170a8b1b5b4a2ac69aacd4c1c9c3" category="list-text">サポート登録ページでアカウントIDのシリアル番号を確認します。</block>
   <block id="50a1dc01b7312307c34a888071586955" category="list-text">上記の手順2からアカウントのシリアル番号をコピーし、セキュリティチェックを完了して、ネットアップのグローバルデータプライバシーポリシーを確認します。</block>
-  <block id="cc8b0535948da368f832027c19b7f853" category="list-text">シリアル番号フィールドには、上記のアカウントのシリアル番号（960xxxx）を必ずコピーしてください。これにより、アカウント処理が高速化されます。</block>
   <block id="b5aec059d3f0c191720983ba1eb05690" category="list-text">登録することで、無償トライアルの終了後にサービスが中断されることがなくなります。</block>
   <block id="121bc0fb41d07ce979966173203acae0" category="paragraph">トライアルが終了すると、階層化したデータの量に応じて1時間ごとに課金されます。</block>
   <block id="5c0fff562b33dc0a5a3acac30ed2d313" category="section-title">2022年12月6日</block>
@@ -1054,7 +1049,6 @@
   <block id="78e084a8e123f468bdc8292351608ac4" category="paragraph">はい。レイテンシは接続によって異なるため、クラウド階層と同じレイテンシを提供することはできません。オブジェクトストアのレイテンシとスループットを見積もるために、BlueXP階層化サービスではクラウドパフォーマンステスト（ONTAP オブジェクトストアプロファイラに基づく）を実行します。このテストは、オブジェクトストアの接続後、階層化のセットアップ前に使用できます。</block>
   <block id="588536d1b6de932fbea2c2b22f963d72" category="summary">BlueXP階層化サービスの30日間無償トライアルは、最初のクラスタから階層化をセットアップするときに始まります。無償トライアルの終了後は、BlueXP階層化サービスの料金を、クラウドプロバイダのマーケットプレイスから従量課金制または年単位のサブスクリプション、ネットアップのBYOLライセンス、またはその両方で支払う必要があります。</block>
   <block id="8202299929ccdfe388049a03c2c36d60" category="doc">BlueXP階層化のライセンスをセットアップ</block>
-  <block id="f6013530929ce5c8125f05448da6c33e" category="list-text">BYOL BlueXP階層化ライセンス（旧称「Cloud Tiering」ライセンス）は_floating_licenseで、BlueXPアカウント内の複数のオンプレミスONTAP クラスタにわたって使用できます。これは、クラスタごとに_ FabricPool _ licenseを購入した以前とは異なり、はるかに簡単です。</block>
   <block id="4f38e9048319fde605a07b6a4c99d8f5" category="inline-link-macro">BlueXPの階層化でライセンスがどのように機能するかについては、こちらをご覧ください</block>
   <block id="917e8711906a1b676db9798fcc2be9a1" category="paragraph"><block ref="4edd15551f6199902649e3b2955f6f1d" category="inline-link-macro-rx"></block>。</block>
   <block id="c98e930332bafdf23443b7d47efce588" category="section-title">BlueXP階層化サービス（PAYGO）サブスクリプションを利用</block>
@@ -1071,7 +1065,6 @@
   <block id="316a7aed758eb7b043492e848b931117" category="section-title">BlueXP階層化ライセンスファイルを入手します</block>
   <block id="9b1441120e66cf63798ba27aa3531664" category="list-text">BlueXP階層化ライセンスのシリアル番号を入力します。</block>
   <block id="1a8eb6c0b4ba023742d25f05dbe5273d" category="section-title">BlueXP階層化BYOLライセンスをアカウントに追加します</block>
-  <block id="87afcfb4fef2a4d3fb672d29a7991ab4" category="paragraph">BlueXPアカウント用のBlueXP階層化ライセンスを購入したら、BlueXP階層化サービスを使用するにはライセンスをBlueXPに追加する必要があります。</block>
   <block id="58db88b7cd0054a3b13ce2930a48dad9" category="list-text">[ガバナンス]&gt;[デジタルウォレット]&gt;[データサービスライセンス]*をクリックします。</block>
   <block id="6b4dd8f152b00922385ef0e152554720" category="inline-image-macro">BlueXP階層化BYOLライセンスを追加するページのスクリーンショット。</block>
   <block id="0a54431ad29a96ceb71a9ab3f197983c" category="paragraph"><block ref="0a54431ad29a96ceb71a9ab3f197983c" category="inline-image-macro-rx" type="image"></block></block>
@@ -1119,7 +1112,6 @@
   <block id="02a08db5d0a39ed9c8dcd2ad1853be2e" category="list-text">ONTAP クラスタ、StorageGRID 、およびBlueXP階層化サービスへのアウトバウンドHTTPS接続を可能にするコネクタのネットワーク。</block>
   <block id="5551962687b10a9e81f434a8452784af" category="inline-image-macro">BlueXP階層化サービスを示すアーキテクチャイメージ。オンプレミスのコネクタへの接続、ONTAP クラスタへの接続、およびONTAP クラスタとオブジェクトストレージの間の接続を確立します。アクティブなデータは ONTAP クラスタに格納され、アクセス頻度の低いデータはオブジェクトストレージに格納されます。」</block>
   <block id="3375a6272f3c0fd37932a7d67a06f3cc" category="paragraph"><block ref="3375a6272f3c0fd37932a7d67a06f3cc" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="e9539e47f1a0a8a4cdc4f8081cd3f4ba" category="list-text">データをStorageGRID に階層化する場合、BlueXPアカウントにはBlueXP階層化ライセンスは必要ありません。また、ONTAP クラスタにFabricPool ライセンスは必要ありません。</block>
   <block id="2cd89e6f0fcda5b09186fef88391ef89" category="admonition">BlueXPの階層化では、ONTAP 9.5以降でFlexGroup ボリュームがサポートされます。セットアップは他のボリュームと同じように機能します。</block>
   <block id="83e95400e41cfc623b4a4a1461c18f83" category="list-text">StorageGRID への階層化をセットアップするときは、S3のアクセスキーとシークレットキーを使用してBlueXPの階層化を提供する必要があります。BlueXPの階層化サービスでは、このキーを使用してバケットにアクセスします。</block>
   <block id="6679647b3dd9ac6d22d449c9098cc77d" category="paragraph">正しいIPspaceを選択すると、BlueXPの階層化でONTAP からStorageGRID オブジェクトストレージへの接続をセットアップできます。</block>
@@ -1177,7 +1169,6 @@
   <block id="f4c3107fb758c7edea8576312dff63ac" category="inline-link-macro">ライセンスをBlueXPデジタルウォレットに追加します</block>
   <block id="1953cb0b13a811a9fb3db1b69c5f0a2d" category="list-text">BlueXPでは、 <block ref="fb3a1da5f1072aaa3d6f4c9eaa7cccb2" category="inline-link-macro-rx"></block>。</block>
   <block id="891ca3a65a7ff1025eab9d895f17f04a" category="paragraph">ネットアップから* BlueXP階層化*ライセンス（旧称「Cloud Tiering」ライセンス）を購入して、お客様所有のライセンスを使用します。1年、2年、3年のライセンスを購入し、任意の量の階層化容量（最低10TiBから）を指定できます。BYOL BlueXP階層化ライセンスは_floating_licenseで、オンプレミスの複数のONTAP クラスタで使用できます。BlueXP階層化ライセンスで定義した合計階層化容量は、すべてのオンプレミスクラスタで使用できます。</block>
-  <block id="2105bccac1837aa99c46baf38ee1c998" category="paragraph">ネットアップが提供するお客様所有のライセンスには、 1 年、 2 年、 3 年の期間があります。BYOL * BlueXP階層化*ライセンス（旧称「クラウド階層化」ライセンス）は_floating_licenseで、BlueXPアカウントの複数のオンプレミスONTAP クラスタにわたって使用できます。BlueXP階層化ライセンスで定義されている階層化の合計容量は*すべての*オンプレミスクラスタで共有されるため、初期ライセンスの取得や更新が容易になります。階層化BYOLライセンスの最小容量は10TiBからです。</block>
   <block id="76e73aa82e342d9c46acf62eef4dcfc4" category="paragraph">[階層化]&gt;[オンプレミスダッシュボード]*をクリックするだけです。BlueXPの階層化サービスには、環境に関する次の詳細情報が用意されています。</block>
   <block id="73363ef02ce267ee93816a7a9661efbb" category="inline-image-macro">オンプレミスのダッシュボードページのスクリーンショット。</block>
   <block id="d8dd920a9088057867f1c70674cd6044" category="paragraph"><block ref="d8dd920a9088057867f1c70674cd6044" category="inline-image-macro-rx" type="image"></block></block>
@@ -1245,25 +1236,18 @@
   <block id="e49aa971c20ec071f1b5bbc3c7266769" category="list-text">シリアル番号のあるONTAPシステムのケースをオープンする場合は、そのシステムのシリアル番号にNSSアカウントを関連付ける必要があります。</block>
   <block id="c7b7a5ae9f37fd7d24e4d641b9186fe9" category="paragraph">このエラーは、NSSアカウントとそれに関連付けられているレコードの会社が、BlueXPアカウントのシリアル番号(例960xxxx）または動作環境のシリアル番号。次のいずれかのオプションを使用して、サポートを受けることができます。</block>
   <block id="28164bf9e881ddc9e7ff74744bfce180" category="paragraph">両方のタイプのシリアル番号を登録することで、サポートチケットのオープンやケースの自動生成などの機能を利用できます。登録を完了するには、以下の手順でNetApp Support Site（NSS）アカウントをBlueXPに追加してください。</block>
-  <block id="5a19febf1dcb23c10e8dcfde64ba764c" category="section-title">NetAppサポートにBlueXPアカウントを登録します</block>
-  <block id="6bbc2ba432f59ab65ee3d8ac5a58336e" category="paragraph">サポートに登録してサポート利用資格をアクティブ化するには、BlueXPアカウントの1人のユーザがNetApp Support SiteアカウントをBlueXPログインに関連付ける必要があります。ネットアップサポートへの登録方法は、NetApp Support Site （NSS）アカウントがあるかどうかによって異なります。</block>
   <block id="0c788a722f31f8f0cf36539ee04615cf" category="list-text">[NSSクレデンシャルの追加]*を選択し、NetApp Support Site（NSS）認証プロンプトに従います。</block>
-  <block id="8add4eb0d3f6ce61d374f3df3ee4eadf" category="paragraph">[リソース]ページに、アカウントがサポートに登録されていることが表示されます。</block>
   <block id="10c56875db7a47f791d653e5d5bff0e9" category="inline-image-macro">アカウントのシリアル番号、緑のチェックボックス、サポート登録済みのテキストを示すスクリーンショット。</block>
   <block id="3d183819a15163ef2e2e7d9d764254a9" category="paragraph"><block ref="3d183819a15163ef2e2e7d9d764254a9" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="d9a01bdcfab6f0a10fc126999b4d5988" category="paragraph">他のBlueXPユーザにNetApp Support Siteアカウントが関連付けられていない場合、このサポート登録ステータスは表示されません。ただし、BlueXPアカウントがサポートに登録されていないわけではありません。アカウント内の1人のユーザーがこれらの手順を実行している限り、アカウントは登録されています。</block>
   <block id="bdd862f49d428a850400bcf2f53cdaf2" category="paragraph">NetAppの既存のお客様で、ライセンスとシリアル番号は_NO_NSSアカウントしかお持ちでない場合は、NSSアカウントを作成してBlueXPログインに関連付ける必要があります。</block>
   <block id="0499bba105f8a891a2c671f1ba99dd34" category="list-text">の手順を実行して、新しいNSSアカウントをBlueXPログインに関連付けます <block ref="2f3aba04ec49ee5f0573a6c80a1b9df2" category="inline-xref-macro-rx"></block>。</block>
   <block id="5cdee814e2d9ba3490a8f16d00c65759" category="paragraph">NetApp Support Siteアカウントを作成したら、の手順を実行してアカウントをBlueXPログインに関連付けます <block ref="2f3aba04ec49ee5f0573a6c80a1b9df2" category="inline-xref-macro-rx"></block>。</block>
   <block id="3e616bae81890a6c8fae17c9b45af152" category="section-title">Cloud Volumes ONTAPサポートのためにNSSクレデンシャルを関連付けます</block>
-  <block id="d8f0da67cbab6e43f6d266bdab68cdc8" category="paragraph">NetApp Support Siteで次の主要なワークフローを有効にするには、BlueXPアカウントにクレデンシャルを関連付ける必要がCloud Volumes ONTAPあります。</block>
   <block id="a0518a10626dc11fd00e2d20265ad240" category="list-text">従量課金制のCloud Volumes ONTAPシステムのサポートを登録しています</block>
   <block id="321aadf78ef73521712291b7aba6411f" category="paragraph">お使いのシステムのサポートを有効にし、ネットアップのテクニカルサポートリソースにアクセスするには、 NSS アカウントを用意する必要があります。</block>
   <block id="d51b2b497db445a16b1c9583c1abbb59" category="list-text">お客様所有のライセンスを使用（BYOL）する場合のCloud Volumes ONTAP の導入</block>
   <block id="2ebfeabed40c2270d9fa8325080a4b3e" category="paragraph">ライセンスキーをBlueXPでアップロードし、購入した契約期間のサブスクリプションを有効にするには、NSSアカウントを提供する必要があります。これには、期間の更新の自動更新も含まれます。</block>
   <block id="f5135b68b75a8404803a1eb438e40c5e" category="list-text">Cloud Volumes ONTAP ソフトウェアを最新リリースにアップグレードしています</block>
-  <block id="39f382b97080640c75604b5890f3a5d3" category="paragraph">NSSクレデンシャルをBlueXPアカウントに関連付ける方法は、BlueXPユーザログインに関連付けられたNSSアカウントとは異なります。</block>
-  <block id="e3bc6d35311568d55f1c8ea11984b964" category="paragraph">これらのNSSクレデンシャルは、特定のBlueXPアカウントIDに関連付けられています。BlueXPアカウントに属するユーザは、*[サポート]&gt;[NSS管理]*からこれらのクレデンシャルにアクセスできます。</block>
   <block id="28acda3f8bdb20220a5658f1cd81f226" category="section-title">2023年7月4日</block>
   <block id="f955a076eeae4df4466469593ff635ca" category="section-title">アクセス頻度の低いデータをオブジェクトストレージにアップロードする際の帯域幅を調整できるようになりました</block>
   <block id="d59048f21fd887ad520398ce677be586" category="inline-link">詳細はこちら。</block>
@@ -1305,10 +1289,6 @@
   <block id="fe35e262c448d76aba8db40105f10ae6" category="paragraph">必要に応じて、以前に設定した AWS PrivateLink を使用するかどうかを選択します。 <block ref="e6b15c4e63006b05802c430924113019" category="inline-xref-macro-rx"></block> エンドポイントの設定手順を説明するダイアログボックスが表示されます。</block>
   <block id="c52a9d7f6355ad24bacb2c5f23c0e863" category="paragraph">BlueXP階層化ライセンスを購入したら、BlueXP階層化シリアル番号とNSSアカウントを入力するか、NLFライセンスファイルをアップロードして、BlueXPでライセンスをアクティブ化します。次の手順は、 NLF ライセンスファイルを取得する方法を示しています。</block>
   <block id="135b308ed83c53f1516b7c754566d1c4" category="paragraph-title">作業を開始する前に</block>
-  <block id="e3286b69a705d4ed944e904722ab7c8f" category="paragraph">開始する前に、次の情報が必要です。</block>
-  <block id="31c32a382d97a37a96c1074e48f523a5" category="list-text">BlueXP階層化のシリアル番号</block>
-  <block id="079aeecf06b109e4316b0a68ea943f2b" category="paragraph">この番号は、SOから確認するか、アカウントチームにお問い合わせください。</block>
-  <block id="bcbbd9a155e07caa8b31001adc835c79" category="list-text">BlueXPアカウントID</block>
   <block id="a6cfac773f21906007a8ddf407596067" category="list-text">[* License Key] 列で、 [* Get NetApp License File* ] をクリックします。</block>
   <block id="7fe6981833e8fe7fd89e0a99a55573da" category="list-text">BlueXPで、*[ヘルプ]&gt;[サポート]*を選択します。</block>
   <block id="6a1b74969231967ed071d465206b15c7" category="list-text">電話で誰かと話をしたい場合は、*[電話]*を選択します。netapp.comのページに移動し、電話番号が表示されます。</block>
@@ -1332,7 +1312,6 @@
   <block id="fdc19b19bb08b842183f4536b3eec76b" category="list-text">*コネクタの権限*：</block>
   <block id="a23c48c7dacd4cbd23073fcbf60fd74b" category="list-text">確認します<block ref="540eaaeac9761e2ce00566e2544cdb50" category="inline-link-rx"></block> IAMロールの一部であり、コネクタに権限を付与します。これらは、コネクタを最初に展開したときにデフォルトで含まれています。そうでない場合は、不足している権限を追加する必要があります。を参照してください<block ref="6d4dc5f0c95117ac550b72968db62911" category="inline-link-rx"></block> 手順については、を参照し</block>
   <block id="66a7f2c8895d7b21d1201fccfd4bdba8" category="list-text">BlueXP階層化で作成されるデフォルトのバケットには、「fabric-pool」というプレフィックスが付けられます。バケットに別のプレフィックスを使用する場合は、使用する名前で権限をカスタマイズする必要があります。S3権限に行が表示されます。<block ref="c712bdd29459fc8b86dccbf521d236c1" prefix=" " category="inline-code"></block>。「fabric-pool」を使用するプレフィックスに変更する必要があります。たとえば、バケットのプレフィックスとして「tiering-1」を使用する場合は、この行を次のように変更します。<block ref="f36e7f2ef320186e3d37d367e5be31fc" prefix=" " category="inline-code"></block>。</block>
-  <block id="ffab91aa955935f27edca0e2b61e13ec" category="paragraph">同じBlueXPアカウントのクラスタの追加に使用するバケットに別のプレフィックスを使用する場合は、プレフィックスを含む行を他のバケットに追加できます。例：</block>
   <block id="38efd96fb4da1774586c4379285d5732" category="paragraph"><block ref="f36e7f2ef320186e3d37d367e5be31fc" prefix="" category="inline-code"></block><block ref="98422a36dda2cb7df4362652f96b84d8" prefix=" " category="inline-code"></block></block>
   <block id="bfe84f0ff43744ba679acbdbf46ab156" category="paragraph">独自のバケットを作成し、標準のプレフィックスを使用しない場合は、この行を次のように変更する必要があります。<block ref="d97fa8f672dbe6f85ad395e3369cf55a" prefix=" " category="inline-code"></block> バケツが認識されるように。ただし、これにより、ボリュームのアクセス頻度の低いデータを保持するように設計されたバケットではなく、すべてのバケットが公開される可能性があります。</block>
   <block id="93965115cac9e91f74b649a6fba443e5" category="list-text">*クラスタ権限*：</block>
@@ -1434,10 +1413,36 @@
   <block id="ad203e818e0c9d7f42f1c260b33875f3" category="sidebar">クラウドに関する Web セミナー</block>
   <block id="4c7d5d7dfde4a7bd82b54348182043d3" category="sidebar">その他のリソース</block>
   <block id="e4f8a35ee8df8b5c247f6e3286e42891" category="sidebar">BlueXPのユースケース</block>
-  <block id="1fb392a56edc456b1bc3eddb57b0906b" category="inline-link">コネクタをオンプレミスにインストールしてセットアップします</block>
-  <block id="510a18acc0e91814caa7b29fd0c6cf03" category="list-text"><block ref="510a18acc0e91814caa7b29fd0c6cf03" category="inline-link-rx"></block></block>
   <block id="f86faf1862caeed3f6dccfce3a669edf" category="inline-link">コネクタを切り替えます</block>
   <block id="803e45c7378965c1863722d57b5fdb0a" category="list-text"><block ref="803e45c7378965c1863722d57b5fdb0a" category="inline-link-rx"></block></block>
   <block id="8adbc3c324aa6698c29b0a7962b11b00" category="list-text">VPC S3 エンドポイントから証明書を取得します。これは、で行います<block ref="b93c91598d8e86da04085f6831b06e68" category="inline-link-rx"></block> 実行するコマンドエンドポイントの DNS 名を入力するときは、先頭に「 * 」を追加して、「 * 」を置き換えます。</block>
   <block id="99bf438e4ecdfb9997a6cefdd9799e09" category="list-text"><block ref="f3a4b869b7377490c5c486397514cea6" category="inline-link-rx"></block>。</block>
+  <block id="98d90e398fc56688ddc647e5f49075ec" category="paragraph">作業環境のリストは、サービスの上部バナーで選択したBlueXP  組織（またはアカウント）、プロジェクト（またはワークスペース）、コネクタの範囲内にあります。</block>
+  <block id="0aac35c69d56f468c7891da9594e68be" category="list-text">BYOL BlueXP  階層化ライセンス（旧称「クラウド階層化」ライセンス）は_floating_licenseで、BlueXP  組織内の複数のオンプレミスONTAPクラスタにわたって使用できます。これは、クラスタごとに_ FabricPool _ licenseを購入した以前とは異なり、はるかに簡単です。</block>
+  <block id="7f58c7f218a280f56c54c444e1bb8411" category="paragraph">ネットアップが提供するお客様所有のライセンスには、 1 年、 2 年、 3 年の期間があります。BYOL * BlueXP  階層化*ライセンス（旧称「クラウド階層化」ライセンス）は_floating_licenseで、BlueXP  組織内の複数のオンプレミスONTAPクラスタにわたって使用できます。BlueXP階層化ライセンスで定義されている階層化の合計容量は*すべての*オンプレミスクラスタで共有されるため、初期ライセンスの取得や更新が容易になります。階層化BYOLライセンスの最小容量は10TiBからです。</block>
+  <block id="0e48ab0bd412e2c6d662a3a4540397a0" category="paragraph">BlueXP  階層化のシリアル番号が必要です。この番号は、SOから確認するか、アカウントチームにお問い合わせください。</block>
+  <block id="e53331a3231a958d20a4871d8efc35d8" category="list-text">BlueXP  アカウントIDを確認します。</block>
+  <block id="e0e8a7d90375792efecad34c0c923e32" category="inline-image-macro">BlueXP  Webコンソールの右上に表示される設定アイコン。</block>
+  <block id="cd42e1c1af0a908f68d68ae6103b5c30" category="list-text">BlueXP  コンソールの右上で、&gt;* IDおよびアクセス管理*を選択します<block ref="32173ab85f1c68a28384d1a40cf387db" category="inline-image-macro-rx" type="image"></block>。</block>
+  <block id="3bcef3f6238058ae825d608e1557c538" category="list-text">[Organization]ページで、アカウントIDを探してコピーします。</block>
+  <block id="2bd8c9344d3768dd44b910db169ef1fa" category="paragraph">アカウントIDが表示されておらず、組織IDがあるだけの場合は、組織IDの最初の8文字をコピーして_account-_に追加する必要があります。</block>
+  <block id="14da2ef10b9e4cc4d0981b05fff98072" category="paragraph">たとえば、次のように組織IDを入力します。</block>
+  <block id="2740d3013330ec13ae7693ee76bc6509" category="paragraph">ea10e1c6-80cc-4219-8e99-3c3e6b161ba5</block>
+  <block id="6ffe1a2d88424dc37ba43bdf5999183e" category="paragraph">アカウントIDは次のようになります。</block>
+  <block id="c0b58edc6437b03c81d24f7ded6f3648" category="paragraph">アカウント- ea10e1c6</block>
+  <block id="d4393f7d35eb6fcb480572ab5d418710" category="list-text">BlueXP  アカウントID（サポートサイトではテナントIDと呼ばれます）を入力し、*[送信]*をクリックしてライセンスファイルをダウンロードします。</block>
+  <block id="921d59a1a10f4e2423dfe3d60997086a" category="paragraph">階層化BlueXP  サービスを使用するには、BlueXP  階層化ライセンスを購入したら、ライセンスをBlueXP  に追加する必要があります。</block>
+  <block id="29360bfcdbc91d3f1514c372b4585965" category="list-text">BlueXP  アカウントのシリアル番号（BlueXP  のサポートリソースページに記載されている20桁の960xxxxxxxxxシリアル番号）を登録します。</block>
+  <block id="444b74bc81e823cc1c4c704219ad8ed3" category="section-title">NetAppサポートのためのBlueXP  の登録</block>
+  <block id="b3bf31f8a918c712f26cdf493a908825" category="paragraph">サポートに登録してサポート利用資格をアクティブ化するには、BlueXP  組織（またはアカウント）の1人のユーザがNetAppサポートサイトのアカウントをBlueXP  ログインに関連付ける必要があります。ネットアップサポートへの登録方法は、NetApp Support Site （NSS）アカウントがあるかどうかによって異なります。</block>
+  <block id="2ba7f9eae7a02f9c3ac0fc07517d1c48" category="paragraph">[リソース]ページに、BlueXP  組織がサポートに登録されていることが表示されます。</block>
+  <block id="c05e530d1466e986d570cfe3f92656c3" category="paragraph">他のBlueXPユーザにNetApp Support Siteアカウントが関連付けられていない場合、このサポート登録ステータスは表示されません。ただし、BlueXP  組織がサポートに登録されていないわけではありません。組織内の1人のユーザーがこれらの手順を実行している限り、組織は登録されています。</block>
+  <block id="a2454703f88e5bf5b433ae850a87151b" category="list-text">シリアル番号フィールドには、上記のアカウントのシリアル番号（960xxxx）を必ずコピーしてください。これにより処理が高速化されます。</block>
+  <block id="0ca08a23718c0a91743dd6c0146ca353" category="paragraph">Cloud Volumes ONTAPで次の主要なワークフローを有効にするには、NetAppサポートサイトのクレデンシャルをBlueXP  組織に関連付ける必要があります。</block>
+  <block id="c81c8e01f5d906ae1ab0c5c606f06b05" category="paragraph">NSSクレデンシャルとBlueXP  組織の関連付けは、BlueXP  ユーザログインに関連付けられたNSSアカウントとは異なります。</block>
+  <block id="8166996cb4a59c147200d89a061bb49c" category="paragraph">これらのNSSクレデンシャルは、特定のBlueXP  組織IDに関連付けられています。BlueXP  組織に属するユーザは、*[サポート]&gt;[NSS管理]*からこれらのクレデンシャルにアクセスできます。</block>
+  <block id="ab890419f359dee3122c3a46ece4de91" category="paragraph">同じBlueXP  組織内の追加のクラスタに使用するバケットに別のプレフィックスを使用する場合は、プレフィックスを含む行を他のバケットに追加できます。例：</block>
+  <block id="697e19b973c6dfabc32eda21853b990c" category="inline-link">コネクタをオンプレミスにインストールしてセットアップする</block>
+  <block id="7134f9d87483badec2f2028b49510a11" category="list-text"><block ref="7134f9d87483badec2f2028b49510a11" category="inline-link-rx"></block></block>
+  <block id="e611f8473aa031238f45b544d113b51c" category="list-text">StorageGRIDにデータを階層化する場合、BlueXP  組織ではBlueXP  階層化ライセンスは必要ありません。また、ONTAPクラスタではFabricPoolライセンスは必要ありません。</block>
 </blocks>
