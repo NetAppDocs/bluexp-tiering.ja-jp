@@ -1445,4 +1445,5 @@
   <block id="697e19b973c6dfabc32eda21853b990c" category="inline-link">コネクタをオンプレミスにインストールしてセットアップする</block>
   <block id="7134f9d87483badec2f2028b49510a11" category="list-text"><block ref="7134f9d87483badec2f2028b49510a11" category="inline-link-rx"></block></block>
   <block id="e611f8473aa031238f45b544d113b51c" category="list-text">StorageGRIDにデータを階層化する場合、BlueXP  組織ではBlueXP  階層化ライセンスは必要ありません。また、ONTAPクラスタではFabricPoolライセンスは必要ありません。</block>
+  <block id="aca1d9b834f4ef7d5cdec1dd3d882bd0" category="paragraph">BlueXP  はこの通知のEメールを送信しません。</block>
 </blocks>
