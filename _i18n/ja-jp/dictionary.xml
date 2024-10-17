@@ -641,9 +641,7 @@
   <block id="ba34121e3527a1918b936c79899e68fa" category="paragraph">ミラーリングの目的で、アグリゲートごとに最大2つのバケットを接続できます。コールドデータは両方のバケットに同期的に階層化されます。バケットは、プロバイダや場所によって異なる場合があります。2022年8月より、* Advanced Setup *ページを使用して、2つのオブジェクトストアを1つのアグリゲートに接続できます。</block>
   <block id="6c66decef59a00987dd2d537b80e9092" category="paragraph">はい。一般的なベストプラクティスとして、1つのバケットを複数のアグリゲートに接続することを推奨します。ただし、パブリッククラウドを使用する場合は、オブジェクトストレージサービスのIOPSが最大であるため、複数のバケットを考慮する必要があります。</block>
   <block id="1f6fd3301ab6ce127efad422dec03d61" category="section-title">2022年8月3日</block>
-  <block id="059c9f6829260507f53186d7191b058c" category="section-title">クラスタ内の他のアグリゲート用に追加のオブジェクトストアを設定できるようになりました</block>
   <block id="aa18b7b04ae6143c1d2f56b72718403e" category="inline-link">新しいオブジェクトストレージ機能の詳細については、こちらをご覧ください。</block>
-  <block id="5c10257d843c1a8aa9e46f55d2064835" category="section-title">MetroCluster 構成に対するCloud Tieringライセンスがサポートされています</block>
   <block id="4f05e87f380a81f7a23601ecba757570" category="sidebar">オブジェクトストレージを管理する</block>
   <block id="5c37edf1ec718afd1ab9a5a51043e0ce" category="paragraph">これらの手順を実行すると、すぐに作業を開始できます。各手順の詳細については、このトピックの以降のセクションを参照してください。</block>
   <block id="e41af01898aa01f20e528d19fdda2ec8" category="paragraph">オンプレミスのONTAP クラスタをパブリックインターネット経由でAWS S3に直接接続するか、VPNとAWS Direct Connectのどちらを使用してトラフィックをAWS S3にルーティングするかを選択します。</block>
@@ -750,8 +748,6 @@
   <block id="e01df0b4dfd95eba2c59333419e4fac6" category="list-text">製品内のチャットを使用します</block>
   <block id="639be990cfca56ab4b63685d8bacd437" category="list-text">テクニカル以外のケースをに送信します<block ref="2298f47e4dad19a3156da7ce6116d9b1" category="inline-link-rx"></block></block>
   <block id="0da0639ab808878f568f3c4f06c02689" category="inline-link">MetroCluster 要件の詳細については、ONTAP のドキュメントを参照してください</block>
-  <block id="c3d7ada1f42d9b916dd8624c5b5661c1" category="section-title">階層化ウィザードでは、S3ストレージへの階層化時にAWS PrivateLinkを設定できます</block>
-  <block id="bf482155aab691ba59a0313f5628cbba" category="section-title">MetroCluster 構成のミラーオブジェクトストアを削除するときに階層化の動作を選択します</block>
   <block id="c80805cd1b291fd4590a3c0b82caa095" category="inline-link">FabricPool ミラーの詳細については、こちらをご覧ください</block>
   <block id="4a6b2da2ae625dffc7d1a103b7579d57" category="paragraph">2つ目のオブジェクトストアをアグリゲートに接続してFabricPool ミラーを作成し、2つのオブジェクトストアにデータを同期的に階層化することができます。アグリゲートにオブジェクトストアがすでに1つ接続されている必要があります。<block ref="8af213a751b87119e23e85f52fbc72d6" category="inline-link-rx"></block>。</block>
   <block id="2dc183e0073f3c1e0402cafe50273750" category="paragraph">MetroCluster 構成を使用する場合は、異なるアベイラビリティゾーンにあるパブリッククラウドでオブジェクトストアを使用することを推奨します。<block ref="8cdfadb67efe7ac0be1266ed1d493d6d" category="inline-link-rx"></block>。</block>
@@ -906,7 +902,6 @@
   <block id="d88bacf2a9fdcbbc844edcba97c34e30" category="section-title">ネットアップサポートと一緒にケースを作成します</block>
   <block id="08d96fdd1a845d80db99e6e1dffb8bc7" category="list-text">[*Resources*]ページで、[Technical Support]で次のいずれかのオプションを選択します。</block>
   <block id="d0693e7bf28b7bbc94287cee0e4b0768" category="section-title">2023年3月5日</block>
-  <block id="b92f2131d3d225c3c3327daaa8862624" category="section-title">ボリュームの階層化レポートを生成できるようになりました</block>
   <block id="f86857f0a51fde5819da3a17258b5448" category="inline-link">階層化レポートのダウンロード方法をご覧ください</block>
   <block id="898e35e1a4bf4b025c3edec879439b08" category="section-title">サポートケースの管理（プレビュー）</block>
   <block id="8b74b053fbeeff5c3b6f4991cb1d028d" category="paragraph">アクティブなサポートケースと解決済みのサポートケースは、BlueXPから直接表示および管理できます。NSSアカウントと会社に関連付けられたケースを管理できます。</block>
@@ -948,7 +943,6 @@
   <block id="78663d9137e3cc2c3049532938b4c70f" category="list-text">[Details &amp; Credentials]ページで、クラスタ名がWorking Environment Nameとして追加されたため、*[Go]*をクリックするだけです。</block>
   <block id="102787ed6297b34a7504b527e91d01d3" category="section-title">2023年4月3日</block>
   <block id="2e79231a13ecf62585403e20da2dea4a" category="section-title">[ライセンス]タブが削除されました</block>
-  <block id="66a0b4752150538292b81c073ca0b83b" category="section-title">階層化タブの名前が変更され、内容が更新されました</block>
   <block id="c7f5c1a75acc58c6f004efc0ce1eba09" category="list-text">*添付ファイル（オプション）*：一度に1つずつ、最大5つの添付ファイルをアップロードできます。</block>
   <block id="bfa80e7aaad6da353b431bff3a0e12d6" category="paragraph">添付ファイルはファイルあたり25 MBに制限されています。サポートされているファイル拡張子は、txt、log、pdf、jpg/jpeg、rtf、 doc/docx、xls/xlsx、およびcsv。</block>
   <block id="8e6b52a532a4fbbfc98dca3ebfa5f1e6" category="list-text">*ケースノートの更新*：問題の詳細を入力するか、*ファイルのアップロード*を選択して最大5つのファイルを添付します。</block>
@@ -1118,8 +1112,6 @@
   <block id="56273c1cb08574200c49973b9bc5c615" category="summary">BlueXP階層化サービスの新機能をご紹介します。</block>
   <block id="d423420066ca2ec630afe096f14eae4b" category="doc">BlueXP階層化サービスの最新情報</block>
   <block id="8c14896b1d1fc37f02aa2e6dfc06354a" category="paragraph">BlueXPの階層化が変更されたため、BlueXPの階層化処理を成功させるには、次のコネクタエンドポイントを変更する必要があります。</block>
-  <block id="3afb7cae2b7c3e96c6a4e1df765d3dce" category="section-title">ドラッグアンドドロップして、Azure Blob、Google Cloud Storage、StorageGRID へのBlueXP階層化を有効にします</block>
-  <block id="18cd1c130656412d8089667948bc48a2" category="section-title">ドラッグアンドドロップして、BlueXPからAmazon S3への階層化を有効にします</block>
   <block id="a0396859c016deff163331729e87c6cf" category="summary">BlueXPの階層化サービスでは、複数のGoogle Cloudストレージクラスとほとんどのリージョンがサポートされます。</block>
   <block id="58edb41c3cfab45408029ad69032402a" category="paragraph">BlueXP階層化ライフサイクルルールを設定するときは、Googleアカウントでバケットをセットアップするときにライフサイクルルールを設定しないでください。</block>
   <block id="2d5551329360393b3ea83aeec84cf519" category="paragraph">BlueXPの階層化サービスは次のリージョンでサポートされます。</block>
@@ -1249,10 +1241,8 @@
   <block id="2ebfeabed40c2270d9fa8325080a4b3e" category="paragraph">ライセンスキーをBlueXPでアップロードし、購入した契約期間のサブスクリプションを有効にするには、NSSアカウントを提供する必要があります。これには、期間の更新の自動更新も含まれます。</block>
   <block id="f5135b68b75a8404803a1eb438e40c5e" category="list-text">Cloud Volumes ONTAP ソフトウェアを最新リリースにアップグレードしています</block>
   <block id="28acda3f8bdb20220a5658f1cd81f226" category="section-title">2023年7月4日</block>
-  <block id="f955a076eeae4df4466469593ff635ca" category="section-title">アクセス頻度の低いデータをオブジェクトストレージにアップロードする際の帯域幅を調整できるようになりました</block>
   <block id="d59048f21fd887ad520398ce677be586" category="inline-link">詳細はこちら。</block>
   <block id="1d59c82c13288b53f26d652175016f90" category="paragraph">BlueXP階層化をアクティブ化すると、ONTAPは無制限のネットワーク帯域幅を使用して、アクセス頻度の低いデータをクラスタ内のボリュームからオブジェクトストレージに転送できます。階層化トラフィックが通常のユーザワークロードに影響していることに気付いた場合は、転送中に使用できる帯域幅を調整できます。<block ref="bd661c8ba5ce12ee5a1adc1010618597" category="inline-link-rx"></block>。</block>
-  <block id="eb516d1f8f028dbd0333948ae6fc06a5" category="section-title">通知センターに「低階層化」の階層化イベントが表示されます</block>
   <block id="250f0923d20814211c14c5a6cd0e2643" category="paragraph">クラスタがコールドデータの20%未満（データを階層化しないクラスタを含む）を階層化しているときに、階層化イベント「Tier additional data from cluster &lt;name&gt; to object storage efficiency」が通知として表示されるようになりました。</block>
   <block id="3c23988fbf7c203a2c811a5ce84251c0" category="inline-link">BlueXP階層化サービス（TCO）とコスト削減試算ツールです</block>
   <block id="57f9b94b395c8e293b7f892fe5995ac7" category="paragraph">本通知は、システムの効率化とストレージコストの削減を目的とした「推奨事項」です。これにより、へのリンクが提供されます<block ref="c9d262883689ef94201e8739cb50c7f6" category="inline-link-rx"></block> コスト削減額の計算に役立ちます。</block>
@@ -1341,7 +1331,6 @@
   <block id="c0e0b7ff0de9558404e9b77ece42948a" category="list-text">[NSS Management]&gt;[Add NSS Account]*を選択します。</block>
   <block id="85b9386ed443776127e099931d73448a" category="list-text">プロンプトが表示されたら、*続行*を選択してMicrosoftログインページにリダイレクトします。</block>
   <block id="4bca0fdcdafed1e5f31435f4b19c8738" category="section-title">2023年8月9日</block>
-  <block id="b839d32c555694a5245fa2fa33d17d88" category="section-title">階層化データを格納するバケット名にカスタムプレフィックスを使用する</block>
   <block id="6eb4429639db75cb3b56cc38a3fb8785" category="paragraph">以前は、バケット名を定義する際にデフォルトの「fabric-pool」プレフィックス（_fabric-pool-bucket1_など）を使用する必要がありました。バケットに名前を付けるときにカスタムプレフィックスを使用できるようになりました。この機能は、データをAmazon S3に階層化する場合にのみ使用できます。<block ref="3e8270d3bc816ce30c7c11fe6d073535" category="inline-link-rx"></block>。</block>
   <block id="6a3a27c0cd9c23985f6e8260846d58bc" category="paragraph">環境内のすべてのストレージシステムの管理に複数のコネクタを使用している場合は、階層化を実装する一部のクラスタが別 々 のコネクタに配置されている可能性があります。特定のクラスタを管理しているコネクタが不明な場合は、BlueXP階層化を使用してすべてのコネクタを検索できます。<block ref="017b0207cc8469b6ea246adade89f8e1" category="inline-link-rx"></block>。</block>
   <block id="d441270e2d66b6759e1bbe07190e3d30" category="admonition">BlueXPの階層化で低コストのアクセス階層を使用し、一定の日数が経過して階層化されたデータがに移行されるように設定する場合は、Azureアカウントでコンテナをセットアップするときにライフサイクルルールを選択しないでください。BlueXPの階層化サービスはライフサイクルの移行を管理します。</block>
@@ -1446,4 +1435,15 @@
   <block id="7134f9d87483badec2f2028b49510a11" category="list-text"><block ref="7134f9d87483badec2f2028b49510a11" category="inline-link-rx"></block></block>
   <block id="e611f8473aa031238f45b544d113b51c" category="list-text">StorageGRIDにデータを階層化する場合、BlueXP  組織ではBlueXP  階層化ライセンスは必要ありません。また、ONTAPクラスタではFabricPoolライセンスは必要ありません。</block>
   <block id="aca1d9b834f4ef7d5cdec1dd3d882bd0" category="paragraph">BlueXP  はこの通知のEメールを送信しません。</block>
+  <block id="344a2fbdf46c3a4ef07e7c73566f42f3" category="section-title">階層化タブの名前変更と更新</block>
+  <block id="a4e53922ceec159164a3765ff05e1458" category="doc">アクセス頻度の低いデータを転送するための帯域幅の調整</block>
+  <block id="904ea3c3aba6edae61ba696b01808a11" category="section-title">通知センターに表示される階層化イベント</block>
+  <block id="101e8e97885c05702335faecd0fb3f50" category="doc">バケット名にカスタムプレフィックスを使用する</block>
+  <block id="5f659aa043041b7c7bd07335ac62ca55" category="section-title">ボリュームの階層化レポートを生成する</block>
+  <block id="02a02728987c939621edc3e2dc71d234" category="section-title">ドラッグアンドドロップして追加のデスティネーションへの階層化を有効にする</block>
+  <block id="dc7d0bd65a1626d3b5577529e98dab87" category="section-title">Amazon S3への階層化時にAWS PrivateLinkを設定</block>
+  <block id="5b509c72bc50acb8c10c2952b7982420" category="section-title">ドラッグアンドドロップしてAmazon S3への階層化を有効にする</block>
+  <block id="e183a98351b41fa6323d79a2f03c328c" category="section-title">ミラーオブジェクトストアを削除する際の階層化の動作を選択</block>
+  <block id="847d8c6cf21c261bf367fb1c3c41bf62" category="section-title">他のアグリゲート用に追加のオブジェクトストアを設定する</block>
+  <block id="ed16268923e9fecfd07bdd809ee9d213" category="section-title">MetroCluster構成のライセンスサポート</block>
 </blocks>

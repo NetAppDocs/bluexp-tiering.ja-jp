@@ -22,7 +22,7 @@ BlueXP階層化サービスの新機能をご紹介します。
 
 
 
-=== 階層化データを格納するバケット名にカスタムプレフィックスを使用する
+=== バケット名にカスタムプレフィックスを使用する
 
 以前は、バケット名を定義する際にデフォルトの「fabric-pool」プレフィックス（_fabric-pool-bucket1_など）を使用する必要がありました。バケットに名前を付けるときにカスタムプレフィックスを使用できるようになりました。この機能は、データをAmazon S3に階層化する場合にのみ使用できます。 https://docs.netapp.com/us-en/bluexp-tiering/task-tiering-onprem-aws.html#prepare-your-aws-environment["詳細はこちら。"]。
 
@@ -38,13 +38,13 @@ BlueXP階層化サービスの新機能をご紹介します。
 
 
 
-=== アクセス頻度の低いデータをオブジェクトストレージにアップロードする際の帯域幅を調整できるようになりました
+=== アクセス頻度の低いデータを転送するための帯域幅の調整
 
 BlueXP階層化をアクティブ化すると、ONTAPは無制限のネットワーク帯域幅を使用して、アクセス頻度の低いデータをクラスタ内のボリュームからオブジェクトストレージに転送できます。階層化トラフィックが通常のユーザワークロードに影響していることに気付いた場合は、転送中に使用できる帯域幅を調整できます。 https://docs.netapp.com/us-en/bluexp-tiering/task-managing-tiering.html#changing-the-network-bandwidth-available-to-upload-inactive-data-to-object-storage["詳細はこちら。"]。
 
 
 
-=== 通知センターに「低階層化」の階層化イベントが表示されます
+=== 通知センターに表示される階層化イベント
 
 クラスタがコールドデータの20%未満（データを階層化しないクラスタを含む）を階層化しているときに、階層化イベント「Tier additional data from cluster <name> to object storage efficiency」が通知として表示されるようになりました。
 
@@ -62,7 +62,7 @@ BlueXP階層化インターフェイスから[ライセンス]タブが削除さ
 
 
 
-=== 階層化タブの名前が変更され、内容が更新されました
+=== 階層化タブの名前変更と更新
 
 [Clusters Dashboard]タブの名前が[Clusters]に変更され、[On-Prem Overview]タブの名前が[On-Premises Dashboard]に変更されました。これらのページには、階層化構成を追加してストレージスペースを最適化できるかどうかを評価するための情報が追加されています。
 
@@ -72,7 +72,7 @@ BlueXP階層化インターフェイスから[ライセンス]タブが削除さ
 
 
 
-=== ボリュームの階層化レポートを生成できるようになりました
+=== ボリュームの階層化レポートを生成する
 
 [階層ボリューム]ページからレポートをダウンロードして、管理しているクラスタ上のすべてのボリュームの階層化ステータスを確認できます。BlueXPの階層化サービスでは.csvファイルが生成されます。このファイルを確認して、必要に応じて社内の他のユーザに送信できます。 https://docs.netapp.com/us-en/bluexp-tiering/task-managing-tiering.html#download-a-tiering-report-for-your-volumes["階層化レポートのダウンロード方法をご覧ください"]。
 
@@ -104,7 +104,7 @@ BlueXPの階層化が変更されたため、BlueXPの階層化処理を成功�
 
 
 
-=== ドラッグアンドドロップして、Azure Blob、Google Cloud Storage、StorageGRID へのBlueXP階層化を有効にします
+=== ドラッグアンドドロップして追加のデスティネーションへの階層化を有効にする
 
 Azure Blob、Google Cloud Storage、またはStorageGRID 階層化のデスティネーションがキャンバス上の作業環境として存在する場合は、オンプレミスのONTAP 作業環境を移行先にドラッグして、階層化セットアップウィザードを開始できます。
 
@@ -114,7 +114,7 @@ Azure Blob、Google Cloud Storage、またはStorageGRID 階層化のデステ�
 
 
 
-=== 階層化ウィザードでは、S3ストレージへの階層化時にAWS PrivateLinkを設定できます
+=== Amazon S3への階層化時にAWS PrivateLinkを設定
 
 以前のリリースでは、VPCエンドポイントを介してクラスタをS3バケットに接続するこのセキュアな方法は、非常に時間がかかりました。前提条件となる手順を実行して、を実行します https://docs.netapp.com/us-en/bluexp-tiering/task-tiering-onprem-aws.html#configure-your-system-for-a-private-connection-using-a-vpc-endpoint-interface["VPCエンドポイントインターフェイスを使用して、システムにプライベート接続を設定します"]をクリックすると、[ネットワーク]ページの階層化セットアップウィザードでPrivateLinkを選択できます。
 
@@ -122,13 +122,13 @@ https://docs.netapp.com/us-en/bluexp-tiering/task-tiering-onprem-aws.html["ア�
 
 
 
-=== ドラッグアンドドロップして、BlueXPからAmazon S3への階層化を有効にします
+=== ドラッグアンドドロップしてAmazon S3への階層化を有効にする
 
 Amazon S3階層化のデスティネーションがキャンバスに作業環境として存在する場合は、オンプレミスのONTAP 作業環境をデスティネーションにドラッグして、階層化セットアップウィザードを開始できます。
 
 
 
-=== MetroCluster 構成のミラーオブジェクトストアを削除するときに階層化の動作を選択します
+=== ミラーオブジェクトストアを削除する際の階層化の動作を選択
 
 MetroCluster構成からミラーオブジェクトストアを削除するときに、プライマリオブジェクトストアも削除するかどうかを確認するメッセージが表示されます。プライマリオブジェクトストアをアグリゲートに接続したままにすることも、削除することもできます。
 
@@ -138,12 +138,12 @@ MetroCluster構成からミラーオブジェクトストアを削除すると�
 
 
 
-=== クラスタ内の他のアグリゲート用に追加のオブジェクトストアを設定できるようになりました
+=== 他のアグリゲート用に追加のオブジェクトストアを設定する
 
 Cloud Tiering UIに、オブジェクトストレージ構成用の新しいページセットが追加されました。新しいオブジェクトストアの追加、FabricPool ミラーリング用のアグリゲートへの複数のオブジェクトストアの接続、プライマリオブジェクトストアとミラーオブジェクトストアの交換、アグリゲートへのオブジェクトストアの接続の削除などが可能です。 https://docs.netapp.com/us-en/bluexp-tiering/task-managing-object-storage.html["新しいオブジェクトストレージ機能の詳細については、こちらをご覧ください。"]
 
 
 
-=== MetroCluster 構成に対するCloud Tieringライセンスがサポートされています
+=== MetroCluster構成のライセンスサポート
 
 Cloud Tieringライセンスを、MetroCluster 構成に含まれるクラスタと共有できるようになりました。これらのシナリオで廃止されたFabricPool ライセンスを使用する必要はなくなりました。これにより、多くのクラスタで「フローティング」のクラウド階層化ライセンスを簡単に使用できるようになります。 https://docs.netapp.com/us-en/bluexp-tiering/task-licensing-cloud-tiering.html#apply-bluexp-tiering-licenses-to-clusters-in-special-configurations["これらのタイプのクラスタのライセンスを設定する方法を参照してください。"]

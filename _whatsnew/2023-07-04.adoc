@@ -1,0 +1,17 @@
+= アクセス頻度の低いデータを転送するための帯域幅の調整
+:allow-uri-read: 
+
+
+
+
+=== アクセス頻度の低いデータを転送するための帯域幅の調整
+
+BlueXP階層化をアクティブ化すると、ONTAPは無制限のネットワーク帯域幅を使用して、アクセス頻度の低いデータをクラスタ内のボリュームからオブジェクトストレージに転送できます。階層化トラフィックが通常のユーザワークロードに影響していることに気付いた場合は、転送中に使用できる帯域幅を調整できます。 https://docs.netapp.com/us-en/bluexp-tiering/task-managing-tiering.html#changing-the-network-bandwidth-available-to-upload-inactive-data-to-object-storage["詳細はこちら。"]。
+
+
+
+=== 通知センターに表示される階層化イベント
+
+クラスタがコールドデータの20%未満（データを階層化しないクラスタを含む）を階層化しているときに、階層化イベント「Tier additional data from cluster <name> to object storage efficiency」が通知として表示されるようになりました。
+
+本通知は、システムの効率化とストレージコストの削減を目的とした「推奨事項」です。これにより、へのリンクが提供されます https://bluexp.netapp.com/cloud-tiering-service-tco["BlueXP階層化サービス（TCO）とコスト削減試算ツールです"^] コスト削減額の計算に役立ちます。
