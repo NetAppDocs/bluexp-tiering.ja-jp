@@ -7,7 +7,7 @@ summary: ネットアップでは、さまざまな方法でBlueXPをサポー�
 = ヘルプを表示します
 :allow-uri-read: 
 :icons: font
-:imagesdir: ../media/
+:imagesdir: ./media/
 
 
 [role="lead"]
