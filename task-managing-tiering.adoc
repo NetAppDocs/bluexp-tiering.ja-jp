@@ -39,7 +39,7 @@ image:screenshot_tiering_cluster_info.png["クラスタの合計使用済みデ�
 
 Cloud Volumes ONTAPシステムでは表示が異なることに注意してください。Cloud Volumes ONTAPボリュームではデータをクラウドに階層化できますが、BlueXP階層化サービスは使用しません。 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-tiering.html["アクセス頻度の低いデータをCloud Volumes ONTAPシステムから低コストのオブジェクトストレージに階層化する方法をご紹介します"^]。
 
-また可能です https://docs.netapp.com/us-en/active-iq/task-informed-decisions-based-on-cloud-recommendations.html#tiering["クラスタの階層化情報をDigital Advisorから表示します"^] ネットアップ製品の知識がある方は、左側のナビゲーションペインから*クラウドの推奨事項*を選択してください。
+また、このNetApp製品に精通している場合にも使用できます https://docs.netapp.com/us-en/active-iq/task-informed-decisions-based-on-cloud-recommendations.html#tiering["Active IQデジタルアドバイザ（デジタルアドバイザとも呼ばれます）からクラスタの階層化情報を表示する"^]。左側のナビゲーションペインから*クラウドの推奨事項*を選択してください。
 
 image:screenshot_tiering_aiq_fabricpool_info.png["デジタルアドバイザのFabricPool を使用してクラスタのFabricPool 情報を示すスクリーンショット。"]
 

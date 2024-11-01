@@ -54,7 +54,8 @@ AWS MarketplaceからBlueXP階層化サービスにサブスクライブする�
 次のビデオは、プロセスを示しています。
 
 +
-video::video_subscribing_aws_tiering.mp4[width=848,height=480]
+.AWS MarketplaceでBlueXPにサブスクライブ
+video::096e1740-d115-44cf-8c27-b051011611eb[panopto]
 
 
 
@@ -72,7 +73,8 @@ Azure MarketplaceからBlueXP階層化サービスにサブスクライブする
 次のビデオは、プロセスを示しています。
 
 +
-video::video_subscribing_azure_tiering.mp4[width=848,height=480]
+.Azure MarketplaceでBlueXPにサブスクライブ
+video::b7e97509-2ecf-4fa0-b39b-b0510109a318[panopto]
 
 
 
@@ -90,7 +92,8 @@ Google Cloud MarketplaceからBlueXPの階層化サービスにサブスクラ�
 次のビデオは、プロセスを示しています。
 
 +
-video::video_subscribing_gcp_tiering.mp4[width=848,height=480]
+.Google Cloud MarketplaceからBlueXPにサブスクライブ
+video::373b96de-3691-4d84-b3f3-b05101161638[panopto]
 
 
 
