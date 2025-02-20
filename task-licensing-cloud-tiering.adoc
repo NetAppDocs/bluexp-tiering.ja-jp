@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: task-licensing-cloud-tiering.html 
-keywords: subscribe, trial, marketplace, subscription, paygo, pay as you go, byol, bring your own license, annual, tiering, cloud tiering 
+keywords: subscribe, digital wallet, trial, marketplace, subscription, paygo, pay as you go, byol, bring your own license, annual, tiering, cloud tiering 
 summary: BlueXP階層化サービスの30日間無償トライアルは、最初のクラスタから階層化をセットアップするときに始まります。無償トライアルの終了後は、BlueXP階層化サービスの料金を、クラウドプロバイダのマーケットプレイスから従量課金制または年単位のサブスクリプション、ネットアップのBYOLライセンス、またはその両方で支払う必要があります。 
 ---
 = BlueXP階層化のライセンスをセットアップ
@@ -161,106 +161,11 @@ TIP: StorageGRID への階層化には、FabricPool またはBlueXPの階層化�
 |===
 
 
-=== BlueXP階層化ライセンスファイルを入手します
+=== BlueXP  階層化ライセンスを管理します。
 
-BlueXP階層化ライセンスを購入したら、BlueXP階層化シリアル番号とNSSアカウントを入力するか、NLFライセンスファイルをアップロードして、BlueXPでライセンスをアクティブ化します。次の手順は、 NLF ライセンスファイルを取得する方法を示しています。
+ライセンス期間が有効期限に近づいている場合、またはライセンス容量が制限に達している場合は、BlueXP  階層化およびデジタルウォレットで通知されます。
 
-.作業を開始する前に
-BlueXP  階層化のシリアル番号が必要です。この番号は、SOから確認するか、アカウントチームにお問い合わせください。
-
-.手順
-. BlueXP  アカウントIDを確認します。
-+
-.. BlueXP  コンソールの右上で、>* IDおよびアクセス管理*を選択しますimage:icon-settings-option.png["BlueXP  Webコンソールの右上に表示される設定アイコン。"]。
-.. [Organization]ページで、アカウントIDを探してコピーします。
-+
-アカウントIDが表示されておらず、組織IDがあるだけの場合は、組織IDの最初の8文字をコピーして_account-_に追加する必要があります。
-
-+
-たとえば、次のように組織IDを入力します。
-
-+
-ea10e1c6-80cc-4219-8e99-3c3e6b161ba5
-
-+
-アカウントIDは次のようになります。
-
-+
-アカウント- ea10e1c6
-
-
-
-. にサインインします https://mysupport.netapp.com["ネットアップサポートサイト"^] [ システム ] 、 [ ソフトウェアライセンス ] の順にクリックします。
-. BlueXP階層化ライセンスのシリアル番号を入力します。
-+
-image:screenshot_cloud_tiering_license_step1.gif["シリアル番号で検索したあとのライセンスの一覧を示すスクリーンショット。"]
-
-. [* License Key] 列で、 [* Get NetApp License File* ] をクリックします。
-. BlueXP  アカウントID（サポートサイトではテナントIDと呼ばれます）を入力し、*[送信]*をクリックしてライセンスファイルをダウンロードします。
-+
-image:screenshot_cloud_tiering_license_step2.gif["ライセンスの取得ダイアログボックスを示すスクリーンショット。テナント ID を入力し、送信をクリックしてライセンスファイルをダウンロードします。"]
-
-
-
-
-
-=== BlueXP階層化BYOLライセンスをアカウントに追加します
-
-階層化BlueXP  サービスを使用するには、BlueXP  階層化ライセンスを購入したら、ライセンスをBlueXP  に追加する必要があります。
-
-.手順
-. [ガバナンス]>[デジタルウォレット]>[データサービスライセンス]*をクリックします。
-. [ ライセンスの追加 ] をクリックします。
-. _ ライセンスの追加 _ ダイアログで、ライセンス情報を入力し、 * ライセンスの追加 * をクリックします。
-+
-** 階層化ライセンスのシリアル番号があり、 NSS アカウントを知っている場合は、 * シリアル番号を入力 * オプションを選択してその情報を入力します。
-+
-お使いのNetApp Support Siteのアカウントがドロップダウンリストにない場合は、 https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-nss-accounts.html["NSSアカウントをBlueXPに追加します"^]。
-
-** 階層化ライセンスファイルがある場合は、 * ライセンスファイルのアップロード * オプションを選択し、プロンプトに従ってファイルを添付します。
-+
-image:screenshot_services_license_add.png["BlueXP階層化BYOLライセンスを追加するページのスクリーンショット。"]
-
-
-
-
-
-.結果
-BlueXPにライセンスが追加され、BlueXP階層化サービスがアクティブになります。
-
-
-
-=== BlueXP階層化BYOLライセンスを更新します
-
-ライセンス期間が有効期限に近づいている場合、またはライセンス容量が上限に達している場合は、BlueXP階層化で通知されます。
-
-image:screenshot_services_license_expire2.png["BlueXP階層化ページの有効期限が近いライセンスを示すスクリーンショット。"]
-
-このステータスは、BlueXPのデジタルウォレットページにも表示されます。
-
-image:screenshot_services_license_expire1.png["BlueXPのデジタルウォレットページの有効期限が近いライセンスを示すスクリーンショット。"]
-
-有効期限が切れる前にBlueXP階層化ライセンスを更新することで、データのクラウドへの階層化が中断されることがありません。
-
-.手順
-. BlueXPの右下にあるチャットアイコンをクリックして、特定のシリアル番号について、期間の延長やBlueXP階層化ライセンスの容量の追加をリクエストしてください。
-+
-ライセンスの料金を支払ってNetApp Support Site に登録すると、BlueXPデジタルウォレット内のライセンスが自動的に更新され、[Data Services Licenses]ページに5~10分後に変更が反映されます。
-
-. BlueXPがライセンスを自動的に更新できない場合は、ライセンスファイルを手動でアップロードする必要があります。
-+
-.. 可能です <<BlueXP階層化ライセンスファイルを入手します,ライセンスファイルをネットアップサポートサイトから入手します>>。
-.. BlueXPデジタルウォレットページの[Data Services Licenses]タブで、をクリックします image:screenshot_horizontal_more_button.gif["[ 詳細 ] アイコン"] 更新するサービスシリアル番号の場合は、 ［ * ライセンスの更新 * ］ をクリックします。
-+
-image:screenshot_services_license_update.png["特定のサービスの [ ライセンスの更新 ] ボタンを選択するスクリーンショット。"]
-
-.. _Update License_page で、ライセンスファイルをアップロードし、 * ライセンスの更新 * をクリックします。
-
-
-
-
-.結果
-BlueXPのライセンスが更新され、BlueXP階層化サービスが引き続きアクティブになります。
+BlueXP  デジタルウォレットを使用して、既存のライセンスの更新、ライセンスステータスの表示、新しいライセンスの追加を行うことができます。 https://docs.netapp.com/us-en/bluexp-digital-wallet/task-manage-data-services-licenses.html["デジタルウォレットでのライセンス管理の詳細"^]です。
 
 
 

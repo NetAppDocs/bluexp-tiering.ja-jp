@@ -338,21 +338,7 @@
   <block id="a7bd9725f68ab51f56b292638f876d9b" category="cell">階層化の設定と管理は、 System Manager または ONTAP CLI を使用して行います。</block>
   <block id="84d29247572532708a78dd9938063ac5" category="cell">設定が完了したら、無償トライアルを使用して、 30 日間のライセンスなしで階層化サービスを使用できます。</block>
   <block id="0f54a92e132940776f23febb26ca8ceb" category="cell">設定が完了すると、最初の 10TB のデータを無料で階層化できます。</block>
-  <block id="9d2169c1c2855b78a7aeaa4f42d27dc7" category="inline-link">ネットアップサポートサイト</block>
-  <block id="80c4b6e3dfa1d4f33033585b7c74e7e9" category="list-text">にサインインします<block ref="fcc52edac3ce57829c48ee35d97a295d" category="inline-link-rx"></block> [ システム ] 、 [ ソフトウェアライセンス ] の順にクリックします。</block>
-  <block id="5190e9ec018f5e661ec4b31ff1b34423" category="inline-image-macro">シリアル番号で検索したあとのライセンスの一覧を示すスクリーンショット。</block>
-  <block id="d15379b9f839ac6523d1b06ad8763875" category="paragraph"><block ref="d15379b9f839ac6523d1b06ad8763875" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="56273f3344c87fabbf5196fba9816fff" category="inline-image-macro">ライセンスの取得ダイアログボックスを示すスクリーンショット。テナント ID を入力し、送信をクリックしてライセンスファイルをダウンロードします。</block>
-  <block id="212f5a95c637538f9375d966345ca9f7" category="paragraph"><block ref="212f5a95c637538f9375d966345ca9f7" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="ea9a2b9ac34c9aab133f21aa5b67976e" category="list-text">[ ライセンスの追加 ] をクリックします。</block>
-  <block id="c1b2dc0798d3960e25b8a12c751f53ec" category="list-text">_ ライセンスの追加 _ ダイアログで、ライセンス情報を入力し、 * ライセンスの追加 * をクリックします。</block>
-  <block id="80b8da08efcb9500667b0fc290bbe1f6" category="list-text">階層化ライセンスのシリアル番号があり、 NSS アカウントを知っている場合は、 * シリアル番号を入力 * オプションを選択してその情報を入力します。</block>
-  <block id="4488cc251929ad2c43c07191375ca26e" category="list-text">階層化ライセンスファイルがある場合は、 * ライセンスファイルのアップロード * オプションを選択し、プロンプトに従ってファイルを添付します。</block>
-  <block id="b2b168bd64a341a85c749cb61bba40cb" category="inline-xref">ライセンスファイルをネットアップサポートサイトから入手します</block>
   <block id="8f0a75d2d5a82f31f2cf069c3b0ee684" category="inline-image-macro">[ 詳細 ] アイコン</block>
-  <block id="3ce750f001c2369e23b68f3210d9f100" category="inline-image-macro">特定のサービスの [ ライセンスの更新 ] ボタンを選択するスクリーンショット。</block>
-  <block id="2bdb7af2b6613fafdba930fb09034d3f" category="paragraph"><block ref="2bdb7af2b6613fafdba930fb09034d3f" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="41e921305ae1b027e5d364af4a2a9df2" category="list-text">_Update License_page で、ライセンスファイルをアップロードし、 * ライセンスの更新 * をクリックします。</block>
   <block id="8fa2690e71ce0c54acb839630146cadd" category="doc">クラスタからデータ階層化の概要を取得します</block>
   <block id="9e476387322a5c250893cf9c5c4ce78c" category="list-text">ポリシー</block>
   <block id="4be1b347cffb3177e749a7dea6f54978" category="list-text">各階層化ポリシーがボリュームに適用された回数。</block>
@@ -801,7 +787,6 @@
   <block id="0c664d98088fac0e3d869a21cac0c6c4" category="list-text">から登録します<block ref="41a6e7dc73b2f1e43bd8c26c6ce83782" category="inline-link-rx"></block>をクリックし、BlueXP Webサイトにログインし直して登録を完了します。</block>
   <block id="6193e62acb4a86204633b2d093e49546" category="list-text">ライセンスをリクエストするには、BlueXPの右下にあるチャットアイコンをクリックします。</block>
   <block id="e031d1891af14066db39ea9bc5a67edb" category="list-text">BlueXPでサポートされていない構成を使用している場合は、引き続きFabricPool ライセンスを使用します。<block ref="f4b8492105dcaca906c2ce90b9ccab9e" category="inline-link-rx"></block>。</block>
-  <block id="bae190eec3db4a0dd635ae72756acde8" category="inline-link">NSSアカウントをBlueXPに追加します</block>
   <block id="8816958eed360786a943983e0bd031fd" category="paragraph">BlueXPでは、オンプレミスの作業環境を選択し、階層化サービスで「*有効化」をクリックし、画面の指示に従ってGoogle Cloud Storageにデータを階層化します。</block>
   <block id="955a264d46a1f0536f93bcb5a3e454f1" category="list-text">BlueXPからオンプレミスクラスタを検出します。</block>
   <block id="92d46e494e7ad2aeddc2f61967fd1763" category="list-text">BlueXPでは、オブジェクトストレージプロバイダを使用するようにONTAP が設定され、クラスタ上のアクティブなデータと非アクティブなデータの量が検出されます。</block>
@@ -891,7 +876,6 @@
   <block id="05278fe4264fa7714f2deb1dc83a1f0f" category="paragraph">いいえクラウドに対して構築、階層化されたオブジェクトには、単一のファイルは含まれず、複数のファイルから最大1、024個の4KBブロックが含まれます。ボリュームのメタデータは常にローカル階層に残ります。</block>
   <block id="d8de974cae25c190e1656a12aae05ac0" category="paragraph">データ階層化はブロックレベルで行われるため、階層化ポリシーのminimum-cooling-days属性によって定義された、一定の期間アクセスがないデータブロックはコールドとみなされます。ONTAP 9.7以前の場合は2～63日、ONTAP 9.8以降は2～183日です。</block>
   <block id="538632f98286e11da7898a8dd8c5940a" category="list-text">データを StorageGRID に階層化する場合は料金が発生しないため、 BYOL ライセンスや PAYGO の登録は必要ありません。この階層化データは、ライセンスで購入された容量には含まれません。</block>
-  <block id="822f69d2e49d7da6f8c764e0680f2f75" category="list-text">BlueXPがライセンスを自動的に更新できない場合は、ライセンスファイルを手動でアップロードする必要があります。</block>
   <block id="1c573cd95f6407add05436f6ac05d6ec" category="section-title">ボリュームの階層化レポートをダウンロードします</block>
   <block id="801ab24683a4a8c433c6eb40c48bcd9d" category="inline-image-macro">ダウンロード</block>
   <block id="fe8e7e0f08b18c3c012d94d74e8386ce" category="inline-image-macro">すべてのボリュームの階層化ステータスを示すCSVファイルの生成方法を示すスクリーンショット。</block>
@@ -1054,21 +1038,6 @@
   <block id="219f576e0419ffa72026ee6b3730b581" category="admonition">StorageGRID への階層化には、FabricPool またはBlueXPの階層化ライセンスは必要ありません。</block>
   <block id="7a75abe8763b34e741fcabf5e89398eb" category="cell">BlueXP階層化ライセンス</block>
   <block id="534497403860589544cd9e470d2d110b" category="cell">階層化の設定と管理は、BlueXPのBlueXP階層化サービスを通じて行われます。</block>
-  <block id="316a7aed758eb7b043492e848b931117" category="section-title">BlueXP階層化ライセンスファイルを入手します</block>
-  <block id="9b1441120e66cf63798ba27aa3531664" category="list-text">BlueXP階層化ライセンスのシリアル番号を入力します。</block>
-  <block id="1a8eb6c0b4ba023742d25f05dbe5273d" category="section-title">BlueXP階層化BYOLライセンスをアカウントに追加します</block>
-  <block id="58db88b7cd0054a3b13ce2930a48dad9" category="list-text">[ガバナンス]&gt;[デジタルウォレット]&gt;[データサービスライセンス]*をクリックします。</block>
-  <block id="6b4dd8f152b00922385ef0e152554720" category="inline-image-macro">BlueXP階層化BYOLライセンスを追加するページのスクリーンショット。</block>
-  <block id="0a54431ad29a96ceb71a9ab3f197983c" category="paragraph"><block ref="0a54431ad29a96ceb71a9ab3f197983c" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="6b151ce754bba307afbfbdfbdb41717b" category="paragraph">BlueXPにライセンスが追加され、BlueXP階層化サービスがアクティブになります。</block>
-  <block id="28b875681d54f556230ca5c52173e3df" category="section-title">BlueXP階層化BYOLライセンスを更新します</block>
-  <block id="85884cbcf3bef3a960250a4bea4d78c9" category="paragraph">ライセンス期間が有効期限に近づいている場合、またはライセンス容量が上限に達している場合は、BlueXP階層化で通知されます。</block>
-  <block id="a257270f45c3400d010c6b64e1918bbc" category="inline-image-macro">BlueXP階層化ページの有効期限が近いライセンスを示すスクリーンショット。</block>
-  <block id="823ff9e6c8c5bae175b237dc370d0f90" category="paragraph"><block ref="823ff9e6c8c5bae175b237dc370d0f90" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="0404c6f4bcf79c09ea3f68a74aa284df" category="paragraph">有効期限が切れる前にBlueXP階層化ライセンスを更新することで、データのクラウドへの階層化が中断されることがありません。</block>
-  <block id="0df47d96ab99d3765b297d66af42219e" category="list-text">BlueXPの右下にあるチャットアイコンをクリックして、特定のシリアル番号について、期間の延長やBlueXP階層化ライセンスの容量の追加をリクエストしてください。</block>
-  <block id="d7f004a77faee56e8076bcfdfa7b0560" category="list-text">可能です <block ref="025fb98ec9c8a155e5ac365eabb828dc" category="inline-xref-macro-rx"></block>。</block>
-  <block id="89e28d16ae270dfde9199b600dc87aa5" category="paragraph">BlueXPのライセンスが更新され、BlueXP階層化サービスが引き続きアクティブになります。</block>
   <block id="9af45e6d474a73f991c4a2515264ca3c" category="section-title">特別な構成のクラスタにBlueXP階層化ライセンスを適用</block>
   <block id="ba4742e3fc97f92aee8dd17337d92765" category="paragraph">次の構成のONTAP クラスタではBlueXP階層化ライセンスを使用できますが、シングルノードクラスタ、HA構成クラスタ、階層化ミラー構成のクラスタ、およびFabricPool ミラーを使用するMetroCluster 構成とは異なる方法でライセンスを適用する必要があります。</block>
   <block id="788e22af5bb5495bee686a619fa97145" category="list-text">「ダークサイト」にインストールされているクラスタ</block>
@@ -1148,11 +1117,6 @@
   <block id="bb987c734075abca5676f20a90739886" category="paragraph">BlueXPのデジタルウォレットページを使用して、BlueXP階層化のBYOLライセンスを管理します。新しいライセンスを追加したり、既存のライセンスを更新したりできます。</block>
   <block id="3fafe7ba610db00ca5147d2e5246692c" category="list-text">BlueXPでサポートされる構成を使用している場合は、FabricPool ライセンスがBlueXP階層化ライセンスに変換され、BlueXPのデジタルウォレットに表示されます。最初のライセンスの有効期限が切れたら、BlueXP階層化ライセンスを更新する必要があります。</block>
   <block id="c02dda54728a1d7496d2f0b0f6025e92" category="cell">BlueXPのデジタルウォレットに登録されています。</block>
-  <block id="01b47f7bb171f9330df8674ddf7b5762" category="paragraph">このステータスは、BlueXPのデジタルウォレットページにも表示されます。</block>
-  <block id="0553876f11122be0920f9fa9c803d152" category="inline-image-macro">BlueXPのデジタルウォレットページの有効期限が近いライセンスを示すスクリーンショット。</block>
-  <block id="be95aaa9ff9dad75f49bfadf917b8f70" category="paragraph"><block ref="be95aaa9ff9dad75f49bfadf917b8f70" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="b23b97d3c26b0f7e2265329756cea9ca" category="paragraph">ライセンスの料金を支払ってNetApp Support Site に登録すると、BlueXPデジタルウォレット内のライセンスが自動的に更新され、[Data Services Licenses]ページに5~10分後に変更が反映されます。</block>
-  <block id="70196feeb01dc8dfdb5276a2398e60f9" category="list-text">BlueXPデジタルウォレットページの[Data Services Licenses]タブで、をクリックします <block ref="50acd719b1954eb4890c002b3b5e71a6" category="inline-image-macro-rx" type="image"></block> 更新するサービスシリアル番号の場合は、 ［ * ライセンスの更新 * ］ をクリックします。</block>
   <block id="f06c1d2da57ae64b66baec3eaec4f2fb" category="paragraph">いつでも <block ref="2383fd55f46b5a2b7b7779e64af3b388" category="inline-link-macro-rx"></block>BlueXP階層化サービスでは、FabricPool ライセンスが認識され、BlueXPのデジタルウォレットに追加されます。これらのクラスタは、通常どおりデータの階層化を継続します。FabricPool のライセンスが期限切れになったら、BlueXP階層化ライセンスを購入する必要があります。</block>
   <block id="5ac06364a2cad0af68f73e54f03c4205" category="list-text">「親」BlueXP階層化ライセンスは、ライセンスに十分な容量があることを確認するために、すべてのクラスタで階層化に使用されている容量を追跡します。ライセンスで許可された合計容量と有効期限は、BlueXPのデジタルウォレットに表示されます。</block>
   <block id="4acb8884a848c4db6d41852f96aa4ef6" category="admonition">System ManagerまたはONTAP CLIの「子」ライセンスに表示されるライセンス容量と有効期限は実際の情報ではないため、情報が異なる場合は問題となりません。これらの価値は、BlueXP階層化ソフトウェアによって内部的に管理されます。実際の情報はBlueXPのデジタルウォレットで追跡されます。</block>
@@ -1208,7 +1172,6 @@
   <block id="994f1fa9f6b6f6276b10a9c8a8f18a8c" category="list-text">BlueXPのバックアップとリカバリも、階層化ポリシーが設定されたボリュームの影響を受けます。<block ref="2db919f88216e9376af16eec91019e18" category="inline-link-rx"></block>。</block>
   <block id="5f6fdb8f4b29baeb552fcdad9078be66" category="list-text">クラウドプロバイダのマーケットプレイスでBlueXPサブスクリプション（PAYGO）にすでにサブスクライブしている場合は、オンプレミスのONTAP システムでもBlueXP階層化に自動的にサブスクライブされます。BlueXP階層化*オンプレミスダッシュボード*タブにアクティブなサブスクリプションが表示されます。再度サブスクライブする必要はありません。BlueXPデジタルウォレットには、アクティブなサブスクリプションが表示されます。</block>
   <block id="1ba2cc4758ef6d9270d73cfc36a18caa" category="paragraph">必要に応じて、使用しないCloud Volumes ONTAP の未割り当てのノードベースライセンスがある場合は、同じ金額、同じ有効期限のBlueXP階層化ライセンスに変換できます。<block ref="f4c32a82791cf9fc58c736c0aed05092" category="inline-link-rx"></block>。</block>
-  <block id="30fc689a9c3cd4222329fe3a4c818a33" category="paragraph">お使いのNetApp Support Siteのアカウントがドロップダウンリストにない場合は、<block ref="06a3bc9d474b5d4e44d1a2733cac785a" category="inline-link-rx"></block>。</block>
   <block id="509259be6d5e15d8959f705cbe0cbcc1" category="paragraph"><block ref="509259be6d5e15d8959f705cbe0cbcc1" category="inline-image-macro-rx" type="image"></block></block>
   <block id="0972db30d942fdb65d1732e6e84bde99" category="paragraph"><block ref="0972db30d942fdb65d1732e6e84bde99" category="inline-image-macro-rx" type="image"></block></block>
   <block id="cb6a777dd3c6e43b0dc441d38519d219" category="paragraph"><block ref="cb6a777dd3c6e43b0dc441d38519d219" category="inline-image-macro-rx" type="image"></block></block>
@@ -1275,9 +1238,6 @@
   <block id="b6d7a1ad9440cb7fff09db239b1313d7" category="paragraph">この設定は、データを階層化している他のクラスタに割り当てられる帯域幅には影響しません。</block>
   <block id="7911cbd17bf94032db18ecf08e4fe5c8" category="list-text">[階層化のセットアップ]ページのセクションを完了します。</block>
   <block id="fe35e262c448d76aba8db40105f10ae6" category="paragraph">必要に応じて、以前に設定した AWS PrivateLink を使用するかどうかを選択します。 <block ref="e6b15c4e63006b05802c430924113019" category="inline-xref-macro-rx"></block> エンドポイントの設定手順を説明するダイアログボックスが表示されます。</block>
-  <block id="c52a9d7f6355ad24bacb2c5f23c0e863" category="paragraph">BlueXP階層化ライセンスを購入したら、BlueXP階層化シリアル番号とNSSアカウントを入力するか、NLFライセンスファイルをアップロードして、BlueXPでライセンスをアクティブ化します。次の手順は、 NLF ライセンスファイルを取得する方法を示しています。</block>
-  <block id="135b308ed83c53f1516b7c754566d1c4" category="paragraph-title">作業を開始する前に</block>
-  <block id="a6cfac773f21906007a8ddf407596067" category="list-text">[* License Key] 列で、 [* Get NetApp License File* ] をクリックします。</block>
   <block id="7fe6981833e8fe7fd89e0a99a55573da" category="list-text">BlueXPで、*[ヘルプ]&gt;[サポート]*を選択します。</block>
   <block id="6a1b74969231967ed071d465206b15c7" category="list-text">電話で誰かと話をしたい場合は、*[電話]*を選択します。netapp.comのページに移動し、電話番号が表示されます。</block>
   <block id="d65a2a6fc9caad1867728d4382eeb989" category="list-text">[ケースの作成]*を選択して、NetAppサポートスペシャリストとのチケットをオープンします。</block>
@@ -1407,18 +1367,6 @@
   <block id="98d90e398fc56688ddc647e5f49075ec" category="paragraph">作業環境のリストは、サービスの上部バナーで選択したBlueXP  組織（またはアカウント）、プロジェクト（またはワークスペース）、コネクタの範囲内にあります。</block>
   <block id="0aac35c69d56f468c7891da9594e68be" category="list-text">BYOL BlueXP  階層化ライセンス（旧称「クラウド階層化」ライセンス）は_floating_licenseで、BlueXP  組織内の複数のオンプレミスONTAPクラスタにわたって使用できます。これは、クラスタごとに_ FabricPool _ licenseを購入した以前とは異なり、はるかに簡単です。</block>
   <block id="7f58c7f218a280f56c54c444e1bb8411" category="paragraph">ネットアップが提供するお客様所有のライセンスには、 1 年、 2 年、 3 年の期間があります。BYOL * BlueXP  階層化*ライセンス（旧称「クラウド階層化」ライセンス）は_floating_licenseで、BlueXP  組織内の複数のオンプレミスONTAPクラスタにわたって使用できます。BlueXP階層化ライセンスで定義されている階層化の合計容量は*すべての*オンプレミスクラスタで共有されるため、初期ライセンスの取得や更新が容易になります。階層化BYOLライセンスの最小容量は10TiBからです。</block>
-  <block id="0e48ab0bd412e2c6d662a3a4540397a0" category="paragraph">BlueXP  階層化のシリアル番号が必要です。この番号は、SOから確認するか、アカウントチームにお問い合わせください。</block>
-  <block id="e53331a3231a958d20a4871d8efc35d8" category="list-text">BlueXP  アカウントIDを確認します。</block>
-  <block id="e0e8a7d90375792efecad34c0c923e32" category="inline-image-macro">BlueXP  Webコンソールの右上に表示される設定アイコン。</block>
-  <block id="cd42e1c1af0a908f68d68ae6103b5c30" category="list-text">BlueXP  コンソールの右上で、&gt;* IDおよびアクセス管理*を選択します<block ref="32173ab85f1c68a28384d1a40cf387db" category="inline-image-macro-rx" type="image"></block>。</block>
-  <block id="3bcef3f6238058ae825d608e1557c538" category="list-text">[Organization]ページで、アカウントIDを探してコピーします。</block>
-  <block id="2bd8c9344d3768dd44b910db169ef1fa" category="paragraph">アカウントIDが表示されておらず、組織IDがあるだけの場合は、組織IDの最初の8文字をコピーして_account-_に追加する必要があります。</block>
-  <block id="14da2ef10b9e4cc4d0981b05fff98072" category="paragraph">たとえば、次のように組織IDを入力します。</block>
-  <block id="2740d3013330ec13ae7693ee76bc6509" category="paragraph">ea10e1c6-80cc-4219-8e99-3c3e6b161ba5</block>
-  <block id="6ffe1a2d88424dc37ba43bdf5999183e" category="paragraph">アカウントIDは次のようになります。</block>
-  <block id="c0b58edc6437b03c81d24f7ded6f3648" category="paragraph">アカウント- ea10e1c6</block>
-  <block id="d4393f7d35eb6fcb480572ab5d418710" category="list-text">BlueXP  アカウントID（サポートサイトではテナントIDと呼ばれます）を入力し、*[送信]*をクリックしてライセンスファイルをダウンロードします。</block>
-  <block id="921d59a1a10f4e2423dfe3d60997086a" category="paragraph">階層化BlueXP  サービスを使用するには、BlueXP  階層化ライセンスを購入したら、ライセンスをBlueXP  に追加する必要があります。</block>
   <block id="29360bfcdbc91d3f1514c372b4585965" category="list-text">BlueXP  アカウントのシリアル番号（BlueXP  のサポートリソースページに記載されている20桁の960xxxxxxxxxシリアル番号）を登録します。</block>
   <block id="444b74bc81e823cc1c4c704219ad8ed3" category="section-title">NetAppサポートのためのBlueXP  の登録</block>
   <block id="b3bf31f8a918c712f26cdf493a908825" category="paragraph">サポートに登録してサポート利用資格をアクティブ化するには、BlueXP  組織（またはアカウント）の1人のユーザがNetAppサポートサイトのアカウントをBlueXP  ログインに関連付ける必要があります。ネットアップサポートへの登録方法は、NetApp Support Site （NSS）アカウントがあるかどうかによって異なります。</block>
@@ -1449,4 +1397,8 @@
   <block id="c6e17aa071476599f5e5fc5b8bc42431" category="video-title">Google Cloud MarketplaceからBlueXPにサブスクライブ</block>
   <block id="2e02ef063e4f9a11ed835693daa2e7d1" category="inline-link">Active IQデジタルアドバイザ（デジタルアドバイザとも呼ばれます）からクラスタの階層化情報を表示する</block>
   <block id="aac4751e2e50c3f9d64afc60244ec854" category="paragraph">また、このNetApp製品に精通している場合にも使用できます<block ref="ab766f8aad1f1b4bf567a28cf12cabcb" category="inline-link-rx"></block>。左側のナビゲーションペインから*クラウドの推奨事項*を選択してください。</block>
+  <block id="936ae05f91caeb56b08682cd274bed64" category="section-title">BlueXP  階層化ライセンスを管理します。</block>
+  <block id="1430b68e61364b237636f6f0ce8e282a" category="paragraph">ライセンス期間が有効期限に近づいている場合、またはライセンス容量が制限に達している場合は、BlueXP  階層化およびデジタルウォレットで通知されます。</block>
+  <block id="f59ab7df4b9fd3526a4fbed390f7fa9a" category="inline-link">デジタルウォレットでのライセンス管理の詳細</block>
+  <block id="bdfa472a184585b4fa4633165dc44d15" category="paragraph">BlueXP  デジタルウォレットを使用して、既存のライセンスの更新、ライセンスステータスの表示、新しいライセンスの追加を行うことができます。<block ref="eb38d0c8186bca45da4435026f76609b" category="inline-link-rx"></block>です。</block>
 </blocks>
