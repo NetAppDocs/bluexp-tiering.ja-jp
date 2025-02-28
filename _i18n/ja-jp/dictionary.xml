@@ -1397,7 +1397,6 @@
   <block id="1430b68e61364b237636f6f0ce8e282a" category="paragraph">ライセンス期間が有効期限に近づいている場合、またはライセンス容量が制限に達している場合は、BlueXP  階層化およびデジタルウォレットで通知されます。</block>
   <block id="f59ab7df4b9fd3526a4fbed390f7fa9a" category="inline-link">デジタルウォレットでのライセンス管理の詳細</block>
   <block id="bdfa472a184585b4fa4633165dc44d15" category="paragraph">BlueXP  デジタルウォレットを使用して、既存のライセンスの更新、ライセンスステータスの表示、新しいライセンスの追加を行うことができます。<block ref="eb38d0c8186bca45da4435026f76609b" category="inline-link-rx"></block>です。</block>
-  <block id="b9f5b01b4774bcb7362c0c3c8c045c8f" category="section-title">BYOLの容量制限に達した場合、またはBYOLライセンスの有効期限が切れた場合はどうなりますか？</block>
   <block id="3bd6904fad56f42c6c8fca6339e68a52" category="paragraph">BYOL容量の上限に達した場合、またはBYOLライセンスの有効期限が切れた場合、新しいコールドデータの階層化は停止し、新しいコールドデータの階層化は停止します。これまで階層化されていたすべてのデータに引き続きアクセスできるため、このデータを読み出して使用できます。取得されると、このデータはクラウドから高パフォーマンス階層に戻されます。</block>
   <block id="b5e80cebccc83c069af38aa776874590" category="inline-link-macro">デジタルウォレットの使用方法をご確認ください。</block>
   <block id="d89bd65e8fd665e3441fc89af7b8df3e" category="paragraph">BlueXP  階層化にサブスクライブすると、デジタルウォレットでサブスクリプションを管理できます。<block ref="d49cdac2c2a5c8f3e20a0ee99c2a8fbf" category="inline-link-macro-rx"></block></block>
@@ -1405,4 +1404,5 @@
   <block id="b5f6f9235ede8b6d89d84e0a91d1d416" category="list-text">BlueXP  階層化BYOLライセンスを使用して支払う場合は、mailto：ng-cloud-tiering@netapp.com？subject=ライセンス[contact us if you need to purchase one]の順にクリックします。<block ref="7514748750b360406b2849d4de48dd88" category="inline-link-macro-rx"></block></block>
   <block id="f5b439eae5ededef7363a59554dfd116" category="list-text">BlueXP  階層化BYOLライセンスを使用して支払う場合は、mailto：ng-cloud-tiering@netapp.com？subject=ライセンス[contact us if you need to purchase one]の順にクリックします。<block ref="9c02282928f3218db393c9c2756eb321" category="inline-link-macro-rx"></block></block>
   <block id="1f7ed36d878143cac28b03439d01a547" category="list-text">BlueXP  階層化BYOLライセンスを使用して支払う場合は、mailto：ng-cloud-tiering@netapp.com？subject=ライセンス[contact us if you need to purchase one]の順にクリックします。<block ref="9c02282928f3218db393c9c2756eb321" category="inline-link-macro-rx"></block>です。</block>
+  <block id="18edf950b6f18ca0e897a7237c2d214e" category="section-title">BYOL容量の上限に達した場合、またはBYOLライセンスの有効期限が切れた場合はどうなりますか？</block>
 </blocks>
