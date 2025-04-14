@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: task-managing-object-storage.html 
-keywords: object storage, mirror object storage, create object storage, remove object storage, swap object storage, display object storage 
+keywords: object storage, mirror object storage, create object storage, remove object storage, swap object storage, display object storage, license 
 summary: データを特定のオブジェクトストレージに階層化するようにオンプレミスのONTAP クラスタを設定したら、追加のオブジェクトストレージタスクを実行できます。新しいオブジェクトストレージの追加、セカンダリオブジェクトストレージへの階層化データのミラーリング、プライマリオブジェクトとミラーオブジェクトのストレージのスワップ、アグリゲートからのミラーオブジェクトストアの削除などが可能です。 
 ---
 = データの階層化に使用するオブジェクトストレージの管理
@@ -91,9 +91,9 @@ IAM ユーザは、「 * S3 Bucket * 」ページで選択または作成した�
 
 2つ目のオブジェクトストアをアグリゲートに接続してFabricPool ミラーを作成し、2つのオブジェクトストアにデータを同期的に階層化することができます。アグリゲートにオブジェクトストアがすでに1つ接続されている必要があります。 https://docs.netapp.com/us-en/ontap/fabricpool/create-mirror-task.html["FabricPool ミラーの詳細については、こちらをご覧ください"^]。
 
-MetroCluster 構成を使用する場合は、異なるアベイラビリティゾーンにあるパブリッククラウドでオブジェクトストアを使用することを推奨します。 https://docs.netapp.com/us-en/ontap/fabricpool/setup-object-stores-mcc-task.html["MetroCluster 要件の詳細については、ONTAP のドキュメントを参照してください"^]。
+MetroCluster構成を使用する場合は、異なるアベイラビリティゾーンにあるパブリッククラウド内のオブジェクトストアを使用することを推奨します。 https://docs.netapp.com/us-en/ontap/fabricpool/setup-object-stores-mcc-task.html["MetroCluster 要件の詳細については、ONTAP のドキュメントを参照してください"^]です。MetroClusterでは、ミラーされていないアグリゲートを使用することは推奨されません。使用するとエラーメッセージが表示されます。
 
-MetroCluster 構成でStorageGRID をオブジェクトストアとして使用する場合、両方のONTAP システムで単一のStorageGRID システムへのFabricPool 階層化を実行できます。各ONTAP システムでは、データを別々のバケットに階層化する必要があります。
+MetroCluster構成でStorageGRIDをオブジェクトストアとして使用している場合は、両方のONTAPシステムで単一のStorageGRIDシステムへのFabricPool階層化を実行できます。各ONTAP システムでは、データを別々のバケットに階層化する必要があります。
 
 .手順
 . [クラスタ]*ページで、選択したクラスタの*[詳細セットアップ]*をクリックします。

@@ -208,7 +208,7 @@ NOTE: System ManagerまたはONTAP CLIの「子」ライセンスに表示され
 この時点では階層化を設定しないでください。
 
 . link:task-licensing-cloud-tiering.html#use-a-bluexp-tiering-byol-license["BlueXP階層化ライセンスを購入"] をクリックします。
-. BlueXPでは、 link:task-licensing-cloud-tiering.html#add-bluexp-tiering-byol-licenses-to-your-account["ライセンスをBlueXPデジタルウォレットに追加します"]。
+. BlueXP  で、<<licenses,ライセンスをBlueXPデジタルウォレットに追加します>>[add the license to the BlueXP  digital wallet]をクリックします。
 . BlueXP階層化サービスで、 link:task-managing-tiering.html#discovering-additional-clusters-from-bluexp-tiering["新しいクラスタを検出"]。
 . [Clusters]ページで、をクリックします image:screenshot_horizontal_more_button.gif["[ 詳細 ] アイコン"] クラスタの場合は、*ライセンスの導入*を選択します。
 +

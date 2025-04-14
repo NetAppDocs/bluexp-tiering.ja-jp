@@ -735,8 +735,6 @@
   <block id="0da0639ab808878f568f3c4f06c02689" category="inline-link">MetroCluster 要件の詳細については、ONTAP のドキュメントを参照してください</block>
   <block id="c80805cd1b291fd4590a3c0b82caa095" category="inline-link">FabricPool ミラーの詳細については、こちらをご覧ください</block>
   <block id="4a6b2da2ae625dffc7d1a103b7579d57" category="paragraph">2つ目のオブジェクトストアをアグリゲートに接続してFabricPool ミラーを作成し、2つのオブジェクトストアにデータを同期的に階層化することができます。アグリゲートにオブジェクトストアがすでに1つ接続されている必要があります。<block ref="8af213a751b87119e23e85f52fbc72d6" category="inline-link-rx"></block>。</block>
-  <block id="2dc183e0073f3c1e0402cafe50273750" category="paragraph">MetroCluster 構成を使用する場合は、異なるアベイラビリティゾーンにあるパブリッククラウドでオブジェクトストアを使用することを推奨します。<block ref="8cdfadb67efe7ac0be1266ed1d493d6d" category="inline-link-rx"></block>。</block>
-  <block id="6b483bd3d7c70c49e8ad823d9d4bbf64" category="paragraph">MetroCluster 構成でStorageGRID をオブジェクトストアとして使用する場合、両方のONTAP システムで単一のStorageGRID システムへのFabricPool 階層化を実行できます。各ONTAP システムでは、データを別々のバケットに階層化する必要があります。</block>
   <block id="64430472f9b760efd0fff8a56c3dfe2d" category="paragraph">2つのオブジェクトストアの同期中は、ミラーステータスが「同期中」と表示されます。同期が完了すると、ステータスが「Synchronized」に変わります。</block>
   <block id="243263104c829e77835d632f591230d5" category="summary">ネットアップテクニカルサポートでサポートケースをオープンするには、まずNetApp Support Site アカウントをBlueXPに追加し、サポートに登録する必要があります。</block>
   <block id="0b0e252af8897fbe981ec6682d2aa33b" category="section-title">サポート登録の概要</block>
@@ -1118,7 +1116,6 @@
   <block id="5ac06364a2cad0af68f73e54f03c4205" category="list-text">「親」BlueXP階層化ライセンスは、ライセンスに十分な容量があることを確認するために、すべてのクラスタで階層化に使用されている容量を追跡します。ライセンスで許可された合計容量と有効期限は、BlueXPのデジタルウォレットに表示されます。</block>
   <block id="4acb8884a848c4db6d41852f96aa4ef6" category="admonition">System ManagerまたはONTAP CLIの「子」ライセンスに表示されるライセンス容量と有効期限は実際の情報ではないため、情報が異なる場合は問題となりません。これらの価値は、BlueXP階層化ソフトウェアによって内部的に管理されます。実際の情報はBlueXPのデジタルウォレットで追跡されます。</block>
   <block id="f4c3107fb758c7edea8576312dff63ac" category="inline-link-macro">ライセンスをBlueXPデジタルウォレットに追加します</block>
-  <block id="1953cb0b13a811a9fb3db1b69c5f0a2d" category="list-text">BlueXPでは、 <block ref="fb3a1da5f1072aaa3d6f4c9eaa7cccb2" category="inline-link-macro-rx"></block>。</block>
   <block id="891ca3a65a7ff1025eab9d895f17f04a" category="paragraph">ネットアップから* BlueXP階層化*ライセンス（旧称「Cloud Tiering」ライセンス）を購入して、お客様所有のライセンスを使用します。1年、2年、3年のライセンスを購入し、任意の量の階層化容量（最低10TiBから）を指定できます。BYOL BlueXP階層化ライセンスは_floating_licenseで、オンプレミスの複数のONTAP クラスタで使用できます。BlueXP階層化ライセンスで定義した合計階層化容量は、すべてのオンプレミスクラスタで使用できます。</block>
   <block id="76e73aa82e342d9c46acf62eef4dcfc4" category="paragraph">[階層化]&gt;[オンプレミスダッシュボード]*をクリックするだけです。BlueXPの階層化サービスには、環境に関する次の詳細情報が用意されています。</block>
   <block id="73363ef02ce267ee93816a7a9661efbb" category="inline-image-macro">オンプレミスのダッシュボードページのスクリーンショット。</block>
@@ -1405,4 +1402,9 @@
   <block id="f5b439eae5ededef7363a59554dfd116" category="list-text">BlueXP  階層化BYOLライセンスを使用して支払う場合は、mailto：ng-cloud-tiering@netapp.com？subject=ライセンス[contact us if you need to purchase one]の順にクリックします。<block ref="9c02282928f3218db393c9c2756eb321" category="inline-link-macro-rx"></block></block>
   <block id="1f7ed36d878143cac28b03439d01a547" category="list-text">BlueXP  階層化BYOLライセンスを使用して支払う場合は、mailto：ng-cloud-tiering@netapp.com？subject=ライセンス[contact us if you need to purchase one]の順にクリックします。<block ref="9c02282928f3218db393c9c2756eb321" category="inline-link-macro-rx"></block>です。</block>
   <block id="18edf950b6f18ca0e897a7237c2d214e" category="section-title">BYOL容量の上限に達した場合、またはBYOLライセンスの有効期限が切れた場合はどうなりますか？</block>
+  <block id="fa248eca9d251b0d2d1865958f765b99" category="section-title">ONTAP MetroClusterを使用している場合、階層化の料金はどのように請求されますか？</block>
+  <block id="78157c877460c2ee87bd63f45fc9a5d4" category="paragraph">MetroCluster環境で使用する場合は、ライセンスされた容量の階層化がミラーリングされたバケットに均等に適用されます。たとえば、100TiBの階層化のライセンスがある場合は、両方のバケットを最大100TiBまで階層化できます。ミラーリングされたバケットには追加料金はかかりません。MetroCluster環境でミラーされていないアグリゲートから階層化する場合、BlueXP  階層化ライセンスが通常どおり適用され、合計容量が両方のバケットに階層化されます。たとえば、100TiBの階層化のライセンスがある場合は、両方のバケットを最大50TBまで階層化できます。</block>
+  <block id="d3a48b6792b79f1932baa44071945c80" category="list-text">BlueXP  で、<block ref="e5625abf9d60b2626bb47dbb5c12864c" category="inline-xref-macro-rx"></block>[add the license to the BlueXP  digital wallet]をクリックします。</block>
+  <block id="af35d47e77f1b287fca9c2a638c644aa" category="paragraph">MetroCluster構成を使用する場合は、異なるアベイラビリティゾーンにあるパブリッククラウド内のオブジェクトストアを使用することを推奨します。<block ref="8cdfadb67efe7ac0be1266ed1d493d6d" category="inline-link-rx"></block>です。MetroClusterでは、ミラーされていないアグリゲートを使用することは推奨されません。使用するとエラーメッセージが表示されます。</block>
+  <block id="437a34485fe2ce742e7d58f52bb6c1e5" category="paragraph">MetroCluster構成でStorageGRIDをオブジェクトストアとして使用している場合は、両方のONTAPシステムで単一のStorageGRIDシステムへのFabricPool階層化を実行できます。各ONTAP システムでは、データを別々のバケットに階層化する必要があります。</block>
 </blocks>
