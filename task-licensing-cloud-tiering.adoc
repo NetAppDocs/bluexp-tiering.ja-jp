@@ -18,26 +18,26 @@ BlueXP階層化サービスの30日間無償トライアルは、最初のクラ
 
 さらに読む前に、いくつかのメモを記入してください。
 
-* クラウドプロバイダのマーケットプレイスでBlueXPサブスクリプション（PAYGO）にすでにサブスクライブしている場合は、オンプレミスのONTAP システムでもBlueXP階層化に自動的にサブスクライブされます。BlueXP階層化*オンプレミスダッシュボード*タブにアクティブなサブスクリプションが表示されます。再度サブスクライブする必要はありません。BlueXPデジタルウォレットには、アクティブなサブスクリプションが表示されます。
+* クラウドプロバイダーのマーケットプレイスでNetApp Intelligent Services（PAYGO）に既にご登録いただいている場合は、オンプレミスのONTAPシステムのティアリングにも自動的にご登録いただいています。ティアリングの*オンプレミスダッシュボード*タブにアクティブなサブスクリプションが表示されます。再度サブスクライブする必要はありません。デジタルウォレットにもアクティブなサブスクリプションが表示されます。
 * BYOL BlueXP  階層化ライセンス（旧称「クラウド階層化」ライセンス）は_floating_licenseで、BlueXP  組織内の複数のオンプレミスONTAPクラスタにわたって使用できます。これは、クラスタごとに_ FabricPool _ licenseを購入した以前とは異なり、はるかに簡単です。
 * データを StorageGRID に階層化する場合は料金が発生しないため、 BYOL ライセンスや PAYGO の登録は必要ありません。この階層化データは、ライセンスで購入された容量には含まれません。
 
 
-link:concept-cloud-tiering.html#pricing-and-licenses["BlueXPの階層化でライセンスがどのように機能するかについては、こちらをご覧ください"]。
+link:concept-cloud-tiering.html#pricing-and-licenses["階層化ライセンスの仕組みについて詳しくは"]です。
 
 
 
 == 30 日間の無償トライアルをご利用いただけます
 
-BlueXP階層化ライセンスをお持ちでない場合は、最初のクラスタへの階層化をセットアップすると、BlueXP階層化の30日間無償トライアルが開始されます。30日間の無償トライアルの終了後、BlueXP階層化サービスの料金は、従量課金制サブスクリプション、年間サブスクリプション、BYOLライセンス、またはその組み合わせで支払う必要があります。
+階層化ライセンスをお持ちでない場合は、最初のクラスターに階層化を設定すると、30日間の無料トライアルが開始されます。30日間の無料トライアル終了後は、従量課金制サブスクリプション、年間サブスクリプション、BYOLライセンス、またはこれらの組み合わせを通じて階層化の料金をお支払いいただく必要があります。
 
 無償トライアルが終了し、ライセンスを登録または追加していない場合、ONTAP はコールドデータをオブジェクトストレージに階層化しなくなります。これまで階層化されていたすべてのデータに引き続きアクセスできるため、このデータを読み出して使用できます。取得されると、このデータはクラウドから高パフォーマンス階層に戻されます。
 
 
 
-== BlueXP階層化サービス（PAYGO）サブスクリプションを利用
+== NetApp Intelligent Services tiering PAYGOサブスクリプションを使用する
 
-クラウドプロバイダのマーケットプレイスから購入した従量課金制サブスクリプションを使用すると、Cloud Volumes ONTAP システムや多くのクラウドデータサービス（BlueXP階層化など）のライセンスを取得できます。
+クラウド プロバイダーのマーケットプレイスからの従量課金制サブスクリプションにより、 Cloud Volumes ONTAPシステムと階層化などのNetApp Intelligent Services の使用ライセンスを取得できます。
 
 BlueXP  階層化にサブスクライブすると、デジタルウォレットでサブスクリプションを管理できます。link:https://docs.netapp.com/us-en/bluexp-digital-wallet/task-manage-subscriptions.html#view-your-subscriptions["デジタルウォレットの使用方法をご確認ください。"^]
 
@@ -49,8 +49,8 @@ AWS MarketplaceからBlueXP階層化サービスにサブスクライブする�
 
 [[subscribe-aws]]
 .手順
-. BlueXPで、*[モビリティ]>[階層化]>[オンプレミスダッシュボード]*をクリックします。
-. [_Marketplace subscriptions]セクションで、[Amazon Web Services]の*[Subscribe]*をクリックし、*[Continue]*をクリックします。
+. BlueXPで、*モビリティ > 階層化 > オンプレミス ダッシュボード* を選択します。
+. _Marketplace subscriptions_ セクションで、Amazon Web Services の下にある *Subscribe* を選択し、*Continue* を選択します。
 . から登録します https://aws.amazon.com/marketplace/pp/prodview-oorxakq6lq7m4["AWS Marketplace"^]をクリックし、BlueXP Webサイトにログインし直して登録を完了します。
 +
 次のビデオは、プロセスを示しています。
@@ -68,8 +68,8 @@ Azure MarketplaceからBlueXP階層化サービスにサブスクライブする
 
 [[subscribe-azure]]
 .手順
-. BlueXPで、*[モビリティ]>[階層化]>[オンプレミスダッシュボード]*をクリックします。
-. [_Marketplace subscriptions]セクションで、[Microsoft Azure]の*[サブスクライブ]*をクリックし、*[続行]*をクリックします。
+. BlueXPで、*モビリティ > 階層化 > オンプレミス ダッシュボード* を選択します。
+. _Marketplace サブスクリプション_ セクションで、Microsoft Azure の下にある *サブスクライブ* を選択し、*続行* を選択します。
 . から登録します https://azuremarketplace.microsoft.com/en-us/marketplace/apps/netapp.cloud-manager?tab=Overview["Azure Marketplace で入手できます"^]をクリックし、BlueXP Webサイトにログインし直して登録を完了します。
 +
 次のビデオは、プロセスを示しています。
@@ -87,8 +87,8 @@ Google Cloud MarketplaceからBlueXPの階層化サービスにサブスクラ�
 
 [[subscribe-gcp]]
 .手順
-. BlueXPで、*[モビリティ]>[階層化]>[オンプレミスダッシュボード]*をクリックします。
-. [_Marketplace subscriptions]セクションで、[Google Cloud]の*[サブスクライブ]*をクリックし、*[続行]*をクリックします。
+. BlueXPで、*モビリティ > 階層化 > オンプレミス ダッシュボード* を選択します。
+. _Marketplace subscriptions_ セクションで、Google Cloud の下にある *Subscribe* を選択し、*Continue* を選択します。
 . から登録します https://console.cloud.google.com/marketplace/details/netapp-cloudmanager/cloud-manager?supportedpurview=project["Google Cloud Marketplace"^]をクリックし、BlueXP Webサイトにログインし直して登録を完了します。
 +
 次のビデオは、プロセスを示しています。
@@ -102,7 +102,7 @@ video::373b96de-3691-4d84-b3f3-b05101161638[panopto]
 
 == 年間契約を使用する
 
-BlueXP階層化サービスの料金は、年単位の契約を購入して年単位で支払います。年間契約には、1年、2年、3年のいずれかがあります。
+年間契約を購入して、階層化の料金を毎年支払います。年間契約には、1年、2年、3年のいずれかがあります。
 
 アクセス頻度の低いデータをAWSに階層化する場合は、 https://aws.amazon.com/marketplace/pp/prodview-q7dg6zwszplri["AWS Marketplace のページ"^]。このオプションを使用する場合は、 Marketplace のページでサブスクリプションを設定してから、を設定します https://docs.netapp.com/us-en/bluexp-setup-admin/task-adding-aws-accounts.html#associate-an-aws-subscription["サブスクリプションを AWS クレデンシャルに関連付けます"^]。
 
@@ -114,17 +114,17 @@ BlueXP階層化サービスの料金は、年単位の契約を購入して年�
 
 == BlueXP階層化BYOLライセンスを使用
 
-ネットアップが提供するお客様所有のライセンスには、 1 年、 2 年、 3 年の期間があります。BYOL * BlueXP  階層化*ライセンス（旧称「クラウド階層化」ライセンス）は_floating_licenseで、BlueXP  組織内の複数のオンプレミスONTAPクラスタにわたって使用できます。BlueXP階層化ライセンスで定義されている階層化の合計容量は*すべての*オンプレミスクラスタで共有されるため、初期ライセンスの取得や更新が容易になります。階層化BYOLライセンスの最小容量は10TiBからです。
+ネットアップが提供するお客様所有のライセンスには、 1 年、 2 年、 3 年の期間があります。BYOL * BlueXP  階層化*ライセンス（旧称「クラウド階層化」ライセンス）は_floating_licenseで、BlueXP  組織内の複数のオンプレミスONTAPクラスタにわたって使用できます。BlueXP tieringライセンスで定義された階層化容量の合計は、オンプレミスのクラスター全体で共有されるため、初期ライセンスの取得と更新が容易になります。階層化BYOLライセンスの最小容量は10TiBからです。
 
 BlueXP階層化ライセンスをお持ちでない場合は、ネットアップまでお問い合わせください。
 
-* mailto ： ng-cloud-tiering@netapp.com ？ subject = ライセンス [ ライセンスを購入するために電子メールを送信 ] 。
-* ライセンスをリクエストするには、BlueXPの右下にあるチャットアイコンをクリックします。
+* NetAppの営業担当者にお問い合わせください
+* NetAppサポートにお問い合わせください。
 
 
 必要に応じて、使用しないCloud Volumes ONTAP の未割り当てのノードベースライセンスがある場合は、同じ金額、同じ有効期限のBlueXP階層化ライセンスに変換できます。 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-manage-node-licenses.html#exchange-unassigned-node-based-licenses["詳細については、こちらをご覧ください"^]。
 
-BlueXPのデジタルウォレットページを使用して、BlueXP階層化のBYOLライセンスを管理します。新しいライセンスを追加したり、既存のライセンスを更新したりできます。link:https://docs.netapp.com/us-en/bluexp-digital-wallet/task-manage-data-services-licenses.html["デジタルウォレットの使用方法をご確認ください。"^]
+ライセンスを管理するには、デジタル ウォレット ページを使用します。新しいライセンスを追加したり、既存のライセンスを更新したりできます。link:https://docs.netapp.com/us-en/bluexp-digital-wallet/task-manage-data-services-licenses.html["デジタルウォレットの使用方法をご確認ください。"^]
 
 
 
@@ -210,11 +210,11 @@ NOTE: System ManagerまたはONTAP CLIの「子」ライセンスに表示され
 . link:task-licensing-cloud-tiering.html#use-a-bluexp-tiering-byol-license["BlueXP階層化ライセンスを購入"] をクリックします。
 . BlueXP  で、<<licenses,ライセンスをBlueXPデジタルウォレットに追加します>>[add the license to the BlueXP  digital wallet]をクリックします。
 . BlueXP階層化サービスで、 link:task-managing-tiering.html#discovering-additional-clusters-from-bluexp-tiering["新しいクラスタを検出"]。
-. [Clusters]ページで、をクリックします image:screenshot_horizontal_more_button.gif["[ 詳細 ] アイコン"] クラスタの場合は、*ライセンスの導入*を選択します。
+. クラスターページから、 image:screenshot_horizontal_more_button.gif["[ 詳細 ] アイコン"]クラスターの場合は、[ライセンスのデプロイ] を選択します。
 +
 image:screenshot_tiering_deploy_license.png["ONTAP クラスタに階層化ライセンスを導入する方法を示すスクリーンショット。"]
 
-. _Deploy License_Dialogで、* Deploy *をクリックします。
+. [ライセンスの展開] ダイアログで、[展開] を選択します。
 +
 子ライセンスがONTAP クラスタに導入されている。
 

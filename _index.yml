@@ -13,7 +13,7 @@ indexpage:
       url: whats-new.html
     - title: ライセンスをセットアップする
       url: task-licensing-cloud-tiering.html
-  - title: オンプレミスの ONTAP データをクラウドに階層化
+  - title: オンプレミスのONTAPデータをクラウドに階層化
     links:
     - title: Amazon S3 への階層化
       url: task-tiering-onprem-aws.html

@@ -20,7 +20,7 @@ BlueXPの階層化サービスでは、複数のGoogle Cloudストレージク�
 
 == サポートされている GCP ストレージクラス
 
-オンプレミスのONTAPシステムからGCPへのデータ階層化を設定すると、BlueXPの階層化ではアクセス頻度の低いデータに_Standard_storageクラスが自動的に使用されます。BlueXPの階層化サービスでは、ライフサイクルルールを適用して、一定の日数が経過した時点で_Standard_storageクラスから他のストレージクラスにデータを移行できます。次のストレージクラスから選択できます。
+オンプレミスのONTAPシステムからGoogle Cloudストレージへのデータ階層化を設定すると、非アクティブなデータには自動的に_Standard_ストレージクラスが使用されます。階層化ではライフサイクルルールを適用できるため、一定の日数後にデータが_Standard_ストレージクラスから他のストレージクラスに移行されます。次のストレージクラスから選択できます。
 
 * ニアライン
 * コールドライン（ Coldline ）
@@ -29,7 +29,7 @@ BlueXPの階層化サービスでは、複数のGoogle Cloudストレージク�
 
 別のストレージクラスを選択しない場合、データは _Standard_storage クラスに残り、ルールは適用されません。
 
-BlueXP階層化ライフサイクルルールを設定するときは、Googleアカウントでバケットをセットアップするときにライフサイクルルールを設定しないでください。
+階層化ライフサイクル ルールを構成する場合は、Google アカウントでバケットを設定するときにライフサイクル ルールを構成しないでください。
 
 https://cloud.google.com/storage/docs/storage-classes["Google Cloud Storage のクラスをご確認ください"^]。
 
@@ -37,7 +37,7 @@ https://cloud.google.com/storage/docs/storage-classes["Google Cloud Storage の�
 
 == サポートされている Google Cloud リージョン
 
-BlueXPの階層化サービスは次のリージョンでサポートされます。
+階層化は次のリージョンをサポートします。
 
 
 
