@@ -784,7 +784,6 @@
   <block id="57c0e1741966187a33a00eea2622a5ec" category="list-text">右側のパネルで、階層化サービスの*有効化*をクリックします。</block>
   <block id="18cf072964a583150dd247485ba75b92" category="inline-link-macro">ONTAP 対応の Amazon FSX</block>
   <block id="7450cfde7058dc5e1f7909d0280fd7ae" category="inline-link-macro">Azure NetApp Files の特長</block>
-  <block id="b0cee72642f5457a71ddd0b49efb6d93" category="inline-link-macro">Cloud Volumes Service for Google Cloud</block>
   <block id="8d69c6a87500bfb8cb04a6182b6d844b" category="paragraph">データをクラウドに階層化するにはコネクタが必要です。データをAzure BLOBストレージに階層化する場合は、Azure VNet内または自社運用内のコネクタを使用できます。新しいコネクタを作成するか、現在選択されているコネクタが Azure またはオンプレミスにあることを確認する必要があります。</block>
   <block id="5354529f47c862f65799910961248e94" category="inline-link">必要なカスタムロールの権限</block>
   <block id="93319d1fbdd154c5602c392140110702" category="paragraph">以前のバージョンのBlueXPを使用してコネクタを作成した場合は、Azureアカウントの権限リストを編集して、不足している権限を追加する必要があります。</block>
@@ -1029,7 +1028,6 @@
   <block id="52ba8ac12050d2494572b940a0d65b25" category="list-text"><block ref="52ba8ac12050d2494572b940a0d65b25" category="inline-link-rx"></block></block>
   <block id="9d06990508d25d367d9158c6558eb9c8" category="list-text"><block ref="9d06990508d25d367d9158c6558eb9c8" category="inline-link-macro-rx"></block></block>
   <block id="2e0c742f4616eb27b5b7646aa790edfe" category="list-text"><block ref="2e0c742f4616eb27b5b7646aa790edfe" category="inline-link-macro-rx"></block></block>
-  <block id="cf14bff66a8b72d3675db8ffe0f02ee3" category="list-text"><block ref="cf14bff66a8b72d3675db8ffe0f02ee3" category="inline-link-macro-rx"></block></block>
   <block id="e8d4092baef6680c6a35d5228ae31de2" category="paragraph"><block ref="e8d4092baef6680c6a35d5228ae31de2" category="inline-image-macro-rx" type="image"></block></block>
   <block id="0dfcbbbe02d3e96f8ad78782e8772587" category="paragraph">これはシステムによって生成されたIDで、電子メールにマッピングされます。[*NSS Management*]ページで、から電子メールを表示できます <block ref="5151db0ded96d46f40ae09b5e5b167a1" category="inline-image-macro-rx" type="image"></block> メニュー。</block>
   <block id="fc79de85a483938f72fbcb9822ec0ae3" category="list-text">ログイン認証情報トークンを更新する必要がある場合は、の[認証情報の更新*]オプションも使用できます <block ref="5151db0ded96d46f40ae09b5e5b167a1" category="inline-image-macro-rx" type="image"></block> メニュー。</block>
@@ -1415,4 +1413,6 @@
   <block id="0e271c8fadf9496816e223bef1dddce1" category="paragraph">Amazon S3 階層化先がキャンバス上に作業環境として存在する場合は、オンプレミスのONTAP作業環境をその先にドラッグして、階層化セットアップ ウィザードを開始できます。</block>
   <block id="f88599376f5e75e17ca7b493801e3fe0" category="sidebar">オンプレミスのONTAPデータをクラウドに階層化</block>
   <block id="7d2282c510a7fb8e2271e7bebbf67d76" category="sidebar">オンプレミスのデータをクラウドに階層化</block>
+  <block id="1215f8190533dfdf63d2224a6d88266f" category="inline-link-macro">Google Cloud NetAppボリューム</block>
+  <block id="cb4bf32603c89d08cad17e7e7dd302f2" category="list-text"><block ref="cb4bf32603c89d08cad17e7e7dd302f2" category="inline-link-macro-rx"></block></block>
 </blocks>

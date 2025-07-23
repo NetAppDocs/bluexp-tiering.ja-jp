@@ -21,7 +21,7 @@ summary: ネットアップでは、さまざまな方法でBlueXPをサポー�
 
 * link:https://docs.netapp.com/us-en/bluexp-fsx-ontap/start/concept-fsx-aws.html#getting-help["ONTAP 対応の Amazon FSX"^]
 * link:https://docs.netapp.com/us-en/bluexp-azure-netapp-files/concept-azure-netapp-files.html#getting-help["Azure NetApp Files の特長"^]
-* link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-service-gcp/concept-cvs-gcp.html#getting-help["Cloud Volumes Service for Google Cloud"^]
+* link:https://docs.netapp.com/us-en/bluexp-google-cloud-netapp-volumes/concept-gcnv.html#getting-help["Google Cloud NetAppボリューム"^]
 
 
 BlueXPおよびそのストレージソリューションとサービスに固有のテクニカルサポートを受けるには、以下に記載されているサポートオプションを使用してください。
